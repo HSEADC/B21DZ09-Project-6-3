@@ -84,48 +84,6 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // about
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/about.html',
-      filename: './about.html',
-      chunks: ['index']
-    }),
-
-    // lifehacks
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/lifehacks.html',
-      filename: './lifehacks.html',
-      chunks: ['index']
-    }),
-    // map
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/map.html',
-      filename: './map.html',
-      chunks: ['index']
-    }),
-    // remindercard
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/remindercard.html',
-      filename: './remindercard.html',
-      chunks: ['index']
-    }),
-    // collections
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/collections.html',
-      filename: './collections.html',
-      chunks: ['index']
-    }),
-
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
