@@ -15,9 +15,56 @@
       <img src="images/image.jpg" />
       <img src="images/image.svg" />
     </div>
+    <form
+      action="https://formspree.io/f/mgeqzljr"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+    <script>
+    var form = document.getElementById("my-form");
 
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
     <div>This is a landing page</div>
-    <a href="./pages/page.html">Go to an internal page</a>
+    <a href="about.html"> Подробнее о проекте</a>
+    <a href="lifehacks.html"> Лайфхаки </a>
+    <a href="map.html"> Карта</a>
+    <a href="remindercard.html"> Памятка</a>
+    <a href="collections.html"> Коллекции</a>
+
   </body>
 </html>
 <!-- test main -->
