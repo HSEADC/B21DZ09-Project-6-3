@@ -1,15 +1,21 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
-const webpack = require('webpack')
 const path = require('path')
+
+const pages = [
+  'index',
+  'about',
+  'lifehacks',
+  'remindercard',
+  'map',
+  'collections'
+]
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.jsx'
+    bundle: './src/index.js'
   },
   output: {
     filename: '[name].js',
@@ -75,66 +81,14 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
-    // Landing page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
-    }),
-
-    // about
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/about.html',
-      filename: './about.html',
-      chunks: ['index']
-    }),
-
-    // lifehacks
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/lifehacks.html',
-      filename: './lifehacks.html',
-      chunks: ['index']
-    }),
-    // map
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/map.html',
-      filename: './map.html',
-      chunks: ['index']
-    }),
-    // remindercard
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/remindercard.html',
-      filename: './remindercard.html',
-      chunks: ['index']
-    }),
-    // collections
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/collections.html',
-      filename: './collections.html',
-      chunks: ['index']
-    }),
-
-    // Partials
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname, './src/partials/analytics.html'),
-        location: 'analytics',
-        template_filename: '*',
-        priority: 'replace'
-      }
-    ])
+    ...pages.map((page) => {
+      const pageName = `${page}.html`
+      return new HtmlWebpackPlugin({
+        hash: true,
+        template: `./src/${pageName}`,
+        filename: `./${pageName}`
+      })
+    })
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
