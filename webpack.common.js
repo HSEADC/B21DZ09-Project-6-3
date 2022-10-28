@@ -11,7 +11,8 @@ const pages = [
   'lifehacks',
   'remindercard',
   'map',
-  'collections'
+  'collections',
+  'promo',
 ]
 
 const partials = ['navbar', 'hamburger']
