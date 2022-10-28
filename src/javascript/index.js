@@ -1,4 +1,4 @@
-const form = document.getElementById('my-form')
+const form = document.getElementById('newsletter-form')
 
 async function handleSubmit(event) {
   event.preventDefault()
