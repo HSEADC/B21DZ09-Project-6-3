@@ -11,6 +11,7 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
+    place-items: center;
 
     a {
       color: #fff;
@@ -36,12 +37,80 @@
     place-items: center;
     padding: 1.5rem 0;
     cursor: pointer;
+    background-color: #000;
+    z-index: 2;
 
     &__line {
       height: 0.25rem;
       width: 2.5rem;
       border-radius: 2.5rem;
       background-color: #fff;
+
+      &-rotate-right {
+        transform: rotate(45deg) translate(0, 0.5rem);
+      }
+
+      &-rotate-left {
+        transform: rotate(-45deg) translate(0, -0.6rem);
+      }
+    }
+  }
+
+  &__container {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 1.25rem;
+    width: calc(100% + 4px);
+    z-index: 1;
+    padding: 0 3.625rem;
+
+    &-hidden {
+      display: none !important;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.625rem;
+
+    &__link {
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+    }
+
+    &__pages {
+      a {
+        margin-bottom: 2.1875rem;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    place-items: flex-end;
+    margin-bottom: 2.875rem;
+
+    &__social {
+      .paragraph {
+        font-weight: 400 !important;
+      }
+
+      &__accounts {
+        margin-top: 1.625rem;
+        display: flex;
+        gap: 1.625rem;
+
+        &-blur {
+          filter: blur(5px);
+        }
+      }
     }
   }
 }
