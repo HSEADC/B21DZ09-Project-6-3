@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 
 const path = require('path')
 
@@ -12,6 +13,8 @@ const pages = [
   'map',
   'collections'
 ]
+
+const partials = ['navbar', 'hamburger']
 
 module.exports = {
   entry: {
@@ -88,7 +91,15 @@ module.exports = {
         template: `./src/${pageName}`,
         filename: `./${pageName}`
       })
-    })
+    }),
+
+    new HtmlWebpackPartialsPlugin(
+      partials.map((partial) => ({
+        path: path.join(__dirname, `./src/partials/${partial}.html`),
+        location: partial,
+        template_filename: '*',
+        priority: 'replace'
+      }))),
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

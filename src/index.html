@@ -8,30 +8,140 @@
   </head>
 
   <body class="index">
-    <div class="images">
-      <div class="image" id="bgPNG"></div>
-      <div class="image" id="bgJPG"></div>
-      <div class="image" id="bgSVG"></div>
-      <img src="images/image.png" />
-      <img src="images/image.jpg" />
-      <img src="images/image.svg" />
-    </div>
+    <navbar></navbar>
 
-    <form action="https://formspree.io/f/mgeqzljr" method="POST">
-      <label>
-        Your email:
-        <input type="email" name="email" />
-      </label>
-      <!-- your other form fields go here -->
-      <button type="submit">Send</button>
-    </form>
+    <main class="main">
+      <hamburger></hamburger>
 
-    <div>This is a landing page</div>
+      <section class="hero">
+        <h1 class="title">
+          Удобный и простой способ <br />
+          начать осознанное <br />
+          потребление с нуля
+        </h1>
+        <p class="paragraph hero__subtitle">
+          Хотите освоить осознанное потребление, но боитесь, что будет сложно
+          разобраться? Вам точно к нам! Мы развеем ваши сомнения и поможем на
+          вашем пути.
+        </p>
+        <div class="hero__image">
+          <img src="images/index/banana-peel.svg" />
+          <img class="hero__image-star" src="images/index/star.svg" />
+        </div>
+      </section>
 
-    <a href="about.html">Подробнее о проекте</a>
-    <a href="lifehacks.html">Лайфхаки </a>
-    <a href="map.html">Карта</a>
-    <a href="remindercard.html">Памятка</a>
-    <a href="collections.html">Коллекции</a>
+      <section class="help">
+        <div class="help__title">
+          <img src="images/index/tomato.svg" />
+          <h1 class="title">Мы поможем:</h1>
+        </div>
+
+        <div class="help__main">
+          <div>
+            <div class="help__main__points">
+              <ol class="help__main__points__list" type="1">
+                <li>Научиться вести осознанный образ жизни</li>
+                <li>Сделать процесс понятным и увлекательным</li>
+                <li>Приобрести доверие к утилизации</li>
+                <li>Осознать, что один человек может изменить многое</li>
+              </ol>
+              <img src="images/index/battery.svg" />
+            </div>
+
+            <img class="help__main__apple" src="images/index/apple.svg" />
+          </div>
+
+          <img class="help__main__shoe" src="images/index/shoe.svg" />
+        </div>
+      </section>
+
+      <section class="aware">
+        <img class="aware__bottle" src="images/index/bottle.svg" />
+
+        <div class="aware__main">
+          <div>
+            <h1 class="title">Почему стоит быть более осознанными?</h1>
+
+            <div class="aware__main__body">
+              <img src="images/index/water-drop.svg" />
+              <p class="paragraph">
+                Переработка может предотвратить захоронение потенциально
+                полезных материалов и сократить потребление первичного сырья,
+                тем самым снизив потребление энергии, загрязнение воздуха (от
+                сжигания), загрязнение воды, загрязнение почвы (от захоронения).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__title">
+          <img src="images/index/coke-can.svg" />
+          <h1 class="title">
+            Какие преимущества имеет сортировка и переработка отходов?
+          </h1>
+        </div>
+
+        <div class="advantages__body">
+          <div>
+            <p class="paragraph advantages__body__paragraph">
+              Главным преимуществом сортировки бытовых отходов является
+              устранение экологически опасных ситуаций, причиной которых
+              являются крупные свалки. На данных объектах мусор начинает гнить,
+              что приводит к распространению бактерий и токсичных продуктов,
+              которые могут проникать в подземные воды и загрязнять почву.
+            </p>
+
+            <div class="advantages__body__image">
+              <div class="advantages__body__image__water">
+                <img
+                  class="advantages__body__image__water__bottle"
+                  src="images/index/water-bottle.svg"
+                />
+                <img
+                  class="advantages__body__image__water__star"
+                  src="images/index/star.svg"
+                />
+              </div>
+              <div class="advantages__body__image__diesel">
+                <img
+                  class="advantages__body__image__diesel"
+                  src="images/index/diesel-bottle.svg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="advantages__recycle">
+            <img src="images/index/recycle-bottle.svg" />
+            <img
+              class="advantages__recycle__star"
+              src="images/index/star.svg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h1 class="title">
+        Оставьте свою почту и мы напишем вам, когда сайт будет готов!
+      </h1>
+
+      <div class="newsletter">
+        <form action="https://formspree.io/f/mgeqzljr" method="POST">
+          <input type="email" name="email" placeholder="Email" />
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <h1 class="title">Взгляните, как это просто!</h1>
+      <div class="game">
+        <img src="images/index/recycle.svg" />
+      </div>
+    </footer>
+
+    <div class="spacing" />
   </body>
 </html>
