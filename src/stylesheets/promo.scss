@@ -242,11 +242,90 @@ body.promo {
     margin: 10rem 3.75rem 4.25rem;
     border: 2px solid #ffffff;
     border-radius: 1.25rem;
-    height: 87.5rem;
-    width: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &__background {
+      position: absolute;
+      height: 25vw;
+    }
+
+    .box1 {
+      background-color: black;
+      width: 85.7vw;
+      height: 56.5vw;
+      stroke: white;
+      stroke-width: 2;
+      border-radius: 2vw;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .img1 {
+      position: relative;
+      display: block;
+      height: 46.1vw;
+      margin-top: -10vw;
+      margin-left: 20vw;
+    }
+    .img2 {
+      position: relative;
+      display: none;
+      height: 20.3vw;
+      margin-top: -60vw;
+      margin-left: 30vw;
+    }
+    .img3 {
+      position: relative;
+      display: none;
+      rotate: 90deg;
+      height: 23.9vw;
+      margin-top: -55vw;
+      margin-left: 25vw;
+    }
+    .img4 {
+      position: relative;
+      display: none;
+      height: 4.27vw;
+      rotate: 90deg;
+      margin-top: -45vw;
+      margin-left: 20vw;
+    }
+    .img5 {
+      position: relative;
+      display: none;
+      height: 20.6vw;
+      margin-top: -35vw;
+      margin-left: 20vw;
+    }
+    .img6 {
+      position: relative;
+      display: none;
+      height: 30vw;
+      margin-left: 35vw;
+      margin-top: -30vw;
+      rotate: 90deg;
+    }
+    .img7 {
+      position: relative;
+      display: none;
+      height: 4.27vw;
+      margin-left: 69vw;
+      margin-top: -29vw;
+    }
+    .yes {
+      display: block;
+    }
+    .yes2 {
+      display: block;
+    }
+    .yes3 {
+      display: block;
+    }
+    .no {
+      display: none;
+    }
   }
 
   .spacing {
