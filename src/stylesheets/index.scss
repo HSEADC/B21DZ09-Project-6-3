@@ -1,96 +1,58 @@
-body {
-  background-color: black;
-}
-a {
-  text-decoration: none;
-}
-.box1 {
-  width: 100vw;
-  height: 8.68vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.searchim {
-  height: 3.15vw;
-  margin-left: 3vw;
-}
-.burgerim {
-  height: 6.53vw;
-  margin-right: 3vw;
-}
-.box2 {
-  width: 100vw;
-  height: 48.6vw;
-  display: flex;
-  justify-content: space-between;
-}
-.box3 {
-  margin-left: 3vw;
-  width: 56.6vw;
-  border: 2px solid white;
-  border-radius: 2vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.box4 {
-  margin-right: 3vw;
-  width: 34vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-}
-.text {
-  height: 40vw;
-}
-.arrowsim {
-  height: 2.2vw;
-  margin-left: 43vw;
-  margin-bottom: 3vw;
-}
-p {
-  font-family: 'Inter';
-  font-size: 2.7vw;
-  color: white;
-  margin-left: 3vw;
-  margin-top: 7vw;
-}
-.p1 {
-  font-family: 'Inter';
-  position: absolute;
-  font-size: 1.73vw;
-  line-height: 2.7vw;
-  color: white;
-  margin-left: 3vw;
-  margin-top: 2vw;
-}
-.p2 {
-  font-family: 'Inter';
-  position: absolute;
-  font-size: 2vw;
-  line-height: 2.8vw;
-  color: white;
-  margin-left: 2vw;
-  padding-top: 2vw;
-}
-.text1 {
-  height: 9.3vw;
-  width: 34vw;
-  border: 2px solid white;
-  border-radius: 2vw;
-  display: flex;
-}
-.text2 {
-  height: 17.8vw;
-  width: 16vw;
-  border: 2px solid white;
-  border-radius: 2vw;
-}
-.basementim {
-  position: absolute;
-  width: 94vw;
-  margin-top: 3vw;
-  margin-left: 3vw;
+body.index {
+  .menu {
+    display: flex;
+    gap: 2vw;
+
+    &__box-text {
+      font-size: 2vw;
+      line-height: 2.8vw;
+    }
+
+    &__two-boxes {
+      gap: 2vw;
+    }
+
+    &__box-style {
+      padding: 2vw;
+      flex: 1;
+    }
+
+    &__long-box {
+      @extend .menu__box-style;
+      height: 17.8vw;
+    }
+
+    &__left {
+      padding: 7vw 3vw 3vw;
+
+      &__content {
+        h1 {
+          font-size: 2.7vw;
+        }
+
+        p {
+          font-size: 1.73vw;
+          line-height: 2.7vw;
+          margin-top: 2vw;
+        }
+      }
+
+      &__arrow {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+
+        img {
+          width: 6.5vw;
+        }
+      }
+    }
+
+    &__right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+    }
+  }
 }

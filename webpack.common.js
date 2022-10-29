@@ -9,13 +9,18 @@ const pages = [
   'index',
   'about',
   'lifehacks',
+  'lifehacks/1',
+  'lifehacks/2',
+  'collections/1',
+  'collections/2',
   'remindercard',
   'map',
   'collections',
   'promo',
+  'questions'
 ]
 
-const partials = ['navbar', 'hamburger']
+const partials = ['navbar', 'hamburger', 'page-navbar', 'back-button']
 
 module.exports = {
   entry: {

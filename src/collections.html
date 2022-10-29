@@ -1,53 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Коллекции</title>
   </head>
-  <body>
-    <div class="box1">
-      <img class="searchim" src="img/search.svg" alt="search" />
-      <img class="burgerim" src="img/burger.svg" alt="burger" />
-    </div>
-    <div class="box2">
-      <a href="index.html"
-        ><img class="arrowim" src="img/arrow.svg" alt="arrow"
-      /></a>
-      <div class="box3">
-        <div class="box31"><p2>Видео</p2></div>
-        <div class="box32"><p2>Подкасты</p2><</div>
-        <div class="box32"><p2>Товары</p2><</div>
-        <div class="box32"><p2>Книги</p2></div>
+  <body class="layout-padding">
+    <page-navbar></page-navbar>
+    <back-button></back-button>
+
+    <div class="chips">
+      <div class="chip chip-active">
+        <p>Видео</p>
+      </div>
+
+      <div class="chip">
+        <p>Подкасты</p>
+      </div>
+
+      <div class="chip">
+        <p>Товары</p>
+      </div>
+
+      <div class="chip">
+        <p>Книги</p>
       </div>
     </div>
-    <div class="box4">
-      <a href="collectionsexample1.html"
-        ><div class="box40">
-          <p1>Название 1 <br />Смотреть видео</p1>
-        </div></a
-      >
-      <div class="box41">
-        <p1>Название 2 <br />Обложка и описание</p1>
-      </div>
-      <div class="box41">
-        <p1>Название 3 <br />Обложка и описание</p1>
-      </div>
-      <div class="box41">
-        <p1>Название 4 <br />Обложка и описание</p1>
-      </div>
-      <div class="box41">
-        <p1>Название 5 <br />Обложка и описание</p1>
-      </div>
-      <div class="box41">
-        <p1>Название 6 <br />Обложка и описание</p1>
-      </div>
-      <div class="box41">
-        <p1>Название 7 <br />Обложка и описание</p1>
-      </div>
-      <div class="box41">
-        <p1>Название 8 <br />Обложка и описание</p1>
-      </div>
+
+    <div class="cards">
+      <a href="collections/1.html">
+        <div class="card card-active">
+          <p>
+            Смотреть видео
+            <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="collections/2.html">
+        <div class="card">
+          <p>
+            Название 2 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 3 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 4 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 5 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 6 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 7 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 8 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 9 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="card">
+          <p>
+            Название 10 <br />
+            Обложка и описание
+          </p>
+        </div>
+      </a>
     </div>
-    <img class="basementim" src="img/basement.svg" alt="basement" />
+
+    <div class="wireframe-footer"></div>
   </body>
 </html>

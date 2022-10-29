@@ -1,16 +1,9 @@
 @import 'stylesheets/reset.scss';
 @import 'stylesheets/vars.scss';
-@import 'stylesheets/fonts.scss';
 @import 'stylesheets/basics.scss';
 
 @import 'stylesheets/index.scss';
 @import 'stylesheets/about.scss';
-@import 'stylesheets/collections.scss';
-@import 'stylesheets/collectionsexample.scss';
-@import 'stylesheets/lifehacks.scss';
-@import 'stylesheets/lifehacksexample.scss';
-@import 'stylesheets/map.scss';
-@import 'stylesheets/remindercard.scss';
 @import 'stylesheets/partials.scss';
 @import 'stylesheets/promo.scss';
-@import 'stylesheets/questions.scss';
+@import 'stylesheets/map.scss';

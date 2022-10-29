@@ -2,36 +2,35 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вопросы</title>
   </head>
-  <body>
-    <div class="box1">
-      <img class="searchim" src="img/search.svg" alt="search" />
-      <img class="burgerim" src="img/burger.svg" alt="burger" />
+  <body class="questions layout-padding">
+    <page-navbar></page-navbar>
+    <back-button></back-button>
+
+    <div class="page-header">
+      <h2 class="page-header__subtitle">Дата публикации</h2>
+      <h1 class="page-header__title">Ответы на вопросы</h1>
     </div>
-    <div class="box2">
-      <a href="index.html"
-        ><img class="arrowim" src="img/arrow.svg" alt="arrow"
-      /></a>
-      <div class="box3">
-        <div class="box31"><p2>Дата публикации</p2></div>
+
+    <main>
+      <div class="basic-box basic-box__box-style basic-box-big-box">
+        <p class="basic-box__box-text">
+          В этой статье мы ответим на самые частые <br />вопросы в области
+          осознанного потребления
+        </p>
       </div>
-    </div>
-    <div class="box4">
-      <p>Ответы на вопросы</p>
-    </div>
-    <div class="box5">
-      <p1
-        >В этой статье мы ответим на самые частые <br />вопросы в области
-        осознанного потребления</p1
-      >
-    </div>
-    <div class="box6">
-      <p1
-        >Как мне начать?<br />Как сформировать привычку?<br />Как сэкономить
-        место в квартире?</p1
-      >
-    </div>
-    <img class="basementim" src="img/basement.svg" alt="basement" />
+
+      <div class="basic-box basic-box__box-style basic-box-big-box mt-3">
+        <p class="basic-box__box-text">
+          Как мне начать?<br />Как сформировать привычку?<br />Как сэкономить
+          место в квартире?
+        </p>
+      </div>
+    </main>
+
+    <div class="wireframe-footer"></div>
   </body>
 </html>
