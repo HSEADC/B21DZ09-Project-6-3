@@ -8,13 +8,137 @@
 
 html,
 body {
-  height: 100%;
+  background-color: #000;
 }
 
 body {
   font-family: 'Inter', Helvetica, Arial, sans-serif;
 }
 
+h1,
+h2,
+p,
+li,
+a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  flex: 1;
+}
+
 .hidden {
   display: none;
+}
+
+// Box
+.basic-box {
+  border: 2px solid white;
+  border-radius: 2vw;
+
+  &__box-text {
+    font-size: 2vw;
+    line-height: 2.8vw;
+  }
+
+  &__box-style {
+    padding: 2vw;
+    flex: 1;
+  }
+
+  &-big-box {
+    height: 36vw;
+  }
+
+  &-small-box {
+    height: 20vw;
+  }
+}
+
+.layout-padding {
+  padding: 0 var(--body-padding);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.mt-3 {
+  margin-top: 3vw;
+}
+
+.collection-video {
+  width: calc(100vw - var(--body-padding) * 2);
+}
+
+// Page header
+.page-header {
+  text-align: center;
+  margin-bottom: 3vw;
+
+  &__title {
+    font-size: 2.7vw;
+    margin-top: 2vw;
+  }
+
+  &__subtitle {
+    font-size: 1.73vw;
+    line-height: 2.7vw;
+  }
+}
+
+// Chip
+.chips {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  margin-bottom: 3vw;
+
+  .chip {
+    border: 2px solid #fff;
+    border-radius: 3vw;
+
+    p {
+      font-size: 1.73vw;
+      line-height: 2.7vw;
+      padding: 0.3vw 2.5vw;
+    }
+
+    &-active {
+      background-color: gray;
+    }
+  }
+}
+
+// Card
+.cards {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, 18%);
+  justify-content: center;
+
+  .card {
+    @extend .basic-box;
+    @extend .basic-box__box-style;
+    height: 23vw;
+
+    p {
+      font-size: 1.73vw;
+      line-height: 2vw;
+    }
+
+    &-active {
+      background-color: gray;
+    }
+  }
 }

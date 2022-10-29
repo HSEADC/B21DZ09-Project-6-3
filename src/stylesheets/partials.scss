@@ -128,3 +128,156 @@
     }
   }
 }
+
+.wireframe-footer {
+  border: 2px solid #fff;
+  height: 11.25vw;
+  width: 100%;
+  border-top-left-radius: 4vw;
+  border-top-right-radius: 4vw;
+  margin-top: 3.125vw;
+}
+
+.page-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 10vw;
+
+  &__search {
+    width: 10.3125vw;
+    display: flex;
+    padding-left: 1vw;
+
+    img {
+      width: 1.4375vw;
+    }
+
+    input {
+      font-size: 1.25vw;
+      font-weight: 500;
+      width: 100%;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      margin-left: 0.5vw;
+      padding: 1vw 1vw 1vw 0;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  .hamburger {
+    width: 5.875vw;
+    height: 5.875vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+    padding: 1.5vw 0;
+    cursor: pointer;
+    background-color: #000;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 2vw;
+
+    &__line {
+      height: 0.25vw;
+      width: 2.5vw;
+      border-radius: 2.5vw;
+      background-color: #fff;
+
+      &-rotate-right {
+        transform: rotate(45deg) translate(0, 0.5vw);
+      }
+
+      &-rotate-left {
+        transform: rotate(-45deg) translate(0, -0.6vw);
+      }
+    }
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: calc(100% + 4px);
+    z-index: 1;
+    padding: 0 3.625vw;
+
+    &-hidden {
+      display: none !important;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.625vw;
+
+    &__link {
+      font-size: 2.5vw;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+    }
+
+    &__pages {
+      a {
+        margin-bottom: 2.1875vw;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    place-items: flex-end;
+    margin-bottom: 2.875vw;
+
+    &__social {
+      .paragraph {
+        font-weight: 400 !important;
+      }
+
+      &__accounts {
+        margin-top: 1.625vw;
+        display: flex;
+        gap: 1.625vw;
+
+        img {
+          width: 3.3125vw;
+        }
+
+        &-blur {
+          filter: blur(5px);
+        }
+      }
+    }
+
+    &__logo {
+      img {
+        width: 22.625vw;
+      }
+    }
+  }
+}
+
+.back-arrow {
+  margin-bottom: 3vw;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  img {
+    width: 2.875vw;
+  }
+}
