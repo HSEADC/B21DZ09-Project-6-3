@@ -1,11 +1,15 @@
 .navbar {
   border: 2px solid #fff;
-  border-radius: 1.25rem;
-  height: 5.625rem;
-  padding: 3.75rem;
+  border-radius: 1.25vw;
+  height: 5.625vw;
+  padding: 3.75vw;
   display: flex;
   place-items: center;
-  margin-top: 1.875rem;
+  margin-top: 1.875vw;
+
+  &__logo {
+    width: 3.8125vw;
+  }
 
   ul {
     flex: 1;
@@ -17,41 +21,41 @@
       color: #fff;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.875rem;
+      font-size: 1.875vw;
     }
   }
 }
 
 .menu {
   .hamburger {
-    width: 5.875rem;
-    height: 5.875rem;
+    width: 5.875vw;
+    height: 5.875vw;
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 2px solid #fff;
     position: absolute;
-    top: 3.875rem;
-    right: 3.875rem;
+    top: 3.875vw;
+    right: 3.875vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     place-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5vw 0;
     cursor: pointer;
     background-color: #000;
     z-index: 2;
 
     &__line {
-      height: 0.25rem;
-      width: 2.5rem;
-      border-radius: 2.5rem;
+      height: 0.25vw;
+      width: 2.5vw;
+      border-radius: 2.5vw;
       background-color: #fff;
 
       &-rotate-right {
-        transform: rotate(45deg) translate(0, 0.5rem);
+        transform: rotate(45deg) translate(0, 0.5vw);
       }
 
       &-rotate-left {
-        transform: rotate(-45deg) translate(0, -0.6rem);
+        transform: rotate(-45deg) translate(0, -0.6vw);
       }
     }
   }
@@ -62,10 +66,10 @@
     left: -2px;
     background-color: #000;
     border: 2px solid #fff;
-    border-radius: 1.25rem;
+    border-radius: 1.25vw;
     width: calc(100% + 4px);
     z-index: 1;
-    padding: 0 3.625rem;
+    padding: 0 3.625vw;
 
     &-hidden {
       display: none !important;
@@ -75,10 +79,10 @@
   &__main {
     display: flex;
     justify-content: space-between;
-    margin-top: 5.625rem;
+    margin-top: 5.625vw;
 
     &__link {
-      font-size: 2.5rem;
+      font-size: 2.5vw;
       font-weight: 600;
       text-decoration: none;
       display: block;
@@ -86,7 +90,7 @@
 
     &__pages {
       a {
-        margin-bottom: 2.1875rem;
+        margin-bottom: 2.1875vw;
       }
     }
   }
@@ -95,7 +99,7 @@
     display: flex;
     justify-content: space-between;
     place-items: flex-end;
-    margin-bottom: 2.875rem;
+    margin-bottom: 2.875vw;
 
     &__social {
       .paragraph {
@@ -103,9 +107,9 @@
       }
 
       &__accounts {
-        margin-top: 1.625rem;
+        margin-top: 1.625vw;
         display: flex;
-        gap: 1.625rem;
+        gap: 1.625vw;
 
         &-blur {
           filter: blur(5px);
