@@ -236,9 +236,11 @@ document.querySelector('.insta-logo').src = instagram_namespaceObject;
 document.querySelector('.vk-logo').src = vk_namespaceObject;
 document.querySelector('.recycle-logo').src = recycle_namespaceObject; // search icon
 
-document.querySelector('.search-icon').src = search_namespaceObject; // back icon
+var search = document.querySelector('.search-icon');
+if (search) search.src = search_namespaceObject; // back icon
 
-document.querySelector('.back-icon').src = arrow_namespaceObject;
+var hamburger_back = document.querySelector('.back-icon');
+if (hamburger_back) hamburger_back.src = arrow_namespaceObject;
 // EXTERNAL MODULE: ./src/javascript/promo.js
 var promo = __webpack_require__(761);
 ;// CONCATENATED MODULE: ./src/index.js
