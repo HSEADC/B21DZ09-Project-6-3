@@ -33,4 +33,4 @@ async function handleSubmit(event) {
     })
 }
 
-form.addEventListener('submit', handleSubmit)
+form?.addEventListener('submit', handleSubmit)
