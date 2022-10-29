@@ -23,7 +23,7 @@ body.promo {
   }
 
   .paragraph {
-    font-size: 1.8vw;
+    font-size: 1.7vw;
     font-weight: 500;
     line-height: 2.775vw;
   }
@@ -171,6 +171,7 @@ body.promo {
 
       &__paragraph {
         font-weight: 400;
+        width: 92%;
       }
 
       &__image {
@@ -225,7 +226,7 @@ body.promo {
   .footer {
     .title {
       text-align: center;
-      max-width: 63.3125vw;
+      max-width: 60vw;
       margin: 6.375vw auto 0;
     }
 
