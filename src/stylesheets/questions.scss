@@ -38,38 +38,26 @@ a {
 }
 .box3 {
   width: 56.6vw;
-  margin-right: 20vw;
+  margin-right: 23vw;
   height: 3vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.box4 {
+  width: 100vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
 }
 .box31 {
   width: 13.3vw;
-  background-color: #454545;
-  border: 2px solid white;
-  border-radius: 2vw;
   height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.box32 {
-  width: 13.3vw;
-  border: 2px solid white;
-  border-radius: 2vw;
-  height: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.p2 {
-  font-family: 'Inter';
-  position: absolute;
-  font-size: 1.73vw;
-  line-height: 2.7vw;
-  color: white;
-}
-.p1 {
+p2 {
   font-family: 'Inter';
   position: absolute;
   font-size: 1.73vw;
@@ -78,25 +66,35 @@ a {
   margin-left: 2vw;
   margin-top: 2vw;
 }
-.box4 {
-  width: 94vw;
-  height: 52.8vw;
+p1 {
+  font-family: 'Inter';
+  position: absolute;
+  font-size: 2.3vw;
+  line-height: 2.9vw;
+  color: white;
   margin-left: 3vw;
   margin-top: 3vw;
+}
+p {
+  font-family: 'Inter';
+  font-size: 2.7vw;
+  color: white;
+}
+.box5 {
+  margin-left: 3vw;
+  margin-top: 3vw;
+  width: 94vw;
+  height: 36.1vw;
+  border: 2px solid white;
+  border-radius: 2vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-.box40 {
-  width: 22.4vw;
-  height: 25vw;
-  background-color: #454545;
+.box6 {
+  margin-left: 3vw;
+  margin-top: 3vw;
+  width: 94vw;
+  height: 82vw;
   border: 2px solid white;
   border-radius: 2vw;
-}
-.box41 {
-  width: 22.4vw;
-  height: 25vw;
-  border: 2px solid white;
-  border-radius: 2vw;
+  display: flex;
 }
