@@ -33,7 +33,9 @@ document.querySelector('.vk-logo').src = vkLogo
 document.querySelector('.recycle-logo').src = recycleLogo
 
 // search icon
-document.querySelector('.search-icon').src = searchIcon
+const search = document.querySelector('.search-icon')
+if (search) search.src = searchIcon
 
 // back icon
-document.querySelector('.back-icon').src = backIcon
+const back = document.querySelector('.back-icon')
+if (back) back.src = backIcon
