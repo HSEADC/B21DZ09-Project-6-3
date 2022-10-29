@@ -3,6 +3,7 @@ import vkLogo from '../images/vk.svg'
 import instagramLogo from '../images/instagram.svg'
 import recycleLogo from '../images/promo/recycle.svg'
 
+
 const hamburger = document.querySelector('#hamburger')
 
 function toggleHamburger() {

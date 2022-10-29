@@ -1,0 +1,289 @@
+body.about {
+  background-color: #000;
+  padding: 0 1.875vw;
+
+  h1,
+  h2,
+  p,
+  a {
+    color: #fff;
+  }
+
+  .title {
+    font-size: 5.625vw;
+    font-weight: 600;
+    line-height: 6.4375vw;
+  }
+
+  .paragraph {
+    font-size: 1.875vw;
+    font-weight: 500;
+    line-height: 2.775vw;
+  }
+
+  .section {
+    border: 2px solid #fff;
+    border-radius: 1.25vw;
+    margin-top: 1.875vw;
+    position: relative;
+  }
+
+  .hero {
+    &__text {
+      margin-top: 2.625vw;
+      max-width: 70%;
+
+      &__subtitle {
+        font-weight: 500;
+        font-size: 2.8125vw;
+        text-align: right;
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: 11.25vw;
+        text-align: right;
+      }
+    }
+
+    &__diesel {
+      margin: 10.75vw 0 5vw;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 5vw;
+      gap: 3vw;
+
+      img {
+        width: 13.5625vw;
+      }
+    }
+  }
+
+  .concept {
+    padding: 5.625vw 0 6vw;
+    background-color: #e584a7;
+
+    &__text {
+      padding: 0 5vw;
+
+      .title {
+        margin-bottom: 3.625vw;
+      }
+
+      .paragraph {
+        max-width: 43.9375vw;
+      }
+    }
+
+    &__recycle {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 5.0625vw;
+
+      img {
+        width: 22.625vw;
+      }
+    }
+  }
+
+  .audience {
+    display: flex;
+    background-color: #6a38ab;
+    padding: 0 3.5vw;
+
+    &__coke {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      img {
+        width: 22.25vw;
+      }
+    }
+
+    &__content {
+      margin-top: 5.875vw;
+
+      &__text {
+        margin-left: 3.375vw;
+
+        h1 {
+          margin-bottom: 3.75vw;
+        }
+
+        p {
+          max-width: 44vw;
+        }
+      }
+
+      &__coke {
+        margin-top: 4.8125vw;
+        img {
+          width: 32.9375vw;
+        }
+      }
+    }
+  }
+
+  .contribution {
+    padding: 7.375vw 4.25vw 2.1875vw;
+
+    h1 {
+      max-width: 70.375vw;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__bottles {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 9vw;
+
+      img {
+        width: 16.1875vw;
+      }
+    }
+  }
+
+  .study {
+    padding: 5.3125vw 3.5vw 20.8125vw;
+    background-color: #e584a7;
+
+    h1 {
+      margin-bottom: 4.75vw;
+    }
+
+    p {
+      max-width: 62vw;
+    }
+  }
+
+  .questions {
+    display: flex;
+    padding: 1vw 1.5vw 1.75vw 1vw;
+
+    .question-title {
+      font-size: 2.5vw;
+      line-height: 3.125vw;
+    }
+
+    li {
+      list-style: auto;
+      color: #fff;
+      font-size: 0.9375vw;
+
+      p {
+        font-size: 0.9375vw;
+        line-height: 1.4375vw;
+        color: #fff;
+      }
+    }
+
+    &__content {
+      position: absolute;
+
+      h1 {
+        margin-bottom: 1.875vw;
+      }
+    }
+
+    &__left {
+      &__green {
+        position: relative;
+        img {
+          width: 49vw;
+        }
+
+        &__content {
+          top: 4.5vw;
+          left: 12vw;
+
+          p {
+            max-width: 26.6875vw;
+          }
+        }
+      }
+
+      &__violet {
+        position: relative;
+        img {
+          width: 49.4375vw;
+        }
+
+        &__content {
+          top: 3.5vw;
+          left: 6.5625vw;
+
+          p {
+            max-width: 33.5vw;
+          }
+        }
+      }
+    }
+
+    &__right {
+      &__blue {
+        position: relative;
+        img {
+          width: 43.5vw;
+        }
+
+        &__content {
+          top: 17.125vw;
+          left: 4.625vw;
+
+          p {
+            font-size: 34.125vw;
+            max-width: 34.125vw;
+          }
+        }
+      }
+    }
+  }
+
+  .competitor {
+    padding: 8vw 5vw 14.875vw;
+    background-color: #ed444e;
+    position: relative;
+
+    p {
+      width: 64.75vw;
+      font-weight: 400 !important;
+      padding-left: 16.5625vw;
+      margin-top: 0.9375vw;
+    }
+
+    &__banana {
+      top: 14.25vw;
+      left: 0;
+      width: 28.5625vw;
+    }
+
+    &__tomato {
+      width: 15.3125vw;
+      position: absolute;
+      top: 5.625vw;
+      right: 5.3125vw;
+    }
+
+    &__apple {
+      position: absolute;
+      width: 28.4375vw;
+      top: 30.625vw;
+      right: 11.5625vw;
+    }
+  }
+
+  .footer {
+    padding: 1.875vw 3.75vw 1vw;
+    display: flex;
+    justify-content: space-between;
+
+    &__hse {
+      margin-top: 7.6875vw;
+
+      img {
+        width: 31.9375vw;
+      }
+    }
+  }
+}
