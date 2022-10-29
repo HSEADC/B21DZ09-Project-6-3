@@ -111,9 +111,19 @@
         display: flex;
         gap: 1.625vw;
 
+        img {
+          width: 3.3125vw;
+        }
+
         &-blur {
           filter: blur(5px);
         }
+      }
+    }
+
+    &__logo {
+      img {
+        width: 22.625vw;
       }
     }
   }
