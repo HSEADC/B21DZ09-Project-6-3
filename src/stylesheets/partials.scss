@@ -6,6 +6,7 @@
   display: flex;
   place-items: center;
   margin-top: 1.875vw;
+  position: relative;
 
   &__logo {
     width: 3.8125vw;
@@ -24,10 +25,32 @@
       font-size: 1.875vw;
     }
   }
+
+  .menu-phone {
+    .hamburger-phone {
+      top: 4.5px;
+      right: 3.75vw;
+      transform: scale(0.9);
+    }
+  }
 }
 
-.menu {
-  .hamburger {
+.desktop {
+  display: none;
+  @media (min-width: 640px) {
+    display: block;
+  }
+}
+
+.phone {
+  display: block;
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+.menu, .menu-phone {
+  .hamburger, .hamburger-phone {
     width: 5.875vw;
     height: 5.875vw;
     border-radius: 50%;

@@ -20,7 +20,7 @@ const pages = [
   'questions'
 ]
 
-const partials = ['navbar', 'hamburger', 'page-navbar', 'back-button']
+const partials = ['navbar', 'hamburger', 'hamburger-phone', 'page-navbar', 'back-button']
 
 module.exports = {
   entry: {

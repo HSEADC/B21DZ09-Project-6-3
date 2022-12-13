@@ -6,12 +6,21 @@ import searchIcon from '../images/search.svg'
 import backIcon from '../images/arrow.svg'
 
 const hamburger = document.querySelector('#hamburger')
+const hamburgerPhone = document.querySelector('#hamburger-phone')
 const pageHamburger = document.querySelector('#page-hamburger')
 
 function toggleHamburger() {
   document.querySelector('.menu__container').classList.toggle('hidden')
   document.querySelector('#hamburger-close').classList.toggle('hidden')
   document.querySelectorAll('.hamburger__line').forEach((line) => {
+    line.classList.toggle('hidden')
+  })
+}
+
+function toggleHamburgerPhone() {
+  document.querySelector('.menu-phone__container').classList.toggle('hidden')
+  document.querySelector('#hamburger-phone-close').classList.toggle('hidden')
+  document.querySelectorAll('.hamburger-phone__line').forEach((line) => {
     line.classList.toggle('hidden')
   })
 }
@@ -25,6 +34,7 @@ function togglePageHamburger() {
 }
 
 hamburger?.addEventListener('click', toggleHamburger)
+hamburgerPhone?.addEventListener('click', toggleHamburgerPhone)
 pageHamburger?.addEventListener('click', togglePageHamburger)
 
 document.querySelector('.telegram-logo').src = telegramLogo
