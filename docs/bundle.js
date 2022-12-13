@@ -211,12 +211,21 @@ const arrow_namespaceObject = __webpack_require__.p + "images/5fa36d28f54964b501
 
 
 var hamburger = document.querySelector('#hamburger');
+var hamburgerPhone = document.querySelector('#hamburger-phone');
 var pageHamburger = document.querySelector('#page-hamburger');
 
 function toggleHamburger() {
   document.querySelector('.menu__container').classList.toggle('hidden');
   document.querySelector('#hamburger-close').classList.toggle('hidden');
   document.querySelectorAll('.hamburger__line').forEach(function (line) {
+    line.classList.toggle('hidden');
+  });
+}
+
+function toggleHamburgerPhone() {
+  document.querySelector('.menu-phone__container').classList.toggle('hidden');
+  document.querySelector('#hamburger-phone-close').classList.toggle('hidden');
+  document.querySelectorAll('.hamburger-phone__line').forEach(function (line) {
     line.classList.toggle('hidden');
   });
 }
@@ -230,6 +239,7 @@ function togglePageHamburger() {
 }
 
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('click', toggleHamburger);
+hamburgerPhone === null || hamburgerPhone === void 0 ? void 0 : hamburgerPhone.addEventListener('click', toggleHamburgerPhone);
 pageHamburger === null || pageHamburger === void 0 ? void 0 : pageHamburger.addEventListener('click', togglePageHamburger);
 document.querySelector('.telegram-logo').src = telegram_namespaceObject;
 document.querySelector('.insta-logo').src = instagram_namespaceObject;
