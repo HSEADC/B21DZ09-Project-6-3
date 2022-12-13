@@ -97,6 +97,7 @@ body.promo {
   .title {
     font-size: 1.3125rem;
     line-height: 130%;
+    font-weight: 600;
 
     @media (min-width: 640px) {
       font-size: 1.3125rem;
@@ -172,6 +173,31 @@ body.promo {
       font-size: 1.6875rem;
       line-height: 160%;
     }    
+  }
+
+  .ipad{
+    display: block;
+    @media (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .desktop {
+    display: none;
+    @media (min-width: 640px) {
+      display: block;
+    }
+  }
+
+  .phone {
+    display: block;
+    @media (min-width: 640px) {
+      display: none;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
   }
 
   .hero {
@@ -519,6 +545,10 @@ body.promo {
       display: flex;
       justify-content: center;
       margin-top: 32px;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
     }
   }
 
@@ -639,14 +669,35 @@ body.promo {
   }
 
   .advantages {
-    margin: 5.4375vw 0 4.875vw;
+    margin: 53px 0;
+    
+    @media (min-width: 640px) {
+      margin: 5.4375vw 0 4.875vw;
+    }
+
+    &__diesel {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 2.5vw;
+      margin-bottom: 25px;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
     
     &__main {
       display: flex;
       padding: 0 2.5vw;
 
       &__text {
+        &__phone {
+          margin-top: 10px;
+        }
+
         @media (min-width: 640px) {
+          margin-left: 29px;
+          padding-top: 85px;
         }
         
         @media (min-width: 768px) {
@@ -708,7 +759,10 @@ body.promo {
 
       &__bottle {
         width: auto;
+        display: none;
+
         @media (min-width: 640px) {
+          display: block;
         }
         
         @media (min-width: 768px) {
@@ -739,13 +793,19 @@ body.promo {
 
     &__images {
       margin-top: 15px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
 
       svg {
         width: auto
       }
 
       &__water {
+        height: 110px;
+
         @media (min-width: 640px) {
+          height: 223px;
         }
         
         @media (min-width: 768px) {
@@ -802,7 +862,10 @@ body.promo {
       }
 
       &__recycle {
+        height: 180px;
+
         @media (min-width: 640px) {
+          height: 367px;
         }
         
         @media (min-width: 768px) {
@@ -837,6 +900,7 @@ body.promo {
 
     &__subtitle {
       font-weight: 700;
+      line-height: 140%;
 
       @media (min-width: 640px) {
         font-size: 15px;
@@ -905,13 +969,17 @@ body.promo {
   }
 
   .game {
-    margin: 10vw 0 4.25vw;
+    margin: 33px 0;
     border: 2px solid #ffffff;
     border-radius: 1.25vw;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media (min-width: 640px) {
+      margin: 7.75vw 0;
+    }
 
     &__background {
       position: absolute;
