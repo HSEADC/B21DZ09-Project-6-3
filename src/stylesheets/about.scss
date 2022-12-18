@@ -1,6 +1,14 @@
 body.about {
   background-color: #000;
-  padding: 0 1.875vw;
+  padding: 1.25rem 1.875rem 1.75rem;
+
+  @media (min-width: 640px) {
+    padding: 32px 50px 60px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 32px 30px 26px; 
+  }
 
   h1,
   h2,
@@ -10,78 +18,165 @@ body.about {
   }
 
   .title {
-    font-size: 5.625vw;
     font-weight: 600;
-    line-height: 6.4375vw;
+    font-size: 1.3125rem;
+    line-height: 130%;
+
+    @media (min-width: 640px) {
+      font-size: 2.625rem;
+      line-height: 115%;
+    }
+    
+    @media (min-width: 1280px) {
+      font-size: 3.75rem;
+      line-height: 115%;
+    }  
   }
 
+
   .paragraph {
-    font-size: 1.875vw;
-    font-weight: 500;
-    line-height: 2.775vw;
+    font-size: 0.8125rem;
+    line-height: 185%;
+
+    @media (min-width: 640px) {
+      font-size: 1.25rem;
+      line-height: 170%;
+    }
+    
+    @media (min-width: 1280px) {
+      font-size: 1.125rem;
+      line-height: 160%;
+    }
   }
 
   .section {
-    border: 2px solid #fff;
-    border-radius: 1.25vw;
-    margin-top: 1.875vw;
+    border: 1px solid #fff;
+    border-radius: 9.6px;
+    margin-top: 1rem;
     position: relative;
+
+    @media (min-width: 640px) {
+      margin-top: 40px;
+    }
   }
 
   .hero {
     &__text {
-      margin-top: 2.625vw;
-      max-width: 70%;
+      margin-top: 1.875rem;
+
+      @media (min-width: 640px) {
+        margin-top: 126px;
+      }
 
       &__subtitle {
         font-weight: 500;
-        font-size: 2.8125vw;
-        text-align: right;
+        font-size: 1rem;
+
+        &-phone {
+          margin-left: 9.125rem;
+        }
+
+        @media (min-width: 640px) {
+          font-size: 27px;
+          margin-left: 254px;
+        }
       }
 
       &__title {
         font-weight: 600;
-        font-size: 11.25vw;
-        text-align: right;
+        font-size: 5rem;
+        margin-left: 1.25rem;
+        line-height: 115%;
+
+        @media (min-width: 640px) {
+          font-size: 125px;
+          margin-left: 38px;
+        }
       }
     }
 
     &__diesel {
-      margin: 10.75vw 0 5vw;
+      margin-top: 4.375rem;
       display: flex;
-      justify-content: flex-end;
-      padding: 0 5vw;
-      gap: 3vw;
+      justify-content: space-between;
+      gap: 1.5rem;
 
-      img {
-        width: 13.5625vw;
+      @media (min-width: 640px) {
+        margin-top: 174px;
+        justify-content: flex-end;
+        padding: 0 40px 57px;
+      }
+
+      svg {
+        height: auto;
+        
+        @media (min-width: 640px) {
+          height: 320px;
+          width: auto;
+        }
       }
     }
   }
 
   .concept {
-    padding: 5.625vw 0 6vw;
+    padding: 30px 0 14px;
     background-color: #e584a7;
 
-    &__text {
-      padding: 0 5vw;
+    @media (min-width: 640px) {
+      padding: 80px 0 34px;
+    }
 
-      .title {
-        margin-bottom: 3.625vw;
+    @media (min-width: 1280px) {
+      padding: 90px 0 73px;
+    }
+
+    &__text {
+      padding: 0 0 0 22px;
+
+      @media (min-width: 1280px) {
+        padding: 0 0 0 60px;
       }
 
-      .paragraph {
-        max-width: 43.9375vw;
+      @media (min-width: 640px) {
+        padding: 0 0 0 44px;
+      }
+
+      .title {
+        margin-bottom: 10px;
+
+        @media (min-width: 640px) {
+          margin-bottom: 22px;
+        }
+
+        @media (min-width: 1280px) {
+          margin-bottom: 30px;
+        }
       }
     }
 
     &__recycle {
+      margin-top: 80px;
       display: flex;
       justify-content: flex-end;
-      padding-right: 5.0625vw;
+      padding-right: 12px;
+
+      @media (min-width: 640px) {
+        margin-top: 140px;
+        padding-right: 34px;
+      }
+
+      @media (min-width: 1280px) {
+        margin-top: 204px;
+        padding-right: 80px;
+      }
 
       img {
-        width: 22.625vw;
+        height: 187px;
+        width: auto;
+
+        @media (min-width: 640px) {
+          height: 407px;
+        }
       }
     }
   }
@@ -89,57 +184,115 @@ body.about {
   .audience {
     display: flex;
     background-color: #6a38ab;
-    padding: 0 3.5vw;
+    padding: 36px 0 20px;
+
+    @media (min-width: 640px) {
+      padding: 88px 0 10px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 94px 0 48px;
+    }
 
     &__coke {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      padding: 10px;
+
+      @media (min-width: 640px) {
+        padding: 0 0 0 20px;
+      }
+
+      @media (min-width: 1280px) {
+        padding: 0 0 0 56px;
+      }
+
       img {
-        width: 22.25vw;
+        height: 208px;
+        width: auto;
+
+        @media (min-width: 640px) {
+          height: 452px;
+        }
       }
     }
 
     &__content {
-      margin-top: 5.875vw;
-
       &__text {
-        margin-left: 3.375vw;
+        margin-left: -85px;
 
-        h1 {
-          margin-bottom: 3.75vw;
+        @media (min-width: 1280px) {
+          margin-left: 50px;
         }
 
-        p {
-          max-width: 44vw;
+        h1 {
+          margin-bottom: 10px;
+
+          @media (min-width: 640px) {
+            margin-bottom: 22px;
+          }
+
+          @media (min-width: 1280px) {
+            margin-bottom: 30px;
+          }
         }
       }
 
       &__coke {
-        margin-top: 4.8125vw;
+        margin-top: 250px;
         img {
           width: 32.9375vw;
+
+          @media (min-width: 640px) {
+            width: 100%;
+            max-width: 452px;
+          }
         }
       }
     }
   }
 
   .contribution {
-    padding: 7.375vw 4.25vw 2.1875vw;
+    padding: 38px 16px 20px;
+
+    @media (min-width: 640px) {
+      padding: 100px 40px 40px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 118px 56px 35px; 
+    }
 
     h1 {
-      max-width: 70.375vw;
-      margin: 0 auto;
       text-align: center;
     }
 
     &__bottles {
       display: flex;
       justify-content: space-between;
-      margin-top: 9vw;
+      margin-top: 105px;
+      gap: 40px;
 
-      img {
-        width: 16.1875vw;
+      @media (min-width: 640px) {
+        margin-top: 153px;
+      }
+
+      @media (min-width: 1280px) {
+        margin-top: 186px;
+      }
+
+      svg {
+        height: auto;
+        width: auto;
+
+        @media (min-width: 640px) {
+          width: 470px;
+        }
+
+        @media (min-width: 1280px) {
+          width: 258px;
+        }
       }
     }
   }
@@ -157,105 +310,75 @@ body.about {
     }
   }
 
-  .questions {
-    display: flex;
-    padding: 1vw 1.5vw 1.75vw 1vw;
-
-    .question-title {
-      font-size: 2.5vw;
-      line-height: 3.125vw;
-    }
-
-    li {
-      list-style: auto;
-      color: #fff;
-      font-size: 0.9375vw;
-
-      p {
-        font-size: 0.9375vw;
-        line-height: 1.4375vw;
-        color: #fff;
-      }
-    }
-
-    &__content {
-      position: absolute;
-
-      h1 {
-        margin-bottom: 1.875vw;
-      }
-    }
-
-    &__left {
-      &__green {
-        position: relative;
-        img {
-          width: 49vw;
-        }
-
-        &__content {
-          top: 4.5vw;
-          left: 12vw;
-
-          p {
-            max-width: 26.6875vw;
-          }
-        }
-      }
-
-      &__violet {
-        position: relative;
-        img {
-          width: 49.4375vw;
-        }
-
-        &__content {
-          top: 3.5vw;
-          left: 6.5625vw;
-
-          p {
-            max-width: 33.5vw;
-          }
-        }
-      }
-    }
-
-    &__right {
-      &__blue {
-        position: relative;
-        img {
-          width: 43.5vw;
-        }
-
-        &__content {
-          top: 17.125vw;
-          left: 4.625vw;
-
-          p {
-            font-size: 34.125vw;
-            max-width: 34.125vw;
-          }
-        }
-      }
-    }
-  }
-
   .competitor {
-    padding: 8vw 5vw 14.875vw;
+    padding: 30px 0;
     background-color: #ed444e;
     position: relative;
 
+    @media (min-width: 640px) {
+      padding: 100px 42px 60px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 96px 60px 60px;
+      min-height: 960px;
+    }
+
+    h1 {
+      text-align: center;
+
+      @media (min-width: 640px) {
+        text-align: left;
+      }
+    }
+
     p {
-      width: 64.75vw;
-      font-weight: 400 !important;
-      padding-left: 16.5625vw;
-      margin-top: 0.9375vw;
+      padding-left: 24px;
+      margin-top: 10px;
+
+      @media (min-width: 640px) {
+        padding-left: 200px;
+      }
+
+      @media (min-width: 1280px) {
+        padding-left: 300px;
+      }
+    }
+
+    .phone-image {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: 640px) {
+        margin-top: 75px;
+      }
+
+      @media (min-width: 1280px) {
+        display: none;
+      }
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .desktop-image {
+      @media (min-width: 640px) {
+        display: none;
+      }
+
+      @media (min-width: 1280px) {
+        display: block;
+      }
     }
 
     &__banana {
-      top: 14.25vw;
-      left: 0;
+      top: 22.25vw;
+      left: 5vw;
       width: 28.5625vw;
+      position: absolute;
     }
 
     &__tomato {
@@ -274,15 +397,44 @@ body.about {
   }
 
   .footer {
-    padding: 1.875vw 3.75vw 1vw;
+    padding: 40px 40px 10px;
     display: flex;
-    justify-content: space-between;
 
-    &__hse {
-      margin-top: 7.6875vw;
+    p {
+      line-height: 130%;
 
-      img {
-        width: 31.9375vw;
+      @media (min-width: 1280px) {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 160%;
+      }
+    }
+
+    &__chse {
+      margin-left: 45px;
+
+      @media (min-width: 768px) {
+        margin-left: 126px;
+        flex: 1;
+      }
+
+      &__hse {
+        margin-top: 42px;
+        margin-left: -20px;
+
+        @media (min-width: 768px) {
+          margin-left: 0;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        @media (min-width: 1280px) {
+          margin-top: -20px;
+        }
+  
+        img {
+          width: 31.9375vw;
+        }
       }
     }
   }
