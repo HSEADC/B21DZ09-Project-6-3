@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const path = require('path')
 
@@ -20,7 +21,14 @@ const pages = [
   'questions'
 ]
 
-const partials = ['navbar', 'hamburger', 'hamburger-phone', 'page-navbar', 'back-button']
+const partials = [
+  'analytics',
+  'navbar',
+  'hamburger',
+  'hamburger-phone',
+  'page-navbar',
+  'back-button'
+]
 
 module.exports = {
   entry: {
@@ -28,8 +36,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'docs'),
-    clean: true
+    path: path.resolve(__dirname, 'docs')
+    // clean: true
   },
   module: {
     rules: [
@@ -90,6 +98,10 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
+    new CopyPlugin({
+      patterns: [{ from: 'src/share', to: 'share' }]
+    }),
+
     ...pages.map((page) => {
       const pageName = `${page}.html`
       return new HtmlWebpackPlugin({
@@ -105,7 +117,8 @@ module.exports = {
         location: partial,
         template_filename: '*',
         priority: 'replace'
-      }))),
+      }))
+    )
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
