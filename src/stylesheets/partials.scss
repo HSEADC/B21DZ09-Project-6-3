@@ -317,6 +317,10 @@
     margin-top: 4.67vw;
   }
 
+  @media (max-width: 1024px) and (min-width: 427px) {
+    border-radius: 2.05vw;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
