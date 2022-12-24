@@ -236,14 +236,15 @@ body.index {
       display: flex;
       gap: 2.78vw;
       margin-top: 4.17vw;
-      flex-wrap: wrap;
 
       @media (max-width: 1024px) and (min-width: 427px) {
         margin-top: 10.16vw;
+        flex-wrap: wrap;
       }
 
       @media (max-width: 428px) {
         margin-top: 14.02vw;
+        flex-wrap: wrap;
       }
 
       .box {
@@ -380,7 +381,7 @@ body.index {
       margin-top: 4.17vw;
       justify-content: space-between;
       gap: 1.39vw;
-      grid-template-columns: 100%;
+      grid-template-columns: 47.92vw 47.92vw;
 
       @media (max-width: 1024px) and (min-width: 427px) {
         grid-template-columns: 100%;
@@ -389,6 +390,7 @@ body.index {
       }
 
       @media (max-width: 428px) {
+        grid-template-columns: 100%;
         margin-top: 14vw;
         gap: 4.67vw;
       }
