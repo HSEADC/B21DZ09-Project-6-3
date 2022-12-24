@@ -20,7 +20,8 @@ const pages = [
   'collections',
   'promo',
   'questions',
-  'styleguide'
+  'styleguide',
+  'old-promo'
 ]
 
 const partials = [
