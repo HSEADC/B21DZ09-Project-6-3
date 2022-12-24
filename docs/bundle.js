@@ -122,6 +122,85 @@ $(document).ready(function () {
   });
 });
 
+/***/ }),
+
+/***/ 327:
+/***/ (() => {
+
+$(document).ready(function () {
+  $(".img5").addClass("yes");
+  $(".img12").click(function () {
+    if ($(".img5").hasClass("yes")) {
+      $(".img5").removeClass("yes");
+      $(".img5").addClass("no");
+      $(".img6").removeClass("no");
+      $(".img6").addClass("yes");
+    } else if ($(".img6").hasClass("yes")) {
+      $(".img6").removeClass("yes");
+      $(".img6").addClass("no");
+      $(".img7").removeClass("no");
+      $(".img7").addClass("yes");
+    } else if ($(".img7").hasClass("yes")) {
+      $(".img7").removeClass("yes");
+      $(".img7").addClass("no");
+      $(".img8").removeClass("no");
+      $(".img8").addClass("yes");
+    } else if ($(".img8").hasClass("yes")) {
+      $(".img8").removeClass("yes");
+      $(".img8").addClass("no");
+      $(".img9").removeClass("no");
+      $(".img9").addClass("yes");
+    } else if ($(".img9").hasClass("yes")) {
+      $(".img9").removeClass("yes");
+      $(".img9").addClass("no");
+      $(".img10").removeClass("no");
+      $(".img10").addClass("yes");
+    } else {
+      $(".img10").removeClass("yes");
+      $(".img10").addClass("no");
+      $(".img5").removeClass("no");
+      $(".img5").addClass("yes");
+    }
+  });
+  $(".img11").click(function () {
+    if ($(".img5").hasClass("yes")) {
+      $(".img5").removeClass("yes");
+      $(".img5").addClass("no");
+      $(".img10").removeClass("no");
+      $(".img10").addClass("yes");
+    } else if ($(".img10").hasClass("yes")) {
+      $(".img10").removeClass("yes");
+      $(".img10").addClass("no");
+      $(".img9").removeClass("no");
+      $(".img9").addClass("yes");
+    } else if ($(".img9").hasClass("yes")) {
+      $(".img9").removeClass("yes");
+      $(".img9").addClass("no");
+      $(".img8").removeClass("no");
+      $(".img8").addClass("yes");
+    } else if ($(".img8").hasClass("yes")) {
+      $(".img8").removeClass("yes");
+      $(".img8").addClass("no");
+      $(".img7").removeClass("no");
+      $(".img7").addClass("yes");
+    } else if ($(".img7").hasClass("yes")) {
+      $(".img7").removeClass("yes");
+      $(".img7").addClass("no");
+      $(".img6").removeClass("no");
+      $(".img6").addClass("yes");
+    } else {
+      $(".img6").removeClass("yes");
+      $(".img6").addClass("no");
+      $(".img5").removeClass("no");
+      $(".img5").addClass("yes");
+    }
+  });
+  $(".img14").click(function () {
+    $(".content").css("display", "none");
+    $(".content1").css("display", "flex");
+  });
+});
+
 /***/ })
 
 /******/ 	});
@@ -241,10 +320,23 @@ function togglePageHamburger() {
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('click', toggleHamburger);
 hamburgerPhone === null || hamburgerPhone === void 0 ? void 0 : hamburgerPhone.addEventListener('click', toggleHamburgerPhone);
 pageHamburger === null || pageHamburger === void 0 ? void 0 : pageHamburger.addEventListener('click', togglePageHamburger);
-document.querySelector('.telegram-logo').src = telegram_namespaceObject;
-document.querySelector('.insta-logo').src = instagram_namespaceObject;
-document.querySelector('.vk-logo').src = vk_namespaceObject;
-document.querySelector('.recycle-logo').src = recycle_namespaceObject; // search icon
+
+if (document.querySelector('.telegram-logo')) {
+  document.querySelector('.telegram-logo').src = telegram_namespaceObject;
+}
+
+if (document.querySelector('.insta-logo')) {
+  document.querySelector('.insta-logo').src = instagram_namespaceObject;
+}
+
+if (document.querySelector('.vk-logo')) {
+  document.querySelector('.vk-logo').src = vk_namespaceObject;
+}
+
+if (document.querySelector('.recycle-logo')) {
+  document.querySelector('.recycle-logo').src = recycle_namespaceObject;
+} // search icon
+
 
 var search = document.querySelector('.search-icon');
 if (search) search.src = search_namespaceObject; // back icon
@@ -253,7 +345,10 @@ var hamburger_back = document.querySelector('.back-icon');
 if (hamburger_back) hamburger_back.src = arrow_namespaceObject;
 // EXTERNAL MODULE: ./src/javascript/promo.js
 var promo = __webpack_require__(761);
+// EXTERNAL MODULE: ./src/javascript/slider.js
+var slider = __webpack_require__(327);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
