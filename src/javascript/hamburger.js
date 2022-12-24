@@ -37,10 +37,22 @@ hamburger?.addEventListener('click', toggleHamburger)
 hamburgerPhone?.addEventListener('click', toggleHamburgerPhone)
 pageHamburger?.addEventListener('click', togglePageHamburger)
 
-document.querySelector('.telegram-logo').src = telegramLogo
-document.querySelector('.insta-logo').src = instagramLogo
-document.querySelector('.vk-logo').src = vkLogo
-document.querySelector('.recycle-logo').src = recycleLogo
+if (document.querySelector('.telegram-logo')) {
+  document.querySelector('.telegram-logo').src = telegramLogo
+}
+
+if (document.querySelector('.insta-logo')) {
+  document.querySelector('.insta-logo').src = instagramLogo
+}
+
+if (document.querySelector('.vk-logo')) {
+  document.querySelector('.vk-logo').src = vkLogo
+}
+
+if (document.querySelector('.recycle-logo')) {
+  document.querySelector('.recycle-logo').src = recycleLogo
+}
+
 
 // search icon
 const search = document.querySelector('.search-icon')

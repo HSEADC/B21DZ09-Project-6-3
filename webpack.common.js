@@ -12,13 +12,15 @@ const pages = [
   'lifehacks',
   'lifehacks/1',
   'lifehacks/2',
+  'lifehacks/3',
   'collections/1',
   'collections/2',
   'remindercard',
   'map',
   'collections',
   'promo',
-  'questions'
+  'questions',
+  'styleguide'
 ]
 
 const partials = [
@@ -27,7 +29,8 @@ const partials = [
   'hamburger',
   'hamburger-phone',
   'page-navbar',
-  'back-button'
+  'back-button',
+  'page-footer',
 ]
 
 module.exports = {
