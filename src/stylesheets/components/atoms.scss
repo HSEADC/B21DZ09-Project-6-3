@@ -1,0 +1,63 @@
+// titles mixins
+
+@mixin TitlesRules {
+  font-family: 'DrukSuper';
+  letter-spacing: -3%;
+}
+
+// titles typography
+
+.A_TitleMain {
+  @include TitlesRules;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.A_TitleAuxiliary {
+  @include TitlesRules;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+// text mixins
+
+@mixin TextRulesBig {
+  font-family: 'Inter';
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: -3%;
+}
+
+@mixin TextRulesSmall {
+  font-family: 'Inter';
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -3%;
+}
+
+// text typography
+
+.A_TextImportantTop {
+  @include TextRulesSmall;
+  font-weight: 500;
+}
+
+.A_TextImportantBottom {
+  @include TextRulesSmall;
+  font-weight: 700;
+}
+
+.A_TextIndependent {
+  @include TextRulesBig;
+  font-weight: 400;
+}
+
+.A_TextDependent {
+  @include TextRulesSmall;
+  font-weight: 400;
+}
+
+.A_TextList {
+  @include TextRulesBig;
+  font-weight: 400;
+}
