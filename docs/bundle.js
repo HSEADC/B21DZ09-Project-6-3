@@ -122,6 +122,307 @@ $(document).ready(function () {
   });
 });
 
+/***/ }),
+
+/***/ 327:
+/***/ (() => {
+
+$(document).ready(function () {
+  $(".img5").addClass("yes");
+  $(".img12").click(function () {
+    if ($(".img5").hasClass("yes")) {
+      $(".img5").removeClass("yes");
+      $(".img5").addClass("no");
+      $(".img6").removeClass("no");
+      $(".img6").addClass("yes");
+    } else if ($(".img6").hasClass("yes")) {
+      $(".img6").removeClass("yes");
+      $(".img6").addClass("no");
+      $(".img7").removeClass("no");
+      $(".img7").addClass("yes");
+    } else if ($(".img7").hasClass("yes")) {
+      $(".img7").removeClass("yes");
+      $(".img7").addClass("no");
+      $(".img8").removeClass("no");
+      $(".img8").addClass("yes");
+    } else if ($(".img8").hasClass("yes")) {
+      $(".img8").removeClass("yes");
+      $(".img8").addClass("no");
+      $(".img9").removeClass("no");
+      $(".img9").addClass("yes");
+    } else if ($(".img9").hasClass("yes")) {
+      $(".img9").removeClass("yes");
+      $(".img9").addClass("no");
+      $(".img10").removeClass("no");
+      $(".img10").addClass("yes");
+    } else {
+      $(".img10").removeClass("yes");
+      $(".img10").addClass("no");
+      $(".img5").removeClass("no");
+      $(".img5").addClass("yes");
+    }
+  });
+  $(".img11").click(function () {
+    if ($(".img5").hasClass("yes")) {
+      $(".img5").removeClass("yes");
+      $(".img5").addClass("no");
+      $(".img10").removeClass("no");
+      $(".img10").addClass("yes");
+    } else if ($(".img10").hasClass("yes")) {
+      $(".img10").removeClass("yes");
+      $(".img10").addClass("no");
+      $(".img9").removeClass("no");
+      $(".img9").addClass("yes");
+    } else if ($(".img9").hasClass("yes")) {
+      $(".img9").removeClass("yes");
+      $(".img9").addClass("no");
+      $(".img8").removeClass("no");
+      $(".img8").addClass("yes");
+    } else if ($(".img8").hasClass("yes")) {
+      $(".img8").removeClass("yes");
+      $(".img8").addClass("no");
+      $(".img7").removeClass("no");
+      $(".img7").addClass("yes");
+    } else if ($(".img7").hasClass("yes")) {
+      $(".img7").removeClass("yes");
+      $(".img7").addClass("no");
+      $(".img6").removeClass("no");
+      $(".img6").addClass("yes");
+    } else {
+      $(".img6").removeClass("yes");
+      $(".img6").addClass("no");
+      $(".img5").removeClass("no");
+      $(".img5").addClass("yes");
+    }
+  });
+  $(".img14").click(function () {
+    $(".content").css("display", "none");
+    $(".content1").css("display", "flex");
+  });
+});
+
+/***/ }),
+
+/***/ 529:
+/***/ (() => {
+
+var brandDefault = "\n\u041C\u044B \u043F\u043E\u0437\u0438\u0446\u0438\u043E\u043D\u0438\u0440\u0443\u0435\u043C \u0441\u0435\u0431\u044F \u043A\u0430\u043A \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u043E\u0435 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u043E, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u043C\n            \u043A\u0430\u0436\u0434\u044B\u0439 \u0441\u043C\u043E\u0436\u0435\u0442 \u043D\u0430\u0447\u0430\u0442\u044C \u043E\u0441\u043E\u0437\u043D\u0430\u043D\u043D\u043E\u0435 \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435 \u0441 \u043D\u0443\u043B\u044F. <br />\n            \u041D\u0430\u0448 \u0431\u0440\u0435\u043D\u0434 \u0441\u0442\u0440\u0435\u043C\u0438\u0442\u0441\u044F \u0431\u044B\u0442\u044C \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u043F\u0440\u043E\u0441\u0442\u044B\u043C \u0438 \u043F\u043E\u043D\u044F\u0442\u043D\u044B\u043C. \u0418\u043C\u0435\u043D\u043D\u043E\n            \u043F\u043E\u044D\u0442\u043E\u043C\u0443 <br />\n            \u0432 \u043E\u0441\u043D\u043E\u0432\u0443 \u0444\u0438\u0440\u043C\u0435\u043D\u043D\u043E\u0433\u043E \u0441\u0442\u0438\u043B\u044F \u043B\u0435\u0433\u043B\u0430 \u044D\u0441\u0442\u0435\u0442\u0438\u043A\u0430 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u0442\u0438\u043A\u0435\u0440\u043E\u0432.\n";
+var brandToggle = "\n<span class=\"gray\">\u041C\u044B \u043F\u043E\u0437\u0438\u0446\u0438\u043E\u043D\u0438\u0440\u0443\u0435\u043C \u0441\u0435\u0431\u044F \u043A\u0430\u043A</span> \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u043E\u0435 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u043E<span class=\"gray\">, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u043C</span>\n\u043A\u0430\u0436\u0434\u044B\u0439 \u0441\u043C\u043E\u0436\u0435\u0442 \u043D\u0430\u0447\u0430\u0442\u044C \u043E\u0441\u043E\u0437\u043D\u0430\u043D\u043D\u043E\u0435 \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435 \u0441 \u043D\u0443\u043B\u044F. <br />\n\u041D\u0430\u0448 \u0431\u0440\u0435\u043D\u0434 \u0441\u0442\u0440\u0435\u043C\u0438\u0442\u0441\u044F \u0431\u044B\u0442\u044C \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u043F\u0440\u043E\u0441\u0442\u044B\u043C \u0438 \u043F\u043E\u043D\u044F\u0442\u043D\u044B\u043C<span class=\"gray\">. \u0418\u043C\u0435\u043D\u043D\u043E\n\u043F\u043E\u044D\u0442\u043E\u043C\u0443 <br />\n\u0432 \u043E\u0441\u043D\u043E\u0432\u0443 \u0444\u0438\u0440\u043C\u0435\u043D\u043D\u043E\u0433\u043E \u0441\u0442\u0438\u043B\u044F \u043B\u0435\u0433\u043B\u0430 \u044D\u0441\u0442\u0435\u0442\u0438\u043A\u0430 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0441\u0442\u0438\u043A\u0435\u0440\u043E\u0432.</span> \n";
+var weDefault = "\n<span class=\"gray\">\u041E\u0441\u043E\u0437\u043D\u0430\u043D\u043D\u044B\u0435, \u0443\u0434\u043E\u0431\u043D\u044B\u0435, \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0435, \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435, \u0441\u0435\u043C\u0435\u0439\u043D\u044B\u0435, \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0447\u043D\u044B\u0435,</span>\n            \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u044B\u0435<span class=\"gray\">, \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0435, \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u043D\u044B\u0435, \u0441\u043F\u043E\u043A\u043E\u0439\u043D\u044B\u0435, \u043F\u043E\u043D\u0438\u043C\u0430\u044E\u0449\u0438\u0435, \u0438\u0434\u0435\u0439\u043D\u044B\u0435,\n            \u0438\u043D\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435,</span> \u0440\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435, \u043B\u044E\u0431\u043E\u0437\u043D\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435<span class=\"gray\">, \u043A\u043E\u043C\u0444\u043E\u0440\u0442\u043D\u044B\u0435, \u0441\u0442\u0438\u043B\u044C\u043D\u044B\u0435,\n            \u043B\u0435\u0433\u043A\u0438\u0435, \u0443\u0432\u0430\u0436\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435, \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0435.</span>\n";
+var weToggle = "\u041E\u0441\u043E\u0437\u043D\u0430\u043D\u043D\u044B\u0435, \u0443\u0434\u043E\u0431\u043D\u044B\u0435, \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0435, \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435, \u0441\u0435\u043C\u0435\u0439\u043D\u044B\u0435, \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0447\u043D\u044B\u0435,\n\u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u044B\u0435, \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0435, \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u043D\u044B\u0435, \u0441\u043F\u043E\u043A\u043E\u0439\u043D\u044B\u0435, \u043F\u043E\u043D\u0438\u043C\u0430\u044E\u0449\u0438\u0435, \u0438\u0434\u0435\u0439\u043D\u044B\u0435,\n\u0438\u043D\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435, \u0440\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435, \u043B\u044E\u0431\u043E\u0437\u043D\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435, \u043A\u043E\u043C\u0444\u043E\u0440\u0442\u043D\u044B\u0435, \u0441\u0442\u0438\u043B\u044C\u043D\u044B\u0435,\n\u043B\u0435\u0433\u043A\u0438\u0435, \u0443\u0432\u0430\u0436\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435, \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0435.\n";
+var goalDefault = "\u041D\u0430\u043C \u0432\u0430\u0436\u043D\u044B \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F, <br />\n            \u0436\u0435\u043B\u0430\u043D\u0438\u044F \u0438 \u043C\u043E\u0440\u0430\u043B\u044C\u043D\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u043D\u0430\u0448\u0438\u0445 <br />\n            \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043A\u043B\u0430\u0434 \u043A\u0430\u0436\u0434\u043E\u0433\u043E, <br />\n            \u0434\u0430\u0436\u0435 \u0441\u0430\u043C\u044B\u0439 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439.\n";
+var goalToggle = "\n<span class=\"gray\">\u041D\u0430\u043C \u0432\u0430\u0436\u043D\u044B</span> \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F, <br />\n\u0436\u0435\u043B\u0430\u043D\u0438\u044F \u0438 \u043C\u043E\u0440\u0430\u043B\u044C\u043D\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 <span class=\"gray\">\u043D\u0430\u0448\u0438\u0445</span> <br />\n\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439<span class=\"gray\">, \u0430 \u0442\u0430\u043A\u0436\u0435</span> \u0432\u043A\u043B\u0430\u0434 \u043A\u0430\u0436\u0434\u043E\u0433\u043E<span class=\"gray\">, <br />\n\u0434\u0430\u0436\u0435 \u0441\u0430\u043C\u044B\u0439 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439.</span>\n";
+var missionDefault = "\u041D\u0430\u0448\u0430 \u043C\u0438\u0441\u0441\u0438\u044F \u2014 \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C \u043E\u0442 \u043C\u0443\u0441\u043E\u0440\u0430 <br />\n            \u0432\u0435\u0441\u044C \u043C\u0438\u0440!\n";
+var missionToggle = "<span class=\"gray\">\u041D\u0430\u0448\u0430 \u043C\u0438\u0441\u0441\u0438\u044F \u2014 </span>\u043E\u0447\u0438\u0441\u0442\u0438\u0442\u044C \u043E\u0442 \u043C\u0443\u0441\u043E\u0440\u0430 <br />\n            \u0432\u0435\u0441\u044C \u043C\u0438\u0440!\n";
+var headerDefault = "\n\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0439\u0441\u044F \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u0442\u0435\u043A\u0441\u0442, \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0441\u0430\u043C\u043E\u0435\n\u0432\u0430\u0436\u043D\u043E\u0435.\n";
+var headerToggle = "\n<span class=\"gray\">\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u0439\u0441\u044F \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u0442\u0435\u043A\u0441\u0442, \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u044C</span> \u0441\u0430\u043C\u043E\u0435\n\u0432\u0430\u0436\u043D\u043E\u0435.\n";
+var pravilaOneDefault = "\n\u041B\u043E\u0433\u043E\u0442\u0438\u043F \u0438\u043C\u0435\u0435\u0442 \u043E\u0434\u0438\u043D \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0432\u0430\u0440\u0438\u0430\u043D\u0442 \u2014 \u0447\u0435\u0440\u043D\u044B\u0439 <br />\n\u0431\u0435\u0437 \u0444\u043E\u043D\u0430. \u0412\u0441\u0435 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u044B \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u0430 \u0447\u0435\u0440\u043D\u043E\u0433\u043E \u0446\u0432\u0435\u0442\u0430 \u0434\u043E\u043B\u0436\u043D\u044B <br />\n\u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0442\u044C\u0441\u044F \u0432 \u043B\u0435\u0432\u043E\u043C \u0432\u0435\u0440\u0445\u043D\u0435\u043C \u0443\u0433\u043B\u0443. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 <br />\n\u0432\u0430\u0440\u0438\u0430\u043D\u0442 \u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F \u0441\u0432\u0435\u0440\u0445\u0443 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435.\n";
+var pravilaOneToggle = "\n<span class=\"gray\">\u041B\u043E\u0433\u043E\u0442\u0438\u043F \u0438\u043C\u0435\u0435\u0442</span> \u043E\u0434\u0438\u043D \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0432\u0430\u0440\u0438\u0430\u043D\u0442 <span class=\"gray\">\u2014</span> \u0447\u0435\u0440\u043D\u044B\u0439 <br />\n\u0431\u0435\u0437 \u0444\u043E\u043D\u0430. \u0412\u0441\u0435 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u044B \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u0430 \u0447\u0435\u0440\u043D\u043E\u0433\u043E \u0446\u0432\u0435\u0442\u0430 <span class=\"gray\">\u0434\u043E\u043B\u0436\u043D\u044B <br />\n\u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0442\u044C\u0441\u044F</span> \u0432 \u043B\u0435\u0432\u043E\u043C \u0432\u0435\u0440\u0445\u043D\u0435\u043C \u0443\u0433\u043B\u0443. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 <br />\n\u0432\u0430\u0440\u0438\u0430\u043D\u0442 <span class=\"gray\">\u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u0430\u0441\u043F\u043E\u043B\u0430\u0433\u0430\u0435\u0442\u0441\u044F</span> \u0441\u0432\u0435\u0440\u0445\u0443 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435.\n";
+var colorsDefault = "\n\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u043C\u0438 \u0446\u0432\u0435\u0442\u0430\u043C\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0447\u0435\u0440\u043D\u044B\u0439 \u0438 \u0441\u0432\u0435\u0442\u043B\u043E-\u0441\u0435\u0440\u044B\u0439. \u042D\u0442\u043E \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435\n          \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u0435 <br />\n          \u0446\u0432\u0435\u0442\u0430 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0439 \u0438 \u0441\u0442\u0438\u043A\u0435\u0440\u043E\u0432. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u0442 \u0438\u0437\n          \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u044B\u0445,<br />\n          \u044F\u0440\u043A\u0438\u0445 \u0446\u0432\u0435\u0442\u043E\u0432. \u0422\u0430\u043A\u0430\u044F \u043F\u0430\u043B\u0438\u0442\u0440\u0430 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0434\u0438\u0437\u0430\u0439\u043D \u0431\u043E\u043B\u0435\u0435\n          \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u043C.\n";
+var colorsToggle = "\n  \u041E\u0441\u043D\u043E\u0432\u043D\u044B\u043C\u0438 <span class=\"gray\">\u0446\u0432\u0435\u0442\u0430\u043C\u0438</span> \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0447\u0435\u0440\u043D\u044B\u0439 \u0438 \u0441\u0432\u0435\u0442\u043B\u043E-\u0441\u0435\u0440\u044B\u0439. \u042D\u0442\u043E \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435\n\u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u043D\u044B\u0435 <br />\n<span class=\"gray\">\u0446\u0432\u0435\u0442\u0430 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0439 \u0438 \u0441\u0442\u0438\u043A\u0435\u0440\u043E\u0432.</span> \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u0442 \u0438\u0437\n\u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u044B\u0445,<br />\n\u044F\u0440\u043A\u0438\u0445 \u0446\u0432\u0435\u0442\u043E\u0432<span class=\"gray\">. \u0422\u0430\u043A\u0430\u044F \u043F\u0430\u043B\u0438\u0442\u0440\u0430 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0434\u0438\u0437\u0430\u0439\u043D \u0431\u043E\u043B\u0435\u0435\n\u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u043C.</span>\n";
+var pravilaTwoDefault = "\n\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0446\u0432\u0435\u0442\u0430 \u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u044B, \u043A\u0430\u043A \u0434\u043B\u044F \u0444\u043E\u043D\u0430 <br />\n          \u0438 \u0442\u0438\u043F\u043E\u0433\u0440\u0430\u0444\u0438\u043A\u0438, \u0442\u0430\u043A \u0438 \u0434\u043B\u044F \u0433\u0440\u0430\u0444\u0438\u043A\u0438. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0446\u0432\u0435\u0442\u0430 <br />\n          \u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u044B \u0442\u043E\u043B\u044C\u043A\u043E \u0432 3D \u0438 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u043E\u043D\u0430 <br />\n          \u043D\u0430 \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044F\u0445.\n";
+var pravilaTwoToggle = "\n\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0446\u0432\u0435\u0442\u0430 <span class=\"gray\">\u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u044B, \u043A\u0430\u043A</span> \u0434\u043B\u044F \u0444\u043E\u043D\u0430 <br />\n          \u0438 \u0442\u0438\u043F\u043E\u0433\u0440\u0430\u0444\u0438\u043A\u0438<span class=\"gray\">, \u0442\u0430\u043A \u0438 \u0434\u043B\u044F</span> \u0433\u0440\u0430\u0444\u0438\u043A\u0438. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0446\u0432\u0435\u0442\u0430 <br />\n          <span class=\"gray\">\u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u044B</span> \u0442\u043E\u043B\u044C\u043A\u043E \u0432 3D \u0438 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u043E\u043D\u0430 <br />\n          \u043D\u0430 \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044F\u0445.\n";
+var typographyDefault = "\n\u041C\u0435\u0442\u0430\u0444\u043E\u0440\u0430 \u0434\u043B\u044F \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0433\u043E \u0442\u0435\u043A\u0441\u0442\u0430 \u2014 \u0438\u0437 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438\n          <br />\u043E\u0442\u043E\u0431\u0440\u0430\u0442\u044C \u0438 \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0441\u0430\u043C\u0443\u044E \u043D\u0443\u0436\u043D\u0443\u044E \u0438 \u043F\u043E\u043D\u044F\u0442\u043D\u0443\u044E.\n";
+var typographyToggle = "\n<span class=\"gray\">\u041C\u0435\u0442\u0430\u0444\u043E\u0440\u0430 \u0434\u043B\u044F \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0433\u043E \u0442\u0435\u043A\u0441\u0442\u0430 \u2014</span> \u0438\u0437 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438\n          <br />\u043E\u0442\u043E\u0431\u0440\u0430\u0442\u044C \u0438 \u0432\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0441\u0430\u043C\u0443\u044E \u043D\u0443\u0436\u043D\u0443\u044E \u0438 \u043F\u043E\u043D\u044F\u0442\u043D\u0443\u044E.\n";
+var compositionDefault = "\n<span class=\"gray\">\u041F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0432\u0441\u0435</span> \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0446\u0438\u0438 \u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u0432\u044B\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0442\u044C \xAB\u0441\u043B\u0438\u043F\u0448\u0438\u043C\u0438\u0441\u044F\xBB,\n          <br />\u043E\u0434\u043D\u0430\u043A\u043E<span class=\"gray\">, \u0441\u0442\u043E\u0438\u0442 \u043F\u043E\u043C\u043D\u0438\u0442\u044C \u043E \xAB\u0432\u043E\u0437\u0434\u0443\u0445\u0435\xBB \u0438 \u0433\u0430\u0440\u043C\u043E\u043D\u0438\u0438 \u0438</span> \u043D\u0435 \u0437\u0430\u0431\u044B\u0432\u0430\u0442\u044C\n          \u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C <br />\n          \u043F\u0443\u0441\u0442\u043E\u0435 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u043E.\n";
+var compositionToggle = "\n\u041F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0432\u0441\u0435 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0446\u0438\u0438 \u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u0432\u044B\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0442\u044C \xAB\u0441\u043B\u0438\u043F\u0448\u0438\u043C\u0438\u0441\u044F\xBB,\n          <br />\u043E\u0434\u043D\u0430\u043A\u043E, \u0441\u0442\u043E\u0438\u0442 \u043F\u043E\u043C\u043D\u0438\u0442\u044C \u043E \xAB\u0432\u043E\u0437\u0434\u0443\u0445\u0435\xBB \u0438 \u0433\u0430\u0440\u043C\u043E\u043D\u0438\u0438 \u0438 \u043D\u0435 \u0437\u0430\u0431\u044B\u0432\u0430\u0442\u044C\n          \u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C <br />\n          \u043F\u0443\u0441\u0442\u043E\u0435 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u043E.\n";
+var pravilaThreeDefault = "\n\u0415\u0441\u043B\u0438 \u043B\u043E\u0433\u043E\u0442\u0438\u043F \u043D\u0430 \u0447\u0435\u0440\u043D\u043E\u043C \u0444\u043E\u043D\u0435 \u0438 \u0441\u0442\u043E\u0438\u0442 \u0432 \u043B\u0435\u0432\u043E\u043C \u0432\u0435\u0440\u0445\u043D\u0435\u043C \u0443\u0433\u043B\u0443, \u0442\u043E\n          \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A <br />\n          \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F \u043D\u0430 \u0442\u043E\u0439 \u0436\u0435 \u0441\u0442\u0440\u043E\u0447\u043A\u0435. \u0415\u0441\u043B\u0438 \u043B\u043E\u0433\u043E\u0442\u0438\u043F \u043D\u0435 \u0438\u043C\u0435\u0435\u0442 \u0444\u043E\u043D\u0430 \u0438 \u0441\u0442\u043E\u0438\u0442\n          \u0441\u0432\u0435\u0440\u0445\u0443\n          <br />\n          \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435, \u0442\u043E \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A \u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C \u043F\u043E\u0434 \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u043E\u043C.\n";
+var pravilaThreeToggle = "\n<span class=\"gray\">\u0415\u0441\u043B\u0438</span> \u043B\u043E\u0433\u043E\u0442\u0438\u043F \u043D\u0430 \u0447\u0435\u0440\u043D\u043E\u043C \u0444\u043E\u043D\u0435<span class=\"gray\"> \u0438 \u0441\u0442\u043E\u0438\u0442 \u0432 \u043B\u0435\u0432\u043E\u043C \u0432\u0435\u0440\u0445\u043D\u0435\u043C \u0443\u0433\u043B\u0443, \u0442\u043E</span>\n          \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A <br />\n          \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F \u043D\u0430 \u0442\u043E\u0439 \u0436\u0435 \u0441\u0442\u0440\u043E\u0447\u043A\u0435. <span class=\"gray\">\u0415\u0441\u043B\u0438</span> \u043B\u043E\u0433\u043E\u0442\u0438\u043F \u043D\u0435 \u0438\u043C\u0435\u0435\u0442 \u0444\u043E\u043D\u0430 <span class=\"gray\">\u0438 \u0441\u0442\u043E\u0438\u0442\n          \u0441\u0432\u0435\u0440\u0445\u0443\n          <br />\n          \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435, \u0442\u043E</span> \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A <span class=\"gray\">\u0441\u043B\u0435\u0434\u0443\u0435\u0442 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C</span> \u043F\u043E\u0434 \u043B\u043E\u0433\u043E\u0442\u0438\u043F\u043E\u043C.\n";
+var graphicsDefault = "\n\u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u0440\u043C\u0435\u043D\u043D\u043E\u0439 \u0433\u0440\u0430\u0444\u0438\u043A\u0438 \u043C\u043E\u0436\u043D\u043E <br />\n            \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0432\u0441\u0435 \u0437\u043D\u0430\u043A\u0438 \u043C\u0430\u0440\u043A\u0438\u0440\u043E\u0432\u043A\u0438, <br />\n            \u0430 \u0442\u0430\u043A\u0436\u0435 3D \u043E\u0431\u044A\u0435\u043A\u0442\u044B \u0432\u044B\u0441\u043E\u043A\u043E\u0433\u043E \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0430 <br />\n            \u0432 \u044F\u0440\u043A\u0438\u0445, \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0445 \u0446\u0432\u0435\u0442\u0430\u0445.\n";
+var graphicsToggle = "\n<span class=\"gray\">\u0412 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0444\u0438\u0440\u043C\u0435\u043D\u043D\u043E\u0439 \u0433\u0440\u0430\u0444\u0438\u043A\u0438</span> \u043C\u043E\u0436\u043D\u043E <br />\n            \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0432\u0441\u0435 \u0437\u043D\u0430\u043A\u0438 \u043C\u0430\u0440\u043A\u0438\u0440\u043E\u0432\u043A\u0438, <br />\n            <span class=\"gray\">\u0430 \u0442\u0430\u043A\u0436\u0435</span> 3D \u043E\u0431\u044A\u0435\u043A\u0442\u044B<span class=\"gray\"> \u0432\u044B\u0441\u043E\u043A\u043E\u0433\u043E \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0430 <br />\n            \u0432 \u044F\u0440\u043A\u0438\u0445, \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0445 \u0446\u0432\u0435\u0442\u0430\u0445.</span>\n";
+var brandBtn = document.getElementById('brand-btn');
+var weBtn = document.getElementById('we-btn');
+var goalBtn = document.getElementById('goal-btn');
+var missionBtn = document.getElementById('mission-btn');
+var headerBtn = document.getElementById('header-btn');
+var pravilaOneBtn = document.getElementById('pravila-one-btn');
+var pravilaTwoBtn = document.getElementById('pravila-two-btn');
+var pravilaThreeBtn = document.getElementById('pravila-three-btn');
+var colorsBtn = document.getElementById('colors-btn');
+var typographyBtn = document.getElementById('typography-btn');
+var compositionBtn = document.getElementById('composition-btn');
+var graphicsBtn = document.getElementById('graphics-btn');
+var brandText = document.getElementById('brand-text');
+var weText = document.getElementById('we-text');
+var goalText = document.getElementById('goal-text');
+var missionText = document.getElementById('mission-text');
+var headerText = document.getElementById('header-text');
+var pravilaOneText = document.getElementById('pravila-one-text');
+var pravilaTwoText = document.getElementById('pravila-two-text');
+var pravilaThreeText = document.getElementById('pravila-three-text');
+var colorsText = document.getElementById('colors-text');
+var typographyText = document.getElementById('typography-text');
+var compositionText = document.getElementById('composition-text');
+var graphicsText = document.getElementById('graphics-text');
+brandBtn === null || brandBtn === void 0 ? void 0 : brandBtn.addEventListener('click', function () {
+  var _brandBtn$dataset;
+
+  if (!brandText) return;
+
+  if ((brandBtn === null || brandBtn === void 0 ? void 0 : (_brandBtn$dataset = brandBtn.dataset) === null || _brandBtn$dataset === void 0 ? void 0 : _brandBtn$dataset.text) === 'default') {
+    brandText.innerHTML = brandToggle;
+    brandBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  brandText.innerHTML = brandDefault;
+  brandBtn.dataset.text = 'default';
+});
+weBtn === null || weBtn === void 0 ? void 0 : weBtn.addEventListener('click', function () {
+  var _weBtn$dataset;
+
+  if (!weText) return;
+
+  if ((weBtn === null || weBtn === void 0 ? void 0 : (_weBtn$dataset = weBtn.dataset) === null || _weBtn$dataset === void 0 ? void 0 : _weBtn$dataset.text) === 'default') {
+    weText.innerHTML = weToggle;
+    weBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  weText.innerHTML = weDefault;
+  weBtn.dataset.text = 'default';
+});
+goalBtn === null || goalBtn === void 0 ? void 0 : goalBtn.addEventListener('click', function () {
+  var _goalBtn$dataset;
+
+  if (!goalText) return;
+
+  if ((goalBtn === null || goalBtn === void 0 ? void 0 : (_goalBtn$dataset = goalBtn.dataset) === null || _goalBtn$dataset === void 0 ? void 0 : _goalBtn$dataset.text) === 'default') {
+    goalText.innerHTML = goalToggle;
+    goalBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  goalText.innerHTML = goalDefault;
+  goalBtn.dataset.text = 'default';
+});
+missionBtn === null || missionBtn === void 0 ? void 0 : missionBtn.addEventListener('click', function () {
+  var _missionBtn$dataset;
+
+  if (!missionText) return;
+
+  if ((missionBtn === null || missionBtn === void 0 ? void 0 : (_missionBtn$dataset = missionBtn.dataset) === null || _missionBtn$dataset === void 0 ? void 0 : _missionBtn$dataset.text) === 'default') {
+    missionText.innerHTML = missionToggle;
+    missionBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  missionText.innerHTML = missionDefault;
+  missionBtn.dataset.text = 'default';
+});
+headerBtn === null || headerBtn === void 0 ? void 0 : headerBtn.addEventListener('click', function () {
+  var _headerBtn$dataset;
+
+  if (!headerText) return;
+
+  if ((headerBtn === null || headerBtn === void 0 ? void 0 : (_headerBtn$dataset = headerBtn.dataset) === null || _headerBtn$dataset === void 0 ? void 0 : _headerBtn$dataset.text) === 'default') {
+    headerText.innerHTML = headerToggle;
+    headerBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  headerText.innerHTML = headerDefault;
+  headerBtn.dataset.text = 'default';
+});
+pravilaOneBtn === null || pravilaOneBtn === void 0 ? void 0 : pravilaOneBtn.addEventListener('click', function () {
+  var _pravilaOneBtn$datase;
+
+  if (!pravilaOneText) return;
+
+  if ((pravilaOneBtn === null || pravilaOneBtn === void 0 ? void 0 : (_pravilaOneBtn$datase = pravilaOneBtn.dataset) === null || _pravilaOneBtn$datase === void 0 ? void 0 : _pravilaOneBtn$datase.text) === 'default') {
+    pravilaOneText.innerHTML = pravilaOneToggle;
+    pravilaOneBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  pravilaOneText.innerHTML = pravilaOneDefault;
+  pravilaOneBtn.dataset.text = 'default';
+});
+pravilaTwoBtn === null || pravilaTwoBtn === void 0 ? void 0 : pravilaTwoBtn.addEventListener('click', function () {
+  var _pravilaTwoBtn$datase;
+
+  if (!pravilaTwoText) return;
+
+  if ((pravilaTwoBtn === null || pravilaTwoBtn === void 0 ? void 0 : (_pravilaTwoBtn$datase = pravilaTwoBtn.dataset) === null || _pravilaTwoBtn$datase === void 0 ? void 0 : _pravilaTwoBtn$datase.text) === 'default') {
+    pravilaTwoText.innerHTML = pravilaTwoToggle;
+    pravilaTwoBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  pravilaTwoText.innerHTML = pravilaTwoDefault;
+  pravilaTwoBtn.dataset.text = 'default';
+});
+pravilaThreeBtn === null || pravilaThreeBtn === void 0 ? void 0 : pravilaThreeBtn.addEventListener('click', function () {
+  var _pravilaThreeBtn$data;
+
+  if (!pravilaThreeText) return;
+
+  if ((pravilaThreeBtn === null || pravilaThreeBtn === void 0 ? void 0 : (_pravilaThreeBtn$data = pravilaThreeBtn.dataset) === null || _pravilaThreeBtn$data === void 0 ? void 0 : _pravilaThreeBtn$data.text) === 'default') {
+    pravilaThreeText.innerHTML = pravilaThreeToggle;
+    pravilaThreeBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  pravilaThreeText.innerHTML = pravilaThreeDefault;
+  pravilaThreeBtn.dataset.text = 'default';
+});
+colorsBtn === null || colorsBtn === void 0 ? void 0 : colorsBtn.addEventListener('click', function () {
+  var _colorsBtn$dataset;
+
+  if (!colorsText) return;
+
+  if ((colorsBtn === null || colorsBtn === void 0 ? void 0 : (_colorsBtn$dataset = colorsBtn.dataset) === null || _colorsBtn$dataset === void 0 ? void 0 : _colorsBtn$dataset.text) === 'default') {
+    colorsText.innerHTML = colorsToggle;
+    colorsBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  colorsText.innerHTML = colorsDefault;
+  colorsBtn.dataset.text = 'default';
+});
+typographyBtn === null || typographyBtn === void 0 ? void 0 : typographyBtn.addEventListener('click', function () {
+  var _typographyBtn$datase;
+
+  if (!typographyText) return;
+
+  if ((typographyBtn === null || typographyBtn === void 0 ? void 0 : (_typographyBtn$datase = typographyBtn.dataset) === null || _typographyBtn$datase === void 0 ? void 0 : _typographyBtn$datase.text) === 'default') {
+    typographyText.innerHTML = typographyToggle;
+    typographyBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  typographyText.innerHTML = typographyDefault;
+  typographyBtn.dataset.text = 'default';
+});
+compositionBtn === null || compositionBtn === void 0 ? void 0 : compositionBtn.addEventListener('click', function () {
+  var _compositionBtn$datas;
+
+  if (!compositionText) return;
+
+  if ((compositionBtn === null || compositionBtn === void 0 ? void 0 : (_compositionBtn$datas = compositionBtn.dataset) === null || _compositionBtn$datas === void 0 ? void 0 : _compositionBtn$datas.text) === 'default') {
+    compositionText.innerHTML = compositionToggle;
+    compositionBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  compositionText.innerHTML = compositionDefault;
+  compositionBtn.dataset.text = 'default';
+});
+graphicsBtn === null || graphicsBtn === void 0 ? void 0 : graphicsBtn.addEventListener('click', function () {
+  var _graphicsBtn$dataset;
+
+  if (!graphicsText) return;
+
+  if ((graphicsBtn === null || graphicsBtn === void 0 ? void 0 : (_graphicsBtn$dataset = graphicsBtn.dataset) === null || _graphicsBtn$dataset === void 0 ? void 0 : _graphicsBtn$dataset.text) === 'default') {
+    graphicsText.innerHTML = graphicsToggle;
+    graphicsBtn.dataset.text = 'toggle';
+    return;
+  }
+
+  graphicsText.innerHTML = graphicsDefault;
+  graphicsBtn.dataset.text = 'default';
+});
+
 /***/ })
 
 /******/ 	});
@@ -241,10 +542,23 @@ function togglePageHamburger() {
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('click', toggleHamburger);
 hamburgerPhone === null || hamburgerPhone === void 0 ? void 0 : hamburgerPhone.addEventListener('click', toggleHamburgerPhone);
 pageHamburger === null || pageHamburger === void 0 ? void 0 : pageHamburger.addEventListener('click', togglePageHamburger);
-document.querySelector('.telegram-logo').src = telegram_namespaceObject;
-document.querySelector('.insta-logo').src = instagram_namespaceObject;
-document.querySelector('.vk-logo').src = vk_namespaceObject;
-document.querySelector('.recycle-logo').src = recycle_namespaceObject; // search icon
+
+if (document.querySelector('.telegram-logo')) {
+  document.querySelector('.telegram-logo').src = telegram_namespaceObject;
+}
+
+if (document.querySelector('.insta-logo')) {
+  document.querySelector('.insta-logo').src = instagram_namespaceObject;
+}
+
+if (document.querySelector('.vk-logo')) {
+  document.querySelector('.vk-logo').src = vk_namespaceObject;
+}
+
+if (document.querySelector('.recycle-logo')) {
+  document.querySelector('.recycle-logo').src = recycle_namespaceObject;
+} // search icon
+
 
 var search = document.querySelector('.search-icon');
 if (search) search.src = search_namespaceObject; // back icon
@@ -253,7 +567,13 @@ var hamburger_back = document.querySelector('.back-icon');
 if (hamburger_back) hamburger_back.src = arrow_namespaceObject;
 // EXTERNAL MODULE: ./src/javascript/promo.js
 var promo = __webpack_require__(761);
+// EXTERNAL MODULE: ./src/javascript/slider.js
+var slider = __webpack_require__(327);
+// EXTERNAL MODULE: ./src/javascript/styleguide.js
+var styleguide = __webpack_require__(529);
 ;// CONCATENATED MODULE: ./src/index.js
+
+
 
 
 
