@@ -1,0 +1,43 @@
+// grid for main page
+.SO_MainPageGrid {
+  height: 71vw;
+  border: 1px solid black;
+  grid-gap: 0px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(32, 1fr);
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd hd hd hd hd'
+    'hd hd hd hd hd hd hd hd hd hd hd hd'
+    'im_mp im_mp im_mp im_mp im_mp im_mp empt empt empt empt empt empt'
+    'im_mp im_mp im_mp im_mp im_mp im_mp empt empt empt empt empt empt'
+    'im_mp im_mp im_mp im_mp im_mp im_mp empt empt empt empt empt empt'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
+    'ft ft ft ft ft ft ft ft ft ft ft ft'
+    'ft ft ft ft ft ft ft ft ft ft ft ft'
+    'ft ft ft ft ft ft ft ft ft ft ft ft'
+    'ft ft ft ft ft ft ft ft ft ft ft ft'
+    'ft ft ft ft ft ft ft ft ft ft ft ft';
+}

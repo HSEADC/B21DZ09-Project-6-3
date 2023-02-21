@@ -1,0 +1,78 @@
+// mixins for images and symbols for main page
+
+@mixin GeneralImageMainPageProperties {
+  width: 720px;
+  height: 608px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  grid-area: im_mp;
+}
+
+@mixin GoToSymbolMainPageProperties {
+  width: 71px;
+  height: 87px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+// images and symbols for main page (background-images)
+
+.Q_GeneralImageMainPage {
+  @include GeneralImageMainPageProperties;
+}
+
+.Q_GoToSymbolMainPage {
+  @include GoToSymbolMainPageProperties;
+}
+
+// images and symbols for lifehacks page
+
+.Q_GeneralImageLifehackPage {
+}
+
+.Q_TopicSymbolLifehackPage {
+}
+
+// images and symbols for maind maps page
+
+.Q_TopicSymbolMindMapPage {
+}
+
+.Q_GoToSymbolMindMapPage {
+}
+
+// images and symbols for selections page
+
+.Q_GeneralImageSelectionPage {
+}
+
+// images and symbols for articles page
+
+.Q_GeneralImageArticlesPage {
+}
+
+.Q_TopicSymbolArticlePage {
+}
+
+// images and symbols for search page and "it will be interesting"
+
+.Q_GeneralImageCard {
+}
+
+.Q_TopicSymbolCardTop {
+}
+
+.Q_TopicSymbolCardBottom {
+}
+
+// images and symbols for text blocks
+.Q_ImageText {
+}
+
+// images and symbols for header
+
+// images and symbols for footer

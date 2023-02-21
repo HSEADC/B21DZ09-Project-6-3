@@ -1,6 +1,6 @@
 // titles mixins
 
-@mixin TitlesRules {
+@mixin TitlesProperties {
   font-family: 'DrukSuper';
   letter-spacing: -3%;
 }
@@ -8,27 +8,27 @@
 // titles typography
 
 .A_TitleMain {
-  @include TitlesRules;
+  @include TitlesProperties;
   font-size: 40px;
   line-height: 60px;
 }
 
 .A_TitleAuxiliary {
-  @include TitlesRules;
+  @include TitlesProperties;
   font-size: 25px;
   line-height: 30px;
 }
 
 // text mixins
 
-@mixin TextRulesBig {
+@mixin TextPropertiesBig {
   font-family: 'Inter';
   font-size: 25px;
   line-height: 35px;
   letter-spacing: -3%;
 }
 
-@mixin TextRulesSmall {
+@mixin TextPropertiesSmall {
   font-family: 'Inter';
   font-size: 20px;
   line-height: 30px;
@@ -38,26 +38,55 @@
 // text typography
 
 .A_TextImportantTop {
-  @include TextRulesSmall;
+  @include TextPropertiesSmall;
   font-weight: 500;
 }
 
 .A_TextImportantBottom {
-  @include TextRulesSmall;
+  @include TextPropertiesSmall;
   font-weight: 700;
 }
 
 .A_TextIndependent {
-  @include TextRulesBig;
+  @include TextPropertiesBig;
   font-weight: 400;
 }
 
 .A_TextDependent {
-  @include TextRulesSmall;
+  @include TextPropertiesSmall;
   font-weight: 400;
 }
 
 .A_TextList {
-  @include TextRulesBig;
+  @include TextPropertiesBig;
   font-weight: 400;
+}
+
+// lines mixins
+
+@mixin Line {
+  background: black;
+}
+
+// lines
+
+.A_LineTextBoxThin {
+  @include Line;
+  height: 1px;
+}
+
+.A_LineTextBoxNormal {
+  @include Line;
+  height: 4px;
+}
+
+.A_LineTextBoxWide {
+  @include Line;
+  height: 12px;
+}
+
+//emply block for grids
+
+.A_EmptyGridArea {
+  grid-area: empt;
 }
