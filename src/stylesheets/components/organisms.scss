@@ -1,7 +1,8 @@
 .O_Header {
-  grid-area: hd;
-  border: 1px solid black;
+  display: flex;
 }
 .O_Footer {
-  grid-area: ft;
+  height: 11vw;
+  display: flex;
+  background-color: black;
 }

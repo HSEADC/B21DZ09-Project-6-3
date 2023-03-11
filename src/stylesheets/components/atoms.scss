@@ -3,22 +3,41 @@
 @mixin TitlesProperties {
   font-family: 'DrukSuper';
   letter-spacing: -3%;
+  font-size: 2.77vw;
+  line-height: 4.16vw;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+}
+
+@mixin TitlesAuxiliaryProperties {
+  font-family: 'DrukSuper';
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
+  display: flex;
+  align-items: center;
 }
 
 // titles typography
 
-.A_TitleMain {
+.A_TitleMainPage {
   @include TitlesProperties;
-  font-size: 40px;
-  line-height: 60px;
+  width: 50%;
+  height: 13.5vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.A_TitleAuxiliary {
-  @include TitlesProperties;
-  font-size: 25px;
-  line-height: 30px;
+.A_TitleAuxiliaryMainPageCardShort {
+  @include TitlesAuxiliaryProperties;
+  width: 22.5vw;
 }
-
+.A_TitleAuxiliaryMainPageCardLong {
+  @include TitlesAuxiliaryProperties;
+  width: 47.5vw;
+}
 // text mixins
 
 @mixin TextPropertiesBig {

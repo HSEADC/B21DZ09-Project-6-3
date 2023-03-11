@@ -1,0 +1,20 @@
+// mixins for footer
+
+@mixin FooterCardsProperties {
+  height: 11vw;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+}
+
+// molecules for footer
+
+.M_FooterCardSocialNetworks {
+  @include FooterCardsProperties;
+  width: 25.5vw;
+}
+
+.M_FooterCardHSE {
+  @include FooterCardsProperties;
+  width: 16vw;
+  border-right: 1px solid #f4f4f4;
+}

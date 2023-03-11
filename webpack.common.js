@@ -21,7 +21,8 @@ const pages = [
   'promo',
   'questions',
   'styleguide',
-  'old-promo'
+  'old-promo',
+  'lifehackspages/lifehackcustom'
 ]
 
 const partials = [
@@ -31,7 +32,7 @@ const partials = [
   'hamburger-phone',
   'page-navbar',
   'back-button',
-  'page-footer',
+  'page-footer'
 ]
 
 module.exports = {

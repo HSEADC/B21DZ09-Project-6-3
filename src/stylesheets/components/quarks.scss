@@ -1,32 +1,26 @@
 // mixins for images and symbols for main page
 
 @mixin GeneralImageMainPageProperties {
-  width: 720px;
-  height: 608px;
+  width: 50%;
+  height: 42.5vw;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  grid-area: im_mp;
-}
-
-@mixin GoToSymbolMainPageProperties {
-  width: 71px;
-  height: 87px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
 }
 
 // images and symbols for main page (background-images)
 
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
+  background-image: url(images/mainpage/GeneralImageMainPage.png);
+  background-size: 100%;
 }
 
-.Q_GoToSymbolMainPage {
-  @include GoToSymbolMainPageProperties;
+.Q_MainPageSymbolArrow {
+  height: 4.86vw;
+  width: 4vw;
+  background-image: url(images/mainpage/MainPageSymbolArrow.svg);
+  background-size: 100%;
 }
 
 // images and symbols for lifehacks page
@@ -70,9 +64,20 @@
 }
 
 // images and symbols for text blocks
+
 .Q_ImageText {
 }
 
 // images and symbols for header
+
+.Q_BurgerMenuIcon {
+  width: 4.23vw;
+  height: 1.59vw;
+}
+
+.Q_LogoIcon {
+  width: 16.5vw;
+  height: 2.56vw;
+}
 
 // images and symbols for footer

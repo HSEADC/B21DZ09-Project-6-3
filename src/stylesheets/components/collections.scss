@@ -1,3 +1,10 @@
 .W_GoToPageMainPageCards {
-  grid-area: gtpmp;
+}
+
+.C_MainPageCards {
+  width: 50vw;
+  height: 56vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

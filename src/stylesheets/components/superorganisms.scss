@@ -1,43 +1,16 @@
-// grid for main page
-.SO_MainPageGrid {
-  height: 71vw;
-  border: 1px solid black;
-  grid-gap: 0px;
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(32, 1fr);
-  grid-template-areas:
-    'hd hd hd hd hd hd hd hd hd hd hd hd'
-    'hd hd hd hd hd hd hd hd hd hd hd hd'
-    'im_mp im_mp im_mp im_mp im_mp im_mp empt empt empt empt empt empt'
-    'im_mp im_mp im_mp im_mp im_mp im_mp empt empt empt empt empt empt'
-    'im_mp im_mp im_mp im_mp im_mp im_mp empt empt empt empt empt empt'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'im_mp im_mp im_mp im_mp im_mp im_mp gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'tt tt tt tt tt tt gtpmp gtpmp gtpmp gtpmp gtpmp gtpmp'
-    'ft ft ft ft ft ft ft ft ft ft ft ft'
-    'ft ft ft ft ft ft ft ft ft ft ft ft'
-    'ft ft ft ft ft ft ft ft ft ft ft ft'
-    'ft ft ft ft ft ft ft ft ft ft ft ft'
-    'ft ft ft ft ft ft ft ft ft ft ft ft';
+// scss for main page
+.SO_MainPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+}
+.bodypage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 56vw;
+  width: 100vw;
 }
