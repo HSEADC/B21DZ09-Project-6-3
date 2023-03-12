@@ -7,7 +7,10 @@
   line-height: 4.16vw;
   display: flex;
   align-items: center;
-  padding-left: 1vw;
+  padding: 1vw 0 1vw 1.5vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 @mixin TitlesAuxiliaryProperties {
@@ -15,16 +18,39 @@
   letter-spacing: -3%;
   font-size: 1.73vw;
   line-height: 2.08vw;
+}
+
+@mixin TitlesAuxiliaryCardsProperties {
   display: flex;
   align-items: center;
 }
 
+// article page titles typography
+
+.A_TitleArticlePage {
+  @include TitlesProperties;
+  width: 33.3vw;
+}
+
+// lifehack page titles typography
+
+.A_TitleLifehackPage {
+  @include TitlesProperties;
+  width: 41.7vw;
+}
+
 // titles typography
+
+.A_TitleAuxiliary {
+  @include TitlesAuxiliaryProperties;
+  width: 95%;
+}
+
+// main page titles typography
 
 .A_TitleMainPage {
   @include TitlesProperties;
-  width: 50%;
-  height: 13.5vw;
+  width: 50vw;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -32,25 +58,29 @@
 
 .A_TitleAuxiliaryMainPageCardShort {
   @include TitlesAuxiliaryProperties;
+  @include TitlesAuxiliaryCardsProperties;
   width: 22.5vw;
 }
+
 .A_TitleAuxiliaryMainPageCardLong {
   @include TitlesAuxiliaryProperties;
+  @include TitlesAuxiliaryCardsProperties;
   width: 47.5vw;
 }
+
 // text mixins
 
 @mixin TextPropertiesBig {
   font-family: 'Inter';
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 1.73vw;
+  line-height: 2.43vw;
   letter-spacing: -3%;
 }
 
 @mixin TextPropertiesSmall {
   font-family: 'Inter';
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.38vw;
+  line-height: 2.08vw;
   letter-spacing: -3%;
 }
 
@@ -59,9 +89,23 @@
 .A_TextImportantTop {
   @include TextPropertiesSmall;
   font-weight: 500;
+  border-bottom: 12px solid black;
+  padding-bottom: 2vw;
+}
+
+.A_TextImportant {
+  @include TextPropertiesSmall;
+  font-weight: 500;
 }
 
 .A_TextImportantBottom {
+  @include TextPropertiesSmall;
+  font-weight: 700;
+  padding-top: 2vw;
+  border-top: 4px solid black;
+}
+
+.A_TextImportantList {
   @include TextPropertiesSmall;
   font-weight: 700;
 }
@@ -79,6 +123,8 @@
 .A_TextList {
   @include TextPropertiesBig;
   font-weight: 400;
+  padding: 0.7vw 0 1.5vw 2vw;
+  border-top: 1px solid #000000;
 }
 
 // lines mixins
@@ -102,10 +148,4 @@
 .A_LineTextBoxWide {
   @include Line;
   height: 12px;
-}
-
-//emply block for grids
-
-.A_EmptyGridArea {
-  grid-area: empt;
 }

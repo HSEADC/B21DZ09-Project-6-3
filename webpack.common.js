@@ -22,7 +22,9 @@ const pages = [
   'questions',
   'styleguide',
   'old-promo',
-  'lifehackspages/lifehackcustom'
+  'lifehackspages/lifehackcustom',
+  'articlespages/articlehdpe',
+  'collectionspages/collectionmelteens'
 ]
 
 const partials = [

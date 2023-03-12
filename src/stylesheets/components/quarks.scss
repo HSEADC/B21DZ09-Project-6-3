@@ -2,10 +2,11 @@
 
 @mixin GeneralImageMainPageProperties {
   width: 50%;
-  height: 42.5vw;
+  height: 47.4vw;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  background-size: 100%;
 }
 
 // images and symbols for main page (background-images)
@@ -13,7 +14,6 @@
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
   background-image: url(images/mainpage/GeneralImageMainPage.png);
-  background-size: 100%;
 }
 
 .Q_MainPageSymbolArrow {
@@ -23,12 +23,35 @@
   background-size: 100%;
 }
 
+// mixins for images and symbols for lifehacks page
+
+@mixin GeneralImageLifehackPageProperties {
+  width: 58.4vw;
+  height: 33.4vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+@mixin SymbolLifehackPageProperties {
+  width: 16.7vw;
+  height: 10.4vw;
+  border-bottom: 1px solid black;
+}
+
 // images and symbols for lifehacks page
 
+.Q_LifehacksBodyTextImage {
+  width: 100%;
+  margin: 2vw 0 2vw 0;
+  border: 1px solid black;
+}
+
 .Q_GeneralImageLifehackPage {
+  @include GeneralImageLifehackPageProperties;
 }
 
 .Q_TopicSymbolLifehackPage {
+  @include SymbolLifehackPageProperties;
 }
 
 // images and symbols for maind maps page
@@ -44,14 +67,30 @@
 .Q_GeneralImageSelectionPage {
 }
 
+// mixins for images and symbols for articles page
+
+@mixin GeneralImageArticlePageProperties {
+  width: 66.6vw;
+  height: 28.8vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+@mixin SymbolArticlePageProperties {
+  width: 33.3vw;
+  height: 15vw;
+  border-bottom: 1px solid black;
+}
+
 // images and symbols for articles page
 
-.Q_GeneralImageArticlesPage {
+.Q_GeneralImageArticlePage {
+  @include GeneralImageArticlePageProperties;
 }
 
 .Q_TopicSymbolArticlePage {
+  @include SymbolArticlePageProperties;
 }
-
 // images and symbols for search page and "it will be interesting"
 
 .Q_GeneralImageCard {
@@ -81,3 +120,31 @@
 }
 
 // images and symbols for footer
+
+.Q_ABCImage {
+  width: 5.3vw;
+  height: 5.3vw;
+  background-image: url(images/footer/ABCImage.png);
+  background-size: 100%;
+  position: absolute;
+  left: 52vw;
+}
+
+.Q_SocialNetworkIcon {
+  width: 4.2vw;
+}
+
+.Q_BarkodeImage {
+  width: 11.4vw;
+  height: 1.45vw;
+  margin-left: 0.5vw;
+  background-image: url(images/footer/BarkodeImage.svg);
+  background-size: 100%;
+}
+
+.Q_HSEImage {
+  width: 13.4vw;
+  height: 5.9vw;
+  background-image: url(images/footer/HSEImage.svg);
+  background-size: 100%;
+}
