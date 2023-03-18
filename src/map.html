@@ -1,38 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="ru" dir="ltr" class="bg-white overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Карта</title>
+    <title>Главная</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <meta property="og:url" content="https://retrash.adc.ac" />
+    <meta property="og:image" content="https://retrash.adc.ac/share/test.png" />
+
+    <analytics></analytics>
   </head>
 
-  <body class="map layout-padding">
-    <page-navbar></page-navbar>
-    <back-button></back-button>
-
-    <main>
-      <div class="info">
-        <div class="basic-box basic-box__box-style">
-          <div class="info__search">
-            <img src="images/search.svg" alt="Search" />
-            <p class="basic-box__box-text">Найти пункт переработки</p>
+  <body>
+    <div class="SO_MainPage">
+      <div class="O_Header">
+        <div class="W_Search"></div>
+        <div class="W_Logo">
+          <img
+            class="Q_LogoIcon"
+            src="images/header/LogoImage.svg"
+            alt="LogoImage"
+          />
+        </div>
+        <div class="W_BurgerMenu">
+          <img
+            class="Q_BurgerMenuIcon"
+            src="images/header/BurgerMenuImage.svg"
+            alt="BurgerMenuImage"
+          />
+        </div>
+      </div>
+      <div class="O_MapPageContainer">
+        <div class="A_TitleMapPage">
+          ЧТО ИМЕННО ВЫ ХОТИТЕ СДАТЬ?
+        </div>
+        <div class="W_MapChooseCards">
+          <div id="paper" class="A_MapPageChooseCard">Бумага</div>
+          <div id="glass" class="A_MapPageChooseCard">Стекло</div>
+          <div id="plastic" class="A_MapPageChooseCard">Пластик</div>
+          <div id="clothes" class="A_MapPageChooseCard">Одежда</div>
+          <div id="metal" class="A_MapPageChooseCard">Металл</div>
+        </div>
+        <div class="C_MapPointInformation"></div>
+        <div class="Q_Map"></div>
+        <div class="wrapper">
+          <div class="A_MapPageInput">
+            <input
+              type="text"
+              id="input"
+              placeholder="Введите название станции метро"
+            />
           </div>
-          <p class="basic-box__box-text">
-            Выпадающий список пунктов <br />по районам
-          </p>
-        </div>
-
-        <div class="basic-box basic-box__box-style">
-          <p class="basic-box__box-text">Фотография <br />пункта</p>
+          <button class="A_MapPageFindButton">Показать</button>
         </div>
       </div>
-
-      <div class="map">
-        <img src="images/map.png" alt="Map" />
+      <div class="O_Footer">
+        <div class="W_FooterCardProducers">
+          <div class="A_TextIndependent white">ИЗГОТОВИТЕЛИ</div>
+          <div class="A_TextDependent white">
+            Олейниченко Ася <br />Шестакова Станислава
+          </div>
+        </div>
+        <div class="W_FooterCardCurators">
+          <div class="A_TextIndependent white">КУРАТОРЫ</div>
+          <div class="Q_ABCImage"></div>
+          <div class="A_TextDependent white">Захар День<br />Соня Каем</div>
+        </div>
+        <div class="M_FooterCardSocialNetworks">
+          <div class="A_TextIndependent white">МЫ В СОЦ СЕТЯХ</div>
+          <div class="W_FooterSymbolsSocialNetworks">
+            <a href="https://t.me/TRASHRETRASH">
+              <img
+                class="Q_SocialNetworkIcon"
+                src="images/footer/Telegram.svg"
+                alt="Telegram"
+            /></a>
+            <a href="https://instagram.com/_re_trash_?igshid=YmMyMTA2M2Y="
+              ><img
+                class="Q_SocialNetworkIcon"
+                src="images/footer/Instagram.svg"
+                alt="Instagram"
+            /></a>
+            <a href="https://vk.com/club216840635"
+              ><img
+                class="Q_SocialNetworkIcon"
+                src="images/footer/Vkontakte.svg"
+                alt="Vkontakte"
+            /></a>
+          </div>
+        </div>
+        <div class="W_FooterCardHSE">
+          <div class="Q_BarkodeImage"></div>
+          <div class="Q_HSEImage"></div>
+        </div>
       </div>
-    </main>
-
-    <div class="wireframe-footer"></div>
+    </div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script src="javascript/mappage.js"></script>
   </body>
 </html>

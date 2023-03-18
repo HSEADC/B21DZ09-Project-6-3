@@ -148,3 +148,14 @@
   flex-direction: column;
   align-items: stretch;
 }
+
+// wrappers for Map
+
+.W_MapChooseCards {
+  display: flex;
+  width: 50vw;
+  margin-top: 4.5vw;
+}
+.wrapper {
+  display: flex;
+}
