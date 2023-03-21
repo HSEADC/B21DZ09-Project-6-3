@@ -1,0 +1,167 @@
+// mixins for images and symbols for main page
+
+@mixin GeneralImageMainPageProperties {
+  width: 50%;
+  height: 47.4vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-size: 100%;
+}
+
+// images and symbols for main page (background-images)
+
+.Q_GeneralImageMainPage {
+  @include GeneralImageMainPageProperties;
+  background-image: url(images/mainpage/GeneralImageMainPage.png);
+}
+
+.Q_MainPageSymbolArrow {
+  height: 4.86vw;
+  width: 4vw;
+  background-image: url(images/mainpage/MainPageSymbolArrow.svg);
+  background-size: 100%;
+}
+
+// mixins for images and symbols for lifehacks page
+
+@mixin GeneralImageLifehackPageProperties {
+  width: 58.4vw;
+  height: 33.4vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+@mixin SymbolLifehackPageProperties {
+  width: 16.7vw;
+  height: 10.4vw;
+  border-bottom: 1px solid black;
+}
+
+// images and symbols for lifehacks page
+
+.Q_LifehacksBodyTextImage {
+  width: 100%;
+  margin: 2vw 0 2vw 0;
+  border: 1px solid black;
+}
+
+.Q_GeneralImageLifehackPage {
+  @include GeneralImageLifehackPageProperties;
+}
+
+.Q_TopicSymbolLifehackPage {
+  @include SymbolLifehackPageProperties;
+}
+
+// images and symbols for maind maps page
+
+.Q_MindMapPagePlayImage {
+  width: 50vw;
+  height: 41.05vw;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+#result {
+  position: absolute;
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
+}
+// images and symbols for selections page
+
+.Q_GeneralImageSelectionPage {
+}
+
+// mixins for images and symbols for articles page
+
+@mixin GeneralImageArticlePageProperties {
+  width: 66.6vw;
+  height: 28.8vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+@mixin SymbolArticlePageProperties {
+  width: 33.3vw;
+  height: 15vw;
+  border-bottom: 1px solid black;
+}
+
+// images and symbols for articles page
+
+.Q_GeneralImageArticlePage {
+  @include GeneralImageArticlePageProperties;
+}
+
+.Q_TopicSymbolArticlePage {
+  @include SymbolArticlePageProperties;
+}
+// images and symbols for search page and "it will be interesting"
+
+.Q_GeneralImageCard {
+}
+
+.Q_TopicSymbolCardTop {
+}
+
+.Q_TopicSymbolCardBottom {
+}
+
+// images and symbols for text blocks
+
+.Q_ImageText {
+}
+
+// images and symbols for header
+
+.Q_BurgerMenuIcon {
+  width: 4.23vw;
+  height: 1.59vw;
+}
+
+.Q_LogoIcon {
+  width: 16.5vw;
+  height: 2.56vw;
+}
+
+// images and symbols for footer
+
+.Q_ABCImage {
+  width: 5.3vw;
+  height: 5.3vw;
+  background-image: url(images/footer/ABCImage.png);
+  background-size: 100%;
+  position: absolute;
+  left: 52vw;
+}
+
+.Q_SocialNetworkIcon {
+  width: 4.2vw;
+}
+
+.Q_BarkodeImage {
+  width: 11.4vw;
+  height: 1.45vw;
+  margin-left: 0.5vw;
+  background-image: url(images/footer/BarkodeImage.svg);
+  background-size: 100%;
+}
+
+.Q_HSEImage {
+  width: 13.4vw;
+  height: 5.9vw;
+  background-image: url(images/footer/HSEImage.svg);
+  background-size: 100%;
+}
+
+// map for map :)))))))))))
+
+.Q_Map {
+  width: 50vw;
+  height: 57.5vw;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
