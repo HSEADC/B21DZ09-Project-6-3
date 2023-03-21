@@ -57,6 +57,9 @@
 // images and symbols for maind maps page
 
 .Q_MindMapPagePlayImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50vw;
   height: 41.05vw;
   border-top: 1px solid #000000;
