@@ -56,12 +56,19 @@
 
 // images and symbols for maind maps page
 
-.Q_TopicSymbolMindMapPage {
+.Q_MindMapPagePlayImage {
+  width: 50vw;
+  height: 41.05vw;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
 }
 
-.Q_GoToSymbolMindMapPage {
+#result {
+  position: absolute;
+  text-align: center;
+  margin: 20px;
+  font-size: 24px;
 }
-
 // images and symbols for selections page
 
 .Q_GeneralImageSelectionPage {

@@ -47,6 +47,14 @@
   border-right: 0px solid black;
 }
 
+// map page typography and cards
+
+.A_TitleMindMapPage {
+  @include TitlesProperties;
+  width: 50vw;
+  border-right: 0px solid black;
+}
+
 // titles typography
 
 .A_TitleAuxiliary {
@@ -189,7 +197,49 @@
   background-color: #f4f4f4;
   border-bottom: 1px solid #000000;
 }
+// mind map card
 
+.A_MindMapPageChooseCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-end;
+  height: 10.33vw;
+  width: 10vw;
+  border-right: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
+}
+
+.A_MindMapPagePlayRestartCard {
+  @include TitlesAuxiliaryProperties;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10.35vw;
+  width: 35vw;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.A_MindMapPageChooseCard.correct {
+  background-color: green;
+}
+
+.A_MindMapPageChooseCard.incorrect {
+  background-color: red;
+}
+
+.A_MapPageChooseCard:hover {
+  cursor: pointer;
+}
+.A_MapPageSelections {
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 10vw;
+  letter-spacing: -3%;
+  background-color: #f4f4f4;
+  border: 0px;
+}
 // lines mixins
 
 @mixin Line {

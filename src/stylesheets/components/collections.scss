@@ -48,6 +48,25 @@
   height: 18.2vw;
 }
 
+//mind map page
+
+.C_MindMapBodyTextParagraphs {
+  @include BodyTextParagraphs;
+  height: 47.1vw;
+  width: 50vw;
+  margin-top: 4.5vw;
+  border-top: 1px solid #000000;
+  border-right: 0px solid #000000;
+}
+
+.C_MindMapBodyPlayBox {
+  height: 62vw;
+  width: 50vw;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+
 //article page
 
 .C_ArticleBodyTextParagraphs {
@@ -63,7 +82,9 @@
 
 //map page
 
-.C_MapPointInformation {
+.C_MapSelectAndPointInformation {
+  display: flex;
+  flex-direction: row;
   height: 38.1vw;
   width: 50vw;
   border-bottom: 1px solid #000000;

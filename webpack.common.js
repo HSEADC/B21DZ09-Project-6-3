@@ -24,6 +24,10 @@ const pages = [
   'old-promo',
   'lifehackspages/lifehackcustom',
   'articlespages/articlehdpe',
+  'mindmaps/mindmapclothes1',
+  'mindmaps/mindmapclothes2',
+  'mindmaps/mindmapfood1',
+  'mindmaps/mindmaptrash1',
   'collectionspages/collectionmelteens'
 ]
 
