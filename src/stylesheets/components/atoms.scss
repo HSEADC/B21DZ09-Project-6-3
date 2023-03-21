@@ -1,63 +1,264 @@
 // titles mixins
 
-@mixin TitlesRules {
+@mixin TitlesProperties {
   font-family: 'DrukSuper';
   letter-spacing: -3%;
+  font-size: 2.77vw;
+  line-height: 4.16vw;
+  display: flex;
+  align-items: center;
+  padding: 1vw 0 1vw 1.5vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+@mixin TitlesAuxiliaryProperties {
+  font-family: 'DrukSuper';
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
+}
+
+@mixin TitlesAuxiliaryCardsProperties {
+  display: flex;
+  align-items: center;
+}
+
+// article page titles typography
+
+.A_TitleArticlePage {
+  @include TitlesProperties;
+  width: 33.3vw;
+}
+
+// lifehack page titles typography
+
+.A_TitleLifehackPage {
+  @include TitlesProperties;
+  width: 41.7vw;
+}
+
+// map page typography and cards
+
+.A_TitleMapPage {
+  @include TitlesProperties;
+  width: 50vw;
+  border-right: 0px solid black;
+}
+
+// map page typography and cards
+
+.A_TitleMindMapPage {
+  @include TitlesProperties;
+  width: 50vw;
+  border-right: 0px solid black;
 }
 
 // titles typography
 
-.A_TitleMain {
-  @include TitlesRules;
-  font-size: 40px;
-  line-height: 60px;
+.A_TitleAuxiliary {
+  @include TitlesAuxiliaryProperties;
+  width: 95%;
 }
 
-.A_TitleAuxiliary {
-  @include TitlesRules;
-  font-size: 25px;
-  line-height: 30px;
+// main page titles typography
+
+.A_TitleMainPage {
+  @include TitlesProperties;
+  width: 50vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.A_TitleAuxiliaryMainPageCardShort {
+  @include TitlesAuxiliaryProperties;
+  @include TitlesAuxiliaryCardsProperties;
+  width: 22.5vw;
+}
+
+.A_TitleAuxiliaryMainPageCardLong {
+  @include TitlesAuxiliaryProperties;
+  @include TitlesAuxiliaryCardsProperties;
+  width: 47.5vw;
 }
 
 // text mixins
 
-@mixin TextRulesBig {
+@mixin TextPropertiesBig {
   font-family: 'Inter';
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 1.73vw;
+  line-height: 2.43vw;
   letter-spacing: -3%;
 }
 
-@mixin TextRulesSmall {
+@mixin TextPropertiesSmall {
   font-family: 'Inter';
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.38vw;
+  line-height: 2.08vw;
   letter-spacing: -3%;
 }
 
 // text typography
 
 .A_TextImportantTop {
-  @include TextRulesSmall;
+  @include TextPropertiesSmall;
+  font-weight: 500;
+  border-bottom: 12px solid black;
+  padding-bottom: 2vw;
+}
+
+.A_TextImportant {
+  @include TextPropertiesSmall;
   font-weight: 500;
 }
 
 .A_TextImportantBottom {
-  @include TextRulesSmall;
+  @include TextPropertiesSmall;
+  font-weight: 700;
+  padding-top: 2vw;
+  border-top: 4px solid black;
+}
+
+.A_TextImportantList {
+  @include TextPropertiesSmall;
   font-weight: 700;
 }
 
 .A_TextIndependent {
-  @include TextRulesBig;
+  @include TextPropertiesBig;
   font-weight: 400;
 }
 
 .A_TextDependent {
-  @include TextRulesSmall;
+  @include TextPropertiesSmall;
   font-weight: 400;
 }
 
 .A_TextList {
-  @include TextRulesBig;
+  @include TextPropertiesBig;
   font-weight: 400;
+  padding: 0.7vw 0 1.5vw 2vw;
+  border-top: 1px solid #000000;
+}
+
+// map card
+
+.A_MapPageChooseCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-end;
+  height: 9vw;
+  width: 10vw;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
+}
+
+.A_MapPageChooseCard:hover {
+  cursor: pointer;
+}
+
+.A_MapPageInput {
+  width: 30vw;
+  height: 4.5vw;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.A_MapPageFindButton {
+  @include TextPropertiesSmall;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 4.5vw;
+  border-width: 1px;
+  border-top: 0px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #f4f4f4;
+}
+
+.A_MapPageFindButton:hover {
+  cursor: pointer;
+}
+
+#input {
+  all: initial;
+  @include TextPropertiesSmall;
+  padding-left: 1.5vw;
+  width: 30vw;
+  height: 4.41vw;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #000000;
+}
+// mind map card
+
+.A_MindMapPageChooseCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-end;
+  height: 10.33vw;
+  width: 10vw;
+  border-right: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
+}
+
+.A_MindMapPagePlayRestartCard {
+  @include TitlesAuxiliaryProperties;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10.35vw;
+  width: 35vw;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.A_MindMapPageChooseCard.correct {
+  background-color: green;
+}
+
+.A_MindMapPageChooseCard.incorrect {
+  background-color: red;
+}
+
+.A_MapPageChooseCard:hover {
+  cursor: pointer;
+}
+.A_MapPageSelections {
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 10vw;
+  letter-spacing: -3%;
+  background-color: #f4f4f4;
+  border: 0px;
+}
+// lines mixins
+
+@mixin Line {
+  background: black;
+}
+
+// lines
+
+.A_LineTextBoxThin {
+  @include Line;
+  height: 1px;
+}
+
+.A_LineTextBoxNormal {
+  @include Line;
+  height: 4px;
+}
+
+.A_LineTextBoxWide {
+  @include Line;
+  height: 12px;
 }

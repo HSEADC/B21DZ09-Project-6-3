@@ -1,0 +1,73 @@
+// header organisms
+
+.O_Header {
+  display: flex;
+}
+
+// footer organisms
+
+.O_Footer {
+  height: 12vw;
+  display: flex;
+  background-color: black;
+  margin-top: 4.5vw;
+}
+
+// main page organisms
+
+.O_MainPageContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 62vw;
+  width: 100vw;
+}
+
+// lifehack page organisms
+
+.O_LifehackPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 62vw;
+  width: 100vw;
+}
+
+// mind map page organisms
+
+.O_MindMapPageContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 62vw;
+  width: 100vw;
+}
+
+.GroupLifehackPage {
+  width: 58.4vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// article page organisms
+
+.GroupArticlePage {
+  width: 66.6vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// article page organisms
+
+.O_MapPageContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 62vw;
+  width: 100vw;
+}

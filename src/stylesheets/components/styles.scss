@@ -1,0 +1,71 @@
+//background colors
+
+.yellow {
+  background-color: #ece700;
+}
+
+.orange {
+  background-color: #f45e4e;
+}
+
+.blue {
+  background-color: #0093ff;
+}
+
+.lightblue {
+  background-color: #b0d3ff;
+}
+
+.turquoise {
+  background-color: #1ebcb1;
+}
+
+//fonts colors
+
+.white {
+  color: #f4f4f4;
+}
+
+//opacity
+
+.opacity70 {
+  opacity: 70%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+//paddings and margins
+
+.marginim {
+  margin: 0;
+}
+
+.paddingtop1 {
+  padding-top: 1vw;
+}
+
+.paddingtop2 {
+  padding-top: 2vw;
+}
+
+.paddingtop3 {
+  padding-top: 3vw;
+}
+
+.paddingbot2 {
+  padding-bottom: 3vw;
+}
+
+#category-selector {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 10vw;
+  letter-spacing: -3%;
+  appearance: none;
+}
