@@ -1,18 +1,14 @@
-import imageSrc1 from '/images/mindmap/im1.png'
-import imageSrc2 from '/images/mindmap/im2.png'
-import imageSrc3 from '/images/mindmap/im3.png'
-
 const images = [
   {
-    src: imageSrc1,
+    src: '/scr/images/mindmap/im1.png',
     answer: 'red'
   },
   {
-    src: imageSrc2,
+    src: '/scr/images/mindmap/im2.png',
     answer: 'yellow'
   },
   {
-    src: imageSrc3,
+    src: '/scr/images/mindmap/im3.png',
     answer: 'blue'
   }
 ]

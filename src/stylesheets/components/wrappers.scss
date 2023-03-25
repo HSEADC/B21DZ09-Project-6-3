@@ -81,9 +81,10 @@
   width: 17vw;
   height: 4.5vw;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 1.5vw;
   border: 1px solid #000000;
 }
 
@@ -158,6 +159,26 @@
 }
 .wrapper {
   display: flex;
+}
+
+// wrappers for search and filter pages
+
+.W_SearchAndFilterCards {
+  overflow: hidden;
+  display: flex;
+  width: 50vw;
+  height: 6.15vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.W_SearchAndFilterCards:hover {
+  cursor: pointer;
+}
+
+.W_SearchAndFilterCards::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .W_MapPageSelections {

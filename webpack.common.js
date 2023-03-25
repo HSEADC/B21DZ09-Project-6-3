@@ -22,12 +22,16 @@ const pages = [
   'questions',
   'styleguide',
   'old-promo',
+  'articlesfilterpage',
+  'collectionsfilterpage',
+  'lifehacksfilterpage',
+  'mindmapsfilterpage',
   'lifehackspages/lifehackcustom',
   'articlespages/articlehdpe',
-  'mindmaps/mindmapclothes1',
-  'mindmaps/mindmapclothes2',
-  'mindmaps/mindmapfood1',
-  'mindmaps/mindmaptrash1',
+  'mindmapspages/mindmapclothes1',
+  'mindmapspages/mindmapclothes2',
+  'mindmapspages/mindmapfood1',
+  'mindmapspages/mindmaptrash1',
   'collectionspages/collectionmelteens'
 ]
 

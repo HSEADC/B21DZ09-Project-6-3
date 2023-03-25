@@ -69,3 +69,27 @@ a {
   letter-spacing: -3%;
   appearance: none;
 }
+
+.textopacity {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.borderleft {
+  border-left: 1px solid #000000;
+}
+
+.bordertop {
+  border-top: 1px solid #000000;
+}
+
+.borderbot {
+  border-bottom: 1px solid #000000;
+}
+
+.addfilterarrow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1.5vw 1.5vw 1vw 1.5vw;
+}

@@ -129,6 +129,11 @@
   height: 2.56vw;
 }
 
+.Q_SearchIcon {
+  width: 1.87vw;
+  margin-right: 1vw;
+}
+
 // images and symbols for footer
 
 .Q_ABCImage {
@@ -167,4 +172,22 @@
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+// images and symbols for search and filter page
+
+.Q_FilterPageArrowImage1 {
+  background-image: url(images/filter/FilterArrowImage.svg);
+  background-size: 100%;
+  height: 1.5vw;
+  width: 2.25vw;
+  margin-left: 11.4vw;
+}
+
+.Q_FilterPageArrowImage2 {
+  background-image: url(images/filter/FilterArrowImage2.svg);
+  background-size: 100%;
+  height: 1.5vw;
+  width: 2.25vw;
+  margin-left: 11.4vw;
 }

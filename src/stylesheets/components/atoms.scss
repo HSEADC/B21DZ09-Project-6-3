@@ -2,12 +2,13 @@
 
 @mixin TitlesProperties {
   font-family: 'DrukSuper';
+  text-transform: uppercase;
   letter-spacing: -3%;
   font-size: 2.77vw;
   line-height: 4.16vw;
   display: flex;
   align-items: center;
-  padding: 1vw 0 1vw 1.5vw;
+  padding: 1.2vw 0 0.8vw 1.5vw;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -15,6 +16,7 @@
 
 @mixin TitlesAuxiliaryProperties {
   font-family: 'DrukSuper';
+  text-transform: uppercase;
   letter-spacing: -3%;
   font-size: 1.73vw;
   line-height: 2.08vw;
@@ -37,6 +39,18 @@
 .A_TitleLifehackPage {
   @include TitlesProperties;
   width: 41.7vw;
+}
+
+// search and filter page titles typography
+
+.A_TitleSearchAndFilterPage {
+  @include TitlesProperties;
+  width: 50vw;
+  border-bottom: 0px;
+  border-right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5vw;
 }
 
 // map page typography and cards
@@ -197,6 +211,7 @@
   background-color: #f4f4f4;
   border-bottom: 1px solid #000000;
 }
+
 // mind map card
 
 .A_MindMapPageChooseCard {
@@ -232,14 +247,26 @@
 .A_MapPageChooseCard:hover {
   cursor: pointer;
 }
-.A_MapPageSelections {
-  font-family: 'Inter';
-  font-size: 1.73vw;
-  line-height: 10vw;
-  letter-spacing: -3%;
-  background-color: #f4f4f4;
-  border: 0px;
+
+// search and filter
+
+.A_SearchAndFilterCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-end;
+  height: 6.15vw;
+  width: calc(50vw / 3);
+  border-right: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
 }
+
+.A_SearchInput {
+  all: initial;
+  @include TextPropertiesSmall;
+  width: 10vw;
+}
+
 // lines mixins
 
 @mixin Line {

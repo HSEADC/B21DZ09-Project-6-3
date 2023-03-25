@@ -24,6 +24,17 @@
   width: 100vw;
 }
 
+// search and filter page organisms
+
+.O_SearchAndFilterContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 62vw;
+  width: 100vw;
+}
+
 // lifehack page organisms
 
 .O_LifehackPageContainer {
