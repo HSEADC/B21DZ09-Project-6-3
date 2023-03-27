@@ -53,6 +53,7 @@ const pages = [
   'articlespages/articlelid',
   'articlespages/articleplasticbag',
   'articlespages/articlesponge',
+  'articlespages/articleshoe',
   'mindmapspages/mindmapclothes1',
   'mindmapspages/mindmapclothes2',
   'mindmapspages/mindmapfood1',

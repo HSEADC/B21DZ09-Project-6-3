@@ -32,6 +32,9 @@
 .A_TitleArticlePage {
   @include TitlesProperties;
   width: 33.3vw;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 // lifehack page titles typography
