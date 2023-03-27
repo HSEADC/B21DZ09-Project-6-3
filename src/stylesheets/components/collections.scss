@@ -117,5 +117,10 @@
 
 .C_SearchAndFiltersPageCards {
   border: 1px solid #000000;
-  min-height: 55.8vw;
+  overflow-y: auto;
+  height: 55.8vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }

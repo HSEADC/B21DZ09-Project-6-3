@@ -46,8 +46,9 @@
 .A_TitleSearchAndFilterPage {
   @include TitlesProperties;
   width: 50vw;
-  border-bottom: 0px;
+  max-height: 6.25vw;
   border-right: 0px;
+  border-bottom: 0px;
   display: flex;
   justify-content: flex-end;
   padding-right: 1.5vw;
@@ -253,7 +254,9 @@
 .A_SearchAndFilterCard {
   @include TextPropertiesSmall;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 6.15vw;
   width: calc(50vw / 3);
   border-right: 1px solid #000000;

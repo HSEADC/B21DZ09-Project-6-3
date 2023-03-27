@@ -3,3 +3,299 @@
   --black: black;
   --body-padding: 1.875vw;
 }
+
+//background colors
+
+.yellow {
+  background-color: #ece700;
+}
+
+.orange {
+  background-color: #f45e4e;
+}
+
+.blue {
+  background-color: #0093ff;
+}
+
+.lightblue {
+  background-color: #b0d3ff;
+}
+
+.turquoise {
+  background-color: #1ebcb1;
+}
+
+//fonts colors
+
+.white {
+  color: #f4f4f4;
+}
+
+//opacity
+
+.opacity70 {
+  opacity: 70%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+//paddings and margins
+
+.marginim {
+  margin: 0;
+}
+
+.margintop3 {
+  margin-top: 3vw;
+}
+
+.paddingtop1 {
+  padding-top: 1vw;
+}
+
+.paddingtop2 {
+  padding-top: 2vw;
+}
+
+.paddingtop3 {
+  padding-top: 3vw;
+}
+
+.paddingbot2 {
+  padding-bottom: 3vw;
+}
+
+#category-selector {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 10vw;
+  letter-spacing: -3%;
+  appearance: none;
+}
+
+.textopacity {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.borderleft {
+  border-left: 1px solid #000000;
+}
+
+.borderright {
+  border-right: 1px solid #000000;
+}
+
+.bordertop {
+  border-top: 1px solid #000000;
+}
+
+.borderbottom {
+  border-bottom: 1px solid #000000 !important;
+}
+
+.addfilterarrow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1.5vw 1.5vw 1vw 1.5vw;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  flex: 0 !important;
+}
+
+// search and filter page cards symbols top backgrounds
+
+.KruzhokTop {
+  background-image: url(./images/filter/TopSymbols/KruzhokTop.svg);
+  background-size: cover;
+}
+// search and filter page cards symbols bottom backgrounds
+
+.KruzhokBottom {
+  background-image: url(./images/filter/BottomSymbols/KruzhokBottom.svg);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter page cards backgrounds
+
+.KruzhokImage {
+  background-image: url(./images/filter/background/Kruzhok.png);
+  background-size: 105%;
+}
+
+.KruzhokImage:hover {
+  background-image: url(./images/filter/background/Kruzhok1.png);
+  background-size: 105%;
+}
+
+.FoodPackaging {
+  background-image: url(./images/filter/background/foodpackaging.png);
+  background-size: 105%;
+}
+
+.FoodPackaging:hover {
+  background-image: url(./images/filter/background/foodpackaging1.png);
+  background-size: 105%;
+}
+
+.MindfulEating {
+  background-image: url(./images/filter/background/mindfuleating.png);
+  background-size: 105%;
+}
+
+.MindfulEating:hover {
+  background-image: url(./images/filter/background/mindfuleating1.png);
+  background-size: 105%;
+}
+
+.StorageOfBread {
+  background-image: url(./images/filter/background/StorageOfBread.png);
+  background-size: 105%;
+}
+
+.StorageOfBread:hover {
+  background-image: url(./images/filter/background/StorageOfBread1.png);
+  background-size: 105%;
+}
+
+.CheeseStorage {
+  background-image: url(./images/filter/background/CheeseStorage.png);
+  background-size: 105%;
+}
+
+.CheeseStorage:hover {
+  background-image: url(./images/filter/background/CheeseStorage1.png);
+  background-size: 105%;
+}
+
+.MeatStorage {
+  background-image: url(./images/filter/background/MeatStorage.png);
+  background-size: 105%;
+}
+
+.MeatStorage:hover {
+  background-image: url(./images/filter/background/MeatStorage1.png);
+  background-size: 105%;
+}
+
+.VegelablesStorage {
+  background-image: url(./images/filter/background/VegelablesStorage.png);
+  background-size: 105%;
+}
+
+.VegelablesStorage:hover {
+  background-image: url(./images/filter/background/VegelablesStorage1.png);
+  background-size: 105%;
+}
+
+.Kitchen {
+  background-image: url(./images/filter/background/Kitchen.png);
+  background-size: 105%;
+}
+
+.Kitchen:hover {
+  background-image: url(./images/filter/background/Kitchen1.png);
+  background-size: 105%;
+}
+
+.ClothesManufacture {
+  background-image: url(./images/filter/background/ClothesManufacture.png);
+  background-size: 105%;
+}
+
+.ClothesManufacture:hover {
+  background-image: url(./images/filter/background/ClothesManufacture1.png);
+  background-size: 105%;
+}
+
+.ShoeCare {
+  background-image: url(./images/filter/background/ShoeCare.png);
+  background-size: 105%;
+}
+
+.ShoeCare:hover {
+  background-image: url(./images/filter/background/ShoeCare1.png);
+  background-size: 105%;
+}
+
+.BagCare {
+  background-image: url(./images/filter/background/BagCare.png);
+  background-size: 105%;
+}
+
+.BagCare:hover {
+  background-image: url(./images/filter/background/BagCare1.png);
+  background-size: 105%;
+}
+
+.ClothesCare {
+  background-image: url(./images/filter/background/ClothesCare.png);
+  background-size: 105%;
+}
+
+.ClothesCare:hover {
+  background-image: url(./images/filter/background/ClothesCare1.png);
+  background-size: 105%;
+}
+
+.FurnitureCare {
+  background-image: url(./images/filter/background/FurnitureCare.png);
+  background-size: 105%;
+}
+
+.FurnitureCare:hover {
+  background-image: url(./images/filter/background/FurnitureCare1.png);
+  background-size: 105%;
+}
+
+.FurnitureRules {
+  background-image: url(./images/filter/background/FurnitureRules.png);
+  background-size: 105%;
+}
+
+.FurnitureRules:hover {
+  background-image: url(./images/filter/background/FurnitureRules1.png);
+  background-size: 105%;
+}
+
+.CleaningRules {
+  background-image: url(./images/filter/background/CleaningRules.png);
+  background-size: 105%;
+}
+
+.CleaningRules:hover {
+  background-image: url(./images/filter/background/CleaningRules1.png);
+  background-size: 105%;
+}
+
+.FloorCleaning {
+  background-image: url(./images/filter/background/FloorCleaning.png);
+  background-size: 105%;
+}
+
+.FloorCleaning:hover {
+  background-image: url(./images/filter/background/FloorCleaning1.png);
+  background-size: 105%;
+}
+
+.DustCleaning {
+  background-image: url(./images/filter/background/DustCleaning.png);
+  background-size: 105%;
+}
+
+.DustCleaning:hover {
+  background-image: url(./images/filter/background/DustCleaning1.png);
+  background-size: 105%;
+}

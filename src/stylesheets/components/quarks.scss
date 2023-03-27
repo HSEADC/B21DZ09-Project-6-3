@@ -101,17 +101,6 @@
 .Q_TopicSymbolArticlePage {
   @include SymbolArticlePageProperties;
 }
-// images and symbols for search page and "it will be interesting"
-
-.Q_GeneralImageCard {
-}
-
-.Q_TopicSymbolCardTop {
-}
-
-.Q_TopicSymbolCardBottom {
-}
-
 // images and symbols for text blocks
 
 .Q_ImageText {
@@ -127,6 +116,13 @@
 .Q_LogoIcon {
   width: 16.5vw;
   height: 2.56vw;
+}
+
+// images and symbols for search page and "it will be interesting"
+
+.Q_SearchAndFilterTopicSymbolCard {
+  height: 5.6vw;
+  width: 5.6vw;
 }
 
 .Q_SearchIcon {

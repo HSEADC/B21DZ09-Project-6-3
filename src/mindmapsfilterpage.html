@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <meta property="og:url" content="https://retrash.adc.ac" />
     <meta property="og:image" content="https://retrash.adc.ac/share/test.png" />
 
@@ -15,7 +16,14 @@
   <body>
     <div class="SO_MainPage">
       <div class="O_Header">
-        <div class="W_Search"></div>
+        <div class="W_Search">
+          <img
+            class="Q_SearchIcon"
+            src="images/header/SearchImage.svg"
+            alt="SearchImage"
+          />
+          <input type="text" class="A_SearchInput" placeholder="Поиск" />
+        </div>
         <div class="W_Logo">
           <img
             class="Q_LogoIcon"
@@ -31,40 +39,270 @@
           />
         </div>
       </div>
-      <div class="O_MainPageContainer">
-        <div class="Q_GeneralImageMainPage"></div>
-        <div class="A_TitleMainPage">
-          КАК НАЧАТЬ ВЕСТИ ОСОЗНАННЫЙ ОБРАЗ ЖИЗНИ С НУЛЯ
+      <div class="O_SearchAndFilterContainer">
+        <div class="C_Filter">
+          <div class="A_TitleSearchAndFilterPage">Лайфхаки</div>
+          <div class="W_SearchAndFilterCards">
+            <div
+              class="A_SearchAndFilterCard borderleft"
+              data-category="одежда"
+            >
+              Одежда
+            </div>
+            <div class="A_SearchAndFilterCard" data-category="еда">Еда</div>
+            <div class="A_SearchAndFilterCard" data-category="уборка">
+              <div class="Q_FilterPageArrowImage1"></div>
+              Уборка
+            </div>
+            <div
+              class="A_SearchAndFilterCard borderleft bordertop"
+              data-category="мебель"
+            >
+              Мебель
+            </div>
+            <div class="A_SearchAndFilterCard bordertop" data-category="другое">
+              Другое
+            </div>
+            <div class="A_SearchAndFilterCard bordertop"></div>
+          </div>
         </div>
-        <div class="C_MainPageCards">
-          <div class="W_MainPageCardShort">
-            <a href="/lifehackspages/lifehackcustom.html">
-              <div class="Q_MainPageSymbolArrow"></div
-            ></a>
-            <div class="A_TitleAuxiliaryMainPageCardShort">ЛАЙФХАКИ</div>
-          </div>
-          <div class="W_MainPageCardShort">
-            <a href="/mindmaps/mindmaptrash1.html"
-              ><div class="Q_MainPageSymbolArrow"></div
-            ></a>
-            <div class="A_TitleAuxiliaryMainPageCardShort">ПАМЯТКИ</div>
-          </div>
-          <div class="W_MainPageCardLong">
-            <a href="map.html"><div class="Q_MainPageSymbolArrow"></div></a>
-            <div class="A_TitleAuxiliaryMainPageCardLong">КАРТА</div>
-          </div>
-          <div class="W_MainPageCardShort">
-            <a href="/articlespages/articlehdpe.html"
-              ><div class="Q_MainPageSymbolArrow"></div
-            ></a>
-            <div class="A_TitleAuxiliaryMainPageCardShort">СТАТЬИ</div>
-          </div>
-          <div class="W_MainPageCardShort">
-            <a href="/collectionspages/collectionmelteens.html"
-              ><div class="Q_MainPageSymbolArrow"></div
-            ></a>
-            <div class="A_TitleAuxiliaryMainPageCardShort">ПОДБОРКИ</div>
-          </div>
+        <div class="C_SearchAndFiltersPageCards">
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard KruzhokImage"
+              data-keywords="кружок, кастом, одежда, джинсы"
+              data-category="одежда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">
+                Мода<br />
+                на кастом
+              </div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard FoodPackaging"
+              data-keywords="еда, упаковка, съедобная, многоразовый, отходы, продукты, самостоятельно"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">
+                Как сделать упаковку экологичнее
+              </div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard MindfulEating"
+              data-keywords="еда, осознанность, осознанный, правила, общие"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">
+                Осознанный подход к еде
+              </div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard StorageOfBread"
+              data-keywords="еда, хлеб, хранение, правила, способы"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Хранение хлеба</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard CheeseStorage"
+              data-keywords="еда, сыр, хранение, способы, правила"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Хранение сыра</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard MeatStorage"
+              data-keywords="еда, мясо, хранение, способы, правила"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Хранение мяса</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard VegelablesStorage"
+              data-keywords="еда, овощи, фрукты, хранение, способы, правила"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Хранение овощей</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard Kitchen"
+              data-keywords="еда, кухня, хранение, натуральные, уборка, правила"
+              data-category="еда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Правила осознанной кухни</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard ClothesManufacture"
+              data-keywords="производство, одежда, экология, повторное, использование, мастерская"
+              data-category="одежда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Экологичная фабрика</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard ShoeCare"
+              data-keywords="одежда, обувь, уход, хранение, правила"
+              data-category="одежда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">
+                Уход<br />
+                за обувью
+              </div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard BagCare"
+              data-keywords="одежда, сумки, уход, хранение, правила"
+              data-category="одежда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">
+                Уход<br />
+                за сумкамии
+              </div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard ClothesCare"
+              data-keywords="одежда, одежда, общие, рекомендации, уход, хранение, правила"
+              data-category="одежда"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">
+                Общие правила
+              </div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard FurnitureCare"
+              data-keywords="мебель, уход, использование, правила"
+              data-category="мебель"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Уход <br />за мебелью</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard FurnitureRules"
+              data-keywords="мебель, общие, рекомендации, уход, использование, правила"
+              data-category="мебель"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Общие правила</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard CleaningRules"
+              data-keywords="уборка, общие, рекомендации, натуральные, средства, использование, правила"
+              data-category="уборка"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Общие правила</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard DustCleaning"
+              data-keywords="уборка, пыль, рекомендации, натуральные, средства, использование, правила"
+              data-category="уборка"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Уборка пыли</div>
+            </div></a
+          >
+          <a href="/lifehackspages/lifehackcustom.html"
+            ><div
+              class="M_SearchAndFiltersPageCard FloorCleaning borderright"
+              data-keywords="уборка, пол, рекомендации, натуральные, средства, использование, правила"
+              data-category="уборка"
+            >
+              <div class="Q_SearchAndFilterTopicSymbolCard KruzhokTop"></div>
+              <div
+                class="Q_SearchAndFilterTopicSymbolCard KruzhokBottom margintop3"
+              ></div>
+              <div class="A_TitleAuxiliary">Уборка пола</div>
+            </div></a
+          >
         </div>
       </div>
       <div class="O_Footer">
@@ -108,5 +346,6 @@
         </div>
       </div>
     </div>
+    <script src="javascript/searchandfilter.js"></script>
   </body>
 </html>
