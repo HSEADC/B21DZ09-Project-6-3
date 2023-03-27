@@ -45,8 +45,8 @@
 
 .A_TitleSearchAndFilterPage {
   @include TitlesProperties;
-  width: 50vw;
-  max-height: 6.25vw;
+  width: 49.94vw;
+  min-height: 6.24vw;
   border-right: 0px;
   border-bottom: 0px;
   display: flex;
@@ -259,7 +259,7 @@
   justify-content: flex-end;
   height: 6.15vw;
   width: calc(50vw / 3);
-  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
   padding-bottom: 1vw;
   padding-left: 1.5vw;
 }
