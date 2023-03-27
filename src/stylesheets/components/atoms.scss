@@ -134,6 +134,9 @@
   font-weight: 700;
   padding-top: 2vw;
   border-top: 4px solid black;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .A_TextImportantList {
@@ -144,11 +147,17 @@
 .A_TextIndependent {
   @include TextPropertiesBig;
   font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .A_TextDependent {
   @include TextPropertiesSmall;
   font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .A_TextList {
