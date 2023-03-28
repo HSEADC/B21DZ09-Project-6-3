@@ -1,74 +1,39 @@
-import imageSrc1 from '../images/mindmap/mindmapwaste/1.png'
-import imageSrc2 from '../images/mindmap/mindmapwaste/2.png'
-$(document).ready(function () {
-  const images = [
-    {
-      src: imageSrc1,
-      answer: 'red',
-      src: imageSrc2,
-      answer: 'red'
-    }
-  ]
-
+document.addEventListener('DOMContentLoaded', function () {
   const colors = document.querySelectorAll('.A_MindMapPageChooseCard')
-
   const playButton = document.getElementById('play')
-
-  const game = document.querySelector('.Q_MindMapPagePlayImage')
-
   const restartButton = document.getElementById('restart')
-
+  const game = document.querySelector('.Q_MindMapPagePlayImage')
   const result = document.getElementById('result')
 
+  const colorAnswers = {
+    MindMap1: 'red',
+    MindMap2: 'blue',
+    MindMap3: 'blue'
+  }
   let correctAnswers = 0
   let currentImage = 0
 
-  shuffleArray(images)
-
   function showNextImage() {
-    if (currentImage < images.length) {
-      if (game.lastChild) {
-        game.removeChild(game.lastChild)
-      }
-      const imageContainer = document.createElement('div')
-      const image = document.createElement('img')
-      image.src = images[currentImage].src
-      image.style.maxWidth = '100%'
-      image.style.maxHeight = '100%'
-      image.style.objectFit = 'contain'
-      imageContainer.style.overflow = 'hidden'
-      imageContainer.style.maxWidth = '100%'
-      imageContainer.style.maxHeight = '100%'
-      imageContainer.appendChild(image)
-      game.appendChild(imageContainer)
-      currentImage++
-    } else {
-      result.textContent = `Number of correct answers: ${correctAnswers}`
-      game.dataset.playing = false
+    if (currentImage >= Object.keys(colorAnswers).length) {
+      return
     }
-  }
 
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[array[i], array[j]] = [array[j], array[i]]
-    }
+    const imageContainer = document.createElement('div')
+    const image = document.createElement('img')
+    game.className = 'Q_MindMapPagePlayImage'
+    game.classList.add(`MindMap${currentImage + 1}`)
+    imageContainer.appendChild(image)
+    game.appendChild(imageContainer)
+    currentImage++
   }
 
   function startGame() {
     correctAnswers = 0
     currentImage = 0
-
-    game.dataset.playing = true
-
     game.innerHTML = ''
-
     showNextImage()
-  }
-
-  function restartGame() {
     result.textContent = ''
-    startGame()
+    game.dataset.playing = true
   }
 
   function handleColorClick(e) {
@@ -76,20 +41,31 @@ $(document).ready(function () {
       return
     }
 
-    if (e.target.id === images[currentImage - 1].answer) {
-      e.target.classList.add('correct')
+    const selectedColor = e.target.id
+
+    if (colorAnswers[`MindMap${currentImage}`] === selectedColor) {
       correctAnswers++
+      e.target.classList.add('correct')
     } else {
       e.target.classList.add('incorrect')
     }
 
-    setTimeout(() => {
+    setTimeout(function () {
       e.target.classList.remove('correct', 'incorrect')
+      if (currentImage >= Object.keys(colorAnswers).length) {
+        game.dataset.playing = false
+        result.textContent = `You got ${correctAnswers} out of ${
+          Object.keys(colorAnswers).length
+        } correct!`
+        return
+      }
       showNextImage()
     }, 500)
   }
 
-  colors.forEach((color) => color.addEventListener('click', handleColorClick))
   playButton.addEventListener('click', startGame)
-  restartButton.addEventListener('click', restartGame)
+
+  colors.forEach(function (color) {
+    color.addEventListener('click', handleColorClick)
+  })
 })
