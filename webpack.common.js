@@ -57,7 +57,7 @@ const pages = [
   'mindmapspages/mindmapclothes2',
   'mindmapspages/mindmapfood1',
   'mindmapspages/mindmaptrash1',
-  'collectionspages/collectionmelteens',
+  'collectionspages/collection1',
   'collectionspages/collection2',
   'collectionspages/collection3',
   'collectionspages/collection4',
