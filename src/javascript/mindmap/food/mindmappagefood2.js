@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageContainer = document.createElement('div')
     const image = document.createElement('img')
     game.className = 'Q_MindMapPagePlayImage'
-    game.classList.add(`MindMap${currentImage + 1}`)
+    game.classList.add(`MindMap1Food${currentImage + 1}`)
     imageContainer.appendChild(image)
     game.appendChild(imageContainer)
     currentImage++
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const selectedColor = e.target.id
 
-    if (colorAnswers[`MindMap${currentImage}`] === selectedColor) {
+    if (colorAnswers[`MindMap1Food${currentImage}`] === selectedColor) {
       correctAnswers++
       e.target.classList.add('correct')
     } else {
@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
       e.target.classList.remove('correct', 'incorrect')
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false
-        result.textContent = `You got ${correctAnswers} out of ${
+        result.textContent = `У вас ${correctAnswers} из ${
           Object.keys(colorAnswers).length
-        } correct!`
+        } баллов!`
         return
       }
       showNextImage()

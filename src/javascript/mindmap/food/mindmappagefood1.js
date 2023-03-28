@@ -6,16 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const result = document.getElementById('result')
 
   const colorAnswers = {
-    MindMap1Waste1: 'red',
-    MindMap1Waste2: 'yellow',
-    MindMap1Waste3: 'black',
-    MindMap1Waste4: 'blue',
-    MindMap1Waste5: 'red',
-    MindMap1Waste6: 'blue',
-    MindMap1Waste7: 'green',
-    MindMap1Waste8: 'red',
-    MindMap1Waste9: 'yellow',
-    MindMap1Waste10: 'green'
+    MindMap1Food1: 'breakfast',
+    MindMap1Food2: 'all',
+    MindMap1Food3: 'dinner',
+    MindMap1Food4: 'breakfast',
+    MindMap1Food5: 'dinner',
+    MindMap1Food6: 'breakfast',
+    MindMap1Food7: 'breakfast',
+    MindMap1Food8: 'lunch',
+    MindMap1Food9: 'breakfast',
+    MindMap1Food10: 'dinner',
+    MindMap1Food11: 'lunch'
   }
   let correctAnswers = 0
   let currentImage = 0
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageContainer = document.createElement('div')
     const image = document.createElement('img')
     game.className = 'Q_MindMapPagePlayImage'
-    game.classList.add(`MindMap${currentImage + 1}`)
+    game.classList.add(`MindMap1Food${currentImage + 1}`)
     imageContainer.appendChild(image)
     game.appendChild(imageContainer)
     currentImage++
@@ -54,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const selectedColor = e.target.id
 
-    if (colorAnswers[`MindMap${currentImage}`] === selectedColor) {
+    if (colorAnswers[`MindMap1Food${currentImage}`] === selectedColor) {
       correctAnswers++
       e.target.classList.add('correct')
     } else {
@@ -65,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
       e.target.classList.remove('correct', 'incorrect')
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false
-        result.textContent = `You got ${correctAnswers} out of ${
+        result.textContent = `У вас ${correctAnswers} из ${
           Object.keys(colorAnswers).length
-        } correct!`
+        } баллов!`
         return
       }
       showNextImage()
