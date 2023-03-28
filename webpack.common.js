@@ -57,7 +57,18 @@ const pages = [
   'mindmapspages/mindmapclothes2',
   'mindmapspages/mindmapfood1',
   'mindmapspages/mindmaptrash1',
-  'collectionspages/collectionmelteens'
+  'collectionspages/collectionmelteens',
+  'collectionspages/collection2',
+  'collectionspages/collection3',
+  'collectionspages/collection4',
+  'collectionspages/collection5',
+  'collectionspages/collection6',
+  'collectionspages/collection7',
+  'collectionspages/collection8',
+  'collectionspages/collection9',
+  'collectionspages/collection10',
+  'collectionspages/collection11',
+  'collectionspages/collection12'
 ]
 
 const partials = [
