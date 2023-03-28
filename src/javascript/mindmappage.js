@@ -7,8 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const colorAnswers = {
     MindMap1: 'red',
-    MindMap2: 'blue',
-    MindMap3: 'blue'
+    MindMap2: 'yellow',
+    MindMap3: 'black',
+    MindMap4: 'blue',
+    MindMap5: 'red',
+    MindMap6: 'blue',
+    MindMap7: 'green',
+    MindMap8: 'red',
+    MindMap9: 'yellow',
+    MindMap10: 'green'
   }
   let correctAnswers = 0
   let currentImage = 0
@@ -30,10 +37,14 @@ document.addEventListener('DOMContentLoaded', function () {
   function startGame() {
     correctAnswers = 0
     currentImage = 0
-    game.innerHTML = ''
     showNextImage()
     result.textContent = ''
     game.dataset.playing = true
+  }
+
+  function restartGame() {
+    game.innerHTML = ''
+    startGame()
   }
 
   function handleColorClick(e) {
@@ -64,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame)
+  restartButton.addEventListener('click', restartGame)
 
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick)
