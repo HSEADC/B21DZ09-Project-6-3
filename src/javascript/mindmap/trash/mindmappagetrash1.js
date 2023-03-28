@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function restartGame() {
-    game.innerHTML = ''
     startGame()
   }
 

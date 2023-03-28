@@ -6,16 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const result = document.getElementById('result')
 
   const colorAnswers = {
-    MindMap1Waste1: 'red',
-    MindMap1Waste2: 'yellow',
-    MindMap1Waste3: 'black',
-    MindMap1Waste4: 'blue',
-    MindMap1Waste5: 'red',
-    MindMap1Waste6: 'blue',
-    MindMap1Waste7: 'green',
-    MindMap1Waste8: 'red',
-    MindMap1Waste9: 'yellow',
-    MindMap1Waste10: 'green'
+    MindMap1Clothes1: 'polkiclothes',
+    MindMap1Clothes2: 'veshalkiclothes',
+    MindMap1Clothes3: 'veshalkiclothes',
+    MindMap1Clothes4: 'veshalkiclothes',
+    MindMap1Clothes5: 'korobkiclothes',
+    MindMap1Clothes6: 'kruchkiclothes',
+    MindMap1Clothes7: 'kruchkiclothes',
+    MindMap1Clothes8: 'veshalkiclothes'
   }
   let correctAnswers = 0
   let currentImage = 0
@@ -28,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageContainer = document.createElement('div')
     const image = document.createElement('img')
     game.className = 'Q_MindMapPagePlayImage'
-    game.classList.add(`MindMap1Waste${currentImage + 1}`)
+    game.classList.add(`MindMap1Clothes${currentImage + 1}`)
     imageContainer.appendChild(image)
     game.appendChild(imageContainer)
     currentImage++
@@ -43,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function restartGame() {
-    game.innerHTML = ''
     startGame()
   }
 
@@ -54,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const selectedColor = e.target.id
 
-    if (colorAnswers[`MindMap1Waste${currentImage}`] === selectedColor) {
+    if (colorAnswers[`MindMap1Clothes${currentImage}`] === selectedColor) {
       correctAnswers++
       e.target.classList.add('correct')
     } else {

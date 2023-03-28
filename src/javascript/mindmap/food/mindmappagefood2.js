@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const result = document.getElementById('result')
 
   const colorAnswers = {
-    MindMap2Clothes1: 'yes',
-    MindMap2Clothes2: 'no',
-    MindMap2Clothes3: 'no',
-    MindMap2Clothes4: 'yes'
+    MindMap2Food1: 'yes',
+    MindMap2Food2: 'no',
+    MindMap2Food3: 'no',
+    MindMap2Food4: 'yes',
+    MindMap2Food5: 'yes',
+    MindMap2Food6: 'no'
   }
   let correctAnswers = 0
   let currentImage = 0
@@ -22,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const imageContainer = document.createElement('div')
     const image = document.createElement('img')
     game.className = 'Q_MindMapPagePlayImage'
-    game.classList.add(`MindMap2Clothes${currentImage + 1}`)
+    game.classList.add(`MindMap2Food${currentImage + 1}`)
     imageContainer.appendChild(image)
     game.appendChild(imageContainer)
     currentImage++
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function restartGame() {
-    game.innerHTML = ''
     startGame()
   }
 
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const selectedColor = e.target.id
 
-    if (colorAnswers[`MindMap2Clothes${currentImage}`] === selectedColor) {
+    if (colorAnswers[`MindMap2Food${currentImage}`] === selectedColor) {
       correctAnswers++
       e.target.classList.add('correct')
     } else {
