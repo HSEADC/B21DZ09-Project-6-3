@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const clothesButton = document.querySelector('#clothes')
   const paperButton = document.querySelector('#paper')
   const metalButton = document.querySelector('#metal')
+
   let markers = []
 
   function showMarkers(category) {
@@ -110,15 +111,15 @@ document.addEventListener('DOMContentLoaded', function () {
         (place) => place.description === 'Пластик'
       )
     } else if (category === 'paper') {
-      filteredPlaces = plasticRecyclingPlaces.filter(
+      filteredPlaces = paperRecyclingPlaces.filter(
         (place) => place.description === 'Бумага'
       )
     } else if (category === 'metal') {
-      filteredPlaces = plasticRecyclingPlaces.filter(
+      filteredPlaces = metalRecyclingPlaces.filter(
         (place) => place.description === 'Метал'
       )
     } else if (category === 'clothes') {
-      filteredPlaces = plasticRecyclingPlaces.filter(
+      filteredPlaces = clothesRecyclingPlaces.filter(
         (place) => place.description === 'Одежда'
       )
     }
