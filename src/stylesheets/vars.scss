@@ -118,9 +118,19 @@ a {
   opacity: 0;
 }
 
+.textsize {
+  font-size: 2.6vw !important;
+}
+
 .flexx {
   display: flex;
   justify-content: center;
+  height: 10.4vw !important;
+  padding-left: 0 !important;
+}
+
+.flexx:hover {
+  cursor: pointer;
 }
 // search and filter page cards symbols top backgrounds
 

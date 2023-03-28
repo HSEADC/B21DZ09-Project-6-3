@@ -71,6 +71,9 @@
   @include TitlesProperties;
   width: 30vw;
   border-right: 0px solid black;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 // map page typography and cards
