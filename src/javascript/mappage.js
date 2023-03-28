@@ -14,12 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const categorySelector = document.querySelector('#category-selector')
   const glassButton = document.querySelector('#glass')
+  const plasticButton = document.querySelector('#plastic')
+  const clothesButton = document.querySelector('#clothes')
+  const paperButton = document.querySelector('#paper')
+  const metalButton = document.querySelector('#metal')
   let markers = []
 
   function showMarkers(category) {
-    const filteredPlaces = glassRecyclingPlaces.filter(
-      (place) => place.description === category
-    )
+    let filteredPlaces
+    if (category === 'glass') {
+      filteredPlaces = glassRecyclingPlaces.filter(
+        (place) => place.description === 'Стекло'
+      )
+    } else if (category === 'plastic') {
+      filteredPlaces = plasticRecyclingPlaces.filter(
+        (place) => place.description === 'Пластик'
+      )
+    }
 
     filteredPlaces.forEach((place) => {
       if (!markers.includes(place.name)) {
@@ -49,18 +60,44 @@ document.addEventListener('DOMContentLoaded', function () {
           type: 'circle',
           source: place.name,
           paint: {
-            'circle-color': 'blue',
-            'circle-radius': 10
+            'circle-color': getColor(category),
+            'circle-radius': 10,
+            'circle-stroke-color': 'black',
+            'circle-stroke-width': 1
           }
         })
+
+        function getColor(category) {
+          switch (category) {
+            case 'glass':
+              return 'blue'
+            case 'metal':
+              return 'red'
+            case 'plastic':
+              return 'green'
+            case 'paper':
+              return 'yellow'
+            case 'organic':
+              return 'orange'
+            default:
+              return 'gray'
+          }
+        }
       }
     })
   }
 
   function hideMarkers(category) {
-    const filteredPlaces = glassRecyclingPlaces.filter(
-      (place) => place.description === category
-    )
+    let filteredPlaces
+    if (category === 'glass') {
+      filteredPlaces = glassRecyclingPlaces.filter(
+        (place) => place.description === 'Стекло'
+      )
+    } else if (category === 'plastic') {
+      filteredPlaces = plasticRecyclingPlaces.filter(
+        (place) => place.description === 'Пластик'
+      )
+    }
 
     filteredPlaces.forEach((place) => {
       const index = markers.indexOf(place.name)
@@ -76,27 +113,22 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  categorySelector.addEventListener('change', function () {
-    const category = categorySelector.value
-
-    if (category === 'glasss') {
-      hideMarkers('Колокольчики')
-      showMarkers('Стеклобой')
-    } else if (category === 'bells') {
-      hideMarkers('Стеклобой')
-      showMarkers('Колокольчики')
-    }
-  })
-
   let clickCount = 0
   glassButton.addEventListener('click', function () {
     clickCount++
     if (clickCount % 2 === 0) {
-      hideMarkers('Колокольчики')
-      hideMarkers('Стеклобой')
+      hideMarkers('glass')
     } else {
-      showMarkers('Колокольчики')
-      showMarkers('Стеклобой')
+      showMarkers('glass')
+    }
+  })
+
+  plasticButton.addEventListener('click', function () {
+    clickCount++
+    if (clickCount % 2 === 0) {
+      hideMarkers('plastic')
+    } else {
+      showMarkers('plastic')
     }
   })
 
