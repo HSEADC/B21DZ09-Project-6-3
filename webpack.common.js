@@ -44,7 +44,6 @@ const pages = [
   'lifehackspages/lifehack16',
   'lifehackspages/lifehack17',
   'articlespages/articlehdpe',
-  'articlespages/articleappliances',
   'articlespages/articlecans',
   'articlespages/articlecardboard',
   'articlespages/articlecup',
