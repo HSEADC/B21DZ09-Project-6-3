@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const result = document.getElementById('result')
 
   const colorAnswers = {
-    MindMap1: 'red',
-    MindMap2: 'yellow',
-    MindMap3: 'black',
-    MindMap4: 'blue',
-    MindMap5: 'red',
-    MindMap6: 'blue',
-    MindMap7: 'green',
-    MindMap8: 'red',
-    MindMap9: 'yellow',
-    MindMap10: 'green'
+    MindMap1Waste1: 'red',
+    MindMap1Waste2: 'yellow',
+    MindMap1Waste3: 'black',
+    MindMap1Waste4: 'blue',
+    MindMap1Waste5: 'red',
+    MindMap1Waste6: 'blue',
+    MindMap1Waste7: 'green',
+    MindMap1Waste8: 'red',
+    MindMap1Waste9: 'yellow',
+    MindMap1Waste10: 'green'
   }
   let correctAnswers = 0
   let currentImage = 0
