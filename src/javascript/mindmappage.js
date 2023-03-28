@@ -1,8 +1,11 @@
-import imageSrc from '../mindmapspages/mindmapwaste/1.png'
+import imageSrc1 from '../images/mindmap/mindmapwaste/1.png'
+import imageSrc2 from '../images/mindmap/mindmapwaste/2.png'
 $(document).ready(function () {
   const images = [
     {
-      src: 'imageSrc',
+      src: imageSrc1,
+      answer: 'red',
+      src: imageSrc2,
       answer: 'red'
     }
   ]
@@ -30,6 +33,12 @@ $(document).ready(function () {
       const imageContainer = document.createElement('div')
       const image = document.createElement('img')
       image.src = images[currentImage].src
+      image.style.maxWidth = '100%'
+      image.style.maxHeight = '100%'
+      image.style.objectFit = 'contain'
+      imageContainer.style.overflow = 'hidden'
+      imageContainer.style.maxWidth = '100%'
+      imageContainer.style.maxHeight = '100%'
       imageContainer.appendChild(image)
       game.appendChild(imageContainer)
       currentImage++
