@@ -1,4 +1,4 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
   const input = document.querySelector('.A_SearchInput')
   const cards = document.querySelectorAll('.M_SearchAndFiltersPageCard')
   const categories = document.querySelectorAll('.A_SearchAndFilterCard')
@@ -11,7 +11,7 @@ $(document).ready(function () {
   let activeCategories = []
   let filterArrowClickCount = 0
 
-  filterArrow.addEventListener('click', (event) => {
+  filterArrow.addEventListener('click', function (event) {
     filterArrowClickCount++
     searchAndFilterCards.style.height =
       filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content'
@@ -20,9 +20,9 @@ $(document).ready(function () {
     event.stopPropagation()
   })
 
-  input.addEventListener('input', () => {
+  input.addEventListener('input', function () {
     searchQuery = input.value.trim().toLowerCase()
-    cards.forEach((card) => {
+    cards.forEach(function (card) {
       const keywords = card.getAttribute('data-keywords').toLowerCase()
       if (
         keywords.includes(searchQuery) &&
@@ -38,8 +38,8 @@ $(document).ready(function () {
     })
   })
 
-  categories.forEach((category) => {
-    category.addEventListener('click', () => {
+  categories.forEach(function (category) {
+    category.addEventListener('click', function () {
       const categoryValue = category.getAttribute('data-category').toLowerCase()
       if (activeCategories.includes(categoryValue)) {
         activeCategories.splice(activeCategories.indexOf(categoryValue), 1)
@@ -48,7 +48,7 @@ $(document).ready(function () {
         activeCategories.push(categoryValue)
         category.classList.add('textopacity')
       }
-      cards.forEach((card) => {
+      cards.forEach(function (card) {
         const keywords = card.getAttribute('data-keywords').toLowerCase()
         const cardCategory = card.getAttribute('data-category').toLowerCase()
         if (
