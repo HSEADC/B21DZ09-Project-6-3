@@ -92,6 +92,19 @@
   border-bottom: 1px solid black;
 }
 
+// images and symbols for collections page
+
+@mixin GeneralImageCollectionPageProperties {
+  width: 60vw;
+  height: 51.6vw;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.Q_GeneralImageCollectionPage {
+  @include GeneralImageCollectionPageProperties;
+}
+
 // images and symbols for articles page
 
 .Q_GeneralImageArticlePage {

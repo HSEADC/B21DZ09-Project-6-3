@@ -74,6 +74,15 @@
 
 // article page organisms
 
+.GroupCollectionPage {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// article page organisms
+
 .O_MapPageContainer {
   display: flex;
   flex-direction: column;

@@ -67,6 +67,14 @@
 
 // map page typography and cards
 
+.A_TitleCollectionPage {
+  @include TitlesProperties;
+  width: 30vw;
+  border-right: 0px solid black;
+}
+
+// map page typography and cards
+
 .A_TitleMindMapPage {
   @include TitlesProperties;
   width: 50vw;
