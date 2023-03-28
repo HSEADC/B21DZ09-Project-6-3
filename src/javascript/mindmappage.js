@@ -1,8 +1,8 @@
+import imageSrc from '../mindmapspages/mindmapwaste/1.png'
 $(document).ready(function () {
   const images = [
     {
-      src:
-        'https://sun9-31.userapi.com/impg/4kHfPO6h6VRBozLiiQgHcWVY1TPE6EMPEm0gRQ/j8SiM3J2O1Q.jpg?size=1081x889&quality=95&sign=e65175c81a592237969e1f338c275fe0&type=album',
+      src: 'imageSrc',
       answer: 'red'
     }
   ]
