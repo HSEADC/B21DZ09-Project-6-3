@@ -30,6 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
       filteredPlaces = plasticRecyclingPlaces.filter(
         (place) => place.description === 'Пластик'
       )
+    } else if (category === 'paper') {
+      filteredPlaces = paperRecyclingPlaces.filter(
+        (place) => place.description === 'Макулатура'
+      )
+    } else if (category === 'metal') {
+      filteredPlaces = metalRecyclingPlaces.filter(
+        (place) => place.description === 'Метал'
+      )
+    } else if (category === 'clothes') {
+      filteredPlaces = clothesRecyclingPlaces.filter(
+        (place) => place.description === 'Одежда'
+      )
     }
 
     filteredPlaces.forEach((place) => {
@@ -77,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
               return 'green'
             case 'paper':
               return 'yellow'
-            case 'organic':
+            case 'clothes':
               return 'orange'
             default:
               return 'gray'
@@ -97,6 +109,18 @@ document.addEventListener('DOMContentLoaded', function () {
       filteredPlaces = plasticRecyclingPlaces.filter(
         (place) => place.description === 'Пластик'
       )
+    } else if (category === 'paper') {
+      filteredPlaces = plasticRecyclingPlaces.filter(
+        (place) => place.description === 'Бумага'
+      )
+    } else if (category === 'metal') {
+      filteredPlaces = plasticRecyclingPlaces.filter(
+        (place) => place.description === 'Метал'
+      )
+    } else if (category === 'clothes') {
+      filteredPlaces = plasticRecyclingPlaces.filter(
+        (place) => place.description === 'Одежда'
+      )
     }
 
     filteredPlaces.forEach((place) => {
@@ -114,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   let clickCount = 0
+
   glassButton.addEventListener('click', function () {
     clickCount++
     if (clickCount % 2 === 0) {
@@ -129,6 +154,33 @@ document.addEventListener('DOMContentLoaded', function () {
       hideMarkers('plastic')
     } else {
       showMarkers('plastic')
+    }
+  })
+
+  paperButton.addEventListener('click', function () {
+    clickCount++
+    if (clickCount % 2 === 0) {
+      hideMarkers('paper')
+    } else {
+      showMarkers('paper')
+    }
+  })
+
+  metalButton.addEventListener('click', function () {
+    clickCount++
+    if (clickCount % 2 === 0) {
+      hideMarkers('metal')
+    } else {
+      showMarkers('metal')
+    }
+  })
+
+  clothesButton.addEventListener('click', function () {
+    clickCount++
+    if (clickCount % 2 === 0) {
+      hideMarkers('clothes')
+    } else {
+      showMarkers('clothes')
     }
   })
 
