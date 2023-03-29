@@ -1,15 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // задаем токен
-  var accessToken =
-    'pk.eyJ1Ijoic21zYWxpc2NoZXZhMjIiLCJhIjoiY2xmNzF4eWZsMDJzODQ0bnZnNXFiYmd0cyJ9.TXlxfRR7GHif7rBbRWqOZw'
+  mapboxgl.accessToken =
+    'pk.eyJ1Ijoic21zYWxpc2NoZXZhMjIiLCJhIjoiY2xmNzF4eWZsMDJzODQ0bnZnNXFiYmd0cyJ9.TXlxfRR7GHif7rBbRWqOZw' // замените на свой токен Mapbox
 
-  // создаем новый объект карты
-  var map = new mapboxgl.Map({
+  const map = new mapboxgl.Map({
     container: document.querySelector('.Q_Map'),
     style: 'mapbox://styles/smsalischeva22/clf78rxpu00do01mltwb5aj5r',
     center: [37.618423, 55.751244],
-    zoom: 10,
-    accessToken: accessToken
+    zoom: 10
   })
 
   const categorySelector = document.querySelector('#category-selector')
@@ -33,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       )
     } else if (category === 'paper') {
       filteredPlaces = paperRecyclingPlaces.filter(
-        (place) => place.description === 'Макулатура'
+        (place) => place.description === 'Бумага'
       )
     } else if (category === 'metal') {
       filteredPlaces = metalRecyclingPlaces.filter(
@@ -74,26 +71,38 @@ document.addEventListener('DOMContentLoaded', function () {
           source: place.name,
           paint: {
             'circle-color': getColor(category),
-            'circle-radius': 10,
+            'circle-radius': 12,
             'circle-stroke-color': 'black',
             'circle-stroke-width': 1
           }
         })
 
+        map.on('click', place.name, function (e) {
+          const coordinates = e.features[0].geometry.coordinates.slice()
+          const name = e.features[0].properties.title
+
+          const markerName = document.createElement('h4')
+          markerName.textContent = name
+
+          const M_MapPagePointInformation = document.querySelector(
+            '.M_MapPagePointInformation'
+          )
+          M_MapPagePointInformation.innerHTML = ''
+          M_MapPagePointInformation.appendChild(markerName)
+        })
+
         function getColor(category) {
           switch (category) {
             case 'glass':
-              return 'blue'
+              return '#1ebcb1'
             case 'metal':
-              return 'red'
+              return '#f45e4e'
             case 'plastic':
-              return 'green'
+              return '#b0d3ff'
             case 'paper':
-              return 'yellow'
+              return '#a15fff'
             case 'clothes':
-              return 'orange'
-            default:
-              return 'gray'
+              return '#ece700'
           }
         }
       }
@@ -138,11 +147,15 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  let clickCount = 0
+  let clickCount1 = 0
+  let clickCount2 = 0
+  let clickCount3 = 0
+  let clickCount4 = 0
+  let clickCount5 = 0
 
   glassButton.addEventListener('click', function () {
-    clickCount++
-    if (clickCount % 2 === 0) {
+    clickCount1++
+    if (clickCount1 % 2 === 0) {
       hideMarkers('glass')
     } else {
       showMarkers('glass')
@@ -150,8 +163,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   plasticButton.addEventListener('click', function () {
-    clickCount++
-    if (clickCount % 2 === 0) {
+    clickCount2++
+    if (clickCount2 % 2 === 0) {
       hideMarkers('plastic')
     } else {
       showMarkers('plastic')
@@ -159,8 +172,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   paperButton.addEventListener('click', function () {
-    clickCount++
-    if (clickCount % 2 === 0) {
+    clickCount3++
+    if (clickCount3 % 2 === 0) {
       hideMarkers('paper')
     } else {
       showMarkers('paper')
@@ -168,8 +181,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   metalButton.addEventListener('click', function () {
-    clickCount++
-    if (clickCount % 2 === 0) {
+    clickCount4++
+    if (clickCount4 % 2 === 0) {
       hideMarkers('metal')
     } else {
       showMarkers('metal')
@@ -177,8 +190,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   clothesButton.addEventListener('click', function () {
-    clickCount++
-    if (clickCount % 2 === 0) {
+    clickCount5++
+    if (clickCount5 % 2 === 0) {
       hideMarkers('clothes')
     } else {
       showMarkers('clothes')
