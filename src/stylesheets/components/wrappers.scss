@@ -171,6 +171,12 @@
   flex-direction: row;
 }
 
+.W_MapPagePointInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .W_SearchAndFilterCards:hover {
   cursor: pointer;
 }

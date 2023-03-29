@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     center: [37.618423, 55.751244],
     zoom: 10
   })
-
+  const class1 = document.querySelector('.A_TitleAuxiliaryMap')
+  const class2 = document.querySelector('.A_TextDependentMap')
   const categorySelector = document.querySelector('#category-selector')
   const glassButton = document.querySelector('#glass')
   const plasticButton = document.querySelector('#plastic')
@@ -84,11 +85,11 @@ document.addEventListener('DOMContentLoaded', function () {
           const markerName = document.createElement('h4')
           markerName.textContent = name
 
-          const M_MapPagePointInformation = document.querySelector(
-            '.M_MapPagePointInformation'
+          const A_TextImportantBottomMap = document.querySelector(
+            '.A_TextImportantBottomMap'
           )
-          M_MapPagePointInformation.innerHTML = ''
-          M_MapPagePointInformation.appendChild(markerName)
+          A_TextImportantBottomMap.innerHTML = ''
+          A_TextImportantBottomMap.appendChild(markerName)
         })
 
         function getColor(category) {
@@ -147,55 +148,99 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  let clickCount1 = 0
-  let clickCount2 = 0
-  let clickCount3 = 0
-  let clickCount4 = 0
-  let clickCount5 = 0
-
   glassButton.addEventListener('click', function () {
-    clickCount1++
-    if (clickCount1 % 2 === 0) {
-      hideMarkers('glass')
-    } else {
-      showMarkers('glass')
+    showMarkers('glass')
+    hideMarkers('plastic')
+    hideMarkers('paper')
+    hideMarkers('metal')
+    hideMarkers('clothes')
+
+    const A_TextImportantBottomMap = document.querySelector(
+      '.A_TextImportantBottomMap'
+    )
+    while (A_TextImportantBottomMap.firstChild) {
+      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
     }
+
+    class1.textContent = 'Утилизация стекла'
+    class2.textContent =
+      'Правильная утилизация стекла позволит его переработать и использовать повторно, что позволяет экономить на добыче новых сырьевых материалов и снижать негативное воздействие на окружающую среду. Кроме того, утилизация стекла может сократить количество отходов на свалках и уменьшить затраты на сбор и обработку мусора.'
   })
 
   plasticButton.addEventListener('click', function () {
-    clickCount2++
-    if (clickCount2 % 2 === 0) {
-      hideMarkers('plastic')
-    } else {
-      showMarkers('plastic')
+    hideMarkers('glass')
+    showMarkers('plastic')
+    hideMarkers('paper')
+    hideMarkers('metal')
+    hideMarkers('clothes')
+
+    const A_TextImportantBottomMap = document.querySelector(
+      '.A_TextImportantBottomMap'
+    )
+    while (A_TextImportantBottomMap.firstChild) {
+      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
     }
+
+    class1.textContent = 'Утилизация пластика'
+    class2.textContent =
+      'Утилизация пластика является важным экологическим вопросом, поскольку пластиковые отходы могут нанести серьезный вред окружающей среде и живым организмам. Некоторые виды пластика могут разлагаться на протяжении сотен лет, загрязняя водные и наземные экосистемы, что может привести к гибели животных и разрушить их местообитаний.'
   })
 
   paperButton.addEventListener('click', function () {
-    clickCount3++
-    if (clickCount3 % 2 === 0) {
-      hideMarkers('paper')
-    } else {
-      showMarkers('paper')
+    hideMarkers('glass')
+    hideMarkers('plastic')
+    showMarkers('paper')
+    hideMarkers('metal')
+    hideMarkers('clothes')
+
+    const A_TextImportantBottomMap = document.querySelector(
+      '.A_TextImportantBottomMap'
+    )
+    while (A_TextImportantBottomMap.firstChild) {
+      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
     }
+
+    class1.textContent = 'Утилизация бумаги'
+    class2.textContent =
+      'Бумага производится из древесных волокон, которые не только являются ограниченным ресурсом, но и их добыча приводит к вырубке лесов, уменьшению биоразнообразия и изменению климата. Кроме того, складирование неиспользуемой бумаги на свалках приводит к загрязнению почвы и воды, а также выбросу парниковых газов. Утилизация бумаги позволяет повторно использовать ее в качестве сырья для производства новой бумаги, что сокращает потребление древесных ресурсов. Кроме того, утилизация бумаги помогает сократить объем отходов, которые попадают на свалки'
   })
 
   metalButton.addEventListener('click', function () {
-    clickCount4++
-    if (clickCount4 % 2 === 0) {
-      hideMarkers('metal')
-    } else {
-      showMarkers('metal')
+    hideMarkers('glass')
+    hideMarkers('plastic')
+    hideMarkers('paper')
+    showMarkers('metal')
+    hideMarkers('clothes')
+
+    const A_TextImportantBottomMap = document.querySelector(
+      '.A_TextImportantBottomMap'
+    )
+    while (A_TextImportantBottomMap.firstChild) {
+      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
     }
+
+    class1.textContent = 'Утилизация металла'
+    class2.textContent =
+      'Металлы являются ценными ресурсами, которые могут быть переработаны и использованы повторно, вместо того чтобы быть выброшенными на свалку и загрязнять окружающую среду. Утилизация металла также позволяет сэкономить энергию и ресурсы, необходимые для производства нового металла. В процессе переработки металла происходит снижение выбросов парниковых газов и других вредных веществ, которые могут негативно влиять на окружающую среду.'
   })
 
   clothesButton.addEventListener('click', function () {
-    clickCount5++
-    if (clickCount5 % 2 === 0) {
-      hideMarkers('clothes')
-    } else {
-      showMarkers('clothes')
+    hideMarkers('glass')
+    hideMarkers('plastic')
+    hideMarkers('paper')
+    hideMarkers('metal')
+    showMarkers('clothes')
+
+    const A_TextImportantBottomMap = document.querySelector(
+      '.A_TextImportantBottomMap'
+    )
+    while (A_TextImportantBottomMap.firstChild) {
+      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
     }
+
+    class1.textContent = 'Утилизация одежды'
+    class2.textContent =
+      'Утилизация одежды является важной практикой, поскольку она позволяет снизить воздействие текстильной промышленности на окружающую среду. Каждый год миллионы тонн одежды выбрасываются на свалки, где они разлагаются на протяжении многих лет, загрязняя землю, воду и воздух. Кроме того, большинство одежды содержит синтетические материалы, которые не могут быть переработаны и в конечном итоге становятся микропластиком, попадающим в океаны и угрожающим жизни морских животных.'
   })
 
   // работа со станциями метро в мск

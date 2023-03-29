@@ -91,6 +91,11 @@
   width: 95%;
 }
 
+.A_TitleAuxiliaryMap {
+  @include TitlesAuxiliaryProperties;
+  width: 95%;
+}
+
 // main page titles typography
 
 .A_TitleMainPage {
@@ -136,6 +141,19 @@
   font-weight: 500;
   border-bottom: 12px solid black;
   padding-bottom: 2vw;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+h4 {
+  @include TextPropertiesSmall;
+  font-weight: 700;
+  padding-top: 2vw;
+  border-top: 4px solid black;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .A_TextImportant {
@@ -153,6 +171,9 @@
   -ms-hyphens: auto;
 }
 
+.A_TextImportantBottomMap {
+}
+
 .A_TextImportantList {
   @include TextPropertiesSmall;
   font-weight: 700;
@@ -167,6 +188,14 @@
 }
 
 .A_TextDependent {
+  @include TextPropertiesSmall;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.A_TextDependentMap {
   @include TextPropertiesSmall;
   font-weight: 400;
   -moz-hyphens: auto;
