@@ -42,6 +42,7 @@
 .A_TitleLifehackPage {
   @include TitlesProperties;
   width: 41.7vw;
+  border-left: 0;
 }
 
 // search and filter page titles typography
