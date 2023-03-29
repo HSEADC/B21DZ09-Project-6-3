@@ -149,11 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   glassButton.addEventListener('click', function () {
-    showMarkers('glass')
     hideMarkers('plastic')
     hideMarkers('paper')
     hideMarkers('metal')
     hideMarkers('clothes')
+    showMarkers('glass')
 
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
@@ -169,10 +169,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   plasticButton.addEventListener('click', function () {
     hideMarkers('glass')
-    showMarkers('plastic')
     hideMarkers('paper')
     hideMarkers('metal')
     hideMarkers('clothes')
+    showMarkers('plastic')
 
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
@@ -189,9 +189,9 @@ document.addEventListener('DOMContentLoaded', function () {
   paperButton.addEventListener('click', function () {
     hideMarkers('glass')
     hideMarkers('plastic')
-    showMarkers('paper')
     hideMarkers('metal')
     hideMarkers('clothes')
+    showMarkers('paper')
 
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
@@ -209,8 +209,8 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('glass')
     hideMarkers('plastic')
     hideMarkers('paper')
-    showMarkers('metal')
     hideMarkers('clothes')
+    showMarkers('metal')
 
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
