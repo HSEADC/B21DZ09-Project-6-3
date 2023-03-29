@@ -46,6 +46,22 @@
   border: 1px solid black;
 }
 
+// images and symbols for lifehacks page
+
+.Q_HeaderEmpty {
+  width: 100vw;
+  height: 4.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-image: url(./images/header/LogoImage.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Q_GeneralImageLifehackPage {
   @include GeneralImageLifehackPageProperties;
 }
