@@ -1,30 +1,4 @@
-// titles mixins
-
-@mixin TitlesProperties {
-  font-family: 'DrukSuper';
-  text-transform: uppercase;
-  letter-spacing: -3%;
-  font-size: 2.77vw;
-  line-height: 4.16vw;
-  display: flex;
-  align-items: center;
-  padding: 1.2vw 0 0.8vw 1.5vw;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
-
-@mixin TitlesAuxiliaryProperties {
-  font-family: 'DrukSuper';
-  text-transform: uppercase;
-  letter-spacing: -3%;
-  font-size: 1.73vw;
-  line-height: 2.08vw;
-}
-
-@mixin TitlesAuxiliaryCardsProperties {
-  display: flex;
-  align-items: center;
-}
+@import 'mixins';
 
 // article page titles typography
 
@@ -117,24 +91,6 @@
   @include TitlesAuxiliaryCardsProperties;
   width: 47.5vw;
 }
-
-// text mixins
-
-@mixin TextPropertiesBig {
-  font-family: 'Inter';
-  font-size: 1.73vw;
-  line-height: 2.43vw;
-  letter-spacing: -3%;
-}
-
-@mixin TextPropertiesSmall {
-  font-family: 'Inter';
-  font-size: 1.38vw;
-  line-height: 2.08vw;
-  letter-spacing: -3%;
-}
-
-// text typography
 
 .A_TextImportantTop {
   @include TextPropertiesSmall;
@@ -319,12 +275,6 @@ h4 {
   all: initial;
   @include TextPropertiesSmall;
   width: 10vw;
-}
-
-// lines mixins
-
-@mixin Line {
-  background: black;
 }
 
 // lines

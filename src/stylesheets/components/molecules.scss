@@ -1,13 +1,4 @@
-// mixins for footer
-
-@mixin FooterCardsProperties {
-  height: 12vw;
-  padding: 1.5vw 1.5vw 1.5vw 1.5vw;
-  border-bottom: 1px solid #f4f4f4;
-  border-left: 1px solid #f4f4f4;
-}
-
-// molecules for footer
+@import 'mixins';
 
 .M_FooterCardSocialNetworks {
   @include FooterCardsProperties;
