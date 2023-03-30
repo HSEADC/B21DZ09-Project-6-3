@@ -41,6 +41,16 @@
   width: 100vw;
 }
 
+// article page organisms
+
+.O_ArticlePageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 62vw;
+  width: 100vw;
+}
+
 // mind map page organisms
 
 .O_MindMapPageContainer {
