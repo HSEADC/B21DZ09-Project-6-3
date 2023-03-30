@@ -127,7 +127,8 @@
 //search and filter page
 
 .C_SearchAndFiltersPageCards {
-  border: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   overflow-y: auto;
   height: 55.8vw;
   display: flex;
