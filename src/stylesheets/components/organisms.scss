@@ -1,9 +1,5 @@
 // header organisms
 
-.O_Header {
-  display: flex;
-}
-
 // footer organisms
 
 .O_Footer {
@@ -24,9 +20,40 @@
   width: 100vw;
 }
 
+// search and filter page organisms
+
+.O_SearchAndFilterContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 62vw;
+  width: 100vw;
+}
+
 // lifehack page organisms
 
 .O_LifehackPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 62vw;
+  width: 100vw;
+}
+
+// article page organisms
+
+.O_ArticlePageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 62vw;
+  width: 100vw;
+}
+
+// article page organisms
+
+.O_CollectionPageContainer {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -45,7 +72,7 @@
   width: 100vw;
 }
 
-.GroupLifehackPage {
+.C_LifehackPageInfo {
   width: 58.4vw;
   display: flex;
   flex-direction: row;
@@ -54,8 +81,17 @@
 
 // article page organisms
 
-.GroupArticlePage {
+.C_ArticlePageInfo {
   width: 66.6vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+// article page organisms
+
+.C_CollectionPageInfo {
+  width: 60vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

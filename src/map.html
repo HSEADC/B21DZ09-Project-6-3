@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <meta property="og:url" content="https://retrash.adc.ac" />
     <meta property="og:image" content="https://retrash.adc.ac/share/test.png" />
 
@@ -13,46 +12,32 @@
   </head>
 
   <body>
-    <div class="SO_MainPage">
-      <div class="O_Header">
-        <div class="W_Search"></div>
-        <div class="W_Logo">
-          <img
-            class="Q_LogoIcon"
-            src="images/header/LogoImage.svg"
-            alt="LogoImage"
-          />
-        </div>
-        <div class="W_BurgerMenu">
-          <img
-            class="Q_BurgerMenuIcon"
-            src="images/header/BurgerMenuImage.svg"
-            alt="BurgerMenuImage"
-          />
-        </div>
-      </div>
+    <div class="SO_MapPage">
+      <a href="index.html"> <div class="Q_HeaderEmpty"></div></a>
       <div class="O_MapPageContainer">
         <div class="A_TitleMapPage">
           ЧТО ИМЕННО ВЫ ХОТИТЕ СДАТЬ?
         </div>
         <div class="W_MapChooseCards">
-          <div id="paper" class="A_MapPageChooseCard">Бумага</div>
-          <div id="glass" class="A_MapPageChooseCard">Стекло</div>
-          <div id="plastic" class="A_MapPageChooseCard">Пластик</div>
-          <div id="clothes" class="A_MapPageChooseCard">Одежда</div>
-          <div id="metal" class="A_MapPageChooseCard">Металл</div>
+          <div id="paper" class="A_MapPageChooseCard borderleftmap violet">
+            Бумага
+          </div>
+          <div id="glass" class="A_MapPageChooseCard turquoise">Стекло</div>
+          <div id="plastic" class="A_MapPageChooseCard lightblue">Пластик</div>
+          <div id="clothes" class="A_MapPageChooseCard yellow">Одежда</div>
+          <div id="metal" class="A_MapPageChooseCard orange">Металл</div>
         </div>
         <div class="C_MapSelectAndPointInformation">
-          <div class="M_MapPageSelect">
-            <select id="category-selector" multiple>
-              <option value="glasss">Стеклобой</option>
-              <option value="bells">Колокольчики</option>
-            </select>
+          <div class="M_MapPagePointInformation">
+            <div class="W_MapPagePointInformation">
+              <div class="A_TitleAuxiliaryMap"></div>
+              <div class="A_TextDependentMap paddingtop1"></div>
+            </div>
+            <div class="A_TextImportantBottomMap"></div>
           </div>
-          <div class="M_MapPagePointInformation"></div>
         </div>
         <div class="Q_Map"></div>
-        <div class="wrapper">
+        <div class="W_MapInput">
           <div class="A_MapPageInput">
             <input
               type="text"
@@ -60,42 +45,37 @@
               placeholder="Введите название станции метро"
             />
           </div>
-          <button class="A_MapPageFindButton">Показать</button>
+          <button class="A_MapPageFindButton borderleft">Показать</button>
         </div>
       </div>
       <div class="O_Footer">
         <div class="W_FooterCardProducers">
           <div class="A_TextIndependent white">ИЗГОТОВИТЕЛИ</div>
+          <div class="A_TextDependent paddingtop2 white">
+            Олейниченко Ася
+          </div>
           <div class="A_TextDependent white">
-            Олейниченко Ася <br />Шестакова Станислава
+            Шестакова Станислава
           </div>
         </div>
         <div class="W_FooterCardCurators">
           <div class="A_TextIndependent white">КУРАТОРЫ</div>
           <div class="Q_ABCImage"></div>
-          <div class="A_TextDependent white">Захар День<br />Соня Каем</div>
+          <div class="A_TextDependent paddingtop2 white">Захар День</div>
+          <div class="A_TextDependent white">Соня Каем</div>
         </div>
         <div class="M_FooterCardSocialNetworks">
           <div class="A_TextIndependent white">МЫ В СОЦ СЕТЯХ</div>
           <div class="W_FooterSymbolsSocialNetworks">
             <a href="https://t.me/TRASHRETRASH">
-              <img
-                class="Q_SocialNetworkIcon"
-                src="images/footer/Telegram.svg"
-                alt="Telegram"
-            /></a>
+              <div class="Q_SocialNetworkIconTelegram"></div
+            ></a>
             <a href="https://instagram.com/_re_trash_?igshid=YmMyMTA2M2Y="
-              ><img
-                class="Q_SocialNetworkIcon"
-                src="images/footer/Instagram.svg"
-                alt="Instagram"
-            /></a>
+              ><div class="Q_SocialNetworkIconInstagram"></div
+            ></a>
             <a href="https://vk.com/club216840635"
-              ><img
-                class="Q_SocialNetworkIcon"
-                src="images/footer/Vkontakte.svg"
-                alt="Vkontakte"
-            /></a>
+              ><div class="Q_SocialNetworkIconVkontakte"></div
+            ></a>
           </div>
         </div>
         <div class="W_FooterCardHSE">
@@ -106,5 +86,10 @@
     </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
     <script src="javascript/mappage.js"></script>
+    <script src="javascript/maprecyclingplases/glass.js"></script>
+    <script src="javascript/maprecyclingplases/plastic.js"></script>
+    <script src="javascript/maprecyclingplases/paper.js"></script>
+    <script src="javascript/maprecyclingplases/metal.js"></script>
+    <script src="javascript/maprecyclingplases/clothes.js"></script>
   </body>
 </html>

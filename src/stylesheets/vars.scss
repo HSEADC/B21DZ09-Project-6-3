@@ -3,3 +3,1103 @@
   --black: black;
   --body-padding: 1.875vw;
 }
+
+//background colors
+
+.yellow {
+  background-color: #ece700;
+}
+
+.orange {
+  background-color: #f45e4e;
+}
+
+.blue {
+  background-color: #0093ff;
+}
+
+.violet {
+  background-color: #a15fff;
+}
+
+.lightblue {
+  background-color: #b0d3ff;
+}
+
+.turquoise {
+  background-color: #1ebcb1;
+}
+
+//fonts colors
+
+.white {
+  color: #f4f4f4;
+}
+
+//opacity
+
+.opacity70 {
+  opacity: 70%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
+//paddings and margins
+
+.marginim {
+  margin: 0;
+}
+
+.margintop3 {
+  margin-top: 3vw;
+}
+
+.paddingtop1 {
+  padding-top: 1vw;
+}
+
+.paddingtop2 {
+  padding-top: 2vw;
+}
+
+.paddingtop3 {
+  padding-top: 3vw;
+}
+
+.paddingbot2 {
+  padding-bottom: 3vw;
+}
+
+.borderleftmap {
+  border-left: 0;
+}
+
+#category-selector {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 10vw;
+  letter-spacing: -3%;
+  appearance: none;
+}
+
+.textopacity {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.borderleft {
+  border-left: 1px solid #000000;
+}
+
+.borderright {
+  border-right: 1px solid #000000;
+}
+
+.bordertop {
+  border-top: 1px solid #000000;
+}
+
+.borderbottom {
+  border-bottom: 1px solid #000000 !important;
+}
+
+.addfilterarrow {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1.5vw 1.5vw 1vw 1.5vw;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  flex: 0 !important;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.textsize {
+  font-size: 2.6vw !important;
+}
+
+.flexx {
+  display: flex;
+  justify-content: center;
+  height: 10.4vw !important;
+  padding-left: 0 !important;
+}
+
+.flexx:hover {
+  cursor: pointer;
+}
+// search and filter page cards symbols top backgrounds
+
+.KruzhokTop {
+  background-image: url(./images/filter/TopSymbols/KruzhokTop.svg);
+  background-size: cover;
+}
+// search and filter page cards symbols bottom backgrounds
+
+.KruzhokBottom {
+  background-image: url(./images/filter/BottomSymbols/KruzhokBottom.svg);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter page cards symbols top backgrounds
+
+.KruzhokTop {
+  background-image: url(./images/filter/TopSymbols/KruzhokTop.svg);
+  background-size: cover;
+}
+// search and filter page cards symbols bottom backgrounds
+
+.KruzhokBottom {
+  background-image: url(./images/filter/BottomSymbols/KruzhokBottom.svg);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter page cards symbols top backgrounds
+
+.KruzhokTop {
+  background-image: url(./images/filter/TopSymbols/KruzhokTop.svg);
+  background-size: cover;
+}
+// search and filter page cards symbols bottom backgrounds
+
+.KruzhokBottom {
+  background-image: url(./images/filter/BottomSymbols/KruzhokBottom.svg);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter page cards symbols top backgrounds
+
+.Top {
+  background-image: url(./images/filter/TopSymbols/top.png);
+  background-size: cover;
+  border: 1px solid #000000;
+}
+// search and filter page cards symbols bottom backgrounds
+
+.ClothesBottom {
+  background-image: url(./images/filter/BottomSymbols/clothes.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.FurnitureBottom {
+  background-image: url(./images/filter/BottomSymbols/furniture.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+.OtherBottom {
+  background-image: url(./images/filter/BottomSymbols/other.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+.CleaningBottom {
+  background-image: url(./images/filter/BottomSymbols/cleaning.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+.CookingBottom {
+  background-image: url(./images/filter/BottomSymbols/cooking.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter page cards symbols bottom backgrounds
+
+.HouseBottom {
+  background-image: url(./images/filter/articles/BottomSymbols/house.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.GlassBottom {
+  background-image: url(./images/filter/articles/BottomSymbols/glass.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.FoodBottom {
+  background-image: url(./images/filter/articles/BottomSymbols/food.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.PlasticBottom {
+  background-image: url(./images/filter/articles/BottomSymbols/plastic.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.PaperBottom {
+  background-image: url(./images/filter/articles/BottomSymbols/paper.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.MindTrashBottom {
+  background-image: url(./images/filter/mindmaps/BottomSymbols/1.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.MindFoodBottom {
+  background-image: url(./images/filter/mindmaps/BottomSymbols/2.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.MindClothesBottom {
+  background-image: url(./images/filter/mindmaps/BottomSymbols/3.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter page cards symbols bottom backgrounds
+
+.BookBottom {
+  background-image: url(./images/filter/collections/BottomSymbols/books.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.ShopBottom {
+  background-image: url(./images/filter/collections/BottomSymbols/shops.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.PodcastBottom {
+  background-image: url(./images/filter/collections/BottomSymbols/podcasts.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+.FilmBottom {
+  background-image: url(./images/filter/collections/BottomSymbols/films.png);
+  background-size: 100%;
+  border: 1px solid #000000;
+}
+
+// search and filter lifehacks page cards backgrounds
+
+.KruzhokImage {
+  background-image: url(./images/filter/background/Kruzhok.png);
+  background-size: 105%;
+}
+
+.KruzhokImage:hover {
+  background-image: url(./images/filter/background/Kruzhok1.png);
+  background-size: 105%;
+}
+
+.FoodPackaging {
+  background-image: url(./images/filter/background/foodpackaging.png);
+  background-size: 105%;
+}
+
+.FoodPackaging:hover {
+  background-image: url(./images/filter/background/foodpackaging1.png);
+  background-size: 105%;
+}
+
+.MindfulEating {
+  background-image: url(./images/filter/background/mindfuleating.png);
+  background-size: 105%;
+}
+
+.MindfulEating:hover {
+  background-image: url(./images/filter/background/mindfuleating1.png);
+  background-size: 105%;
+}
+
+.StorageOfBread {
+  background-image: url(./images/filter/background/StorageOfBread.png);
+  background-size: 105%;
+}
+
+.StorageOfBread:hover {
+  background-image: url(./images/filter/background/StorageOfBread1.png);
+  background-size: 105%;
+}
+
+.CheeseStorage {
+  background-image: url(./images/filter/background/CheeseStorage.png);
+  background-size: 105%;
+}
+
+.CheeseStorage:hover {
+  background-image: url(./images/filter/background/CheeseStorage1.png);
+  background-size: 105%;
+}
+
+.MeatStorage {
+  background-image: url(./images/filter/background/MeatStorage.png);
+  background-size: 105%;
+}
+
+.MeatStorage:hover {
+  background-image: url(./images/filter/background/MeatStorage1.png);
+  background-size: 105%;
+}
+
+.VegelablesStorage {
+  background-image: url(./images/filter/background/VegelablesStorage.png);
+  background-size: 105%;
+}
+
+.VegelablesStorage:hover {
+  background-image: url(./images/filter/background/VegelablesStorage1.png);
+  background-size: 105%;
+}
+
+.Kitchen {
+  background-image: url(./images/filter/background/Kitchen.png);
+  background-size: 105%;
+}
+
+.Kitchen:hover {
+  background-image: url(./images/filter/background/Kitchen1.png);
+  background-size: 105%;
+}
+
+.ClothesManufacture {
+  background-image: url(./images/filter/background/ClothesManufacture.png);
+  background-size: 105%;
+}
+
+.ClothesManufacture:hover {
+  background-image: url(./images/filter/background/ClothesManufacture1.png);
+  background-size: 105%;
+}
+
+.ShoeCare {
+  background-image: url(./images/filter/background/ShoeCare.png);
+  background-size: 105%;
+}
+
+.ShoeCare:hover {
+  background-image: url(./images/filter/background/ShoeCare1.png);
+  background-size: 105%;
+}
+
+.BagCare {
+  background-image: url(./images/filter/background/BagCare.png);
+  background-size: 105%;
+}
+
+.BagCare:hover {
+  background-image: url(./images/filter/background/BagCare1.png);
+  background-size: 105%;
+}
+
+.ClothesCare {
+  background-image: url(./images/filter/background/ClothesCare.png);
+  background-size: 105%;
+}
+
+.ClothesCare:hover {
+  background-image: url(./images/filter/background/ClothesCare1.png);
+  background-size: 105%;
+}
+
+.FurnitureCare {
+  background-image: url(./images/filter/background/FurnitureCare.png);
+  background-size: 105%;
+}
+
+.FurnitureCare:hover {
+  background-image: url(./images/filter/background/FurnitureCare1.png);
+  background-size: 105%;
+}
+
+.FurnitureRules {
+  background-image: url(./images/filter/background/FurnitureRules.png);
+  background-size: 105%;
+}
+
+.FurnitureRules:hover {
+  background-image: url(./images/filter/background/FurnitureRules1.png);
+  background-size: 105%;
+}
+
+.CleaningRules {
+  background-image: url(./images/filter/background/CleaningRules.png);
+  background-size: 105%;
+}
+
+.CleaningRules:hover {
+  background-image: url(./images/filter/background/CleaningRules1.png);
+  background-size: 105%;
+}
+
+.FloorCleaning {
+  background-image: url(./images/filter/background/FloorCleaning.png);
+  background-size: 105%;
+}
+
+.FloorCleaning:hover {
+  background-image: url(./images/filter/background/FloorCleaning1.png);
+  background-size: 105%;
+}
+
+.DustCleaning {
+  background-image: url(./images/filter/background/DustCleaning.png);
+  background-size: 105%;
+}
+
+.DustCleaning:hover {
+  background-image: url(./images/filter/background/DustCleaning1.png);
+  background-size: 105%;
+}
+
+// search and filter articles page cards backgrounds
+
+.HDPE {
+  background-image: url(./images/filter/articles/background/HDPE.png);
+  background-size: 100%;
+}
+
+.HDPE:hover {
+  background-image: url(./images/filter/articles/background/HDPE1.png);
+  background-size: 100%;
+}
+
+.Sponge {
+  background-image: url(./images/filter/articles/background/Sponge.png);
+  background-size: 100%;
+}
+
+.Sponge:hover {
+  background-image: url(./images/filter/articles/background/Sponge1.png);
+  background-size: 100%;
+}
+
+.Lid {
+  background-image: url(./images/filter/articles/background/lid.png);
+  background-size: 105%;
+}
+
+.Lid:hover {
+  background-image: url(./images/filter/articles/background/lid1.png);
+  background-size: 105%;
+}
+
+.PlasticBag {
+  background-image: url(./images/filter/articles/background/PlasticBag.png);
+  background-size: 100%;
+}
+
+.PlasticBag:hover {
+  background-image: url(./images/filter/articles/background/PlasticBag1.png);
+  background-size: 100%;
+}
+
+.Сardboard {
+  background-image: url(./images/filter/articles/background/Сardboard.png);
+  background-size: 100%;
+}
+
+.Сardboard:hover {
+  background-image: url(./images/filter/articles/background/Сardboard1.png);
+  background-size: 100%;
+}
+
+.Banana {
+  background-image: url(./images/filter/articles/background/Banana.png);
+  background-size: 100%;
+}
+
+.Banana:hover {
+  background-image: url(./images/filter/articles/background/Banana1.png);
+  background-size: 100%;
+}
+
+.Cans {
+  background-image: url(./images/filter/articles/background/Cans.png);
+  background-size: 98%;
+}
+
+.Cans:hover {
+  background-image: url(./images/filter/articles/background/Cans1.png);
+  background-size: 98%;
+}
+
+.Bottle {
+  background-image: url(./images/filter/articles/background/Bottle.png);
+  background-size: 100%;
+}
+
+.Bottle:hover {
+  background-image: url(./images/filter/articles/background/Bottle1.png);
+  background-size: 100%;
+}
+
+.Coffee {
+  background-image: url(./images/filter/articles/background/Coffee.png);
+  background-size: 105%;
+}
+
+.Coffee:hover {
+  background-image: url(./images/filter/articles/background/Coffee1.png);
+  background-size: 105%;
+}
+
+.Shoe {
+  background-image: url(./images/filter/articles/background/Shoe.png);
+  background-size: 105%;
+}
+
+.Shoe:hover {
+  background-image: url(./images/filter/articles/background/Shoe1.png);
+  background-size: 105%;
+}
+
+.Zero {
+  background-image: url(./images/filter/collections/background/Zero.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Zero:hover {
+  background-image: url(./images/filter/collections/background/Zero1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Waste {
+  background-image: url(./images/filter/collections/background/Waste.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Waste:hover {
+  background-image: url(./images/filter/collections/background/Waste1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Future {
+  background-image: url(./images/filter/collections/background/Future.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Future:hover {
+  background-image: url(./images/filter/collections/background/Future1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Eco {
+  background-image: url(./images/filter/collections/background/Eco.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Eco:hover {
+  background-image: url(./images/filter/collections/background/Eco1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Greta {
+  background-image: url(./images/filter/collections/background/Greta.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Greta:hover {
+  background-image: url(./images/filter/collections/background/Greta1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Story {
+  background-image: url(./images/filter/collections/background/Story.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Story:hover {
+  background-image: url(./images/filter/collections/background/Story1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Cheski {
+  background-image: url(./images/filter/collections/background/Cheski.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Cheski:hover {
+  background-image: url(./images/filter/collections/background/Cheski1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Joneses {
+  background-image: url(./images/filter/collections/background/Joneses.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Joneses:hover {
+  background-image: url(./images/filter/collections/background/Joneses1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Stuff {
+  background-image: url(./images/filter/collections/background/Stuff.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Stuff:hover {
+  background-image: url(./images/filter/collections/background/Stuff1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Zelenka {
+  background-image: url(./images/filter/collections/background/Zelenka.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Zelenka:hover {
+  background-image: url(./images/filter/collections/background/Zelenka1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Useful {
+  background-image: url(./images/filter/collections/background/Useful.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Useful:hover {
+  background-image: url(./images/filter/collections/background/Useful1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Pokolenie {
+  background-image: url(./images/filter/collections/background/Pokolenie.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Pokolenie:hover {
+  background-image: url(./images/filter/collections/background/Pokolenie1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Year {
+  background-image: url(./images/filter/collections/background/Year.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Year:hover {
+  background-image: url(./images/filter/collections/background/Year1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Pedal {
+  background-image: url(./images/filter/collections/background/Pedal.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.Pedal:hover {
+  background-image: url(./images/filter/collections/background/Pedal1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+//mindmap trash1
+
+.MindMap1Waste1 {
+  background-image: url(./images/mindmap/mindmapwaste/1.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste2 {
+  background-image: url(./images/mindmap/mindmapwaste/2.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste3 {
+  background-image: url(./images/mindmap/mindmapwaste/3.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste4 {
+  background-image: url(./images/mindmap/mindmapwaste/4.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste5 {
+  background-image: url(./images/mindmap/mindmapwaste/5.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste6 {
+  background-image: url(./images/mindmap/mindmapwaste/6.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste7 {
+  background-image: url(./images/mindmap/mindmapwaste/7.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste8 {
+  background-image: url(./images/mindmap/mindmapwaste/8.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste9 {
+  background-image: url(./images/mindmap/mindmapwaste/9.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Waste10 {
+  background-image: url(./images/mindmap/mindmapwaste/10.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+//mindmap backgrounds
+
+.MindMapWaste {
+  background-image: url(./images/filter/mindmaps/background/waste.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapWaste:hover {
+  background-image: url(./images/filter/mindmaps/background/waste1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapTime {
+  background-image: url(./images/filter/mindmaps/background/time.png);
+  background-size: 115%;
+  background-position: center;
+}
+
+.MindMapTime:hover {
+  background-image: url(./images/filter/mindmaps/background/time1.png);
+  background-size: 115%;
+  background-position: center;
+}
+
+.MindMapFridge {
+  background-image: url(./images/filter/mindmaps/background/fridge.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapFridge:hover {
+  background-image: url(./images/filter/mindmaps/background/fridge1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapShoe {
+  background-image: url(./images/filter/mindmaps/background/shoe.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapShoe:hover {
+  background-image: url(./images/filter/mindmaps/background/shoe1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapClothes {
+  background-image: url(./images/filter/mindmaps/background/clothes.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+.MindMapClothes:hover {
+  background-image: url(./images/filter/mindmaps/background/clothes1.png);
+  background-size: 105%;
+  background-position: center;
+}
+
+//mindmap food1
+
+.MindMap1Food1 {
+  background-image: url(./images/mindmap/mindmapfood1/1.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food2 {
+  background-image: url(./images/mindmap/mindmapfood1/2.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food3 {
+  background-image: url(./images/mindmap/mindmapfood1/3.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food4 {
+  background-image: url(./images/mindmap/mindmapfood1/4.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food5 {
+  background-image: url(./images/mindmap/mindmapfood1/5.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food6 {
+  background-image: url(./images/mindmap/mindmapfood1/6.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food7 {
+  background-image: url(./images/mindmap/mindmapfood1/7.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food8 {
+  background-image: url(./images/mindmap/mindmapfood1/8.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food9 {
+  background-image: url(./images/mindmap/mindmapfood1/9.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food10 {
+  background-image: url(./images/mindmap/mindmapfood1/10.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Food11 {
+  background-image: url(./images/mindmap/mindmapfood1/11.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+//mindmap food2
+
+.MindMap2Food1 {
+  background-image: url(./images/mindmap/mindmapfood2/1.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Food2 {
+  background-image: url(./images/mindmap/mindmapfood2/2.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Food3 {
+  background-image: url(./images/mindmap/mindmapfood2/3.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Food4 {
+  background-image: url(./images/mindmap/mindmapfood2/4.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Food5 {
+  background-image: url(./images/mindmap/mindmapfood2/5.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Food6 {
+  background-image: url(./images/mindmap/mindmapfood2/6.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+//mindmap clothes2
+
+.MindMap2Clothes1 {
+  background-image: url(./images/mindmap/mindmapclothes2/1.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Clothes2 {
+  background-image: url(./images/mindmap/mindmapclothes2/2.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Clothes3 {
+  background-image: url(./images/mindmap/mindmapclothes2/3.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap2Clothes4 {
+  background-image: url(./images/mindmap/mindmapclothes2/4.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+//mindmap clothes1
+
+.MindMap1Clothes1 {
+  background-image: url(./images/mindmap/mindmapclothes1/1.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes2 {
+  background-image: url(./images/mindmap/mindmapclothes1/2.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes3 {
+  background-image: url(./images/mindmap/mindmapclothes1/3.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes4 {
+  background-image: url(./images/mindmap/mindmapclothes1/4.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes5 {
+  background-image: url(./images/mindmap/mindmapclothes1/5.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes6 {
+  background-image: url(./images/mindmap/mindmapclothes1/6.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes7 {
+  background-image: url(./images/mindmap/mindmapclothes1/7.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MindMap1Clothes8 {
+  background-image: url(./images/mindmap/mindmapclothes1/8.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+// Lifehacks topic symbols
+
+.LifehackSymbolClothes {
+  background-image: url(./images/lifehack/symbols/clothes.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.LifehackSymbolFurniture {
+  background-image: url(./images/lifehack/symbols/furniture.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.LifehackSymbolCooking {
+  background-image: url(./images/lifehack/symbols/cooking.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.LifehackSymbolCleaning {
+  background-image: url(./images/lifehack/symbols/cleaning.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.ArticleSymbolOther {
+  background-image: url(./images/article/symbols/Other.svg);
+  background-size: 101%;
+  background-position: center;
+}
+
+.ArticleSymbolFoodWaste {
+  background-image: url(./images/article/symbols/FoodWaste.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.ArticleSymbolGlass {
+  background-image: url(./images/article/symbols/Glass.svg);
+  background-size: 101%;
+  background-position: center;
+}
+
+.ArticleSymbolHome {
+  background-image: url(./images/article/symbols/Home.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.ArticleSymbolPaper {
+  background-image: url(./images/article/symbols/Paper.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.ArticleSymbolPlastic {
+  background-image: url(./images/article/symbols/Plastic.svg);
+  background-size: 100%;
+  background-position: center;
+}

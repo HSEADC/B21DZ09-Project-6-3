@@ -1,15 +1,4 @@
-// mixins for images and symbols for main page
-
-@mixin GeneralImageMainPageProperties {
-  width: 50%;
-  height: 47.4vw;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  background-size: 100%;
-}
-
-// images and symbols for main page (background-images)
+@import 'mixins';
 
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
@@ -23,27 +12,47 @@
   background-size: 100%;
 }
 
-// mixins for images and symbols for lifehacks page
-
-@mixin GeneralImageLifehackPageProperties {
-  width: 58.4vw;
-  height: 33.4vw;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-}
-
-@mixin SymbolLifehackPageProperties {
-  width: 16.7vw;
-  height: 10.4vw;
-  border-bottom: 1px solid black;
-}
-
 // images and symbols for lifehacks page
 
 .Q_LifehacksBodyTextImage {
   width: 100%;
   margin: 2vw 0 2vw 0;
   border: 1px solid black;
+}
+
+// images and symbols for lifehacks page
+
+.W_Search {
+  width: 17vw;
+  height: 4.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5vw;
+  border: 1px solid #000000;
+  border-left: 0;
+}
+
+.Q_HeaderEmpty {
+  width: 100vw;
+  height: 4.5vw;
+  align-items: center;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-image: url(./images/header/LogoImage.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Q_Logo {
+  width: 83vw;
+  height: 4.5vw;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-image: url(./images/header/Logo.svg);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .Q_GeneralImageLifehackPage {
@@ -57,6 +66,9 @@
 // images and symbols for maind maps page
 
 .Q_MindMapPagePlayImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50vw;
   height: 41.05vw;
   border-top: 1px solid #000000;
@@ -74,19 +86,8 @@
 .Q_GeneralImageSelectionPage {
 }
 
-// mixins for images and symbols for articles page
-
-@mixin GeneralImageArticlePageProperties {
-  width: 66.6vw;
-  height: 28.8vw;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-}
-
-@mixin SymbolArticlePageProperties {
-  width: 33.3vw;
-  height: 15vw;
-  border-bottom: 1px solid black;
+.Q_GeneralImageCollectionPage {
+  @include GeneralImageCollectionPageProperties;
 }
 
 // images and symbols for articles page
@@ -98,17 +99,6 @@
 .Q_TopicSymbolArticlePage {
   @include SymbolArticlePageProperties;
 }
-// images and symbols for search page and "it will be interesting"
-
-.Q_GeneralImageCard {
-}
-
-.Q_TopicSymbolCardTop {
-}
-
-.Q_TopicSymbolCardBottom {
-}
-
 // images and symbols for text blocks
 
 .Q_ImageText {
@@ -126,7 +116,50 @@
   height: 2.56vw;
 }
 
+// images and symbols for search page and "it will be interesting"
+
+.Q_SearchAndFilterTopicSymbolCard {
+  height: 5.6vw;
+  width: 5.6vw;
+}
+
+.Q_SearchIcon {
+  width: 1.87vw;
+  margin-right: 1vw;
+}
+
 // images and symbols for footer
+
+.W_FooterCardProducers {
+  @include FooterCardsProperties;
+  width: 33.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.W_FooterCardCurators {
+  @include FooterCardsProperties;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.W_FooterCardHSE {
+  @include FooterCardsProperties;
+  width: 16vw;
+  border-right: 1px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.W_FooterSymbolsSocialNetworks {
+  width: 22.9vw;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .Q_ABCImage {
   width: 5.3vw;
@@ -139,6 +172,27 @@
 
 .Q_SocialNetworkIcon {
   width: 4.2vw;
+}
+
+.Q_SocialNetworkIconTelegram {
+  width: 4.2vw;
+  height: 4.2vw;
+  background-image: url(./images/footer/Telegram.svg);
+  background-size: 100%;
+}
+
+.Q_SocialNetworkIconInstagram {
+  width: 4.2vw;
+  height: 4.2vw;
+  background-image: url(./images/footer/Instagram.svg);
+  background-size: 100%;
+}
+
+.Q_SocialNetworkIconVkontakte {
+  width: 4.2vw;
+  height: 4.2vw;
+  background-image: url(./images/footer/Vkontakte.svg);
+  background-size: 100%;
 }
 
 .Q_BarkodeImage {
@@ -162,6 +216,23 @@
   width: 50vw;
   height: 57.5vw;
   border-left: 1px solid black;
-  border-right: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+// images and symbols for search and filter page
+
+.Q_FilterPageArrowImage1 {
+  background-image: url(images/filter/FilterArrowImage.svg);
+  background-size: 100%;
+  height: 1.5vw;
+  width: 2.25vw;
+  margin-left: 11.4vw;
+}
+
+.Q_FilterPageArrowImage2 {
+  background-image: url(images/filter/FilterArrowImage2.svg);
+  background-size: 100%;
+  height: 1.5vw;
+  width: 2.25vw;
+  margin-left: 11.4vw;
 }
