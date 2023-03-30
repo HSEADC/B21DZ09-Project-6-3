@@ -1,6 +1,33 @@
 @import 'mixins';
 
 // article page titles typography
+.W_BodyTextFact {
+  width: 100%;
+  padding-top: 0.2vw;
+  padding-bottom: 1.3vw;
+  border-top: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.W_LifehackBodyTextAttention {
+  @include BodyTextAttention;
+  width: 25.1vw;
+  height: 18.2vw;
+}
+
+.W_ArticleBodyTextAttention {
+  @include BodyTextAttention;
+  width: 22.1vw;
+  height: 18.2vw;
+}
+
+.W_BodyTextList {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 
 .A_TitleArticlePage {
   @include TitlesProperties;
@@ -80,10 +107,42 @@
   border-right: 1px solid black;
 }
 
+.C_MainPageCards {
+  width: 50vw;
+  height: 57vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.W_MainPageCardShort {
+  width: 25vw;
+  height: 20.5vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vw 0.8vw 1.5vw 1vw;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .A_TitleAuxiliaryMainPageCardShort {
   @include TitlesAuxiliaryProperties;
   @include TitlesAuxiliaryCardsProperties;
   width: 22.5vw;
+}
+
+.W_MainPageCardLong {
+  width: 50vw;
+  height: 21vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vw 0.8vw 1.5vw 1vw;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .A_TitleAuxiliaryMainPageCardLong {
@@ -110,6 +169,66 @@ h4 {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+}
+
+.C_LifehackBodyTextParagraphs {
+  @include BodyTextParagraphs;
+  width: 41.6vw;
+}
+
+.C_LifehackTextFacts {
+  @include TextFacts;
+  width: 33.3vw;
+  height: 18.2vw;
+}
+
+.C_LifehackBodyTextParagraphs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+//mind map page
+
+.C_MindMapBodyTextParagraphs {
+  @include BodyTextParagraphs;
+  height: 47.1vw;
+  width: 50vw;
+  margin-top: 4.5vw;
+  border-top: 1px solid #000000;
+  border-right: 0px solid #000000;
+}
+
+.C_MindMapBodyTextParagraphs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.C_ArticleBodyTextParagraphs {
+  @include BodyTextParagraphs;
+  width: 33.3vw;
+}
+
+.C_ArticleBodyTextParagraphs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.C_ArticleTextFacts {
+  @include TextFacts;
+  width: 44.4vw;
+  height: 18.2vw;
+}
+
+//collection page
+
+.C_CoolectionBodyTextParagraphs {
+  @include BodyTextParagraphs;
+  width: 40vw;
+}
+
+.C_CollectionBodyTextParagraphs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .A_TextImportant {
@@ -166,7 +285,77 @@ h4 {
   border-top: 1px solid #000000;
 }
 
-// map card
+//map page
+
+.C_MapSelectAndPointInformation {
+  display: flex;
+  flex-direction: row;
+  height: 38.1vw;
+  width: 50vw;
+  border-bottom: 1px solid #000000;
+}
+
+.W_MapPagePointInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.W_MapChooseCards {
+  display: flex;
+  width: 50vw;
+  margin-top: 4.5vw;
+}
+.W_MapInput {
+  display: flex;
+}
+.A_MindMapPageChooseCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-end;
+  height: 10.33vw;
+  width: 100%;
+  border-right: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
+}
+
+.C_MindMapBodyPlayBox {
+  height: 62vw;
+  width: 50vw;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+
+.A_MindMapPagePlayRestartCard {
+  @include TitlesAuxiliaryProperties;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10.35vw;
+  width: 35vw;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+
+.A_MindMapPageChooseCard.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseCard.incorrect {
+  background-color: #f45e4e;
+}
+
+.W_MindMapChooseCards {
+  display: flex;
+  width: 50vw;
+}
+
+.W_MindMapPlayRestartCards {
+  display: flex;
+  width: 50vw;
+}
 
 .A_MapPageChooseCard {
   @include TextPropertiesSmall;
@@ -222,41 +411,71 @@ h4 {
 
 // mind map card
 
-.A_MindMapPageChooseCard {
-  @include TextPropertiesSmall;
-  display: flex;
-  align-items: flex-end;
-  height: 10.33vw;
-  width: 100%;
-  border-right: 1px solid #000000;
-  padding-bottom: 1vw;
-  padding-left: 1.5vw;
-}
-
-.A_MindMapPagePlayRestartCard {
-  @include TitlesAuxiliaryProperties;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10.35vw;
-  width: 35vw;
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
-}
-
-.A_MindMapPageChooseCard.correct {
-  background-color: #1ebcb1;
-}
-
-.A_MindMapPageChooseCard.incorrect {
-  background-color: #f45e4e;
-}
-
 .A_MapPageChooseCard:hover {
   cursor: pointer;
 }
 
 // search and filter
+.C_Filter {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.C_SearchAndFiltersPageCards {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  overflow-y: auto;
+  height: 55.8vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.W_SearchAndFilterCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 6.15vw;
+  width: calc(50vw / 3);
+  border-left: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
+}
+
+.W_SearchAndFilterCard {
+  @include TextPropertiesSmall;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 6.15vw;
+  width: calc(50vw / 3);
+  border-left: 1px solid #000000;
+  padding-bottom: 1vw;
+  padding-left: 1.5vw;
+}
+
+.W_SearchAndFilterCards {
+  overflow: hidden;
+  display: flex;
+  width: 50vw;
+  height: 6.15vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.W_SearchAndFilterCards:hover {
+  cursor: pointer;
+}
+
+.W_SearchAndFilterCards::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 .A_SearchAndFilterCard {
   @include TextPropertiesSmall;

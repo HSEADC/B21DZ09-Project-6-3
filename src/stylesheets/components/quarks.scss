@@ -22,6 +22,18 @@
 
 // images and symbols for lifehacks page
 
+.W_Search {
+  width: 17vw;
+  height: 4.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5vw;
+  border: 1px solid #000000;
+  border-left: 0;
+}
+
 .Q_HeaderEmpty {
   width: 100vw;
   height: 4.5vw;
@@ -117,6 +129,37 @@
 }
 
 // images and symbols for footer
+
+.W_FooterCardProducers {
+  @include FooterCardsProperties;
+  width: 33.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.W_FooterCardCurators {
+  @include FooterCardsProperties;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.W_FooterCardHSE {
+  @include FooterCardsProperties;
+  width: 16vw;
+  border-right: 1px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.W_FooterSymbolsSocialNetworks {
+  width: 22.9vw;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .Q_ABCImage {
   width: 5.3vw;
