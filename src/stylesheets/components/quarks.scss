@@ -2,14 +2,19 @@
 
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
+  height: 55vw;
   background-image: url(images/mainpage/GeneralImageMainPage.png);
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.Q_MainPageSymbolArrow {
-  height: 4.86vw;
-  width: 4vw;
-  background-image: url(images/mainpage/MainPageSymbolArrow.svg);
-  background-size: 100%;
+.Q_MainPageSymbol {
+  height: 4.5vw;
+  width: 4.5vw;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 // images and symbols for lifehacks page
@@ -36,7 +41,8 @@
 
 .Q_HeaderEmpty {
   width: 100vw;
-  height: 4.5vw;
+  height: 6.5vw;
+  background-color: #000000;
   align-items: center;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;

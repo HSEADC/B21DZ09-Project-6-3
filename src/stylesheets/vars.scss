@@ -30,6 +30,14 @@
   background-color: #1ebcb1;
 }
 
+.backgound70 {
+  background-size: 65% !important;
+}
+
+.backgound90 {
+  background-size: 90% !important;
+}
+
 //fonts colors
 
 .white {
@@ -70,6 +78,10 @@ a {
 
 .paddingbot2 {
   padding-bottom: 3vw;
+}
+
+.paddingbot5 {
+  padding-bottom: 7vw;
 }
 
 .borderleftmap {
@@ -1102,4 +1114,38 @@ a {
   background-image: url(./images/article/symbols/Plastic.svg);
   background-size: 100%;
   background-position: center;
+}
+
+.MainPageSymbolLifehack {
+  background-image: url(images/mainpage/lifehack.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MainPageSymbolArticle {
+  background-image: url(images/mainpage/article.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MainPageSymbolCollection {
+  background-image: url(images/mainpage/collection.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MainPageSymbolMap {
+  background-image: url(images/mainpage/map.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.MainPageSymbolMindMap {
+  background-image: url(images/mainpage/mindmap.svg);
+  background-size: 100%;
+  background-position: center;
+}
+.mainnonstyle {
+  padding-bottom: 0 !important;
+  border-bottom: 0 !important;
 }
