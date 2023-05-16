@@ -110,7 +110,7 @@
 
 .C_MainPageCard {
   width: 33.2vw;
-  height: 55vw;
+  height: 52vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,11 +118,13 @@
 }
 
 .C_MainPageCards {
-  width: 30.2vw;
-  height: 50vw;
+  width: 30vw;
+  height: 49vw;
+  background-color: black;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  padding: 2vw;
   justify-content: space-between;
   padding-top: 2vw;
   padding-bottom: 2vw;
