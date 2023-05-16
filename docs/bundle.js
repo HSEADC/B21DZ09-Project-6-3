@@ -2691,26 +2691,32 @@ document.addEventListener('DOMContentLoaded', function () {
   var titleSearchAndFilterPage = document.querySelector('.A_TitleSearchAndFilterPage');
   var searchQuery = '';
   var activeCategories = [];
-  var filterArrowClickCount = 0;
-  filterArrow.addEventListener('click', function (event) {
-    filterArrowClickCount++;
-    searchAndFilterCards.style.height = filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content';
-    titleSearchAndFilterPage.classList.toggle('borderbottom');
-    filterArrow.classList.toggle('Q_FilterPageArrowImage2');
-    event.stopPropagation();
-  });
-  input.addEventListener('input', function () {
-    searchQuery = input.value.trim().toLowerCase();
-    cards.forEach(function (card) {
-      var keywords = card.getAttribute('data-keywords').toLowerCase();
+  var filterArrowClickCount = 0; // filterArrow.addEventListener('click', function (event) {
+  //   filterArrowClickCount++
+  //   searchAndFilterCards.style.height =
+  //     filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content'
+  //   titleSearchAndFilterPage.classList.toggle('borderbottom')
+  //   filterArrow.classList.toggle('Q_FilterPageArrowImage2')
+  //   event.stopPropagation()
+  // })
+  // input.addEventListener('input', function () {
+  //   searchQuery = input.value.trim().toLowerCase()
+  //   cards.forEach(function (card) {
+  //     const keywords = card.getAttribute('data-keywords').toLowerCase()
+  //     if (
+  //       keywords.includes(searchQuery) &&
+  //       (activeCategories.length === 0 ||
+  //         activeCategories.includes(
+  //           card.getAttribute('data-category').toLowerCase()
+  //         ))
+  //     ) {
+  //       card.style.display = 'flex'
+  //     } else {
+  //       card.style.display = 'none'
+  //     }
+  //   })
+  // })
 
-      if (keywords.includes(searchQuery) && (activeCategories.length === 0 || activeCategories.includes(card.getAttribute('data-category').toLowerCase()))) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
   categories.forEach(function (category) {
     category.addEventListener('click', function () {
       var categoryValue = category.getAttribute('data-category').toLowerCase();
@@ -3211,6 +3217,7 @@ var metal = __webpack_require__(195);
 // EXTERNAL MODULE: ./src/javascript/mappage.js
 var mappage = __webpack_require__(551);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
