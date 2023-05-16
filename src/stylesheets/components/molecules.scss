@@ -19,8 +19,8 @@
 .M_MapPageSelect {
   width: 25vw;
   height: 33.6vw;
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
   margin-top: 4.5vw;
 }
 
@@ -30,7 +30,7 @@
   justify-content: space-between;
   width: 50vw;
   height: 33.6vw;
-  border-top: 1px solid #000000;
+  border-top: 2px solid #000000;
   padding: 2vw 1.5vw 2vw 1.5vw;
   margin-top: 4.5vw;
 }
@@ -38,11 +38,11 @@
 // molecules for search and filter page
 
 .M_SearchAndFiltersPageCard {
-  width: 24.965vw;
+  width: 25vw;
   height: 27.85vw;
-  padding: 2vw 1.5vw 1.5vw 1.5vw;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  padding: 2.5vw 1.5vw 1.5vw 1.5vw;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

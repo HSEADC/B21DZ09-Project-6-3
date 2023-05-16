@@ -5,7 +5,7 @@
   width: 100%;
   padding-top: 0.2vw;
   padding-bottom: 1.3vw;
-  border-top: 1px solid #000000;
+  border-top: 2px solid #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,12 +49,14 @@
 
 .A_TitleSearchAndFilterPage {
   @include TitlesProperties;
-  width: 49.94vw;
+  width: 100vw;
   min-height: 6.24vw;
   border-right: 0px;
-  border-bottom: 0px;
+  border-bottom: 2px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 0 1vw 0vw;
   padding-right: 1.5vw;
 }
 
@@ -103,9 +105,9 @@
   @include TitlesProperties;
   text-align: center;
   width: 100vw;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .C_MainPageCard {
@@ -114,7 +116,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 .C_MainPageCards {
@@ -136,8 +138,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5vw 0.8vw 1.5vw 1vw;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -157,8 +159,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5vw 0.8vw 1.5vw 1vw;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -212,7 +214,7 @@ h4 {
   height: 47.1vw;
   width: 50vw;
   margin-top: 4.5vw;
-  border-top: 1px solid #000000;
+  border-top: 2px solid #000000;
   border-right: 0px solid #000000;
 }
 
@@ -300,7 +302,7 @@ h4 {
   @include TextPropertiesBig;
   font-weight: 400;
   padding: 0.7vw 0 1.5vw 2vw;
-  border-top: 1px solid #000000;
+  border-top: 2px solid #000000;
 }
 
 //map page
@@ -310,7 +312,7 @@ h4 {
   flex-direction: row;
   height: 38.1vw;
   width: 50vw;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .W_MapPagePointInformation {
@@ -333,7 +335,7 @@ h4 {
   align-items: flex-end;
   height: 10.33vw;
   width: 100%;
-  border-right: 1px solid #000000;
+  border-right: 2px solid #000000;
   padding-bottom: 1vw;
   padding-left: 1.5vw;
 }
@@ -341,9 +343,9 @@ h4 {
 .C_MindMapBodyPlayBox {
   height: 62vw;
   width: 50vw;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
-  border-left: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #000000;
 }
 
 .A_MindMapPagePlayRestartCard {
@@ -353,8 +355,8 @@ h4 {
   justify-content: center;
   height: 10.35vw;
   width: 35vw;
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
 }
 
 .A_MindMapPageChooseCard.correct {
@@ -381,9 +383,9 @@ h4 {
   align-items: flex-end;
   height: 9vw;
   width: 10vw;
-  border-left: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  border-top: 1px solid #000000;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
   padding-bottom: 1vw;
   padding-left: 1.5vw;
 }
@@ -395,9 +397,9 @@ h4 {
 .A_MapPageInput {
   width: 30vw;
   height: 4.5vw;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .A_MapPageFindButton {
@@ -407,9 +409,9 @@ h4 {
   align-items: center;
   width: 20vw;
   height: 4.5vw;
-  border-width: 1px;
+  border-width: 2px;
   border-top: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   background-color: #f4f4f4;
 }
 
@@ -424,7 +426,7 @@ h4 {
   width: 30vw;
   height: 4.41vw;
   background-color: #f4f4f4;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 // mind map card
@@ -437,15 +439,14 @@ h4 {
 .C_Filter {
   width: 100vw;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .C_SearchAndFiltersPageCards {
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  overflow-y: auto;
-  height: 55.8vw;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -460,7 +461,7 @@ h4 {
   justify-content: flex-end;
   height: 6.15vw;
   width: calc(50vw / 3);
-  border-left: 1px solid #000000;
+  border-left: 2px solid #000000;
   padding-bottom: 1vw;
   padding-left: 1.5vw;
 }
@@ -473,7 +474,7 @@ h4 {
   justify-content: flex-end;
   height: 6.15vw;
   width: calc(50vw / 3);
-  border-left: 1px solid #000000;
+  border-left: 2px solid #000000;
   padding-bottom: 1vw;
   padding-left: 1.5vw;
 }
@@ -482,9 +483,9 @@ h4 {
   overflow: hidden;
   display: flex;
   width: 50vw;
-  height: 6.15vw;
-  flex-wrap: wrap;
-  flex-direction: row;
+  height: 25.1vw;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 .W_SearchAndFilterCards:hover {
   cursor: pointer;
@@ -496,16 +497,8 @@ h4 {
 }
 
 .A_SearchAndFilterCard {
-  @include TextPropertiesSmall;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 6.15vw;
-  width: calc(50vw / 3);
-  border-left: 1px solid #000000;
-  padding-bottom: 1vw;
-  padding-left: 1.5vw;
+  @include TitlesAuxiliaryProperties;
+  @include TitlesAuxiliaryCardsProperties;
 }
 
 .A_SearchInput {
@@ -518,7 +511,7 @@ h4 {
 
 .A_LineTextBoxThin {
   @include Line;
-  height: 1px;
+  height: 2px;
 }
 
 .A_LineTextBoxNormal {
@@ -537,8 +530,8 @@ h4 {
   width: 24.965vw;
   height: 27.83vw;
   padding: 2vw 1.5vw 1.5vw 1.5vw;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
   let activeCategories = []
   let filterArrowClickCount = 0
 
-  filterArrow.addEventListener('click', function (event) {
-    filterArrowClickCount++
-    searchAndFilterCards.style.height =
-      filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content'
-    titleSearchAndFilterPage.classList.toggle('borderbottom')
-    filterArrow.classList.toggle('Q_FilterPageArrowImage2')
-    event.stopPropagation()
-  })
+  // filterArrow.addEventListener('click', function (event) {
+  //   filterArrowClickCount++
+  //   searchAndFilterCards.style.height =
+  //     filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content'
+  //   titleSearchAndFilterPage.classList.toggle('borderbottom')
+  //   filterArrow.classList.toggle('Q_FilterPageArrowImage2')
+  //   event.stopPropagation()
+  // })
 
   input.addEventListener('input', function () {
     searchQuery = input.value.trim().toLowerCase()

@@ -22,7 +22,7 @@
 .Q_LifehacksBodyTextImage {
   width: 100%;
   margin: 2vw 0 2vw 0;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 // images and symbols for lifehacks page
@@ -35,7 +35,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-left: 1.5vw;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-left: 0;
 }
 
@@ -44,8 +44,8 @@
   height: 6.5vw;
   background-color: #000000;
   align-items: center;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   background-image: url(./images/header/LogoImage.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -54,8 +54,8 @@
 .Q_Logo {
   width: 83vw;
   height: 4.5vw;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   background-image: url(./images/header/Logo.svg);
   background-position: left;
   background-repeat: no-repeat;
@@ -77,8 +77,8 @@
   align-items: center;
   width: 50vw;
   height: 41.05vw;
-  border-top: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
 }
 
 #result {
@@ -125,8 +125,8 @@
 // images and symbols for search page and "it will be interesting"
 
 .Q_SearchAndFilterTopicSymbolCard {
-  height: 5.6vw;
-  width: 5.6vw;
+  height: 6vw;
+  width: 6vw;
 }
 
 .Q_SearchIcon {
@@ -155,7 +155,7 @@
 .W_FooterCardHSE {
   @include FooterCardsProperties;
   width: 16vw;
-  border-right: 1px solid #f4f4f4;
+  border-right: 2px solid #f4f4f4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -221,8 +221,8 @@
 .Q_Map {
   width: 50vw;
   height: 57.5vw;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 // images and symbols for search and filter page
