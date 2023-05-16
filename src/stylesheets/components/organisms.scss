@@ -3,20 +3,21 @@
 // footer organisms
 
 .O_Footer {
-  height: 12vw;
+  height: 27vw;
   display: flex;
   background-color: black;
-  margin-top: 4.5vw;
+  margin-top: 5.31vw;
 }
 
 // main page organisms
 
 .O_MainPageContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 62vw;
+  justify-content: flex-start;
+  align-content: flex-start;
+  height: 125.5vw;
   width: 100vw;
 }
 
@@ -101,9 +102,8 @@
 
 .O_MapPageContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   height: 62vw;
   width: 100vw;
 }
