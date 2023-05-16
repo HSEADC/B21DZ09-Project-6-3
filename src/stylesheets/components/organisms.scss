@@ -102,9 +102,8 @@
 
 .O_MapPageContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   height: 62vw;
   width: 100vw;
 }
