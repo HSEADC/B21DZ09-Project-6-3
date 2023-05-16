@@ -36,19 +36,20 @@
 // images and symbols for lifehacks page
 
 .W_Search {
-  width: 17vw;
-  height: 4.5vw;
+  width: 20vw;
+  height: 4vw;
+  margin-left: 1.5vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding-left: 1.5vw;
-  border: 2px solid #000000;
-  border-left: 0;
+  border: 2px solid #f4f4f4;
 }
 
 .Q_HeaderEmpty {
   width: 100vw;
+  display: flex;
   height: 6.5vw;
   background-color: #000000;
   align-items: center;
