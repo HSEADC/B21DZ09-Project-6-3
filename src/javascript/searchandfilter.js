@@ -20,23 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
   //   event.stopPropagation()
   // })
 
-  input.addEventListener('input', function () {
-    searchQuery = input.value.trim().toLowerCase()
-    cards.forEach(function (card) {
-      const keywords = card.getAttribute('data-keywords').toLowerCase()
-      if (
-        keywords.includes(searchQuery) &&
-        (activeCategories.length === 0 ||
-          activeCategories.includes(
-            card.getAttribute('data-category').toLowerCase()
-          ))
-      ) {
-        card.style.display = 'flex'
-      } else {
-        card.style.display = 'none'
-      }
-    })
-  })
+  // input.addEventListener('input', function () {
+  //   searchQuery = input.value.trim().toLowerCase()
+  //   cards.forEach(function (card) {
+  //     const keywords = card.getAttribute('data-keywords').toLowerCase()
+  //     if (
+  //       keywords.includes(searchQuery) &&
+  //       (activeCategories.length === 0 ||
+  //         activeCategories.includes(
+  //           card.getAttribute('data-category').toLowerCase()
+  //         ))
+  //     ) {
+  //       card.style.display = 'flex'
+  //     } else {
+  //       card.style.display = 'none'
+  //     }
+  //   })
+  // })
 
   categories.forEach(function (category) {
     category.addEventListener('click', function () {
