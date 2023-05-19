@@ -103,9 +103,7 @@
 
 .A_TitleMapPage {
   @include TitlesProperties;
-  width: 100vw;
-  text-align: center;
-  border-right: 0px solid black;
+  border: 0;
 }
 
 // map page typography and cards
@@ -359,28 +357,13 @@ h4 {
   justify-content: flex-start;
 }
 .W_MapChooseCard {
-  width: 30vw;
-  height: 52vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid black;
+  width: fit-content;
+  height: 4vw;
 }
 
-.W_MapChooseCards {
-  width: 36.8vw;
-  height: 49vw;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 2vw;
-  justify-content: space-between;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  border-bottom: 30px solid black;
-  border-top: 30px solid black;
-}
 .W_MapInput {
   display: flex;
 }
@@ -433,16 +416,10 @@ h4 {
 }
 
 .A_MapPageChooseCard {
-  font-family: 'DrukSuper';
-  text-transform: uppercase;
-  letter-spacing: -3%;
-  font-size: 1.73vw;
-  line-height: 2.08vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1.5vw;
-  border-bottom: 10px solid #f4f4f4;
+  @include TextPropertiesSmall;
+  @include TitlesAuxiliaryCardsProperties;
+  text-transform: none;
+  margin-right: 2vw;
 }
 
 .A_MapPageChooseCard:hover {
