@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var paperButton = document.querySelector('#paper');
   var metalButton = document.querySelector('#metal');
   var markers = [];
+  var backButton = document.querySelector('.Q_GoBack');
+  backButton.addEventListener('click', function () {
+    history.back();
+  });
 
   function showMarkers(category) {
     var filteredPlaces;
@@ -172,6 +176,21 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('metal');
     hideMarkers('clothes');
     showMarkers('glass');
+    glassButton.style.backgroundColor = '#1EBCB1';
+    glassButton.style.border = '2px solid black';
+    glassButton.style.color = 'black';
+    plasticButton.style.backgroundColor = 'black';
+    plasticButton.style.border = '0px';
+    plasticButton.style.color = '#f4f4f4';
+    clothesButton.style.backgroundColor = 'black';
+    clothesButton.style.border = '0px';
+    clothesButton.style.color = '#f4f4f4';
+    paperButton.style.backgroundColor = 'black';
+    paperButton.style.border = '0px';
+    paperButton.style.color = '#f4f4f4';
+    metalButton.style.backgroundColor = 'black';
+    metalButton.style.border = '0px';
+    metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
 
     while (A_TextImportantBottomMap.firstChild) {
@@ -187,6 +206,21 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('metal');
     hideMarkers('clothes');
     showMarkers('plastic');
+    glassButton.style.backgroundColor = 'black';
+    glassButton.style.border = '0px';
+    glassButton.style.color = '#f4f4f4';
+    plasticButton.style.backgroundColor = '#B0D3FF';
+    plasticButton.style.border = '2px solid black';
+    plasticButton.style.color = 'black';
+    clothesButton.style.backgroundColor = 'black';
+    clothesButton.style.border = '0px';
+    clothesButton.style.color = '#f4f4f4';
+    paperButton.style.backgroundColor = 'black';
+    paperButton.style.border = '0px';
+    paperButton.style.color = '#f4f4f4';
+    metalButton.style.backgroundColor = 'black';
+    metalButton.style.border = '0px';
+    metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
 
     while (A_TextImportantBottomMap.firstChild) {
@@ -202,6 +236,21 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('metal');
     hideMarkers('clothes');
     showMarkers('paper');
+    glassButton.style.backgroundColor = 'black';
+    glassButton.style.border = '0px';
+    glassButton.style.color = '#f4f4f4';
+    plasticButton.style.backgroundColor = 'black';
+    plasticButton.style.border = '0px';
+    plasticButton.style.color = '#f4f4f4';
+    clothesButton.style.backgroundColor = 'black';
+    clothesButton.style.border = '0px';
+    clothesButton.style.color = '#f4f4f4';
+    paperButton.style.backgroundColor = '#A15FFF';
+    paperButton.style.border = '2px solid black';
+    paperButton.style.color = 'black';
+    metalButton.style.backgroundColor = 'black';
+    metalButton.style.border = '0px';
+    metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
 
     while (A_TextImportantBottomMap.firstChild) {
@@ -217,6 +266,21 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('paper');
     hideMarkers('clothes');
     showMarkers('metal');
+    glassButton.style.backgroundColor = 'black';
+    glassButton.style.border = '0px';
+    glassButton.style.color = '#f4f4f4';
+    plasticButton.style.backgroundColor = 'black';
+    plasticButton.style.border = '0px';
+    plasticButton.style.color = '#f4f4f4';
+    clothesButton.style.backgroundColor = 'black';
+    clothesButton.style.border = '0px';
+    clothesButton.style.color = '#f4f4f4';
+    paperButton.style.backgroundColor = 'black';
+    paperButton.style.border = '0px';
+    paperButton.style.color = '#f4f4f4';
+    metalButton.style.backgroundColor = '#F45E4E';
+    metalButton.style.border = '2px solid black';
+    metalButton.style.color = 'black';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
 
     while (A_TextImportantBottomMap.firstChild) {
@@ -232,6 +296,21 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('paper');
     hideMarkers('metal');
     showMarkers('clothes');
+    glassButton.style.backgroundColor = 'black';
+    glassButton.style.border = '0px';
+    glassButton.style.color = '#f4f4f4';
+    plasticButton.style.backgroundColor = 'black';
+    plasticButton.style.border = '0px';
+    plasticButton.style.color = '#f4f4f4';
+    clothesButton.style.backgroundColor = '#ECE700';
+    clothesButton.style.border = '2px solid black';
+    clothesButton.style.color = 'black';
+    paperButton.style.backgroundColor = 'black';
+    paperButton.style.border = '0px';
+    paperButton.style.color = '#f4f4f4';
+    metalButton.style.backgroundColor = 'black';
+    metalButton.style.border = '0px';
+    metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
 
     while (A_TextImportantBottomMap.firstChild) {
@@ -2691,7 +2770,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var titleSearchAndFilterPage = document.querySelector('.A_TitleSearchAndFilterPage');
   var searchQuery = '';
   var activeCategories = [];
-  var filterArrowClickCount = 0; // filterArrow.addEventListener('click', function (event) {
+  var filterArrowClickCount = 0;
+  var backButton = document.querySelector('.Q_GoBack');
+  backButton.addEventListener('click', function () {
+    history.back();
+  }); // filterArrow.addEventListener('click', function (event) {
   //   filterArrowClickCount++
   //   searchAndFilterCards.style.height =
   //     filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content'
