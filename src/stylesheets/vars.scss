@@ -5,6 +5,9 @@
 }
 
 //background colors
+.green {
+  background-color: #c5f700 !important;
+}
 
 .yellow {
   background-color: #ece700;
@@ -42,6 +45,39 @@
 
 .white {
   color: #f4f4f4;
+}
+
+.whiteback {
+  background-color: #f4f4f4;
+}
+
+.running-text {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee {
+  color: #000000;
+  white-space: nowrap;
+  animation: marquee 8.5s infinite linear; /* notice the infinite */
+}
+
+.marquee:after {
+  content: 'Cервис об осознанном потреблении Cервис об осознанном потреблении';
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.positionforallarticles {
+  justify-content: flex-start !important;
 }
 
 //opacity
@@ -84,8 +120,22 @@ a {
   padding-top: 3vw;
 }
 
+.paddingtop4 {
+  padding-top: 4vw;
+}
+.paddingtop5 {
+  padding-top: 5vw;
+}
 .paddingbot2 {
   padding-bottom: 3vw;
+}
+
+.paddingbot0 {
+  padding-bottom: 0 !important;
+}
+
+.padding0all {
+  padding: 0 !important;
 }
 
 .paddingbot5 {
@@ -625,7 +675,7 @@ a {
 
 .MindMapShoe {
   background-image: url(./images/filter/mindmaps/background/shoe1.png);
-  background-size: 105%;
+  background-size: 95%;
   background-position: center;
 }
 

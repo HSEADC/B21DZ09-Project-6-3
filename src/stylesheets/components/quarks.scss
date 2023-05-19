@@ -2,9 +2,9 @@
 
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
-  height: 52vw;
+  height: 51.7vw;
   background-image: url(images/mainpage/GeneralImageMainPage.svg);
-  background-size: 95%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -50,12 +50,13 @@
 .Q_HeaderEmpty {
   width: 100vw;
   display: flex;
-  height: 6.5vw;
+  height: 4.5vw;
   background-color: #000000;
   align-items: center;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
-  background-image: url(./images/header/LogoImage.svg);
+  background-image: url(./images/header/Logo1.svg);
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -76,6 +77,30 @@
 
 .Q_TopicSymbolLifehackPage {
   @include SymbolLifehackPageProperties;
+}
+
+.Q_TopicSymboll {
+  background-image: url(./images/AllArticlesSymbol.png);
+  width: 32.5vw;
+  height: 8.69vw;
+  margin-top: 5.5vw;
+  background-size: 100%;
+}
+
+.Q_GoBack {
+  background-image: url(./images/AllArticlesArrow.svg);
+  width: 10.15vw;
+  height: 6.29vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  margin-right: 3vw;
+  border-right: 2px solid black;
+}
+
+.Q_GoBack:hover {
+  cursor: pointer;
 }
 
 // images and symbols for maind maps page
@@ -229,7 +254,7 @@
 
 .Q_Map {
   width: 70vw;
-  height: 46.4vw;
+  height: 46vw;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
 }
