@@ -2,7 +2,7 @@
 
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
-  height: 52vw;
+  height: 51.7vw;
   background-image: url(images/mainpage/GeneralImageMainPage.svg);
   background-size: 100%;
   background-position: center;
@@ -50,12 +50,13 @@
 .Q_HeaderEmpty {
   width: 100vw;
   display: flex;
-  height: 6.5vw;
+  height: 4.5vw;
   background-color: #000000;
   align-items: center;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
-  background-image: url(./images/header/LogoImage.svg);
+  background-image: url(./images/header/Logo1.svg);
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
