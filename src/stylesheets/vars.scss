@@ -6,7 +6,7 @@
 
 //background colors
 .green {
-  background-color: #c5f700;
+  background-color: #c5f700 !important;
 }
 
 .yellow {
@@ -46,6 +46,11 @@
 .white {
   color: #f4f4f4;
 }
+
+.whiteback {
+  background-color: #f4f4f4;
+}
+
 .running-text {
   display: flex;
   align-items: center;
@@ -111,12 +116,22 @@ a {
   padding-top: 3vw;
 }
 
+.paddingtop4 {
+  padding-top: 4vw;
+}
+.paddingtop5 {
+  padding-top: 5vw;
+}
 .paddingbot2 {
   padding-bottom: 3vw;
 }
 
 .paddingbot0 {
   padding-bottom: 0 !important;
+}
+
+.padding0all {
+  padding: 0 !important;
 }
 
 .paddingbot5 {

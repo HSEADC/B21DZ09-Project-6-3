@@ -79,6 +79,26 @@
   @include SymbolLifehackPageProperties;
 }
 
+.Q_TopicSymboll {
+  background-image: url(./images/AllArticlesSymbol.png);
+  width: 32.5vw;
+  height: 8.69vw;
+  margin-top: 5.5vw;
+  background-size: 100%;
+}
+
+.Q_GoBack {
+  background-image: url(./images/AllArticlesArrow.svg);
+  width: 10.2vw;
+  height: 6.29vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  margin-right: 3vw;
+  border-right: 2px solid black;
+}
+
 // images and symbols for maind maps page
 
 .Q_MindMapPagePlayImage {
