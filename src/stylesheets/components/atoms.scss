@@ -58,6 +58,19 @@
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
+
+.W_TitleMindMapPage {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 2.5vw 4.5vw 5vw 4.5vw;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
 .C_LifehackBodiesTextParagraphs {
   width: 100vw;
   border-left: 2px solid black;
@@ -68,6 +81,16 @@
   align-items: center;
 }
 .W_TitlesLifehackPage {
+  width: 100vw;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  border-bottom: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+}
+
+.W_TitlesMindMapPage {
   width: 100vw;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -121,8 +144,10 @@
 
 .A_TitleMindMapPage {
   @include TitlesProperties;
-  width: 50vw;
-  border-right: 0px solid black;
+  border-bottom: 10px solid black;
+  border-right: 0;
+  width: 68vw;
+  padding-bottom: 2vw;
 }
 
 // titles typography
@@ -344,10 +369,10 @@ h4 {
 //map page
 
 .C_MapSelectAndPointInformation {
-  display: none;
+  display: flex;
   flex-direction: row;
-  height: 38.1vw;
-  width: 50vw;
+  height: 51.6vw;
+  width: 30vw;
   border-bottom: 2px solid #000000;
 }
 
@@ -430,17 +455,14 @@ h4 {
   width: 50vw;
   height: 5.6vw;
   display: flex;
+  background-color: #f4f4f4;
   border-right: 2px solid black;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
 }
 
 .A_MapPageFindButton {
-  font-family: 'DrukSuper';
-  text-transform: uppercase;
-  letter-spacing: -3%;
-  font-size: 1.73vw;
-  line-height: 2.08vw;
+  @include TextPropertiesBig;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -484,7 +506,7 @@ h4 {
   padding: 1.8vw 1.8vw 0vw 0vw;
   display: flex;
   justify-content: flex-start;
-  min-height: 56.2vw;
+  min-height: fit-content;
   flex-wrap: wrap;
   border-bottom: 2px solid #000000;
   height: fit-content;

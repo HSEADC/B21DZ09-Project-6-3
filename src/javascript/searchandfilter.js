@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
   let activeCategories = []
   let filterArrowClickCount = 0
 
+  const backButton = document.querySelector('.Q_GoBack')
+  backButton.addEventListener('click', function () {
+    history.back()
+  })
+
   // filterArrow.addEventListener('click', function (event) {
   //   filterArrowClickCount++
   //   searchAndFilterCards.style.height =

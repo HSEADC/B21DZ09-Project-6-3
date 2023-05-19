@@ -89,7 +89,7 @@
 
 .Q_GoBack {
   background-image: url(./images/AllArticlesArrow.svg);
-  width: 10.2vw;
+  width: 10.15vw;
   height: 6.29vw;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -97,6 +97,10 @@
   background-size: 80%;
   margin-right: 3vw;
   border-right: 2px solid black;
+}
+
+.Q_GoBack:hover {
+  cursor: pointer;
 }
 
 // images and symbols for maind maps page
@@ -250,7 +254,7 @@
 
 .Q_Map {
   width: 70vw;
-  height: 46.4vw;
+  height: 46vw;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
 }

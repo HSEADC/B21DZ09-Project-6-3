@@ -76,6 +76,10 @@
   }
 }
 
+.positionforallarticles {
+  justify-content: flex-start !important;
+}
+
 //opacity
 
 .opacity70 {
@@ -671,7 +675,7 @@ a {
 
 .MindMapShoe {
   background-image: url(./images/filter/mindmaps/background/shoe1.png);
-  background-size: 105%;
+  background-size: 95%;
   background-position: center;
 }
 

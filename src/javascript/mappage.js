@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let markers = []
 
+  const backButton = document.querySelector('.Q_GoBack')
+  backButton.addEventListener('click', function () {
+    history.back()
+  })
+
   function showMarkers(category) {
     let filteredPlaces
     if (category === 'glass') {
@@ -155,6 +160,26 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('clothes')
     showMarkers('glass')
 
+    glassButton.style.backgroundColor = '#1EBCB1'
+    glassButton.style.border = '2px solid black'
+    glassButton.style.color = 'black'
+
+    plasticButton.style.backgroundColor = 'black'
+    plasticButton.style.border = '0px'
+    plasticButton.style.color = '#f4f4f4'
+
+    clothesButton.style.backgroundColor = 'black'
+    clothesButton.style.border = '0px'
+    clothesButton.style.color = '#f4f4f4'
+
+    paperButton.style.backgroundColor = 'black'
+    paperButton.style.border = '0px'
+    paperButton.style.color = '#f4f4f4'
+
+    metalButton.style.backgroundColor = 'black'
+    metalButton.style.border = '0px'
+    metalButton.style.color = '#f4f4f4'
+
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
     )
@@ -173,6 +198,26 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('metal')
     hideMarkers('clothes')
     showMarkers('plastic')
+
+    glassButton.style.backgroundColor = 'black'
+    glassButton.style.border = '0px'
+    glassButton.style.color = '#f4f4f4'
+
+    plasticButton.style.backgroundColor = '#B0D3FF'
+    plasticButton.style.border = '2px solid black'
+    plasticButton.style.color = 'black'
+
+    clothesButton.style.backgroundColor = 'black'
+    clothesButton.style.border = '0px'
+    clothesButton.style.color = '#f4f4f4'
+
+    paperButton.style.backgroundColor = 'black'
+    paperButton.style.border = '0px'
+    paperButton.style.color = '#f4f4f4'
+
+    metalButton.style.backgroundColor = 'black'
+    metalButton.style.border = '0px'
+    metalButton.style.color = '#f4f4f4'
 
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
@@ -193,6 +238,26 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('clothes')
     showMarkers('paper')
 
+    glassButton.style.backgroundColor = 'black'
+    glassButton.style.border = '0px'
+    glassButton.style.color = '#f4f4f4'
+
+    plasticButton.style.backgroundColor = 'black'
+    plasticButton.style.border = '0px'
+    plasticButton.style.color = '#f4f4f4'
+
+    clothesButton.style.backgroundColor = 'black'
+    clothesButton.style.border = '0px'
+    clothesButton.style.color = '#f4f4f4'
+
+    paperButton.style.backgroundColor = '#A15FFF'
+    paperButton.style.border = '2px solid black'
+    paperButton.style.color = 'black'
+
+    metalButton.style.backgroundColor = 'black'
+    metalButton.style.border = '0px'
+    metalButton.style.color = '#f4f4f4'
+
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
     )
@@ -212,6 +277,26 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('clothes')
     showMarkers('metal')
 
+    glassButton.style.backgroundColor = 'black'
+    glassButton.style.border = '0px'
+    glassButton.style.color = '#f4f4f4'
+
+    plasticButton.style.backgroundColor = 'black'
+    plasticButton.style.border = '0px'
+    plasticButton.style.color = '#f4f4f4'
+
+    clothesButton.style.backgroundColor = 'black'
+    clothesButton.style.border = '0px'
+    clothesButton.style.color = '#f4f4f4'
+
+    paperButton.style.backgroundColor = 'black'
+    paperButton.style.border = '0px'
+    paperButton.style.color = '#f4f4f4'
+
+    metalButton.style.backgroundColor = '#F45E4E'
+    metalButton.style.border = '2px solid black'
+    metalButton.style.color = 'black'
+
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
     )
@@ -230,6 +315,26 @@ document.addEventListener('DOMContentLoaded', function () {
     hideMarkers('paper')
     hideMarkers('metal')
     showMarkers('clothes')
+
+    glassButton.style.backgroundColor = 'black'
+    glassButton.style.border = '0px'
+    glassButton.style.color = '#f4f4f4'
+
+    plasticButton.style.backgroundColor = 'black'
+    plasticButton.style.border = '0px'
+    plasticButton.style.color = '#f4f4f4'
+
+    clothesButton.style.backgroundColor = '#ECE700'
+    clothesButton.style.border = '2px solid black'
+    clothesButton.style.color = 'black'
+
+    paperButton.style.backgroundColor = 'black'
+    paperButton.style.border = '0px'
+    paperButton.style.color = '#f4f4f4'
+
+    metalButton.style.backgroundColor = 'black'
+    metalButton.style.border = '0px'
+    metalButton.style.color = '#f4f4f4'
 
     const A_TextImportantBottomMap = document.querySelector(
       '.A_TextImportantBottomMap'
