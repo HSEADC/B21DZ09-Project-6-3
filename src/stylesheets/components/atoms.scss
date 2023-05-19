@@ -80,14 +80,21 @@
 
 .A_TitleSearchAndFilterPage {
   @include TitlesProperties;
+  border: 0;
+}
+
+.W_ArrowAnNameFilterPage {
+  display: flex;
+}
+
+.M_TitleSearchAndFilterPage {
   width: 100vw;
   min-height: 6.24vw;
-  border-right: 0px;
   border-bottom: 2px solid black;
   display: flex;
   align-items: center;
   padding-right: 1.5vw;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1vw 0 1vw 2vw;
   padding-right: 1.5vw;
 }
@@ -150,8 +157,8 @@
   border-bottom: 2px solid black;
 }
 
-.C_MainPageCards {
-  width: 29.3vw;
+.M_MainPageCards {
+  width: 29.8vw;
   height: 47.7vw;
   display: flex;
   flex-direction: column;
@@ -176,7 +183,7 @@
 
 .A_TitleAuxiliaryMainPageCardShort {
   @include TitlesAuxiliaryProperties;
-  @include TitlesAuxiliaryCardsProperties;
+  @include TitlesAuxiliaryCardsPropertiesMainPage;
 }
 
 .A_TitleAuxiliaryMainPageCardShort:hover {
@@ -536,9 +543,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 56vw;
+  width: fit-content;
   height: 4vw;
-  margin-left: 4.5vw;
 }
 
 .W_SearchAndFilterCards:hover {
@@ -554,6 +560,7 @@ h4 {
   @include TextPropertiesSmall;
   @include TitlesAuxiliaryCardsProperties;
   text-transform: none;
+  margin-right: 2vw;
 }
 
 .A_SearchAndFilterCard:hover {

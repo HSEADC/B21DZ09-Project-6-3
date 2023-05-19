@@ -27,7 +27,16 @@
   color: #f4f4f4;
   background-color: black;
   height: 4vw;
-  width: 10vw;
+  width: 9.5vw;
+}
+
+@mixin TitlesAuxiliaryCardsPropertiesMainPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 1.5vw;
+  border-bottom: 10px solid black;
 }
 
 @mixin TextPropertiesBig {
