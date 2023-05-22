@@ -24,6 +24,7 @@
 }
 
 .W_BodyTextList {
+  padding-top: 4vw;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -155,6 +156,12 @@
 .A_TitleAuxiliary {
   @include TitlesAuxiliaryProperties;
   width: 95%;
+}
+
+.A_TitleAuxiliaryBody {
+  @include TitlesAuxiliaryProperties;
+  width: 95%;
+  padding-top: 5vw;
 }
 
 .A_TitleAuxiliaryMap {
@@ -341,6 +348,15 @@ h4 {
   -ms-hyphens: auto;
 }
 
+.A_TextIndependentBody {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  padding-top: 5vw;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
 .A_TextDependent {
   @include TextPropertiesSmall;
   font-weight: 400;
@@ -362,7 +378,7 @@ h4 {
 .A_TextList {
   @include TextPropertiesBig;
   font-weight: 400;
-  padding: 0.7vw 0 1.5vw 2vw;
+  padding: 1.5vw 0 3vw 6vw;
   border-top: 2px solid #000000;
 }
 
