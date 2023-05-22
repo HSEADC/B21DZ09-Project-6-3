@@ -495,6 +495,25 @@ h4 {
   cursor: pointer;
 }
 
+.A_CollectionsPageFindButton {
+  @include TextPropertiesBig;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  background-color: black;
+  height: 5.6vw;
+  border-width: 2px;
+  border-top: 0px;
+  border-bottom: 2px solid black;
+  background-color: black;
+  margin: 3vw 0 0 22vw;
+}
+
+.A_CollectionsPageFindButton:hover {
+  cursor: pointer;
+}
+
 #input {
   all: initial;
   @include TextPropertiesSmall;

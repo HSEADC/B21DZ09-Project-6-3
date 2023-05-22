@@ -43,7 +43,7 @@ const pages = [
   'lifehackspages/lifehack15',
   'lifehackspages/lifehack16',
   'lifehackspages/lifehack17',
-  'articlespages/test',
+  'collectionspages/test',
   'articlespages/articlehdpe',
   'articlespages/articlecans',
   'articlespages/articlecardboard',
