@@ -20,6 +20,14 @@
   line-height: 2.08vw;
 }
 
+@mixin TitlesAuxiliaryPropertiesBody {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.5vw;
+}
+
 @mixin TitlesAuxiliaryCardsProperties {
   display: flex;
   align-items: center;

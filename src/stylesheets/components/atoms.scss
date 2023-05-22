@@ -159,7 +159,7 @@
 }
 
 .A_TitleAuxiliaryBody {
-  @include TitlesAuxiliaryProperties;
+  @include TitlesAuxiliaryPropertiesBody;
   width: 95%;
   padding-top: 5vw;
 }
