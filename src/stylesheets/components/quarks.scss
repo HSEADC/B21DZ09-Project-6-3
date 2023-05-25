@@ -59,6 +59,7 @@
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: space-between;
 }
 
 .Q_Logo {
@@ -112,12 +113,24 @@
 
 // images and symbols for maind maps page
 
+.Q_Menu {
+  width: 6.5vw;
+  height: 4.5vw;
+  z-index: 3;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background-image: url(./images/header/menu.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+}
+
 .Q_MindMapPagePlayImage {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-  height: 41.05vw;
+  width: 66vw;
+  height: 31vw;
   border-top: 2px solid #000000;
   border-right: 2px solid #000000;
 }
@@ -135,6 +148,10 @@
 
 .Q_GeneralImageCollectionPage {
   @include GeneralImageLifehackPageProperties;
+  width: 34vw;
+  height: 52vw;
+  border: 0;
+  margin: 0;
 }
 
 // images and symbols for articles page
@@ -260,7 +277,7 @@
 // map for map :)))))))))))
 
 .Q_Map {
-  width: 70vw;
+  width: 66vw;
   height: 46vw;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
