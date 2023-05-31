@@ -3,7 +3,9 @@
   --black: black;
   --body-padding: 1.875vw;
 }
-
+.div {
+  display: flex;
+}
 //background colors
 .green {
   background-color: #c5f700 !important;
@@ -41,6 +43,16 @@
   background-size: 90% !important;
 }
 
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  padding: 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
 //fonts colors
 
 .white {
@@ -60,11 +72,11 @@
 .marquee {
   color: #000000;
   white-space: nowrap;
-  animation: marquee 8.5s infinite linear; /* notice the infinite */
+  animation: marquee 14.5s infinite linear; /* notice the infinite */
 }
 
 .marquee:after {
-  content: 'Cервис об осознанном потреблении Cервис об осознанном потреблении';
+  content: 'Осознанное потребление — забота о себе и о планете. Выбирайте экологически ответственные продукты, утилизируйте отходы и храните вещи правильно. Вместе мы создаем более устойчивое будущее!';
 }
 
 @keyframes marquee {
@@ -148,6 +160,14 @@ a {
 
 .borderbot0 {
   border-bottom: 0 !important;
+}
+
+.bordertop2 {
+  border-bottom: 2 !important;
+}
+
+.borderbot2 {
+  border-bottom: 2 !important;
 }
 
 #category-selector {

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const colors = document.querySelectorAll('.A_MindMapPageChooseCard')
   const playButton = document.getElementById('play')
-  const restartButton = document.getElementById('restart')
   const game = document.querySelector('.Q_MindMapPagePlayImage')
   const result = document.getElementById('result')
 
@@ -42,10 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
     game.dataset.playing = true
   }
 
-  function restartGame() {
-    startGame()
-  }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return
@@ -74,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame)
-  restartButton.addEventListener('click', restartGame)
 
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick)
