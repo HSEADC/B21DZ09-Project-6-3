@@ -216,10 +216,6 @@
   @include TitlesAuxiliaryCardsPropertiesMainPage;
 }
 
-.A_TitleAuxiliaryMainPageCardShort:hover {
-  opacity: 60%;
-}
-
 .W_MainPageCardLong {
   width: 50vw;
   height: 21vw;
@@ -620,10 +616,6 @@ h4 {
   @include TitlesAuxiliaryCardsProperties;
   text-transform: none;
   margin-right: 2vw;
-}
-
-.A_SearchAndFilterCard:hover {
-  opacity: 60%;
 }
 
 .A_SearchInput {
