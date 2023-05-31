@@ -4,13 +4,104 @@
 /***/ 971:
 /***/ (() => {
 
-var backButton = document.querySelector('#back-button');
-
-if (backButton) {
+document.addEventListener('DOMContentLoaded', function () {
+  var backButton = document.querySelector('.Q_GoBack');
   backButton.addEventListener('click', function () {
-    window.history.back();
+    if (document.referrer) {
+      window.location.href = document.referrer;
+    } else {
+      // Ваш fallback-код, если document.referrer недоступен
+      // Например, перенаправление на главную страницу
+      window.location.href = '/';
+    }
   });
-}
+});
+
+/***/ }),
+
+/***/ 808:
+/***/ (() => {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var input = document.querySelector('.A_SearchInput');
+  var cards = document.querySelectorAll('.M_SearchAndFiltersPageCard');
+  var categories = document.querySelectorAll('.A_SearchAndFilterCard');
+  var filterArrow = document.querySelector('.Q_FilterPageArrowImage1');
+  var searchAndFilterCards = document.querySelector('.W_SearchAndFilterCards');
+  var titleSearchAndFilterPage = document.querySelector('.A_TitleSearchAndFilterPage');
+  var searchQuery = '';
+  var activeCategories = [];
+  var filterArrowClickCount = 0;
+  categories.forEach(function (category) {
+    category.addEventListener('mouseover', function () {
+      if (filterArrowClickCount === 0) {
+        categories.forEach(function (cat) {
+          if (cat !== category) {
+            cat.style.opacity = '0.4';
+            cat.style.transition = 'opacity 0.15s ease-in-out';
+          }
+        });
+      }
+    });
+    category.addEventListener('mouseout', function () {
+      if (filterArrowClickCount === 0) {
+        categories.forEach(function (cat) {
+          if (cat !== category) {
+            cat.style.opacity = '1';
+            cat.style.transition = 'opacity 0.15s ease-in-out';
+          }
+        });
+      }
+    });
+    category.addEventListener('click', function () {
+      filterArrowClickCount++;
+      var categoryValue = category.getAttribute('data-category').toLowerCase();
+
+      if (activeCategories.includes(categoryValue)) {
+        activeCategories.splice(activeCategories.indexOf(categoryValue), 1);
+      } else {
+        activeCategories.push(categoryValue);
+      }
+
+      categories.forEach(function (cat) {
+        var catValue = cat.getAttribute('data-category').toLowerCase();
+
+        if (activeCategories.includes(catValue)) {
+          cat.style.opacity = '1';
+          cat.style.transition = 'opacity 0.15s ease-in-out';
+        } else {
+          cat.style.opacity = '0.4';
+          cat.style.transition = 'opacity 0.15s ease-in-out';
+        }
+      });
+      cards.forEach(function (card) {
+        var keywords = card.getAttribute('data-keywords').toLowerCase();
+        var cardCategory = card.getAttribute('data-category').toLowerCase();
+
+        if (keywords.includes(searchQuery) && (activeCategories.length === 0 || activeCategories.includes(cardCategory))) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
+/***/ }),
+
+/***/ 360:
+/***/ (() => {
+
+var toggleButton = document.querySelector('.Q_Menu');
+var overlay = document.querySelector('.C_Menu');
+toggleButton.addEventListener('click', function () {
+  if (overlay.style.display === 'none' || overlay.style.display === '') {
+    overlay.style.display = 'block';
+  } else {
+    overlay.style.display = 'none';
+  }
+});
 
 /***/ }),
 
@@ -2235,7 +2326,6 @@ var plasticRecyclingPlaces = [{
 document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
-  var restartButton = document.getElementById('restart');
   var game = document.querySelector('.Q_MindMapPagePlayImage');
   var result = document.getElementById('result');
   var colorAnswers = {
@@ -2305,7 +2395,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame);
-  restartButton.addEventListener('click', restartGame);
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick);
   });
@@ -2319,7 +2408,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
-  var restartButton = document.getElementById('restart');
   var game = document.querySelector('.Q_MindMapPagePlayImage');
   var result = document.getElementById('result');
   var colorAnswers = {
@@ -2385,7 +2473,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame);
-  restartButton.addEventListener('click', restartGame);
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick);
   });
@@ -2399,7 +2486,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
-  var restartButton = document.getElementById('restart');
   var game = document.querySelector('.Q_MindMapPagePlayImage');
   var result = document.getElementById('result');
   var colorAnswers = {
@@ -2472,7 +2558,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame);
-  restartButton.addEventListener('click', restartGame);
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick);
   });
@@ -2486,7 +2571,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
-  var restartButton = document.getElementById('restart');
   var game = document.querySelector('.Q_MindMapPagePlayImage');
   var result = document.getElementById('result');
   var colorAnswers = {
@@ -2554,7 +2638,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame);
-  restartButton.addEventListener('click', restartGame);
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick);
   });
@@ -2568,7 +2651,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
-  var restartButton = document.getElementById('restart');
   var game = document.querySelector('.Q_MindMapPagePlayImage');
   var result = document.getElementById('result');
   var colorAnswers = {
@@ -2608,10 +2690,6 @@ document.addEventListener('DOMContentLoaded', function () {
     game.dataset.playing = true;
   }
 
-  function restartGame() {
-    startGame();
-  }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return;
@@ -2640,7 +2718,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   playButton.addEventListener('click', startGame);
-  restartButton.addEventListener('click', restartGame);
   colors.forEach(function (color) {
     color.addEventListener('click', handleColorClick);
   });
@@ -2771,47 +2848,48 @@ document.addEventListener('DOMContentLoaded', function () {
   var searchQuery = '';
   var activeCategories = [];
   var filterArrowClickCount = 0;
-  var backButton = document.querySelector('.Q_GoBack');
-  backButton.addEventListener('click', function () {
-    history.back();
-  }); // filterArrow.addEventListener('click', function (event) {
-  //   filterArrowClickCount++
-  //   searchAndFilterCards.style.height =
-  //     filterArrowClickCount % 2 === 0 ? '6.15vw' : 'fit-content'
-  //   titleSearchAndFilterPage.classList.toggle('borderbottom')
-  //   filterArrow.classList.toggle('Q_FilterPageArrowImage2')
-  //   event.stopPropagation()
-  // })
-  // input.addEventListener('input', function () {
-  //   searchQuery = input.value.trim().toLowerCase()
-  //   cards.forEach(function (card) {
-  //     const keywords = card.getAttribute('data-keywords').toLowerCase()
-  //     if (
-  //       keywords.includes(searchQuery) &&
-  //       (activeCategories.length === 0 ||
-  //         activeCategories.includes(
-  //           card.getAttribute('data-category').toLowerCase()
-  //         ))
-  //     ) {
-  //       card.style.display = 'flex'
-  //     } else {
-  //       card.style.display = 'none'
-  //     }
-  //   })
-  // })
-
   categories.forEach(function (category) {
+    category.addEventListener('mouseover', function () {
+      if (filterArrowClickCount === 0) {
+        categories.forEach(function (cat) {
+          if (cat !== category) {
+            cat.style.opacity = '0.4';
+            cat.style.transition = 'opacity 0.15s ease-in-out';
+          }
+        });
+      }
+    });
+    category.addEventListener('mouseout', function () {
+      if (filterArrowClickCount === 0) {
+        categories.forEach(function (cat) {
+          if (cat !== category) {
+            cat.style.opacity = '1';
+            cat.style.transition = 'opacity 0.15s ease-in-out';
+          }
+        });
+      }
+    });
     category.addEventListener('click', function () {
+      filterArrowClickCount++;
       var categoryValue = category.getAttribute('data-category').toLowerCase();
 
       if (activeCategories.includes(categoryValue)) {
         activeCategories.splice(activeCategories.indexOf(categoryValue), 1);
-        category.classList.remove('textopacity');
       } else {
         activeCategories.push(categoryValue);
-        category.classList.add('textopacity');
       }
 
+      categories.forEach(function (cat) {
+        var catValue = cat.getAttribute('data-category').toLowerCase();
+
+        if (activeCategories.includes(catValue)) {
+          cat.style.opacity = '1';
+          cat.style.transition = 'opacity 0.15s ease-in-out';
+        } else {
+          cat.style.opacity = '0.4';
+          cat.style.transition = 'opacity 0.15s ease-in-out';
+        }
+      });
       cards.forEach(function (card) {
         var keywords = card.getAttribute('data-keywords').toLowerCase();
         var cardCategory = card.getAttribute('data-category').toLowerCase();
@@ -3299,7 +3377,12 @@ var clothes = __webpack_require__(829);
 var metal = __webpack_require__(195);
 // EXTERNAL MODULE: ./src/javascript/mappage.js
 var mappage = __webpack_require__(551);
+// EXTERNAL MODULE: ./src/javascript/indexsearch.js
+var indexsearch = __webpack_require__(360);
+// EXTERNAL MODULE: ./src/javascript/buttons.js
+var buttons = __webpack_require__(808);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
