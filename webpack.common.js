@@ -19,6 +19,7 @@ const pages = [
   'map',
   'collections',
   'promo',
+  'landing',
   'questions',
   'styleguide',
   'old-promo',

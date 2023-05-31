@@ -347,6 +347,16 @@ h4 {
   -ms-hyphens: auto;
 }
 
+.A_TextIndependentFooter {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
 .A_TextIndependentBody {
   @include TextPropertiesBig;
   font-weight: 400;
@@ -364,6 +374,25 @@ h4 {
   -ms-hyphens: auto;
   margin-left: 6vw;
   padding-top: 3vw;
+}
+
+.A_TextDependentFooter {
+  @include TextPropertiesSmall;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  color: #f4f4f4;
+}
+
+.W_LogoBottomFooter {
+  height: 7vw;
+  width: 100vw;
+  display: flex;
+  border: 2px solid #f4f4f4;
+  border-top: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .A_TextDependentMap {
@@ -640,10 +669,13 @@ h4 {
   @include Line;
   height: 12px;
 }
+
 .C_Menu {
   display: none;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #f4f4f4;
   z-index: 2;
   width: 100vw;
   height: 62.5vw;
