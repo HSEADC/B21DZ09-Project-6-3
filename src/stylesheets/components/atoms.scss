@@ -693,3 +693,168 @@ h4 {
   flex-direction: column;
   justify-content: flex-end;
 }
+//landing
+
+.A_TitleAuxiliaryBodyLandingPage {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 2.08vw;
+  line-height: 2.7vw;
+  padding-bottom: 1.5vw;
+  border-bottom: 20px solid black;
+  border-right: 0;
+}
+
+.A_TextIndependentLandingWide {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  width: 70.7vw;
+  text-align: center;
+}
+
+.A_TextDependentLandingWide {
+  @include TextPropertiesSmall;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  width: 60vw;
+  text-align: center;
+}
+
+.A_TextIndependentLanding {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  padding-top: 3vw;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.A_TitleLandingPage {
+  @include TitlesProperties;
+  border-bottom: 20px solid black;
+  border-right: 0;
+  width: 68vw;
+  padding-bottom: 2vw;
+  text-align: center;
+}
+
+.A_LineLandingPageBlack {
+  @include TitlesProperties;
+  text-align: center;
+  width: 100vw;
+  border-bottom: 2px solid black;
+  background-color: black;
+  color: #f4f4f4;
+}
+
+.W_TitleLandingPage {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 2.5vw 4.5vw 6vw 4.5vw;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.M_LandingAboutUs {
+  display: flex;
+  height: 57vw;
+  width: 80vw;
+  border-left: 2px solid black;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.W_LandingAboutUsInfo {
+  height: 28.5vw;
+  width: 40vw;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  padding: 3vw;
+  padding-top: 2.5vw;
+}
+
+.M_LandingWhatWeHave {
+  display: flex;
+  height: 57.5vw;
+  width: 80vw;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 3vw 4.5vw 4vw 4.5vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.M_LandingWhatMail {
+  display: flex;
+  height: 57vw;
+  width: 80vw;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 3vw 4.5vw 4vw 4.5vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.M_LandingPageCards {
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.W_MenuLandingPageLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 1.5vw;
+  border-bottom: 4px solid black;
+}
+
+.A_TextIndependentLandingMenu {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  width: 20vw;
+  line-height: 2vw;
+}
+
+.A_TextDependentLandingMenu {
+  @include TextPropertiesSmall;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  width: 15vw;
+  text-align: right;
+  opacity: 50%;
+  line-height: 1.6vw;
+}
+
+.C_LandingSearchAndFiltersCards {
+  padding: 2vw 1.8vw 1vw 0vw;
+  display: flex;
+  justify-content: center;
+  min-height: 57vw;
+  width: 80vw;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 10vw;
+  align-content: space-around;
+}
