@@ -51,6 +51,10 @@ window?.addEventListener('load', function () {
       )
     }
 
+    filteredPlaces = filteredPlaces.filter(
+      (f) => f.name && f.coordinates?.length
+    )
+
     filteredPlaces.forEach((place) => {
       if (!markers.includes(place.name)) {
         markers.push(place.name)
