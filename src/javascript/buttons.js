@@ -5,7 +5,7 @@ const menuItems = document.querySelectorAll('.menu-item')
 menuItems.forEach((menuItem) => {
   const symbol = menuItem.querySelector('.Q_MainPageSymbol')
 
-  menuItem.addEventListener('mouseenter', () => {
+  menuItem?.addEventListener('mouseenter', () => {
     // Изменяем цвет текста и картинку всех пунктов меню, кроме текущего
     menuItems.forEach((item) => {
       if (item !== menuItem) {
@@ -19,7 +19,7 @@ menuItems.forEach((menuItem) => {
   })
 
   // Восстанавливаем цвет текста и картинку всех пунктов меню при уходе мыши
-  menuItem.addEventListener('mouseleave', () => {
+  menuItem?.addEventListener('mouseleave', () => {
     menuItems.forEach((item) => {
       item.style.transition = 'color 0.3s, opacity 0.3s'
       item.style.color = 'rgba(0, 0, 0, 1)'

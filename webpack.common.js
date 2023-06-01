@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
@@ -19,7 +20,6 @@ const pages = [
   'map',
   'collections',
   'promo',
-  'landing',
   'questions',
   'styleguide',
   'old-promo',
@@ -159,6 +159,11 @@ module.exports = {
 
     new CopyPlugin({
       patterns: [{ from: 'src/share', to: 'share' }]
+    }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     }),
 
     ...pages.map((page) => {
