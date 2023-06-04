@@ -1011,3 +1011,34 @@ h4 {
   justify-content: space-between;
   margin-top: 4vw;
 }
+
+.W_StyleGuideColorSmall {
+  display: flex;
+  width: 15vw;
+  height: 15vw;
+  padding-bottom: 1vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 2px solid black;
+  border-radius: 0.5vw;
+}
+
+.W_StyleGuideColorBig {
+  display: flex;
+  width: 20vw;
+  height: 20vw;
+  padding-bottom: 1vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border: 2px solid black;
+  border-radius: 0.5vw;
+}
+
+.C_StyleGuideColors {
+  display: flex;
+  width: 93vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
