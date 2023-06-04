@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document?.addEventListener('DOMContentLoaded', function () {
   mapboxgl.accessToken =
     'pk.eyJ1Ijoic21zYWxpc2NoZXZhMjIiLCJhIjoiY2xmNzF4eWZsMDJzODQ0bnZnNXFiYmd0cyJ9.TXlxfRR7GHif7rBbRWqOZw' // замените на свой токен Mapbox
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let markers = []
 
   const backButton = document.querySelector('.Q_GoBack')
-  backButton.addEventListener('click', function () {
+  backButton?.addEventListener('click', function () {
     history.back()
   })
 
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  glassButton.addEventListener('click', function () {
+  glassButton?.addEventListener('click', function () {
     hideMarkers('plastic')
     hideMarkers('paper')
     hideMarkers('metal')
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Правильная утилизация стекла позволит его переработать и\u00A0использовать повторно, что\u00A0позволяет экономить на\u00A0добыче новых сырьевых материалов и\u00A0снижать негативное воздействие на\u00A0окружающую среду. Кроме того, утилизация стекла может сократить количество отходов на\u00A0свалках и\u00A0уменьшить затраты на\u00A0сбор и\u00A0обработку мусора.'
   })
 
-  plasticButton.addEventListener('click', function () {
+  plasticButton?.addEventListener('click', function () {
     hideMarkers('glass')
     hideMarkers('paper')
     hideMarkers('metal')
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Утилизация пластика является важным экологическим вопросом, поскольку пластиковые отходы могут нанести серьезный вред окружающей среде и\u00A0живым организмам. Некоторые виды пластика могут разлагаться на\u00A0протяжении сотен лет, загрязняя водные и\u00A0наземные экосистемы, что\u00A0может привести к\u00A0гибели животных и\u00A0разрушить их\u00A0местообитания.'
   })
 
-  paperButton.addEventListener('click', function () {
+  paperButton?.addEventListener('click', function () {
     hideMarkers('glass')
     hideMarkers('plastic')
     hideMarkers('metal')
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Бумага производится из\u00A0древесных волокон, которые не\u00A0только являются ограниченным ресурсом, но\u00A0и\u00A0их добыча приводит к\u00A0вырубке лесов, уменьшению биоразнообразия и\u00A0изменению климата. Кроме того, складирование неиспользуемой бумаги на\u00A0свалках приводит к\u00A0загрязнению почвы и\u00A0воды, а\u00A0также\u00A0выбросу парниковых газов. Утилизация бумаги позволяет повторно использовать ее в\u00A0качестве сырья для\u00A0производства новой бумаги, что\u00A0сокращает потребление древесных ресурсов. Кроме того, утилизация бумаги помогает сократить объем отходов, которые попадают на\u00A0свалки'
   })
 
-  metalButton.addEventListener('click', function () {
+  metalButton?.addEventListener('click', function () {
     hideMarkers('glass')
     hideMarkers('plastic')
     hideMarkers('paper')
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Металлы являются ценными ресурсами, которые могут быть переработаны и\u00A0использованы повторно, вместо того чтобы\u00A0быть выброшенными на\u00A0свалку и\u00A0загрязнять окружающую среду. Утилизация металла также позволяет сэкономить энергию и\u00A0ресурсы, необходимые для\u00A0производства нового металла. В\u00A0процессе переработки металла происходит снижение выбросов парниковых газов и\u00A0других вредных веществ, которые могут негативно влиять на\u00A0окружающую среду.'
   })
 
-  clothesButton.addEventListener('click', function () {
+  clothesButton?.addEventListener('click', function () {
     hideMarkers('glass')
     hideMarkers('plastic')
     hideMarkers('paper')
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const stationInput = document.getElementById('input')
   const stationButton = document.querySelector('.A_MapPageFindButton')
 
-  stationButton.addEventListener('click', function () {
+  stationButton?.addEventListener('click', function () {
     const stationName = stationInput.value
     if (stationName) {
       fetch(

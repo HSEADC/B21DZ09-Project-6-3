@@ -7,7 +7,10 @@
     <title>Главная</title>
     <meta property="og:url" content="https://retrash.adc.ac" />
     <meta property="og:image" content="https://retrash.adc.ac/share/test.png" />
-
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <analytics></analytics>
   </head>
 
@@ -45,7 +48,7 @@
             </div>
           </div>
           <div>
-            <div class="Q_Map"></div>
+            <div class="Q_Map" id="map"></div>
             <div class="W_MapInput">
               <div class="A_MapPageInput">
                 <input
@@ -61,22 +64,22 @@
       </div>
       <div class="O_Footer">
         <div class="W_FooterCardProducers">
-          <div class="A_TextIndependent white">ИЗГОТОВИТЕЛИ</div>
-          <div class="A_TextDependent paddingtop2 white">
+          <div class="A_TextIndependent paddingbot5 white">ИЗГОТОВИТЕЛИ</div>
+          <div class="A_TextDependentFooter paddingtop2">
             Олейниченко Ася
           </div>
-          <div class="A_TextDependent white">
+          <div class="A_TextDependentFooter">
             Шестакова Станислава
           </div>
         </div>
         <div class="W_FooterCardCurators">
-          <div class="A_TextIndependent white">КУРАТОРЫ</div>
+          <div class="A_TextIndependentFooter paddingbot5">КУРАТОРЫ</div>
           <div class="Q_ABCImage"></div>
-          <div class="A_TextDependent paddingtop2 white">Захар День</div>
-          <div class="A_TextDependent white">Соня Каем</div>
+          <div class="A_TextDependentFooter paddingtop2">Захар День</div>
+          <div class="A_TextDependentFooter">Соня Каем</div>
         </div>
         <div class="M_FooterCardSocialNetworks">
-          <div class="A_TextIndependent white">МЫ В СОЦ СЕТЯХ</div>
+          <div class="A_TextIndependentFooter">МЫ В СОЦ СЕТЯХ</div>
           <div class="W_FooterSymbolsSocialNetworks">
             <a href="https://t.me/TRASHRETRASH">
               <div class="Q_SocialNetworkIconTelegram"></div
@@ -93,10 +96,12 @@
           <div class="Q_BarkodeImage"></div>
           <div class="Q_HSEImage"></div>
         </div>
+        <div class="W_LogoBottomFooter">
+          <div class="A_TextIndependentFooter">Re*trash</div>
+        </div>
       </div>
     </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-    <script src="javascript/mappage.js"></script>
     <script src="javascript/maprecyclingplases/glass.js"></script>
     <script src="javascript/maprecyclingplases/plastic.js"></script>
     <script src="javascript/maprecyclingplases/paper.js"></script>

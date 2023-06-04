@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
+document?.addEventListener('DOMContentLoaded', function () {
   const backButton = document.querySelector('.Q_GoBack')
-  backButton.addEventListener('click', function () {
+  backButton?.addEventListener('click', function () {
     if (document.referrer) {
       window.location.href = document.referrer
     } else {

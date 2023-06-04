@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document?.addEventListener('DOMContentLoaded', function () {
   const input = document.querySelector('.A_SearchInput')
   const cards = document.querySelectorAll('.M_SearchAndFiltersPageCard')
   const categories = document.querySelectorAll('.A_SearchAndFilterCard')
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let filterArrowClickCount = 0
 
   categories.forEach(function (category) {
-    category.addEventListener('mouseover', function () {
+    category?.addEventListener('mouseover', function () {
       if (filterArrowClickCount === 0) {
         categories.forEach(function (cat) {
           if (cat !== category) {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
 
-    category.addEventListener('mouseout', function () {
+    category?.addEventListener('mouseout', function () {
       if (filterArrowClickCount === 0) {
         categories.forEach(function (cat) {
           if (cat !== category) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
 
-    category.addEventListener('click', function () {
+    category?.addEventListener('click', function () {
       filterArrowClickCount++
       const categoryValue = category.getAttribute('data-category').toLowerCase()
 

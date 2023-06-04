@@ -11,7 +11,7 @@ const brandToggle = `
 каждый сможет начать осознанное потребление с нуля. <br />
 Наш бренд стремится быть максимально простым и понятным<span class="gray">. Именно
 поэтому <br />
-в основу фирменного стиля легла эстетика технических стикеров.</span> 
+в основу фирменного стиля легла эстетика технических стикеров.</span>
 `
 
 const weDefault = `
@@ -48,8 +48,7 @@ const missionToggle = `<span class="gray">Наша миссия — </span>оч�
             весь мир!
 `
 
-const headerDefault = 
-`
+const headerDefault = `
 Нажмите на увеличивающийся при наведении текст, чтобы выделить самое
 важное.
 `
@@ -154,155 +153,153 @@ const graphicsToggle = `
             в ярких, современных цветах.</span>
 `
 
+const brandBtn = document.getElementById('brand-btn')
+const weBtn = document.getElementById('we-btn')
+const goalBtn = document.getElementById('goal-btn')
+const missionBtn = document.getElementById('mission-btn')
+const headerBtn = document.getElementById('header-btn')
+const pravilaOneBtn = document.getElementById('pravila-one-btn')
+const pravilaTwoBtn = document.getElementById('pravila-two-btn')
+const pravilaThreeBtn = document.getElementById('pravila-three-btn')
+const colorsBtn = document.getElementById('colors-btn')
+const typographyBtn = document.getElementById('typography-btn')
+const compositionBtn = document.getElementById('composition-btn')
+const graphicsBtn = document.getElementById('graphics-btn')
 
-
-const brandBtn = document.getElementById('brand-btn');
-const weBtn = document.getElementById('we-btn');
-const goalBtn = document.getElementById('goal-btn');
-const missionBtn = document.getElementById('mission-btn');
-const headerBtn = document.getElementById('header-btn');
-const pravilaOneBtn = document.getElementById('pravila-one-btn');
-const pravilaTwoBtn = document.getElementById('pravila-two-btn');
-const pravilaThreeBtn = document.getElementById('pravila-three-btn');
-const colorsBtn = document.getElementById('colors-btn');
-const typographyBtn = document.getElementById('typography-btn');
-const compositionBtn = document.getElementById('composition-btn');
-const graphicsBtn = document.getElementById('graphics-btn');
-
-const brandText = document.getElementById('brand-text');
-const weText = document.getElementById('we-text');
-const goalText = document.getElementById('goal-text');
-const missionText = document.getElementById('mission-text');
-const headerText = document.getElementById('header-text');
-const pravilaOneText = document.getElementById('pravila-one-text');
-const pravilaTwoText = document.getElementById('pravila-two-text');
-const pravilaThreeText = document.getElementById('pravila-three-text');
-const colorsText = document.getElementById('colors-text');
-const typographyText = document.getElementById('typography-text');
-const compositionText = document.getElementById('composition-text');
-const graphicsText = document.getElementById('graphics-text');
+const brandText = document.getElementById('brand-text')
+const weText = document.getElementById('we-text')
+const goalText = document.getElementById('goal-text')
+const missionText = document.getElementById('mission-text')
+const headerText = document.getElementById('header-text')
+const pravilaOneText = document.getElementById('pravila-one-text')
+const pravilaTwoText = document.getElementById('pravila-two-text')
+const pravilaThreeText = document.getElementById('pravila-three-text')
+const colorsText = document.getElementById('colors-text')
+const typographyText = document.getElementById('typography-text')
+const compositionText = document.getElementById('composition-text')
+const graphicsText = document.getElementById('graphics-text')
 
 brandBtn?.addEventListener('click', () => {
-  if (!brandText) return;
+  if (!brandText) return
   if (brandBtn?.dataset?.text === 'default') {
-    brandText.innerHTML = brandToggle;
+    brandText.innerHTML = brandToggle
     brandBtn.dataset.text = 'toggle'
     return
   }
-  brandText.innerHTML = brandDefault;
+  brandText.innerHTML = brandDefault
   brandBtn.dataset.text = 'default'
 })
 
 weBtn?.addEventListener('click', () => {
-  if (!weText) return;
+  if (!weText) return
   if (weBtn?.dataset?.text === 'default') {
-    weText.innerHTML = weToggle;
+    weText.innerHTML = weToggle
     weBtn.dataset.text = 'toggle'
     return
   }
-  weText.innerHTML = weDefault;
+  weText.innerHTML = weDefault
   weBtn.dataset.text = 'default'
 })
 
 goalBtn?.addEventListener('click', () => {
-  if (!goalText) return;
+  if (!goalText) return
   if (goalBtn?.dataset?.text === 'default') {
-    goalText.innerHTML = goalToggle;
+    goalText.innerHTML = goalToggle
     goalBtn.dataset.text = 'toggle'
     return
   }
-  goalText.innerHTML = goalDefault;
+  goalText.innerHTML = goalDefault
   goalBtn.dataset.text = 'default'
 })
 
 missionBtn?.addEventListener('click', () => {
-  if (!missionText) return;
+  if (!missionText) return
   if (missionBtn?.dataset?.text === 'default') {
-    missionText.innerHTML = missionToggle;
+    missionText.innerHTML = missionToggle
     missionBtn.dataset.text = 'toggle'
     return
   }
-  missionText.innerHTML = missionDefault;
+  missionText.innerHTML = missionDefault
   missionBtn.dataset.text = 'default'
 })
 
 headerBtn?.addEventListener('click', () => {
-  if (!headerText) return;
+  if (!headerText) return
   if (headerBtn?.dataset?.text === 'default') {
-    headerText.innerHTML = headerToggle;
+    headerText.innerHTML = headerToggle
     headerBtn.dataset.text = 'toggle'
     return
   }
-  headerText.innerHTML = headerDefault;
+  headerText.innerHTML = headerDefault
   headerBtn.dataset.text = 'default'
 })
 pravilaOneBtn?.addEventListener('click', () => {
-  if (!pravilaOneText) return;
+  if (!pravilaOneText) return
   if (pravilaOneBtn?.dataset?.text === 'default') {
-    pravilaOneText.innerHTML = pravilaOneToggle;
+    pravilaOneText.innerHTML = pravilaOneToggle
     pravilaOneBtn.dataset.text = 'toggle'
     return
   }
-  pravilaOneText.innerHTML = pravilaOneDefault;
+  pravilaOneText.innerHTML = pravilaOneDefault
   pravilaOneBtn.dataset.text = 'default'
 })
 pravilaTwoBtn?.addEventListener('click', () => {
-  if (!pravilaTwoText) return;
+  if (!pravilaTwoText) return
   if (pravilaTwoBtn?.dataset?.text === 'default') {
-    pravilaTwoText.innerHTML = pravilaTwoToggle;
+    pravilaTwoText.innerHTML = pravilaTwoToggle
     pravilaTwoBtn.dataset.text = 'toggle'
     return
   }
-  pravilaTwoText.innerHTML = pravilaTwoDefault;
+  pravilaTwoText.innerHTML = pravilaTwoDefault
   pravilaTwoBtn.dataset.text = 'default'
 })
 pravilaThreeBtn?.addEventListener('click', () => {
-  if (!pravilaThreeText) return;
+  if (!pravilaThreeText) return
   if (pravilaThreeBtn?.dataset?.text === 'default') {
-    pravilaThreeText.innerHTML = pravilaThreeToggle;
+    pravilaThreeText.innerHTML = pravilaThreeToggle
     pravilaThreeBtn.dataset.text = 'toggle'
     return
   }
-  pravilaThreeText.innerHTML = pravilaThreeDefault;
+  pravilaThreeText.innerHTML = pravilaThreeDefault
   pravilaThreeBtn.dataset.text = 'default'
 })
 colorsBtn?.addEventListener('click', () => {
-  if (!colorsText) return;
+  if (!colorsText) return
   if (colorsBtn?.dataset?.text === 'default') {
-    colorsText.innerHTML = colorsToggle;
+    colorsText.innerHTML = colorsToggle
     colorsBtn.dataset.text = 'toggle'
     return
   }
-  colorsText.innerHTML = colorsDefault;
+  colorsText.innerHTML = colorsDefault
   colorsBtn.dataset.text = 'default'
 })
 typographyBtn?.addEventListener('click', () => {
-  if (!typographyText) return;
+  if (!typographyText) return
   if (typographyBtn?.dataset?.text === 'default') {
-    typographyText.innerHTML = typographyToggle;
+    typographyText.innerHTML = typographyToggle
     typographyBtn.dataset.text = 'toggle'
     return
   }
-  typographyText.innerHTML = typographyDefault;
+  typographyText.innerHTML = typographyDefault
   typographyBtn.dataset.text = 'default'
 })
 compositionBtn?.addEventListener('click', () => {
-  if (!compositionText) return;
+  if (!compositionText) return
   if (compositionBtn?.dataset?.text === 'default') {
-    compositionText.innerHTML = compositionToggle;
+    compositionText.innerHTML = compositionToggle
     compositionBtn.dataset.text = 'toggle'
     return
   }
-  compositionText.innerHTML = compositionDefault;
+  compositionText.innerHTML = compositionDefault
   compositionBtn.dataset.text = 'default'
 })
 graphicsBtn?.addEventListener('click', () => {
-  if (!graphicsText) return;
+  if (!graphicsText) return
   if (graphicsBtn?.dataset?.text === 'default') {
-    graphicsText.innerHTML = graphicsToggle;
+    graphicsText.innerHTML = graphicsToggle
     graphicsBtn.dataset.text = 'toggle'
     return
   }
-  graphicsText.innerHTML = graphicsDefault;
+  graphicsText.innerHTML = graphicsDefault
   graphicsBtn.dataset.text = 'default'
 })

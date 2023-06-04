@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document?.addEventListener('DOMContentLoaded', function () {
   const colors = document.querySelectorAll('.A_MindMapPageChooseCard')
   const playButton = document.getElementById('play')
   const game = document.querySelector('.Q_MindMapPagePlayImage')
@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 500)
   }
 
-  playButton.addEventListener('click', startGame)
+  playButton?.addEventListener('click', startGame)
 
   colors.forEach(function (color) {
-    color.addEventListener('click', handleColorClick)
+    color?.addEventListener('click', handleColorClick)
   })
 })

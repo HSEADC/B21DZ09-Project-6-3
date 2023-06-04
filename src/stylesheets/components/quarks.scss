@@ -59,7 +59,7 @@
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .Q_Logo {
@@ -92,12 +92,12 @@
   background-image: url(./images/AllArticlesArrow.svg);
   width: 10.15vw;
   height: 6.29vw;
+  border-right: 2px solid black;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
   margin-right: 3vw;
-  border-right: 2px solid black;
 }
 
 .Q_GoBack:hover {
@@ -114,12 +114,21 @@
 // images and symbols for maind maps page
 
 .Q_Menu {
-  width: 6.5vw;
-  height: 4.5vw;
+  width: 5vw;
+  height: 3vw;
   z-index: 3;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
   background-image: url(./images/header/menu.svg);
+  background-size: 65%;
+  background-position: left;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+}
+
+.Q_MenuBlack {
+  width: 4vw;
+  height: 3vw;
+  z-index: 3;
+  background-image: url(./images/header/menublack.svg);
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
@@ -299,4 +308,57 @@
   height: 1.5vw;
   width: 2.25vw;
   margin-left: 11.4vw;
+}
+
+// Landing
+
+.Q_LandingEarthImage {
+  background-image: url(images/landing/Earth.png);
+  background-size: 100%;
+  height: 30vw;
+  width: 30vw;
+  margin: 4.2vw 0 4.2vw 0;
+}
+
+.Q_LandingAboutUs {
+  background-size: 105%;
+  height: 28.5vw;
+  width: 40vw;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.Q_NumberSymbolLanding {
+  width: 3vw;
+  height: 3vw;
+}
+
+.Q_LandingPageSymbol {
+  height: 4.5vw;
+  width: 4.5vw;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 12vw;
+  margin-right: 8vw;
+}
+
+// Styleguide
+
+.Q_StyleGuideSecurityField {
+  background-image: url(images/styleguidefinish/StyleGuideSecurityField.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 27vw;
+}
+
+.Q_StyleGuideLogoPositions {
+  background-image: url(images/styleguidefinish/StyleGuideLogoPositions.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 91vw;
+  height: 35vw;
 }

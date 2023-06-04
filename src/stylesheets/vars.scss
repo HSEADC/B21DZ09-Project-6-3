@@ -7,32 +7,49 @@
   display: flex;
 }
 //background colors
+
+.whiteback {
+  background-color: #f4f4f4;
+}
+
 .green {
   background-color: #c5f700 !important;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.turquoise {
+  background-color: #1ebcb1;
+}
+
+.violet1 {
+  background-color: #c15fc1;
+}
+
+.violet2 {
+  background-color: #a15fff;
+}
+
+.lightorange {
+  background-color: #f47745;
 }
 
 .yellow {
   background-color: #ece700;
 }
 
-.orange {
-  background-color: #f45e4e;
-}
-
-.blue {
-  background-color: #0093ff;
-}
-
-.violet {
-  background-color: #a15fff;
+.brown {
+  background-color: #cca580;
 }
 
 .lightblue {
   background-color: #b0d3ff;
 }
 
-.turquoise {
-  background-color: #1ebcb1;
+.orange {
+  background-color: #f45e4e;
 }
 
 .backgound70 {
@@ -43,24 +60,10 @@
   background-size: 90% !important;
 }
 
-.mapboxgl-popup {
-  max-width: 200px;
-}
-
-.mapboxgl-popup-content {
-  padding: 0.5em;
-  text-align: center;
-  font-weight: bold;
-}
-
 //fonts colors
 
 .white {
   color: #f4f4f4;
-}
-
-.whiteback {
-  background-color: #f4f4f4;
 }
 
 .running-text {
@@ -72,7 +75,7 @@
 .marquee {
   color: #000000;
   white-space: nowrap;
-  animation: marquee 14.5s infinite linear; /* notice the infinite */
+  animation: marquee 70s infinite linear; /* notice the infinite */
 }
 
 .marquee:after {
@@ -110,6 +113,14 @@ a {
 
 .margintop3 {
   margin-top: 3vw;
+}
+
+.margintop12 {
+  margin-top: 3vw;
+}
+
+.margintop17 {
+  margin-top: 20vw;
 }
 
 .margintop2 {
@@ -987,4 +998,13 @@ a {
 .mainnonstyle {
   padding-bottom: 0 !important;
   border-bottom: 0 !important;
+}
+//landing
+
+.LandingAboutUsUp {
+  background-image: url(./images/landing/LandingForWho1.png);
+}
+
+.LandingAboutUsDown {
+  background-image: url(./images/landing/LandingForWho2.png);
 }
