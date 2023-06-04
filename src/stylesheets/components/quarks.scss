@@ -362,3 +362,43 @@
   width: 91vw;
   height: 35vw;
 }
+
+.Q_StyleGuidePictureGridLong {
+  background-image: url(images/styleguidefinish/StyleGuidePictureGridLong.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 75vw;
+  height: 35vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 3vw 0 1vw 0;
+}
+
+.Q_StyleGuidePictureGridShort {
+  background-image: url(images/styleguidefinish/StyleGuidePictureGridShort.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 65vw;
+  height: 38vw;
+  margin: 3vw 0 1vw 0;
+}
+
+.Q_StyleGuideArrowLeft {
+  background-image: url(images/styleguidefinish/StyleGuideArrowLeft.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 9vw;
+  height: 4vw;
+}
+
+.Q_StyleGuideArrowRight {
+  background-image: url(images/styleguidefinish/StyleGuideArrowRight.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 9vw;
+  height: 4vw;
+}

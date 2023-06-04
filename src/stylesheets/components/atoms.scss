@@ -900,7 +900,7 @@ h4 {
   width: 97vw;
   min-height: 59.5vw;
   border: 2px solid black;
-  padding: 4vw 3vw 7vw 3vw;
+  padding: 4vw 3vw 5vw 3vw;
   margin-top: 1.5vw;
   display: flex;
   flex-direction: column;
@@ -1014,20 +1014,21 @@ h4 {
 
 .W_StyleGuideColorSmall {
   display: flex;
-  width: 15vw;
-  height: 15vw;
+  width: 14vw;
+  height: 14vw;
   padding-bottom: 1vw;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   border: 2px solid black;
   border-radius: 0.5vw;
+  margin-top: 1vw;
 }
 
 .W_StyleGuideColorBig {
   display: flex;
-  width: 20vw;
-  height: 20vw;
+  width: 21.5vw;
+  height: 21.5vw;
   padding-bottom: 1vw;
   flex-direction: column;
   align-items: center;
@@ -1038,7 +1039,132 @@ h4 {
 
 .C_StyleGuideColors {
   display: flex;
-  width: 93vw;
+  width: 90vw;
+  margin: 4vw 0 2vw 0;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-between;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.M_StyleGuideCards {
+  width: 55vw;
+  height: 47.7vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2vw;
+  justify-content: space-between;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border-bottom: 30px solid black;
+  border-top: 30px solid black;
+}
+
+.A_MapPageFindButtonS {
+  @include TextPropertiesBig;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  background-color: black;
+  height: 5.6vw;
+  border-width: 2px;
+  border-top: 0px;
+  border-bottom: 2px solid black;
+  background-color: black;
+}
+
+.A_MapPageFindButtonS:hover {
+  cursor: pointer;
+}
+
+.A_MapPageInputStyleGuide {
+  width: 46vw;
+  height: 5.6vw;
+  display: flex;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  flex-direction: column;
+}
+
+.M_StyleGuideBlockUiKit {
+  width: 97vw;
+  min-height: 59.5vw;
+  border: 2px solid black;
+  padding: 4vw 3vw 0vw 3vw;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.A_StyleGuideLinkUiKit {
+  @include TextPropertiesBig;
+  width: 97vw;
+  height: 6vw;
+  padding: 1.5vw;
+  color: #f4f4f4;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -3vw;
+  justify-content: center;
+}
+
+.A_StyleGuideLinkUiKit:hover {
+  cursor: pointer;
+}
+
+.M_StyleGuideBlockImages {
+  width: 97vw;
+  height: 59.5vw;
+  border: 2px solid black;
+  padding: 4vw 3vw 5vw 3vw;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: url(images/styleguidefinish/StyleGuideBackgroundImages.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.M_StyleGuideBlockToneOfVoive {
+  width: 97vw;
+  height: 40vw;
+  border: 2px solid black;
+  padding: 4vw 3vw 5vw 3vw;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.M_StyleGuideBlockAbout {
+  width: 97vw;
+  min-height: 59.5vw;
+  border: 2px solid black;
+  padding: 4vw 3vw 7vw 3vw;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.W_StyleGuideArrows {
+  display: flex;
+  justify-content: space-between;
+  width: 19.5vw;
+  margin-left: 68vw;
+  margin-bottom: 2vw;
 }
