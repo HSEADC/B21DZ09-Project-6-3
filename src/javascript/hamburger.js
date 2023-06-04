@@ -53,7 +53,6 @@ if (document.querySelector('.recycle-logo')) {
   document.querySelector('.recycle-logo').src = recycleLogo
 }
 
-
 // search icon
 const search = document.querySelector('.search-icon')
 if (search) search.src = searchIcon

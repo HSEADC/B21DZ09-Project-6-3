@@ -896,15 +896,16 @@ h4 {
   flex-direction: column;
 }
 
-.C_StyleGuideBlock {
+.M_StyleGuideBlock {
   width: 97vw;
-  height: 55vw;
+  min-height: 59.5vw;
   border: 2px solid black;
-  padding: 3vw;
+  padding: 4vw 3vw 7vw 3vw;
   margin-top: 1.5vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .A_TitleStyleGuidePage {
@@ -913,8 +914,100 @@ h4 {
   letter-spacing: -3%;
   font-size: 2.8vw;
   line-height: 4.16vw;
-  width: 33.3vw;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+}
+
+.A_TextStyleGuideIndependentBodyDependent {
+  @include TextPropertiesBig;
+  margin-top: 2vw;
+  padding-left: 3vw;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.A_TitleStyleGuideAuxiliaryBody {
+  @include TitlesAuxiliaryPropertiesBody;
+  margin-top: 3.2vw;
+  // padding-left: 2vw;
+}
+
+.C_StyleGuideWhoWeAre {
+  display: flex;
+  justify-content: space-between;
+  width: 92vw;
+}
+
+.W_StyleGuideWhoWeAreBox {
+  display: flex;
+  max-width: 45vw;
+  flex-direction: column;
+}
+
+.A_TextStyleGuideIndependentBody {
+  @include TextPropertiesBig;
+  margin-top: 2vw;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.W_StyleGuideTypographyNames {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 68.5vw;
+  justify-content: space-between;
+}
+
+.C_StyleGuideTypographyFonts {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.W_StyleGuideTypographyFont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vw;
+}
+
+.A_TextStyleGuideIndependentTypography {
+  @include TextPropertiesBig;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.A_TextStyleGuideDependentTypography {
+  @include TextPropertiesSmall;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.A_StyleGuideTitleTypography {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 2.8vw;
+  line-height: 4.16vw;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.A_StyleGuideAuxiliaryTitleTypography {
+  @include TitlesAuxiliaryPropertiesBody;
+}
+
+.C_StyleGuideTypography {
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+  margin-top: 4vw;
 }
