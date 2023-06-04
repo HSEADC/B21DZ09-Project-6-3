@@ -10,6 +10,7 @@ const path = require('path')
 const pages = [
   'index',
   'about',
+  'styleguidefinish',
   'lifehacks',
   'lifehacks/1',
   'lifehacks/2',

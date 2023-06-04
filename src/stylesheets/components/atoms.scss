@@ -858,3 +858,63 @@ h4 {
   margin-left: 10vw;
   align-content: space-around;
 }
+
+// Styleguide
+
+.C_StyleGuideCover {
+  width: 97vw;
+  height: 55vw;
+  border: 2px solid black;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 2.5vw;
+}
+
+.A_TitleStyleGuidePageCover {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 5.6vw;
+}
+
+.A_TextStyleGuidePageCover {
+  font-family: 'Inter';
+  font-size: 2vw;
+  line-height: 3vw;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.W_TextStyleGuidePageCover {
+  height: 60vw;
+  display: flex;
+  margin-top: 3vw;
+  flex-direction: column;
+}
+
+.C_StyleGuideBlock {
+  width: 97vw;
+  height: 55vw;
+  border: 2px solid black;
+  padding: 3vw;
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.A_TitleStyleGuidePage {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 2.8vw;
+  line-height: 4.16vw;
+  width: 33.3vw;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
