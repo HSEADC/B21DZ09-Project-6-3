@@ -685,31 +685,6 @@ h4 {
 }
 
 // search and filter
-.M_Filter {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 0.13vw solid #000000;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .M_Filter {
-    border-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
-  .M_Filter {
-    border-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 .C_SearchAndFiltersPageCards {
   padding: 1.8vw 1.8vw 0vw 0vw;
