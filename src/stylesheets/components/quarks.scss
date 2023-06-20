@@ -12,9 +12,50 @@
 .Q_MainPageSymbol {
   height: 4.5vw;
   width: 4.5vw;
-  background-size: 80%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPage2048.png);
+    height: 45.6vw;
+  }
+}
+
+@media only screen and (device-width: 1728px) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPage1728.png);
+    height: 53.9vw;
+  }
+}
+
+@media only screen and (device-width: 1512px) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPage1512.png);
+    height: 54.2vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPageIpad.png);
+    height: 67.38vw;
+    width: 50vw;
+  }
+  .Q_MainPageSymbol {
+    height: 5.95vw;
+    width: 5.95vw;
+  }
+  .MainPageSymbolLifehack {
+    width: 5vw;
+    height: 6.6vw;
+  }
+  .MainPageSymbolMindMap {
+    width: 6.8vw;
+    height: 6.8vw;
+  }
 }
 
 .Q_FilterPageSymbol {
@@ -113,7 +154,7 @@
 
 // images and symbols for maind maps page
 
-.W_Search {
+.W_Header {
   width: 100vw;
   display: flex;
   height: 4.5vw;
@@ -121,36 +162,62 @@
   align-items: center;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
+  justify-content: space-between;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .Q_BurgerMenuIqon {
-  width: 5vw;
-  height: 3vw;
+  width: 4vw;
+  height: 2.8vw;
   z-index: 3;
   background-image: url(./images/header/Q_BurgerMenuIqon.svg);
+  background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
 }
 
 .Q_SearchIqon {
-  width: 5vw;
-  height: 3vw;
+  width: 4vw;
+  height: 2.8vw;
   z-index: 3;
   background-image: url(./images/header/Q_SearchIqon.svg);
+  background-size: 80%;
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
 }
 
 .Q_LogoHeader {
-  width: 15vw;
-  height: 3vw;
+  width: 17vw;
+  height: 2.8vw;
   z-index: 3;
   background-image: url(./images/header/Q_LogoHeader.svg);
+  background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_Header {
+    height: 6.97vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .Q_BurgerMenuIqon {
+    height: 4.5vw;
+    width: 5.5vw;
+  }
+  .Q_SearchIqon {
+    height: 4.5vw;
+    width: 5.5vw;
+  }
+  .Q_LogoHeader {
+    height: 4.5vw;
+    width: 25vw;
+  }
 }
 
 .Q_MenuBlack {
@@ -220,7 +287,7 @@
 
 // images and symbols for search page and "it will be interesting"
 
-.Q_SearchAndFilterTopicSymbolCard {
+.Q_ContentCardsIcon {
   height: 6vw;
   width: 6vw;
 }

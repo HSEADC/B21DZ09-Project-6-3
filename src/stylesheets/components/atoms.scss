@@ -153,9 +153,16 @@
 
 // titles typography
 
-.A_TitleAuxiliary {
+.A_AdditionalTitle {
   @include TitlesAuxiliaryProperties;
   width: 95%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_AdditionalTitle {
+    font-size: 2.44vw;
+    line-height: 2.92vw;
+  }
 }
 
 .A_TitleAuxiliaryBody {
@@ -171,34 +178,19 @@
 
 // main page titles typography
 
-.A_TitleMainPage {
+.A_Title {
   @include TitlesProperties;
   text-align: center;
   width: 100vw;
   border-bottom: 2px solid black;
 }
 
-.C_MainPageCard {
-  width: 33.2vw;
-  height: 51.7vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid black;
-}
-
-.M_MainPageCards {
-  width: 29.8vw;
-  height: 47.7vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 2vw;
-  justify-content: space-between;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  border-bottom: 30px solid black;
-  border-top: 30px solid black;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_Title {
+    font-size: 3.93vw;
+    line-height: 4.68vw;
+    padding: 2vw 0 2vw 0vw;
+  }
 }
 
 .W_MainPageCardShort {
@@ -211,9 +203,29 @@
   align-items: flex-end;
 }
 
-.A_TitleAuxiliaryMainPageCardShort {
+.W_MainPageMenu {
   @include TitlesAuxiliaryProperties;
   @include TitlesAuxiliaryCardsPropertiesMainPage;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .W_MainPageMenu {
+    @include TitlesAuxiliaryProperties;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    border-bottom: 0.69vw solid black;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MainPageMenu {
+    font-size: 2.44vw;
+    line-height: 2.92vw;
+    padding-bottom: 2vw;
+  }
 }
 
 .W_MainPageCardLong {

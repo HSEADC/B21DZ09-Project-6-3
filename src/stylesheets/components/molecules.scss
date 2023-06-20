@@ -8,6 +8,68 @@
   justify-content: space-between;
 }
 
+.M_MainPageCard {
+  width: 33.2vw;
+  height: 51.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.138vw solid black;
+}
+
+.C_MainPageCards {
+  width: 29.8vw;
+  height: 47.7vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2vw;
+  justify-content: space-between;
+  border-bottom: 2.08vw solid black;
+  border-top: 2.08vw solid black;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .M_MainPageCard {
+    height: 45.6vw;
+  }
+  .C_MainPageCards {
+    height: 41.9vw;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+  }
+}
+
+@media only screen and (device-width: 1728px) {
+  .M_MainPageCard {
+    height: 53.9vw;
+  }
+  .C_MainPageCards {
+    height: 48.6vw;
+    width: 27.8vw;
+  }
+}
+
+@media only screen and (device-width: 1512px) {
+  .M_MainPageCard {
+    height: 54.2vw;
+  }
+  .C_MainPageCards {
+    height: 50vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .M_MainPageCard {
+    height: 67.38vw;
+    width: 50vw;
+  }
+  .C_MainPageCards {
+    height: 61.38vw;
+    width: 43.8vw;
+    padding: 3.2vw 3vw 3.2vw 3vw;
+  }
+}
+
 // molecules for lifehack page
 
 .M_BodyTextFactsContainer {
@@ -47,12 +109,47 @@
   justify-content: space-between;
 }
 
+.W_ContentCard {
+  width: 22.7vw;
+  height: 23.5vw;
+  padding: 2.5vw 1.5vw 1.5vw 1.5vw;
+  margin: 0 0 1.5vw 1.8vw;
+  border: 0.138vw solid #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_ContentCard {
+    width: 30.1vw;
+    height: 31.33vw;
+    margin: 0 0 2vw 2.5vw;
+    border: 0.2vw solid #000000;
+  }
+}
+
 .C_SearchAndFiltersPageCard {
   padding: 1.8vw 0vw 0vw 0vw;
   display: flex;
   min-height: 51vw;
   flex-wrap: wrap;
   border-bottom: 2px solid #000000;
+}
+
+.C_MainPageContentCards {
+  padding: 1.8vw 0vw 0vw 0vw;
+  display: flex;
+  min-height: 51vw;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #000000;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_MainPageContentCards {
+    padding: 2vw 0vw 0vw 0vw;
+    border-bottom: 0.2vw solid #000000;
+  }
 }
 
 .M_Header {

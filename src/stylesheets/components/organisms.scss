@@ -20,8 +20,14 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  height: 122vw;
+  height: auto;
   width: 100vw;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .O_MainPageContainer {
+    height: auto;
+  }
 }
 
 // search and filter page organisms
