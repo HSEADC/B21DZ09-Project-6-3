@@ -3,6 +3,7 @@
 @import 'stylesheets/basics.scss';
 
 @import 'stylesheets/index.scss';
+@import 'search.css';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/partials.scss';
 @import 'stylesheets/promo.scss';

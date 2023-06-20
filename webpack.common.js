@@ -78,7 +78,8 @@ const pages = [
   'collectionspages/collection9',
   'collectionspages/collection10',
   'collectionspages/collection11',
-  'collectionspages/collection12'
+  'collectionspages/collection12',
+  'search'
 ]
 
 const partials = [
@@ -93,7 +94,8 @@ const partials = [
 
 module.exports = {
   entry: {
-    bundle: './src/index.js'
+    bundle: './src/index.js',
+    search: './src/search.jsx'
   },
   output: {
     filename: '[name].js',
