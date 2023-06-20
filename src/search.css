@@ -9,38 +9,42 @@ body {
   min-height: 100vh;
 }
 
-main {
-  max-width: 940px;
-  width: 100%;
-  margin: 60px auto;
-}
-
 .searchWrapper {
   display: flex;
-  gap: 30px;
-  margin: 0 auto 40px;
-  max-width: 940px;
-  width: 100%;
 }
 
 .searchWrapper input {
-  height: 40px;
-  flex-grow: 1;
-  border-radius: 100px;
-  border: 1px solid #3c65f6;
-  color: #3c65f6;
-  font-size: 18px;
-  padding: 5px 20px;
+  font-family: 'Inter';
+  font-size: 1.38vw;
+  line-height: 2.08vw;
+  letter-spacing: -3%;
+  width: 30vw;
+  height: 9.9vw;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: 2px solid black;
+  padding-left: 2vw;
 }
 
 .searchWrapper button {
-  width: 220px;
-  height: 40px;
-  background: #3c65f6;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 100px;
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  color: #f4f4f4;
+  background-color: black;
+  height: 9.9vw;
+  border-width: 2px;
+  border-top: 0px;
+  border-bottom: 2px solid black;
+  background-color: black;
+  border-radius: 5px;
 }
 
 .heading {
@@ -50,19 +54,39 @@ main {
   font-size: 36px;
 }
 
-.post {
-  padding: 0 40px;
-  height: 66px;
+.C_SearchPageCards {
+  padding: 1.8vw 1.8vw 0vw 0vw;
   display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  min-height: 48.3vw;
+  width: 100vw;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #000000;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_SearchPageCards {
+    padding: 2.5vw 1.8vw 0.7vw 0vw;
+    min-height: 110vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_SearchPageCards {
+    padding: 6vw 0vw 0vw 0vw;
+    justify-content: center;
+  }
+}
+.post {
+  width: 22.7vw !important;
+  height: 23.5vw !important;
+  padding: 2.5vw 1.5vw 1.5vw 1.5vw;
+  margin: 0 0 1.5vw 1.8vw;
+  border: 0.138vw solid #000000;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  border-color: #3c65f6;
-  border-radius: 100px;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  background-color: #fff;
-  margin-bottom: 20px;
 }
 
 .keywords {

@@ -19,35 +19,36 @@ const SearchPage = () => {
   }
   console.log(posts)
   return (
-    <main>
-      <h1 className="heading">Поиск</h1>
-      <div className="searchWrapper">
-        <input
-          placeholder="пластик, пакет, магазин, мусор..."
-          onChange={(e) => setValue(e.target.value)}
-          value={value}
-          type="text"
-        />
-        <button onClick={handleSearch}>Найти</button>
+    <div className="M_Filter">
+      <div className="C_FilterPageNavigation">
+        <div className="Q_GoBack"></div>
+        <div className="A_TitleContent">Поиск</div>
       </div>
-      <div className="postsWrapper">
+      <div className="W_FilterPageButtons">
+        <div className="searchWrapper">
+          <input
+            placeholder="пластик, пакет, магазин, мусор..."
+            onChange={(e) => setValue(e.target.value)}
+            value={value}
+            type="text"
+          />
+          <button onClick={handleSearch}>Найти</button>
+        </div>
+      </div>
+
+      <div className="C_SearchPageCards">
         {posts && posts.length ? (
           posts.map((post) => (
             <a href={post.link} className="post" key={post.id}>
               {post.bg && <img src={post.bg} alt="" />}
-              {post.title}
-              <div className="keywords">
-                {post.keywords.split(',').map((key, idx) => (
-                  <p key={idx}>{key}</p>
-                ))}
-              </div>
+              <div className="A_AdditionalTitle">{post.title}</div>
             </a>
           ))
         ) : (
-          <div>Ничего не найдено</div>
+          <div></div>
         )}
       </div>
-    </main>
+    </div>
   )
 }
 
