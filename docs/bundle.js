@@ -5,7 +5,6 @@
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var backButton = document.querySelector('.Q_GoBack');
   backButton === null || backButton === void 0 ? void 0 : backButton.addEventListener('click', function () {
@@ -40,8 +39,9 @@ toggleButton === null || toggleButton === void 0 ? void 0 : toggleButton.addEven
 /***/ (() => {
 
 // Получаем все элементы с классом "menu-item"
-var menuItems = document.querySelectorAll('.menu-item'); // Перебираем элементы и добавляем обработчик события наведения мыши
+var menuItems = document.querySelectorAll('.menu-item');
 
+// Перебираем элементы и добавляем обработчик события наведения мыши
 menuItems.forEach(function (menuItem) {
   var symbol = menuItem.querySelector('.Q_MainPageSymbol');
   menuItem === null || menuItem === void 0 ? void 0 : menuItem.addEventListener('mouseenter', function () {
@@ -50,15 +50,14 @@ menuItems.forEach(function (menuItem) {
       if (item !== menuItem) {
         item.style.transition = 'color 0.3s, opacity 0.3s';
         item.style.color = 'rgba(0, 0, 0, 0.4)';
-
         var _symbol = item.querySelector('.Q_MainPageSymbol');
-
         _symbol.style.transition = 'opacity 0.3s';
         _symbol.style.opacity = '0.4';
       }
     });
-  }); // Восстанавливаем цвет текста и картинку всех пунктов меню при уходе мыши
+  });
 
+  // Восстанавливаем цвет текста и картинку всех пунктов меню при уходе мыши
   menuItem === null || menuItem === void 0 ? void 0 : menuItem.addEventListener('mouseleave', function () {
     menuItems.forEach(function (item) {
       item.style.transition = 'color 0.3s, opacity 0.3s';
@@ -91,7 +90,6 @@ toggleButton === null || toggleButton === void 0 ? void 0 : toggleButton.addEven
 /***/ (() => {
 
 var _window;
-
 (_window = window) === null || _window === void 0 ? void 0 : _window.addEventListener('load', function () {
   if (typeof mapboxgl === 'undefined') return;
   mapboxgl.accessToken = 'pk.eyJ1Ijoic21zYWxpc2NoZXZhMjIiLCJhIjoiY2xmNzF4eWZsMDJzODQ0bnZnNXFiYmd0cyJ9.TXlxfRR7GHif7rBbRWqOZw';
@@ -114,10 +112,8 @@ var _window;
   backButton === null || backButton === void 0 ? void 0 : backButton.addEventListener('click', function () {
     history.back();
   });
-
   function showMarkers(category) {
     var filteredPlaces;
-
     if (category === 'glass') {
       filteredPlaces = glassRecyclingPlaces.filter(function (place) {
         return place.description === 'Стекло';
@@ -139,10 +135,8 @@ var _window;
         return place.description === 'Одежда';
       });
     }
-
     filteredPlaces = filteredPlaces.filter(function (f) {
       var _f$coordinates;
-
       return f.name && ((_f$coordinates = f.coordinates) === null || _f$coordinates === void 0 ? void 0 : _f$coordinates.length);
     });
     filteredPlaces.forEach(function (place) {
@@ -151,21 +145,16 @@ var _window;
           switch (category) {
             case 'glass':
               return '#1ebcb1';
-
             case 'metal':
               return '#f45e4e';
-
             case 'plastic':
               return '#b0d3ff';
-
             case 'paper':
               return '#a15fff';
-
             case 'clothes':
               return '#ece700';
           }
         };
-
         markers.push(place.name);
         map.addSource(place.name, {
           type: 'geojson',
@@ -209,10 +198,8 @@ var _window;
       }
     });
   }
-
   function hideMarkers(category) {
     var filteredPlaces;
-
     if (category === 'glass') {
       filteredPlaces = glassRecyclingPlaces.filter(function (place) {
         return place.description === 'Стекло';
@@ -234,24 +221,19 @@ var _window;
         return place.description === 'Одежда';
       });
     }
-
     filteredPlaces.forEach(function (place) {
       var index = markers.indexOf(place.name);
-
       if (index !== -1) {
         markers.splice(index, 1);
-
         if (map.getLayer(place.name)) {
           map.removeLayer(place.name);
         }
-
         if (map.getSource(place.name)) {
           map.removeSource(place.name);
         }
       }
     });
   }
-
   glassButton === null || glassButton === void 0 ? void 0 : glassButton.addEventListener('click', function () {
     hideMarkers('plastic');
     hideMarkers('paper');
@@ -274,11 +256,9 @@ var _window;
     metalButton.style.border = '0px';
     metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
-
     while (A_TextImportantBottomMap.firstChild) {
       A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild);
     }
-
     class1.textContent = 'Утилизация стекла';
     class2.textContent = "\u041F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u0430\u044F \u0443\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u0441\u0442\u0435\u043A\u043B\u0430 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0435\u0433\u043E \u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0438\xA0\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E, \u0447\u0442\u043E\xA0\u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0442\u044C \u043D\u0430\xA0\u0434\u043E\u0431\u044B\u0447\u0435 \u043D\u043E\u0432\u044B\u0445 \u0441\u044B\u0440\u044C\u0435\u0432\u044B\u0445 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u043E\u0432 \u0438\xA0\u0441\u043D\u0438\u0436\u0430\u0442\u044C \u043D\u0435\u0433\u0430\u0442\u0438\u0432\u043D\u043E\u0435 \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u043D\u0430\xA0\u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0443\u044E \u0441\u0440\u0435\u0434\u0443. \u041A\u0440\u043E\u043C\u0435 \u0442\u043E\u0433\u043E, \u0443\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u0441\u0442\u0435\u043A\u043B\u0430 \u043C\u043E\u0436\u0435\u0442 \u0441\u043E\u043A\u0440\u0430\u0442\u0438\u0442\u044C \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043E\u0442\u0445\u043E\u0434\u043E\u0432 \u043D\u0430\xA0\u0441\u0432\u0430\u043B\u043A\u0430\u0445 \u0438\xA0\u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u0437\u0430\u0442\u0440\u0430\u0442\u044B \u043D\u0430\xA0\u0441\u0431\u043E\u0440 \u0438\xA0\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043C\u0443\u0441\u043E\u0440\u0430.";
   });
@@ -304,11 +284,9 @@ var _window;
     metalButton.style.border = '0px';
     metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
-
     while (A_TextImportantBottomMap.firstChild) {
       A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild);
     }
-
     class1.textContent = 'Утилизация пластика';
     class2.textContent = "\u0423\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u0430 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0432\u0430\u0436\u043D\u044B\u043C \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u043C, \u043F\u043E\u0441\u043A\u043E\u043B\u044C\u043A\u0443 \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u044B\u0435 \u043E\u0442\u0445\u043E\u0434\u044B \u043C\u043E\u0433\u0443\u0442 \u043D\u0430\u043D\u0435\u0441\u0442\u0438 \u0441\u0435\u0440\u044C\u0435\u0437\u043D\u044B\u0439 \u0432\u0440\u0435\u0434 \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0435\u0439 \u0441\u0440\u0435\u0434\u0435 \u0438\xA0\u0436\u0438\u0432\u044B\u043C \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043C\u0430\u043C. \u041D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u0438\u0434\u044B \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u0430 \u043C\u043E\u0433\u0443\u0442 \u0440\u0430\u0437\u043B\u0430\u0433\u0430\u0442\u044C\u0441\u044F \u043D\u0430\xA0\u043F\u0440\u043E\u0442\u044F\u0436\u0435\u043D\u0438\u0438 \u0441\u043E\u0442\u0435\u043D \u043B\u0435\u0442, \u0437\u0430\u0433\u0440\u044F\u0437\u043D\u044F\u044F \u0432\u043E\u0434\u043D\u044B\u0435 \u0438\xA0\u043D\u0430\u0437\u0435\u043C\u043D\u044B\u0435 \u044D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u0447\u0442\u043E\xA0\u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0438\u0432\u0435\u0441\u0442\u0438 \u043A\xA0\u0433\u0438\u0431\u0435\u043B\u0438 \u0436\u0438\u0432\u043E\u0442\u043D\u044B\u0445 \u0438\xA0\u0440\u0430\u0437\u0440\u0443\u0448\u0438\u0442\u044C \u0438\u0445\xA0\u043C\u0435\u0441\u0442\u043E\u043E\u0431\u0438\u0442\u0430\u043D\u0438\u044F.";
   });
@@ -334,11 +312,9 @@ var _window;
     metalButton.style.border = '0px';
     metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
-
     while (A_TextImportantBottomMap.firstChild) {
       A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild);
     }
-
     class1.textContent = 'Утилизация бумаги';
     class2.textContent = "\u0411\u0443\u043C\u0430\u0433\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0441\u044F \u0438\u0437\xA0\u0434\u0440\u0435\u0432\u0435\u0441\u043D\u044B\u0445 \u0432\u043E\u043B\u043E\u043A\u043E\u043D, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0435\xA0\u0442\u043E\u043B\u044C\u043A\u043E \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043D\u044B\u043C \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u043C, \u043D\u043E\xA0\u0438\xA0\u0438\u0445 \u0434\u043E\u0431\u044B\u0447\u0430 \u043F\u0440\u0438\u0432\u043E\u0434\u0438\u0442 \u043A\xA0\u0432\u044B\u0440\u0443\u0431\u043A\u0435 \u043B\u0435\u0441\u043E\u0432, \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044E \u0431\u0438\u043E\u0440\u0430\u0437\u043D\u043E\u043E\u0431\u0440\u0430\u0437\u0438\u044F \u0438\xA0\u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044E \u043A\u043B\u0438\u043C\u0430\u0442\u0430. \u041A\u0440\u043E\u043C\u0435 \u0442\u043E\u0433\u043E, \u0441\u043A\u043B\u0430\u0434\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0435\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u043E\u0439 \u0431\u0443\u043C\u0430\u0433\u0438 \u043D\u0430\xA0\u0441\u0432\u0430\u043B\u043A\u0430\u0445 \u043F\u0440\u0438\u0432\u043E\u0434\u0438\u0442 \u043A\xA0\u0437\u0430\u0433\u0440\u044F\u0437\u043D\u0435\u043D\u0438\u044E \u043F\u043E\u0447\u0432\u044B \u0438\xA0\u0432\u043E\u0434\u044B, \u0430\xA0\u0442\u0430\u043A\u0436\u0435\xA0\u0432\u044B\u0431\u0440\u043E\u0441\u0443 \u043F\u0430\u0440\u043D\u0438\u043A\u043E\u0432\u044B\u0445 \u0433\u0430\u0437\u043E\u0432. \u0423\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u0431\u0443\u043C\u0430\u0433\u0438 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0435\u0435 \u0432\xA0\u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0441\u044B\u0440\u044C\u044F \u0434\u043B\u044F\xA0\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430 \u043D\u043E\u0432\u043E\u0439 \u0431\u0443\u043C\u0430\u0433\u0438, \u0447\u0442\u043E\xA0\u0441\u043E\u043A\u0440\u0430\u0449\u0430\u0435\u0442 \u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\u0435 \u0434\u0440\u0435\u0432\u0435\u0441\u043D\u044B\u0445 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432. \u041A\u0440\u043E\u043C\u0435 \u0442\u043E\u0433\u043E, \u0443\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u0431\u0443\u043C\u0430\u0433\u0438 \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u0441\u043E\u043A\u0440\u0430\u0442\u0438\u0442\u044C \u043E\u0431\u044A\u0435\u043C \u043E\u0442\u0445\u043E\u0434\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043E\u043F\u0430\u0434\u0430\u044E\u0442 \u043D\u0430\xA0\u0441\u0432\u0430\u043B\u043A\u0438";
   });
@@ -364,11 +340,9 @@ var _window;
     metalButton.style.border = '2px solid black';
     metalButton.style.color = 'black';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
-
     while (A_TextImportantBottomMap.firstChild) {
       A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild);
     }
-
     class1.textContent = 'Утилизация металла';
     class2.textContent = "\u041C\u0435\u0442\u0430\u043B\u043B\u044B \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0446\u0435\u043D\u043D\u044B\u043C\u0438 \u0440\u0435\u0441\u0443\u0440\u0441\u0430\u043C\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u044B \u0438\xA0\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u044B \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E, \u0432\u043C\u0435\u0441\u0442\u043E \u0442\u043E\u0433\u043E \u0447\u0442\u043E\u0431\u044B\xA0\u0431\u044B\u0442\u044C \u0432\u044B\u0431\u0440\u043E\u0448\u0435\u043D\u043D\u044B\u043C\u0438 \u043D\u0430\xA0\u0441\u0432\u0430\u043B\u043A\u0443 \u0438\xA0\u0437\u0430\u0433\u0440\u044F\u0437\u043D\u044F\u0442\u044C \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0443\u044E \u0441\u0440\u0435\u0434\u0443. \u0423\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u043C\u0435\u0442\u0430\u043B\u043B\u0430 \u0442\u0430\u043A\u0436\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0441\u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0442\u044C \u044D\u043D\u0435\u0440\u0433\u0438\u044E \u0438\xA0\u0440\u0435\u0441\u0443\u0440\u0441\u044B, \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u044B\u0435 \u0434\u043B\u044F\xA0\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430 \u043D\u043E\u0432\u043E\u0433\u043E \u043C\u0435\u0442\u0430\u043B\u043B\u0430. \u0412\xA0\u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0435 \u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043C\u0435\u0442\u0430\u043B\u043B\u0430 \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442 \u0441\u043D\u0438\u0436\u0435\u043D\u0438\u0435 \u0432\u044B\u0431\u0440\u043E\u0441\u043E\u0432 \u043F\u0430\u0440\u043D\u0438\u043A\u043E\u0432\u044B\u0445 \u0433\u0430\u0437\u043E\u0432 \u0438\xA0\u0434\u0440\u0443\u0433\u0438\u0445 \u0432\u0440\u0435\u0434\u043D\u044B\u0445 \u0432\u0435\u0449\u0435\u0441\u0442\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u043D\u0435\u0433\u0430\u0442\u0438\u0432\u043D\u043E \u0432\u043B\u0438\u044F\u0442\u044C \u043D\u0430\xA0\u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0443\u044E \u0441\u0440\u0435\u0434\u0443.";
   });
@@ -394,20 +368,18 @@ var _window;
     metalButton.style.border = '0px';
     metalButton.style.color = '#f4f4f4';
     var A_TextImportantBottomMap = document.querySelector('.A_TextImportantBottomMap');
-
     while (A_TextImportantBottomMap.firstChild) {
       A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild);
     }
-
     class1.textContent = 'Утилизация одежды';
     class2.textContent = "\u0423\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F \u043E\u0434\u0435\u0436\u0434\u044B \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0432\u0430\u0436\u043D\u043E\u0439 \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u043E\u0439, \u043F\u043E\u0441\u043A\u043E\u043B\u044C\u043A\u0443 \u043E\u043D\u0430 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0441\u043D\u0438\u0437\u0438\u0442\u044C \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0442\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438 \u043D\u0430\xA0\u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0443\u044E \u0441\u0440\u0435\u0434\u0443. \u041A\u0430\u0436\u0434\u044B\u0439 \u0433\u043E\u0434 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u044B \u0442\u043E\u043D\u043D \u043E\u0434\u0435\u0436\u0434\u044B \u0432\u044B\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u044E\u0442\u0441\u044F \u043D\u0430\xA0\u0441\u0432\u0430\u043B\u043A\u0438, \u0433\u0434\u0435 \u043E\u043D\u0438 \u0440\u0430\u0437\u043B\u0430\u0433\u0430\u044E\u0442\u0441\u044F \u043D\u0430\xA0\u043F\u0440\u043E\u0442\u044F\u0436\u0435\u043D\u0438\u0438 \u043C\u043D\u043E\u0433\u0438\u0445 \u043B\u0435\u0442, \u0437\u0430\u0433\u0440\u044F\u0437\u043D\u044F\u044F \u0437\u0435\u043C\u043B\u044E, \u0432\u043E\u0434\u0443 \u0438\xA0\u0432\u043E\u0437\u0434\u0443\u0445. \u041A\u0440\u043E\u043C\u0435 \u0442\u043E\u0433\u043E, \u0431\u043E\u043B\u044C\u0448\u0438\u043D\u0441\u0442\u0432\u043E \u043E\u0434\u0435\u0436\u0434\u044B \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442 \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0435\xA0\u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u043F\u0435\u0440\u0435\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u044B \u0438\xA0\u0432\xA0\u043A\u043E\u043D\u0435\u0447\u043D\u043E\u043C \u0438\u0442\u043E\u0433\u0435 \u0441\u0442\u0430\u043D\u043E\u0432\u044F\u0442\u0441\u044F \u043C\u0438\u043A\u0440\u043E\u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u043C, \u043F\u043E\u043F\u0430\u0434\u0430\u044E\u0449\u0438\u043C \u0432\xA0\u043E\u043A\u0435\u0430\u043D\u044B \u0438\xA0\u0443\u0433\u0440\u043E\u0436\u0430\u044E\u0449\u0438\u043C \u0436\u0438\u0437\u043D\u0438 \u043C\u043E\u0440\u0441\u043A\u0438\u0445 \u0436\u0438\u0432\u043E\u0442\u043D\u044B\u0445.";
-  }); // работа со станциями метро в мск
+  });
 
+  // работа со станциями метро в мск
   var stationInput = document.getElementById('input');
   var stationButton = document.querySelector('.A_MapPageFindButton');
   stationButton === null || stationButton === void 0 ? void 0 : stationButton.addEventListener('click', function () {
     var stationName = stationInput.value;
-
     if (stationName) {
       fetch('https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(stationName) + '.json?access_token=' + mapboxgl.accessToken).then(function (response) {
         return response.json();
@@ -2315,7 +2287,6 @@ var plasticRecyclingPlaces = [{
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
@@ -2333,12 +2304,10 @@ var _document;
   };
   var correctAnswers = 0;
   var currentImage = 0;
-
   function showNextImage() {
     if (currentImage >= Object.keys(colorAnswers).length) {
       return;
     }
-
     var imageContainer = document.createElement('div');
     var image = document.createElement('img');
     game.className = 'Q_MindMapPagePlayImage';
@@ -2347,7 +2316,6 @@ var _document;
     game.appendChild(imageContainer);
     currentImage++;
   }
-
   function startGame() {
     correctAnswers = 0;
     currentImage = 0;
@@ -2355,38 +2323,30 @@ var _document;
     result.textContent = '';
     game.dataset.playing = true;
   }
-
   function restartGame() {
     startGame();
   }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return;
     }
-
     var selectedColor = e.target.id;
-
     if (colorAnswers["MindMap1Clothes".concat(currentImage)] === selectedColor) {
       correctAnswers++;
       e.target.classList.add('correct');
     } else {
       e.target.classList.add('incorrect');
     }
-
     setTimeout(function () {
       e.target.classList.remove('correct', 'incorrect');
-
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false;
         result.textContent = "\u0423 \u0432\u0430\u0441 ".concat(correctAnswers, " \u0438\u0437 ").concat(Object.keys(colorAnswers).length, " \u0431\u0430\u043B\u043B\u043E\u0432!");
         return;
       }
-
       showNextImage();
     }, 500);
   }
-
   playButton === null || playButton === void 0 ? void 0 : playButton.addEventListener('click', startGame);
   colors.forEach(function (color) {
     color === null || color === void 0 ? void 0 : color.addEventListener('click', handleColorClick);
@@ -2399,7 +2359,6 @@ var _document;
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
@@ -2413,12 +2372,10 @@ var _document;
   };
   var correctAnswers = 0;
   var currentImage = 0;
-
   function showNextImage() {
     if (currentImage >= Object.keys(colorAnswers).length) {
       return;
     }
-
     var imageContainer = document.createElement('div');
     var image = document.createElement('img');
     game.className = 'Q_MindMapPagePlayImage';
@@ -2427,7 +2384,6 @@ var _document;
     game.appendChild(imageContainer);
     currentImage++;
   }
-
   function startGame() {
     correctAnswers = 0;
     currentImage = 0;
@@ -2435,38 +2391,30 @@ var _document;
     result.textContent = '';
     game.dataset.playing = true;
   }
-
   function restartGame() {
     startGame();
   }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return;
     }
-
     var selectedColor = e.target.id;
-
     if (colorAnswers["MindMap2Clothes".concat(currentImage)] === selectedColor) {
       correctAnswers++;
       e.target.classList.add('correct');
     } else {
       e.target.classList.add('incorrect');
     }
-
     setTimeout(function () {
       e.target.classList.remove('correct', 'incorrect');
-
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false;
         result.textContent = "\u0423 \u0432\u0430\u0441 ".concat(correctAnswers, " \u0438\u0437 ").concat(Object.keys(colorAnswers).length, " \u0431\u0430\u043B\u043B\u043E\u0432!");
         return;
       }
-
       showNextImage();
     }, 500);
   }
-
   playButton === null || playButton === void 0 ? void 0 : playButton.addEventListener('click', startGame);
   colors.forEach(function (color) {
     color === null || color === void 0 ? void 0 : color.addEventListener('click', handleColorClick);
@@ -2479,7 +2427,6 @@ var _document;
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
@@ -2500,12 +2447,10 @@ var _document;
   };
   var correctAnswers = 0;
   var currentImage = 0;
-
   function showNextImage() {
     if (currentImage >= Object.keys(colorAnswers).length) {
       return;
     }
-
     var imageContainer = document.createElement('div');
     var image = document.createElement('img');
     game.className = 'Q_MindMapPagePlayImage';
@@ -2514,7 +2459,6 @@ var _document;
     game.appendChild(imageContainer);
     currentImage++;
   }
-
   function startGame() {
     correctAnswers = 0;
     currentImage = 0;
@@ -2522,38 +2466,30 @@ var _document;
     result.textContent = '';
     game.dataset.playing = true;
   }
-
   function restartGame() {
     startGame();
   }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return;
     }
-
     var selectedColor = e.target.id;
-
     if (colorAnswers["MindMap1Food".concat(currentImage)] === selectedColor) {
       correctAnswers++;
       e.target.classList.add('correct');
     } else {
       e.target.classList.add('incorrect');
     }
-
     setTimeout(function () {
       e.target.classList.remove('correct', 'incorrect');
-
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false;
         result.textContent = "\u0423 \u0432\u0430\u0441 ".concat(correctAnswers, " \u0438\u0437 ").concat(Object.keys(colorAnswers).length, " \u0431\u0430\u043B\u043B\u043E\u0432!");
         return;
       }
-
       showNextImage();
     }, 500);
   }
-
   playButton === null || playButton === void 0 ? void 0 : playButton.addEventListener('click', startGame);
   colors.forEach(function (color) {
     color === null || color === void 0 ? void 0 : color.addEventListener('click', handleColorClick);
@@ -2566,7 +2502,6 @@ var _document;
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
   var playButton = document.getElementById('play');
@@ -2582,12 +2517,10 @@ var _document;
   };
   var correctAnswers = 0;
   var currentImage = 0;
-
   function showNextImage() {
     if (currentImage >= Object.keys(colorAnswers).length) {
       return;
     }
-
     var imageContainer = document.createElement('div');
     var image = document.createElement('img');
     game.className = 'Q_MindMapPagePlayImage';
@@ -2596,7 +2529,6 @@ var _document;
     game.appendChild(imageContainer);
     currentImage++;
   }
-
   function startGame() {
     correctAnswers = 0;
     currentImage = 0;
@@ -2604,38 +2536,30 @@ var _document;
     result.textContent = '';
     game.dataset.playing = true;
   }
-
   function restartGame() {
     startGame();
   }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return;
     }
-
     var selectedColor = e.target.id;
-
     if (colorAnswers["MindMap2Food".concat(currentImage)] === selectedColor) {
       correctAnswers++;
       e.target.classList.add('correct');
     } else {
       e.target.classList.add('incorrect');
     }
-
     setTimeout(function () {
       e.target.classList.remove('correct', 'incorrect');
-
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false;
         result.textContent = "\u0423 \u0432\u0430\u0441 ".concat(correctAnswers, " \u0438\u0437 ").concat(Object.keys(colorAnswers).length, " \u0431\u0430\u043B\u043B\u043E\u0432!");
         return;
       }
-
       showNextImage();
     }, 500);
   }
-
   playButton === null || playButton === void 0 ? void 0 : playButton.addEventListener('click', startGame);
   colors.forEach(function (color) {
     color === null || color === void 0 ? void 0 : color.addEventListener('click', handleColorClick);
@@ -2648,10 +2572,9 @@ var _document;
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var colors = document.querySelectorAll('.A_MindMapPageChooseCard');
-  var playButton = document.getElementById('play');
+  var playButton = document.getElementById('play1');
   var game = document.querySelector('.Q_MindMapPagePlayImage');
   var result = document.getElementById('result');
   var colorAnswers = {
@@ -2668,12 +2591,10 @@ var _document;
   };
   var correctAnswers = 0;
   var currentImage = 0;
-
   function showNextImage() {
     if (currentImage >= Object.keys(colorAnswers).length) {
       return;
     }
-
     var imageContainer = document.createElement('div');
     var image = document.createElement('img');
     game.className = 'Q_MindMapPagePlayImage';
@@ -2682,7 +2603,6 @@ var _document;
     game.appendChild(imageContainer);
     currentImage++;
   }
-
   function startGame() {
     correctAnswers = 0;
     currentImage = 0;
@@ -2690,34 +2610,27 @@ var _document;
     result.textContent = '';
     game.dataset.playing = true;
   }
-
   function handleColorClick(e) {
     if (!game.dataset.playing) {
       return;
     }
-
     var selectedColor = e.target.id;
-
     if (colorAnswers["MindMap1Waste".concat(currentImage)] === selectedColor) {
       correctAnswers++;
       e.target.classList.add('correct');
     } else {
       e.target.classList.add('incorrect');
     }
-
     setTimeout(function () {
       e.target.classList.remove('correct', 'incorrect');
-
       if (currentImage >= Object.keys(colorAnswers).length) {
         game.dataset.playing = false;
         result.textContent = "\u0423 \u0432\u0430\u0441 ".concat(correctAnswers, " \u0438\u0437 ").concat(Object.keys(colorAnswers).length, " \u0431\u0430\u043B\u043B\u043E\u0432!");
         return;
       }
-
       showNextImage();
     }, 500);
   }
-
   playButton === null || playButton === void 0 ? void 0 : playButton.addEventListener('click', startGame);
   colors.forEach(function (color) {
     color === null || color === void 0 ? void 0 : color.addEventListener('click', handleColorClick);
@@ -2841,7 +2754,6 @@ $(document).ready(function () {
 /***/ (() => {
 
 var _document;
-
 (_document = document) === null || _document === void 0 ? void 0 : _document.addEventListener('DOMContentLoaded', function () {
   var input = document.querySelector('.A_SearchInput');
   var cards = document.querySelectorAll('.M_SearchAndFiltersPageCard');
@@ -2876,16 +2788,13 @@ var _document;
     category === null || category === void 0 ? void 0 : category.addEventListener('click', function () {
       filterArrowClickCount++;
       var categoryValue = category.getAttribute('data-category').toLowerCase();
-
       if (activeCategories.includes(categoryValue)) {
         activeCategories.splice(activeCategories.indexOf(categoryValue), 1);
       } else {
         activeCategories.push(categoryValue);
       }
-
       categories.forEach(function (cat) {
         var catValue = cat.getAttribute('data-category').toLowerCase();
-
         if (activeCategories.includes(catValue)) {
           cat.style.opacity = '1';
           cat.style.transition = 'opacity 0.15s ease-in-out';
@@ -2897,7 +2806,6 @@ var _document;
       cards.forEach(function (card) {
         var keywords = card.getAttribute('data-keywords').toLowerCase();
         var cardCategory = card.getAttribute('data-category').toLowerCase();
-
         if (keywords.includes(searchQuery) && (activeCategories.length === 0 || activeCategories.includes(cardCategory))) {
           card.style.display = 'flex';
         } else {
@@ -3043,169 +2951,133 @@ var compositionText = document.getElementById('composition-text');
 var graphicsText = document.getElementById('graphics-text');
 brandBtn === null || brandBtn === void 0 ? void 0 : brandBtn.addEventListener('click', function () {
   var _brandBtn$dataset;
-
   if (!brandText) return;
-
   if ((brandBtn === null || brandBtn === void 0 ? void 0 : (_brandBtn$dataset = brandBtn.dataset) === null || _brandBtn$dataset === void 0 ? void 0 : _brandBtn$dataset.text) === 'default') {
     brandText.innerHTML = brandToggle;
     brandBtn.dataset.text = 'toggle';
     return;
   }
-
   brandText.innerHTML = brandDefault;
   brandBtn.dataset.text = 'default';
 });
 weBtn === null || weBtn === void 0 ? void 0 : weBtn.addEventListener('click', function () {
   var _weBtn$dataset;
-
   if (!weText) return;
-
   if ((weBtn === null || weBtn === void 0 ? void 0 : (_weBtn$dataset = weBtn.dataset) === null || _weBtn$dataset === void 0 ? void 0 : _weBtn$dataset.text) === 'default') {
     weText.innerHTML = weToggle;
     weBtn.dataset.text = 'toggle';
     return;
   }
-
   weText.innerHTML = weDefault;
   weBtn.dataset.text = 'default';
 });
 goalBtn === null || goalBtn === void 0 ? void 0 : goalBtn.addEventListener('click', function () {
   var _goalBtn$dataset;
-
   if (!goalText) return;
-
   if ((goalBtn === null || goalBtn === void 0 ? void 0 : (_goalBtn$dataset = goalBtn.dataset) === null || _goalBtn$dataset === void 0 ? void 0 : _goalBtn$dataset.text) === 'default') {
     goalText.innerHTML = goalToggle;
     goalBtn.dataset.text = 'toggle';
     return;
   }
-
   goalText.innerHTML = goalDefault;
   goalBtn.dataset.text = 'default';
 });
 missionBtn === null || missionBtn === void 0 ? void 0 : missionBtn.addEventListener('click', function () {
   var _missionBtn$dataset;
-
   if (!missionText) return;
-
   if ((missionBtn === null || missionBtn === void 0 ? void 0 : (_missionBtn$dataset = missionBtn.dataset) === null || _missionBtn$dataset === void 0 ? void 0 : _missionBtn$dataset.text) === 'default') {
     missionText.innerHTML = missionToggle;
     missionBtn.dataset.text = 'toggle';
     return;
   }
-
   missionText.innerHTML = missionDefault;
   missionBtn.dataset.text = 'default';
 });
 headerBtn === null || headerBtn === void 0 ? void 0 : headerBtn.addEventListener('click', function () {
   var _headerBtn$dataset;
-
   if (!headerText) return;
-
   if ((headerBtn === null || headerBtn === void 0 ? void 0 : (_headerBtn$dataset = headerBtn.dataset) === null || _headerBtn$dataset === void 0 ? void 0 : _headerBtn$dataset.text) === 'default') {
     headerText.innerHTML = headerToggle;
     headerBtn.dataset.text = 'toggle';
     return;
   }
-
   headerText.innerHTML = headerDefault;
   headerBtn.dataset.text = 'default';
 });
 pravilaOneBtn === null || pravilaOneBtn === void 0 ? void 0 : pravilaOneBtn.addEventListener('click', function () {
   var _pravilaOneBtn$datase;
-
   if (!pravilaOneText) return;
-
   if ((pravilaOneBtn === null || pravilaOneBtn === void 0 ? void 0 : (_pravilaOneBtn$datase = pravilaOneBtn.dataset) === null || _pravilaOneBtn$datase === void 0 ? void 0 : _pravilaOneBtn$datase.text) === 'default') {
     pravilaOneText.innerHTML = pravilaOneToggle;
     pravilaOneBtn.dataset.text = 'toggle';
     return;
   }
-
   pravilaOneText.innerHTML = pravilaOneDefault;
   pravilaOneBtn.dataset.text = 'default';
 });
 pravilaTwoBtn === null || pravilaTwoBtn === void 0 ? void 0 : pravilaTwoBtn.addEventListener('click', function () {
   var _pravilaTwoBtn$datase;
-
   if (!pravilaTwoText) return;
-
   if ((pravilaTwoBtn === null || pravilaTwoBtn === void 0 ? void 0 : (_pravilaTwoBtn$datase = pravilaTwoBtn.dataset) === null || _pravilaTwoBtn$datase === void 0 ? void 0 : _pravilaTwoBtn$datase.text) === 'default') {
     pravilaTwoText.innerHTML = pravilaTwoToggle;
     pravilaTwoBtn.dataset.text = 'toggle';
     return;
   }
-
   pravilaTwoText.innerHTML = pravilaTwoDefault;
   pravilaTwoBtn.dataset.text = 'default';
 });
 pravilaThreeBtn === null || pravilaThreeBtn === void 0 ? void 0 : pravilaThreeBtn.addEventListener('click', function () {
   var _pravilaThreeBtn$data;
-
   if (!pravilaThreeText) return;
-
   if ((pravilaThreeBtn === null || pravilaThreeBtn === void 0 ? void 0 : (_pravilaThreeBtn$data = pravilaThreeBtn.dataset) === null || _pravilaThreeBtn$data === void 0 ? void 0 : _pravilaThreeBtn$data.text) === 'default') {
     pravilaThreeText.innerHTML = pravilaThreeToggle;
     pravilaThreeBtn.dataset.text = 'toggle';
     return;
   }
-
   pravilaThreeText.innerHTML = pravilaThreeDefault;
   pravilaThreeBtn.dataset.text = 'default';
 });
 colorsBtn === null || colorsBtn === void 0 ? void 0 : colorsBtn.addEventListener('click', function () {
   var _colorsBtn$dataset;
-
   if (!colorsText) return;
-
   if ((colorsBtn === null || colorsBtn === void 0 ? void 0 : (_colorsBtn$dataset = colorsBtn.dataset) === null || _colorsBtn$dataset === void 0 ? void 0 : _colorsBtn$dataset.text) === 'default') {
     colorsText.innerHTML = colorsToggle;
     colorsBtn.dataset.text = 'toggle';
     return;
   }
-
   colorsText.innerHTML = colorsDefault;
   colorsBtn.dataset.text = 'default';
 });
 typographyBtn === null || typographyBtn === void 0 ? void 0 : typographyBtn.addEventListener('click', function () {
   var _typographyBtn$datase;
-
   if (!typographyText) return;
-
   if ((typographyBtn === null || typographyBtn === void 0 ? void 0 : (_typographyBtn$datase = typographyBtn.dataset) === null || _typographyBtn$datase === void 0 ? void 0 : _typographyBtn$datase.text) === 'default') {
     typographyText.innerHTML = typographyToggle;
     typographyBtn.dataset.text = 'toggle';
     return;
   }
-
   typographyText.innerHTML = typographyDefault;
   typographyBtn.dataset.text = 'default';
 });
 compositionBtn === null || compositionBtn === void 0 ? void 0 : compositionBtn.addEventListener('click', function () {
   var _compositionBtn$datas;
-
   if (!compositionText) return;
-
   if ((compositionBtn === null || compositionBtn === void 0 ? void 0 : (_compositionBtn$datas = compositionBtn.dataset) === null || _compositionBtn$datas === void 0 ? void 0 : _compositionBtn$datas.text) === 'default') {
     compositionText.innerHTML = compositionToggle;
     compositionBtn.dataset.text = 'toggle';
     return;
   }
-
   compositionText.innerHTML = compositionDefault;
   compositionBtn.dataset.text = 'default';
 });
 graphicsBtn === null || graphicsBtn === void 0 ? void 0 : graphicsBtn.addEventListener('click', function () {
   var _graphicsBtn$dataset;
-
   if (!graphicsText) return;
-
   if ((graphicsBtn === null || graphicsBtn === void 0 ? void 0 : (_graphicsBtn$dataset = graphicsBtn.dataset) === null || _graphicsBtn$dataset === void 0 ? void 0 : _graphicsBtn$dataset.text) === 'default') {
     graphicsText.innerHTML = graphicsToggle;
     graphicsBtn.dataset.text = 'toggle';
     return;
   }
-
   graphicsText.innerHTML = graphicsDefault;
   graphicsBtn.dataset.text = 'default';
 });
@@ -13970,10 +13842,13 @@ return jQuery;
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
+/******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -14013,7 +13888,6 @@ const arrow_namespaceObject = __webpack_require__.p + "images/5fa36d28f54964b501
 var hamburger = document.querySelector('#hamburger');
 var hamburgerPhone = document.querySelector('#hamburger-phone');
 var pageHamburger = document.querySelector('#page-hamburger');
-
 function toggleHamburger() {
   document.querySelector('.menu__container').classList.toggle('hidden');
   document.querySelector('#hamburger-close').classList.toggle('hidden');
@@ -14021,7 +13895,6 @@ function toggleHamburger() {
     line.classList.toggle('hidden');
   });
 }
-
 function toggleHamburgerPhone() {
   document.querySelector('.menu-phone__container').classList.toggle('hidden');
   document.querySelector('#hamburger-phone-close').classList.toggle('hidden');
@@ -14029,7 +13902,6 @@ function toggleHamburgerPhone() {
     line.classList.toggle('hidden');
   });
 }
-
 function togglePageHamburger() {
   document.querySelector('.page-navbar__container').classList.toggle('hidden');
   document.querySelector('#hamburger-close').classList.toggle('hidden');
@@ -14037,31 +13909,27 @@ function togglePageHamburger() {
     line.classList.toggle('hidden');
   });
 }
-
 hamburger === null || hamburger === void 0 ? void 0 : hamburger.addEventListener('click', toggleHamburger);
 hamburgerPhone === null || hamburgerPhone === void 0 ? void 0 : hamburgerPhone.addEventListener('click', toggleHamburgerPhone);
 pageHamburger === null || pageHamburger === void 0 ? void 0 : pageHamburger.addEventListener('click', togglePageHamburger);
-
 if (document.querySelector('.telegram-logo')) {
   document.querySelector('.telegram-logo').src = telegram_namespaceObject;
 }
-
 if (document.querySelector('.insta-logo')) {
   document.querySelector('.insta-logo').src = instagram_namespaceObject;
 }
-
 if (document.querySelector('.vk-logo')) {
   document.querySelector('.vk-logo').src = vk_namespaceObject;
 }
-
 if (document.querySelector('.recycle-logo')) {
   document.querySelector('.recycle-logo').src = recycle_namespaceObject;
-} // search icon
+}
 
-
+// search icon
 var search = document.querySelector('.search-icon');
-if (search) search.src = search_namespaceObject; // back icon
+if (search) search.src = search_namespaceObject;
 
+// back icon
 var hamburger_back = document.querySelector('.back-icon');
 if (hamburger_back) hamburger_back.src = arrow_namespaceObject;
 // EXTERNAL MODULE: ./src/javascript/promo.js
