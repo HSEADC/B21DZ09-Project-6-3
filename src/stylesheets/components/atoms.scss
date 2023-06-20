@@ -193,9 +193,45 @@
   padding-top: 5vw;
 }
 
-.A_TitleAuxiliaryMap {
-  @include TitlesAuxiliaryProperties;
-  width: 95%;
+.A_TextTopMap {
+  @include TextPropertiesSmall;
+  font-weight: 500;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  padding-bottom: 2vw;
+}
+
+.A_TextBottomMap {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextBottomMap {
+    font-size: 2.41vw;
+    line-height: 2.92vw;
+    padding-bottom: 3vw;
+  }
+  .A_TextTopMap {
+    font-size: 1.94vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextBottomMap {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-bottom: 10vw;
+  }
+  .A_TextTopMap {
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 // main page titles typography
@@ -500,14 +536,6 @@ h4 {
   }
 }
 
-.A_TextDependentMap {
-  @include TextPropertiesSmall;
-  font-weight: 400;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-}
-
 .A_TextList {
   @include TextPropertiesBig;
   font-weight: 400;
@@ -525,12 +553,26 @@ h4 {
   border-bottom: 2px solid #000000;
 }
 
-.W_MapPagePointInformation {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.W_MapPageInfoBox {
+  padding: 3vw 3vw 3vw 3vw !important;
+  border-bottom: 2px solid #000000;
+  width: 33vw;
+  height: 51vw;
 }
-.W_MapChooseCard {
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MapPageInfoBox {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MapPageInfoBox {
+    display: none;
+  }
+}
+
+.W_MapChooseButtons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -538,8 +580,34 @@ h4 {
   height: 4vw;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MapChooseButtons {
+    height: 9.9vw;
+    width: 100vw;
+    justify-content: space-evenly;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MapChooseButtons {
+    height: 15.8vw;
+    width: 100vw;
+    border-bottom: 0.46vw solid #000000;
+    overflow-x: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
 .W_MapInput {
   display: flex;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MapInput {
+    flex-direction: column;
+  }
 }
 
 .W_MindMapShortInfoBox {
@@ -600,33 +668,79 @@ h4 {
   width: 66vw;
 }
 
-.A_MapPageChooseCard {
+.A_MapPageChooseButton {
   @include TextPropertiesSmall;
   @include TitlesAuxiliaryCardsProperties;
   text-transform: none;
   margin-right: 2vw;
+  border-radius: 5px;
 }
 
-.A_MapPageChooseCard:hover {
+.A_MapPageChooseButton:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MapPageChooseButton {
+    height: 5.44vw;
+    width: 14.2vw;
+    font-size: 2vw;
+    line-height: 2.92vw;
+    margin-right: 0;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MapPageChooseButton {
+    height: 10.8vw;
+    min-width: 26.21vw;
+    margin-left: 2vw;
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 .A_MapPageInput {
   width: 46vw;
   height: 5.6vw;
   display: flex;
+  align-items: center;
   background-color: #f4f4f4;
   border-right: 2px solid black;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MapPageInput {
+    border-right: 0;
+    border-left: 0;
+    width: 66.6vw;
+    height: 9.9vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MapPageInput {
+    border-right: 0;
+    border-left: 0;
+    width: 100vw;
+    height: 18.6vw;
+  }
+}
+
 .A_MapPageFindButton {
-  @include TextPropertiesBig;
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20vw;
+  color: #f4f4f4;
   background-color: black;
   height: 5.6vw;
   border-width: 2px;
@@ -637,6 +751,24 @@ h4 {
 
 .A_MapPageFindButton:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MapPageFindButton {
+    border: 0;
+    font-size: 2.44vw;
+    width: 33.4vw;
+    height: 9.9vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MapPageFindButton {
+    font-size: 5.84vw;
+    border: 0;
+    width: 100vw;
+    height: 18.6vw;
+  }
 }
 
 .A_CollectionsPageFindButton {
@@ -671,16 +803,37 @@ h4 {
 
 #input {
   all: initial;
-  @include TextPropertiesSmall;
+  font-family: 'Inter';
+  font-size: 1.38vw;
+  line-height: 2.08vw;
+  letter-spacing: -3%;
+  margin-left: 6vw;
   padding-left: 1.5vw;
-  width: 50vw;
   height: 5.5vw;
   background-color: #f4f4f4;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #input {
+    font-size: 1.94vw;
+    letter-spacing: -3%;
+    margin-left: 2vw;
+    height: fit-content;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  #input {
+    height: fit-content;
+    font-size: 4.67vw;
+    margin-left: 10vw;
+    width: 80vw;
+  }
+}
+
 // mind map card
 
-.A_MapPageChooseCard:hover {
+.A_MapPageChooseButton:hover {
   cursor: pointer;
 }
 
@@ -1218,28 +1371,11 @@ h4 {
   border-top: 30px solid black;
 }
 
-.A_MapPageFindButtonS {
-  @include TextPropertiesBig;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20vw;
-  background-color: black;
-  height: 5.6vw;
-  border-width: 2px;
-  border-top: 0px;
-  border-bottom: 2px solid black;
-  background-color: black;
-}
-
-.A_MapPageFindButtonS:hover {
-  cursor: pointer;
-}
-
 .A_MapPageInputStyleGuide {
   width: 46vw;
   height: 5.6vw;
   display: flex;
+
   background-color: #f4f4f4;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
@@ -1323,4 +1459,7 @@ h4 {
   width: 19.5vw;
   margin-left: 68vw;
   margin-bottom: 2vw;
+}
+::-webkit-scrollbar {
+  display: none;
 }

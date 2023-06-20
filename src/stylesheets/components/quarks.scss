@@ -594,6 +594,22 @@
   border-bottom: 2px solid black;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_Map {
+    width: 100vw;
+    height: 70.9vw;
+    border-left: 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_Map {
+    height: 128.5vw;
+    width: 100vw;
+    border-left: 0;
+  }
+}
+
 // images and symbols for search and filter page
 
 .Q_FilterPageArrowImage1 {
