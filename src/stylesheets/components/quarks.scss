@@ -113,12 +113,41 @@
 
 // images and symbols for maind maps page
 
-.Q_Menu {
+.W_Search {
+  width: 100vw;
+  display: flex;
+  height: 4.5vw;
+  background-color: #000000;
+  align-items: center;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.Q_BurgerMenuIqon {
   width: 5vw;
   height: 3vw;
   z-index: 3;
-  background-image: url(./images/header/menu.svg);
-  background-size: 65%;
+  background-image: url(./images/header/Q_BurgerMenuIqon.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+}
+
+.Q_SearchIqon {
+  width: 5vw;
+  height: 3vw;
+  z-index: 3;
+  background-image: url(./images/header/Q_SearchIqon.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  pointer-events: auto;
+}
+
+.Q_LogoHeader {
+  width: 15vw;
+  height: 3vw;
+  z-index: 3;
+  background-image: url(./images/header/Q_LogoHeader.svg);
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
