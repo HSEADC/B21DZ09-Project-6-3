@@ -143,7 +143,6 @@
   width: 10.15vw;
   height: 6.29vw;
   border-right: 2px solid black;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -152,6 +151,22 @@
 
 .Q_GoBack:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_GoBack {
+    height: 9.9vw;
+    width: 14.9vw;
+    background-size: 70%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_GoBack {
+    height: 15.8vw;
+    width: 18.9vw;
+    margin-right: 5vw;
+  }
 }
 
 .Q_NumberSymbol {
@@ -323,8 +338,8 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .Q_ContentCardsIcon {
-    height: 3.47vw;
-    width: 4vw;
+    height: 4.63vw;
+    width: 5.37vw;
   }
 }
 
