@@ -1,16 +1,8 @@
 @import 'mixins';
 
-.M_FooterCardSocialNetworks {
-  @include FooterCardsProperties;
-  width: 25.5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .M_MainPageCard {
   width: 33.2vw;
-  height: 51.7vw;
+  height: 48.3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +11,11 @@
 
 .C_MainPageCards {
   width: 29.8vw;
-  height: 47.7vw;
+  height: 45vw;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 2vw;
+  padding: 1.5vw;
   justify-content: space-between;
   border-bottom: 2.08vw solid black;
   border-top: 2.08vw solid black;
@@ -67,6 +59,36 @@
     height: 61.38vw;
     width: 43.8vw;
     padding: 3.2vw 3vw 3.2vw 3vw;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .M_MainPageCard {
+    display: none;
+  }
+}
+.M_Footer {
+  height: 27vw;
+  display: flex;
+  background-color: black;
+  border-top: 2px solid black;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .M_Footer {
+    height: 52.75vw;
+    border-top: 0.19vw solid black;
+    margin-top: 2vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .M_Footer {
+    height: 220vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 
@@ -125,7 +147,18 @@
     width: 30.1vw;
     height: 31.33vw;
     margin: 0 0 2vw 2.5vw;
+    padding: 2.6vw 1.58vw 1.58vw 1.58vw;
     border: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_ContentCard {
+    width: 87.6vw;
+    height: 92.2vw;
+    margin: 0 0 6vw 0;
+    padding: 8.4vw 6vw 6vw 6vw;
+    border: 0.46vw solid #000000;
   }
 }
 
@@ -149,6 +182,17 @@
   .C_MainPageContentCards {
     padding: 2vw 0vw 0vw 0vw;
     border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_MainPageContentCards {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 6vw;
   }
 }
 

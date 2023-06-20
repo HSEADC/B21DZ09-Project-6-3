@@ -165,6 +165,13 @@
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_AdditionalTitle {
+    font-size: 5.84vw;
+    line-height: 7vw;
+  }
+}
+
 .A_TitleAuxiliaryBody {
   @include TitlesAuxiliaryPropertiesBody;
   width: 95%;
@@ -190,6 +197,14 @@
     font-size: 3.93vw;
     line-height: 4.68vw;
     padding: 2vw 0 2vw 0vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_Title {
+    font-size: 7vw;
+    line-height: 8.41vw;
+    padding: 3.5vw 0 3.5vw 0vw;
   }
 }
 
@@ -367,6 +382,41 @@ h4 {
   -ms-hyphens: auto;
   text-transform: uppercase;
   color: #f4f4f4;
+  padding-bottom: 5vw;
+}
+
+.A_TextDependentFooter {
+  @include TextPropertiesSmall;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  color: #f4f4f4;
+  padding-top: 1vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextIndependentFooter {
+    font-size: 2.41vw;
+    line-height: 2.92vw;
+    padding-bottom: 3vw;
+  }
+  .A_TextDependentFooter {
+    font-size: 1.94vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextIndependentFooter {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-bottom: 10vw;
+  }
+  .A_TextDependentFooter {
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 .A_TextIndependentBody {
@@ -388,23 +438,28 @@ h4 {
   padding-top: 3vw;
 }
 
-.A_TextDependentFooter {
-  @include TextPropertiesSmall;
-  font-weight: 400;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  color: #f4f4f4;
-}
-
 .W_LogoBottomFooter {
   height: 7vw;
   width: 100vw;
   display: flex;
-  border: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
   border-top: 0;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_LogoBottomFooter {
+    height: 10.55vw;
+    border-bottom: 0.2vw solid #f4f4f4;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_LogoBottomFooter {
+    height: 25.25vw;
+    border-bottom: 0.46vw solid #f4f4f4;
+  }
 }
 
 .A_TextDependentMap {
