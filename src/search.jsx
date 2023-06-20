@@ -37,16 +37,18 @@ const SearchPage = () => {
       </div>
 
       <div className="C_SearchPageCards">
-        {posts && posts.length ? (
-          posts.map((post) => (
-            <a href={post.link} className="post" key={post.id}>
-              {post.bg && <img src={post.bg} alt="" />}
-              <div className="A_AdditionalTitle">{post.title}</div>
-            </a>
-          ))
-        ) : (
-          <div></div>
-        )}
+        {posts && posts.length
+          ? posts.map((post) => (
+              <a
+                href={post.link}
+                className="post"
+                key={post.id}
+                style={{ backgroundImage: `url(${post.bg})` }}
+              >
+                <div className="A_AdditionalTitle">{post.title}</div>
+              </a>
+            ))
+          : null}
       </div>
     </div>
   )
