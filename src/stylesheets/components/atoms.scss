@@ -42,9 +42,15 @@
   align-items: stretch;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_BodyTextList {
+    padding-top: 6vw;
+  }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
   .W_BodyTextList {
-    padding-top: 8vw;
+    padding-top: 10vw;
   }
 }
 
@@ -743,9 +749,9 @@ h4 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .A_TextList {
-    font-size: 1.95vw;
-    line-height: 2.34vw;
-    padding: 2vw 0 4vw 6vw;
+    font-size: 2.41vw;
+    line-height: 3.41vw;
+    padding: 3vw 0 5vw 6vw;
   }
 }
 
@@ -753,7 +759,7 @@ h4 {
   .A_TextList {
     font-size: 4.67vw;
     line-height: 5.6vw;
-    padding: 4vw 0 6vw 8vw;
+    padding: 6vw 0 8vw 6vw;
   }
 }
 

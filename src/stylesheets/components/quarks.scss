@@ -122,7 +122,7 @@
   background-repeat: no-repeat;
 }
 
-.Q_GeneralImageLifehackPage {
+.Q_GeneralImageContentPage {
   width: 63.9vw;
   height: 40vw;
   border: 2px solid black;
@@ -130,14 +130,14 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .Q_GeneralImageLifehackPage {
+  .Q_GeneralImageContentPage {
     width: 84vw;
     height: 56.25vw;
   }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
-  .Q_GeneralImageLifehackPage {
+  .Q_GeneralImageContentPage {
     width: 83.6vw;
     height: 92.2vw;
     margin-top: 12vw;
