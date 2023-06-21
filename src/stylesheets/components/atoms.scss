@@ -58,15 +58,54 @@
 
 // lifehack page titles typography
 
-.A_TitleLifehackPage {
-  @include TitlesProperties;
-  border-bottom: 10px solid black;
+.A_TitleContentPage {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 2.8vw;
+  line-height: 4.16vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 0 1vw 0vw;
+  border-bottom: 0.97vw solid black;
   border-right: 0;
   width: 68vw;
   padding-bottom: 2vw;
 }
 
-.W_TitleLifehackPage {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TitleContentPage {
+    font-size: 3.93vw;
+    line-height: 4.68vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0 1vw 0vw;
+    border-bottom: 1.17vw solid black;
+    border-right: 0;
+    width: 85vw;
+    padding-bottom: 3vw;
+    margin-bottom: 1.5vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TitleContentPage {
+    font-size: 7vw;
+    line-height: 8.41vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0 1vw 0vw;
+    border-bottom: 2.33vw solid black;
+    border-right: 0;
+    width: 68vw;
+    padding-bottom: 2vw;
+  }
+}
+
+.W_TitleContentPage {
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -76,6 +115,24 @@
   padding: 2.5vw 4.5vw 5vw 4.5vw;
   border-left: 2px solid black;
   border-right: 2px solid black;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_TitleContentPage {
+    width: 87vw;
+    height: 99.1vw;
+    padding: 7vw 6vw 7vw 6vw;
+    border: 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_TitleContentPage {
+    width: 100vw;
+    height: 180vw;
+    padding: 7vw 6vw 7vw 6vw;
+    border: 0;
+  }
 }
 
 .W_TitleMindMapPage {
@@ -90,16 +147,14 @@
   border-right: 2px solid black;
 }
 
-.C_LifehackBodiesTextParagraphs {
+.C_ContentBodiesTextParagraphs {
   width: 100vw;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
   border-bottom: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.W_TitlesLifehackPage {
+.C_TitlesContentPage {
   width: 100vw;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -107,6 +162,20 @@
   border-bottom: 2px solid black;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_TitlesContentPage {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_TitlesContentPage {
+    border-left: 0;
+    border-right: 0;
+  }
 }
 
 .W_TitlesMindMapPage {
@@ -209,6 +278,22 @@
   @include TitlesAuxiliaryPropertiesBody;
   width: 95%;
   padding-top: 5vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TitleAuxiliaryBody {
+    font-size: 2.44vw;
+    line-height: 3.51vw;
+    padding-top: 7vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TitleAuxiliaryBody {
+    font-size: 5.84vw;
+    line-height: 8.41vw;
+    padding-top: 9vw;
+  }
 }
 
 .A_TextTopMap {
@@ -368,15 +453,16 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .A_TextImportantTop {
-    font-size: 1.59vw;
-    line-height: 1.95vw;
+    font-size: 1.94vw;
+    line-height: 2.92vw;
   }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
   .A_TextImportantTop {
-    font-size: 3.39vw;
-    line-height: 4.2vw;
+    font-size: 3.5vw;
+    line-height: 5.6vw;
+    padding-bottom: 5vw;
   }
 }
 
@@ -390,17 +476,33 @@ h4 {
   -ms-hyphens: auto;
 }
 
-.C_LifehackBodyTextParagraphs {
+.C_ContentBodyTextParagraphs {
   @include BodyTextParagraphs;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_ContentBodyTextParagraphs {
+    width: 100vw;
+    padding: 8vw 8vw 9vw 8vw;
+    border: 0;
+  }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_ContentBodyTextParagraphs {
+    width: 100vw;
+    padding: 9vw 8vw 9vw 8vw;
+    border: 0;
+  }
+}
 .C_LifehackTextFacts {
   @include TextFacts;
   width: 33.3vw;
   height: 18.2vw;
 }
 
-.C_LifehackBodyTextParagraphs::-webkit-scrollbar {
+.C_ContentBodyTextParagraphs::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -568,6 +670,22 @@ h4 {
   -ms-hyphens: auto;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextIndependentBody {
+    font-size: 2.41vw;
+    line-height: 3.41vw;
+    padding-top: 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextIndependentBody {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-top: 10vw;
+  }
+}
+
 .A_TextDependent {
   @include TextPropertiesSmall;
   font-weight: 400;
@@ -577,7 +695,21 @@ h4 {
   margin-left: 6vw;
   padding-top: 3vw;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextDependent {
+    font-size: 1.94vw;
+    line-height: 2.92vw;
+    padding-top: 3vw;
+  }
+}
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextDependent {
+    font-size: 3.5vw;
+    line-height: 5.6vw;
+    padding-top: 6vw;
+  }
+}
 .W_LogoBottomFooter {
   height: 7vw;
   width: 100vw;

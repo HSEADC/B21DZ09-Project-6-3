@@ -123,7 +123,27 @@
 }
 
 .Q_GeneralImageLifehackPage {
-  @include GeneralImageLifehackPageProperties;
+  width: 63.9vw;
+  height: 40vw;
+  border: 2px solid black;
+  margin: 5vw 0 0 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_GeneralImageLifehackPage {
+    width: 84vw;
+    height: 56.25vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_GeneralImageLifehackPage {
+    width: 83.6vw;
+    height: 92.2vw;
+    margin-top: 12vw;
+    background-size: 100%;
+    margin: 10vw 0 0 0;
+  }
 }
 
 .Q_TopicSymbolLifehackPage {
@@ -136,6 +156,24 @@
   height: 8.69vw;
   margin-top: 5.5vw;
   background-size: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_TopicSymboll {
+    width: 45.7vw;
+    height: 12.5vw;
+    margin-top: 12vw;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_TopicSymboll {
+    width: 61.6vw;
+    height: 16.8vw;
+    margin-top: 12vw;
+    background-size: 100%;
+  }
 }
 
 .Q_GoBack {
@@ -174,6 +212,20 @@
   height: 2vw;
   margin-right: 0.5vw;
   margin-bottom: -0.3vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_NumberSymbol {
+    width: 2.8vw;
+    height: 2.8vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_NumberSymbol {
+    width: 6.72vw;
+    height: 6.72vw;
+  }
 }
 
 // images and symbols for maind maps page
