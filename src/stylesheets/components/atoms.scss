@@ -42,6 +42,12 @@
   align-items: stretch;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_BodyTextList {
+    padding-top: 8vw;
+  }
+}
+
 .A_TitleArticlePage {
   @include TitlesProperties;
   width: 33.3vw;
@@ -447,7 +453,7 @@ h4 {
   .W_CoolectionBodyTextParagraphs {
     width: 61vw;
     height: 70.2vw;
-    padding: 4vw 6vw 4vw 6vw;
+    padding: 4vw 4vw 4vw 4vw;
   }
 }
 
@@ -603,6 +609,22 @@ h4 {
   border-top: 2px solid #000000;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextList {
+    font-size: 1.95vw;
+    line-height: 2.34vw;
+    padding: 2vw 0 4vw 6vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextList {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding: 4vw 0 6vw 8vw;
+  }
+}
+
 //map page
 
 .C_MapSelectAndPointInformation {
@@ -672,8 +694,8 @@ h4 {
 
 .W_MindMapInfoBox {
   width: 34vw;
-  height: 52vw;
-  padding: 2vw 2vw 2vw 2vw;
+  height: 51.75vw;
+  padding: 3vw 3vw 3vw 3vw;
   border-bottom: 0.138vw solid black;
   border-right: 0.138vw solid black;
 }
