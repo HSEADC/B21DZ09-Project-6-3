@@ -17765,7 +17765,8 @@ function getPostTeasers() {
           category: record.fields['Category'],
           topic: record.fields['Topic'],
           bg: record.fields['Background'],
-          link: record.fields['Link']
+          link: record.fields['Link'],
+          icon: record.fields['Icon']
         });
       });
       resolve(content);

@@ -4332,7 +4332,8 @@ function getPostTeasers() {
           category: record.fields['Category'],
           topic: record.fields['Topic'],
           bg: record.fields['Background'],
-          link: record.fields['Link']
+          link: record.fields['Link'],
+          icon: record.fields['Icon']
         });
       });
       resolve(content);
@@ -4369,6 +4370,8 @@ var SearchPage = function SearchPage() {
   };
   console.log(posts);
   return /*#__PURE__*/react.createElement("div", {
+    className: "O_SearchAndFilterContainer"
+  }, /*#__PURE__*/react.createElement("div", {
     className: "M_Filter"
   }, /*#__PURE__*/react.createElement("div", {
     className: "C_FilterPageNavigation"
@@ -4376,8 +4379,8 @@ var SearchPage = function SearchPage() {
     className: "Q_GoBack"
   }), /*#__PURE__*/react.createElement("div", {
     className: "A_TitleContent"
-  }, "\u041F\u043E\u0438\u0441\u043A"), /*#__PURE__*/react.createElement("div", {
-    className: "W_SearchPageButtons"
+  }, "\u041F\u043E\u0438\u0441\u043A")), /*#__PURE__*/react.createElement("div", {
+    className: "W_FilterPageButtons"
   }, /*#__PURE__*/react.createElement("input", {
     placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u0430\u043F\u0440\u043E\u0441",
     onChange: function onChange(e) {
@@ -4398,9 +4401,62 @@ var SearchPage = function SearchPage() {
         backgroundImage: "url(".concat(post.bg, ")")
       }
     }, /*#__PURE__*/react.createElement("div", {
+      style: {
+        backgroundImage: "url(".concat(post.icon, ")")
+      },
+      className: "Q_ContentCardsIcon"
+    }), /*#__PURE__*/react.createElement("div", {
       className: "A_AdditionalTitle"
     }, post.title));
-  }) : null));
+  }) : null), /*#__PURE__*/react.createElement("div", {
+    className: "M_Footer"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "W_FooterCardProducers"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_TextIndependentFooter"
+  }, "\u0418\u0417\u0413\u041E\u0422\u041E\u0412\u0418\u0422\u0415\u041B\u0418"), /*#__PURE__*/react.createElement("div", {
+    className: "A_TextDependentFooter"
+  }, "\u041E\u043B\u0435\u0439\u043D\u0438\u0447\u0435\u043D\u043A\u043E \u0410\u0441\u044F"), /*#__PURE__*/react.createElement("div", {
+    className: "A_TextDependentFooter"
+  }, "\u0428\u0435\u0441\u0442\u0430\u043A\u043E\u0432\u0430 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430")), /*#__PURE__*/react.createElement("div", {
+    className: "W_FooterCardCurators"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_TextIndependentFooter paddingbot5"
+  }, "\u041A\u0423\u0420\u0410\u0422\u041E\u0420\u042B"), /*#__PURE__*/react.createElement("div", {
+    className: "Q_ABCImage"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "A_TextDependentFooter paddingtop2"
+  }, "\u0417\u0430\u0445\u0430\u0440 \u0414\u0435\u043D\u044C"), /*#__PURE__*/react.createElement("div", {
+    className: "A_TextDependentFooter"
+  }, "\u0421\u043E\u043D\u044F \u041A\u0430\u0435\u043C")), /*#__PURE__*/react.createElement("div", {
+    className: "C_FooterCardSocialNetworks"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_TextIndependentFooter"
+  }, "\u041C\u042B \u0412 \u0421\u041E\u0426 \u0421\u0415\u0422\u042F\u0425"), /*#__PURE__*/react.createElement("div", {
+    className: "W_FooterSymbolsSocialNetworks"
+  }, /*#__PURE__*/react.createElement("a", {
+    href: "https://t.me/TRASHRETRASH"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_SocialNetworkIconTelegram"
+  })), /*#__PURE__*/react.createElement("a", {
+    href: "https://instagram.com/_re_trash_?igshid=YmMyMTA2M2Y="
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_SocialNetworkIconInstagram"
+  })), /*#__PURE__*/react.createElement("a", {
+    href: "https://vk.com/club216840635"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_SocialNetworkIconVkontakte"
+  })))), /*#__PURE__*/react.createElement("div", {
+    className: "W_FooterCardHSE"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "Q_BarkodeImage"
+  }), /*#__PURE__*/react.createElement("div", {
+    className: "Q_HSEImage"
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "W_LogoBottomFooter"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "A_TextIndependentFooter paddingbot0"
+  }, "Re*trash"))));
 };
 document.addEventListener('DOMContentLoaded', function () {
   // Define the specific relative path where you want to render the component
