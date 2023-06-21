@@ -11,8 +11,8 @@ window?.addEventListener('load', function () {
     zoom: 10
   })
 
-  const class1 = document.querySelector('.A_TitleAuxiliaryMap')
-  const class2 = document.querySelector('.A_TextDependentMap')
+  const class1 = document.querySelector('.A_TextTopMap')
+  const class2 = document.querySelector('.A_TextBottomMap')
   const categorySelector = document.querySelector('#category-selector')
   const glassButton = document.querySelector('#glass')
   const plasticButton = document.querySelector('#plastic')
@@ -95,14 +95,8 @@ window?.addEventListener('load', function () {
           console.log('click', coordinates)
           const name = e.features[0].properties.title
 
-          const markerName = document.createElement('h4')
-          markerName.textContent = name
-
-          const A_TextImportantBottomMap = document.querySelector(
-            '.A_TextImportantBottomMap'
-          )
-          A_TextImportantBottomMap.innerHTML = ''
-          A_TextImportantBottomMap.appendChild(markerName)
+          // const markerName = document.createElement('h4')
+          // markerName.textContent = name
 
           new mapboxgl.Popup().setLngLat(coordinates).setHTML(name).addTo(map)
         })
@@ -190,16 +184,9 @@ window?.addEventListener('load', function () {
     metalButton.style.border = '0px'
     metalButton.style.color = '#f4f4f4'
 
-    const A_TextImportantBottomMap = document.querySelector(
-      '.A_TextImportantBottomMap'
-    )
-    while (A_TextImportantBottomMap.firstChild) {
-      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
-    }
-
     class1.textContent = 'Утилизация стекла'
     class2.textContent =
-      'Правильная утилизация стекла позволит его переработать и\u00A0использовать повторно, что\u00A0позволяет экономить на\u00A0добыче новых сырьевых материалов и\u00A0снижать негативное воздействие на\u00A0окружающую среду. Кроме того, утилизация стекла может сократить количество отходов на\u00A0свалках и\u00A0уменьшить затраты на\u00A0сбор и\u00A0обработку мусора.'
+      'Правильная утилизация стекла позволит его переработать и\u00A0использовать повторно, что\u00A0позволяет экономить на\u00A0добыче новых сырьевых материалов и\u00A0снижать негативное воздействие на\u00A0окружающую среду.'
   })
 
   plasticButton?.addEventListener('click', function () {
@@ -229,16 +216,9 @@ window?.addEventListener('load', function () {
     metalButton.style.border = '0px'
     metalButton.style.color = '#f4f4f4'
 
-    const A_TextImportantBottomMap = document.querySelector(
-      '.A_TextImportantBottomMap'
-    )
-    while (A_TextImportantBottomMap.firstChild) {
-      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
-    }
-
     class1.textContent = 'Утилизация пластика'
     class2.textContent =
-      'Утилизация пластика является важным экологическим вопросом, поскольку пластиковые отходы могут нанести серьезный вред окружающей среде и\u00A0живым организмам. Некоторые виды пластика могут разлагаться на\u00A0протяжении сотен лет, загрязняя водные и\u00A0наземные экосистемы, что\u00A0может привести к\u00A0гибели животных и\u00A0разрушить их\u00A0местообитания.'
+      'Утилизация пластика является важным экологическим вопросом, поскольку пластиковые отходы могут нанести серьезный вред окружающей среде и\u00A0живым организмам.'
   })
 
   paperButton?.addEventListener('click', function () {
@@ -268,16 +248,9 @@ window?.addEventListener('load', function () {
     metalButton.style.border = '0px'
     metalButton.style.color = '#f4f4f4'
 
-    const A_TextImportantBottomMap = document.querySelector(
-      '.A_TextImportantBottomMap'
-    )
-    while (A_TextImportantBottomMap.firstChild) {
-      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
-    }
-
     class1.textContent = 'Утилизация бумаги'
     class2.textContent =
-      'Бумага производится из\u00A0древесных волокон, которые не\u00A0только являются ограниченным ресурсом, но\u00A0и\u00A0их добыча приводит к\u00A0вырубке лесов, уменьшению биоразнообразия и\u00A0изменению климата. Кроме того, складирование неиспользуемой бумаги на\u00A0свалках приводит к\u00A0загрязнению почвы и\u00A0воды, а\u00A0также\u00A0выбросу парниковых газов. Утилизация бумаги позволяет повторно использовать ее в\u00A0качестве сырья для\u00A0производства новой бумаги, что\u00A0сокращает потребление древесных ресурсов. Кроме того, утилизация бумаги помогает сократить объем отходов, которые попадают на\u00A0свалки'
+      'Бумага производится из\u00A0древесных волокон, которые не\u00A0только являются ограниченным ресурсом, но\u00A0и\u00A0их добыча приводит к\u00A0вырубке лесов, уменьшению биоразнообразия и\u00A0изменению климата.'
   })
 
   metalButton?.addEventListener('click', function () {
@@ -307,16 +280,9 @@ window?.addEventListener('load', function () {
     metalButton.style.border = '2px solid black'
     metalButton.style.color = 'black'
 
-    const A_TextImportantBottomMap = document.querySelector(
-      '.A_TextImportantBottomMap'
-    )
-    while (A_TextImportantBottomMap.firstChild) {
-      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
-    }
-
     class1.textContent = 'Утилизация металла'
     class2.textContent =
-      'Металлы являются ценными ресурсами, которые могут быть переработаны и\u00A0использованы повторно, вместо того чтобы\u00A0быть выброшенными на\u00A0свалку и\u00A0загрязнять окружающую среду. Утилизация металла также позволяет сэкономить энергию и\u00A0ресурсы, необходимые для\u00A0производства нового металла. В\u00A0процессе переработки металла происходит снижение выбросов парниковых газов и\u00A0других вредных веществ, которые могут негативно влиять на\u00A0окружающую среду.'
+      'Металлы являются ценными ресурсами, которые могут быть переработаны и\u00A0использованы повторно, вместо того чтобы\u00A0быть выброшенными на\u00A0свалку и\u00A0загрязнять окружающую среду. Утилизация металла также позволяет сэкономить энергию и\u00A0ресурсы, необходимые для\u00A0производства нового металла.'
   })
 
   clothesButton?.addEventListener('click', function () {
@@ -346,16 +312,9 @@ window?.addEventListener('load', function () {
     metalButton.style.border = '0px'
     metalButton.style.color = '#f4f4f4'
 
-    const A_TextImportantBottomMap = document.querySelector(
-      '.A_TextImportantBottomMap'
-    )
-    while (A_TextImportantBottomMap.firstChild) {
-      A_TextImportantBottomMap.removeChild(A_TextImportantBottomMap.firstChild)
-    }
-
     class1.textContent = 'Утилизация одежды'
     class2.textContent =
-      'Утилизация одежды является важной практикой, поскольку она позволяет снизить воздействие текстильной промышленности на\u00A0окружающую среду. Каждый год миллионы тонн одежды выбрасываются на\u00A0свалки, где они разлагаются на\u00A0протяжении многих лет, загрязняя землю, воду и\u00A0воздух. Кроме того, большинство одежды содержит синтетические материалы, которые не\u00A0могут быть переработаны и\u00A0в\u00A0конечном итоге становятся микропластиком, попадающим в\u00A0океаны и\u00A0угрожающим жизни морских животных.'
+      'Утилизация одежды является важной практикой, поскольку она позволяет снизить воздействие текстильной промышленности на\u00A0окружающую среду. Каждый год миллионы тонн одежды выбрасываются на\u00A0свалки, где они разлагаются на\u00A0протяжении многих лет, загрязняя землю, воду и\u00A0воздух.'
   })
 
   // работа со станциями метро в мск

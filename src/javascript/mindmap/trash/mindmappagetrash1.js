@@ -1,6 +1,6 @@
 document?.addEventListener('DOMContentLoaded', function () {
-  const colors = document.querySelectorAll('.A_MindMapPageChooseCard')
-  const playButton = document.getElementById('play1')
+  const colors = document.querySelectorAll('.A_MindMapPageChooseButton5')
+  const playButton = document.getElementById('play5')
   const game = document.querySelector('.Q_MindMapPagePlayImage')
   const result = document.getElementById('result')
 

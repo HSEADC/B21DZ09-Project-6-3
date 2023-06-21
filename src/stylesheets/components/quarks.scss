@@ -2,8 +2,8 @@
 
 .Q_GeneralImageMainPage {
   @include GeneralImageMainPageProperties;
-  height: 51.7vw;
-  background-image: url(images/mainpage/GeneralImageMainPage.svg);
+  height: 48.3vw;
+  background-image: url(images/mainpage/GeneralImageMainPage.png);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,9 +12,59 @@
 .Q_MainPageSymbol {
   height: 4.5vw;
   width: 4.5vw;
-  background-size: 80%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPage2048.png);
+    height: 45.6vw;
+  }
+}
+
+@media only screen and (device-width: 1728px) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPage1728.png);
+    height: 53.9vw;
+  }
+}
+
+@media only screen and (device-width: 1512px) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPage1512.png);
+    height: 54.2vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPageIpad.png);
+    height: 67.38vw;
+    width: 50vw;
+  }
+  .Q_MainPageSymbol {
+    height: 5.95vw;
+    width: 5.95vw;
+  }
+  .MainPageSymbolLifehack {
+    width: 5vw !important;
+    height: 6.6vw;
+  }
+  .MainPageSymbolMindMap {
+    width: 6.8vw;
+    height: 6.8vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_GeneralImageMainPage {
+    background-image: url(images/mainpage/GeneralImageMainPageIphone.png);
+    background-size: 102%;
+    height: 141vw;
+    width: 100vw;
+  }
 }
 
 .Q_FilterPageSymbol {
@@ -93,7 +143,6 @@
   width: 10.15vw;
   height: 6.29vw;
   border-right: 2px solid black;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -102,6 +151,22 @@
 
 .Q_GoBack:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_GoBack {
+    height: 9.9vw;
+    width: 14.9vw;
+    background-size: 70%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_GoBack {
+    height: 15.8vw;
+    width: 18.9vw;
+    margin-right: 5vw;
+  }
 }
 
 .Q_NumberSymbol {
@@ -113,7 +178,7 @@
 
 // images and symbols for maind maps page
 
-.W_Search {
+.W_Header {
   width: 100vw;
   display: flex;
   height: 4.5vw;
@@ -121,36 +186,82 @@
   align-items: center;
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
+  justify-content: space-between;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .Q_BurgerMenuIqon {
-  width: 5vw;
-  height: 3vw;
+  width: 4vw;
+  height: 2.8vw;
   z-index: 3;
   background-image: url(./images/header/Q_BurgerMenuIqon.svg);
+  background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
 }
 
 .Q_SearchIqon {
-  width: 5vw;
-  height: 3vw;
+  width: 4vw;
+  height: 2.8vw;
   z-index: 3;
   background-image: url(./images/header/Q_SearchIqon.svg);
+  background-size: 80%;
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
 }
 
 .Q_LogoHeader {
-  width: 15vw;
-  height: 3vw;
+  width: 17vw;
+  height: 2.8vw;
   z-index: 3;
   background-image: url(./images/header/Q_LogoHeader.svg);
+  background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: auto;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_Header {
+    height: 6.97vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .Q_BurgerMenuIqon {
+    height: 4.5vw;
+    width: 5.5vw;
+  }
+  .Q_SearchIqon {
+    height: 4.5vw;
+    width: 5.5vw;
+  }
+  .Q_LogoHeader {
+    height: 4.5vw;
+    width: 25vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_Header {
+    height: 10.7vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .Q_BurgerMenuIqon {
+    height: 6.1vw;
+    width: 9vw;
+  }
+  .Q_SearchIqon {
+    height: 6.5vw;
+    width: 8vw;
+  }
+  .Q_LogoHeader {
+    height: 6.1vw;
+    width: 40vw;
+  }
 }
 
 .Q_MenuBlack {
@@ -168,8 +279,22 @@
   justify-content: center;
   align-items: center;
   width: 66vw;
-  height: 46.42vw;
+  height: 46vw;
   border-right: 2px solid #000000;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_MindMapPagePlayImage {
+    height: 70.9vw;
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_MindMapPagePlayImage {
+    height: 128.5vw;
+    width: 100vw;
+  }
 }
 
 #result {
@@ -184,14 +309,26 @@
 }
 
 .Q_GeneralImageCollectionPage {
-  @include GeneralImageLifehackPageProperties;
   width: 34vw;
   height: 52vw;
   border: 0;
   border-bottom: 2px solid black;
   margin: 0;
+  background-color: black;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_GeneralImageCollectionPage {
+    height: 70.2vw;
+    width: 38.1vw;
+  }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_GeneralImageCollectionPage {
+    height: 128.5vw;
+    width: 100vw;
+  }
+}
 // images and symbols for articles page
 
 .Q_GeneralImageArticlePage {
@@ -220,9 +357,23 @@
 
 // images and symbols for search page and "it will be interesting"
 
-.Q_SearchAndFilterTopicSymbolCard {
+.Q_ContentCardsIcon {
   height: 6vw;
   width: 6vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_ContentCardsIcon {
+    height: 4.63vw;
+    width: 5.37vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_ContentCardsIcon {
+    height: 11.6vw;
+    width: 14vw;
+  }
 }
 
 .Q_SearchIcon {
@@ -243,6 +394,7 @@
 .W_FooterCardCurators {
   @include FooterCardsProperties;
   width: 25vw;
+  border-left: 2px solid #f4f4f4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -251,7 +403,15 @@
 .W_FooterCardHSE {
   @include FooterCardsProperties;
   width: 16vw;
-  border-right: 2px solid #f4f4f4;
+  border-left: 2px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.C_FooterCardSocialNetworks {
+  @include FooterCardsProperties;
+  width: 25.5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,8 +468,147 @@
 .Q_HSEImage {
   width: 13.4vw;
   height: 5.9vw;
-  background-image: url(images/footer/HSEImage.svg);
+  background-image: url(images/footer/HSEImage.png);
   background-size: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_FooterCardProducers {
+    height: 21.1vw;
+    padding: 2.92vw;
+    border-bottom: 0.2vw solid #f4f4f4;
+    border-left: 0;
+    width: 50vw;
+  }
+  .W_FooterCardCurators {
+    height: 21.1vw;
+    padding: 2.92vw;
+    border-bottom: 0.2vw solid #f4f4f4;
+    border-left: 0.2vw solid #f4f4f4;
+    width: 50vw;
+  }
+
+  .W_FooterCardHSE {
+    height: 21.1vw;
+    padding: 2.92vw;
+    border-bottom: 0.2vw solid #f4f4f4;
+    border-left: 0.2vw solid #f4f4f4;
+    width: 50vw;
+  }
+
+  .C_FooterCardSocialNetworks {
+    height: 21.1vw;
+    padding: 2.92vw;
+    border-bottom: 0.2vw solid #f4f4f4;
+    border-left: 0;
+    width: 50vw;
+  }
+
+  .W_FooterSymbolsSocialNetworks {
+    width: 22.9vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Q_SocialNetworkIconTelegram {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .Q_SocialNetworkIconInstagram {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .Q_SocialNetworkIconVkontakte {
+    width: 6vw;
+    height: 6vw;
+  }
+  .Q_ABCImage {
+    width: 9vw;
+    height: 9vw;
+    left: 88vw;
+  }
+
+  .Q_BarkodeImage {
+    width: 19vw;
+    height: 3vw;
+  }
+  .Q_HSEImage {
+    width: 22vw;
+    height: 9vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_FooterCardProducers {
+    height: 50.5vw;
+    padding: 7vw;
+    border-bottom: 0.46vw solid #f4f4f4;
+    border-left: 0;
+    width: 100vw;
+  }
+
+  .W_FooterCardCurators {
+    height: 50.5vw;
+    padding: 7vw;
+    border-bottom: 0.46vw solid #f4f4f4;
+    border-left: 0;
+    width: 100vw;
+  }
+
+  .W_FooterCardHSE {
+    height: 50.5vw;
+    padding: 7vw;
+    padding-left: 5vw;
+    border-bottom: 0.46vw solid #f4f4f4;
+    border-left: 0;
+    width: 100vw;
+  }
+
+  .C_FooterCardSocialNetworks {
+    height: 50.5vw;
+    padding: 7vw;
+    border-bottom: 0.46vw solid #f4f4f4;
+    border-left: 0;
+    width: 100vw;
+  }
+
+  .W_FooterSymbolsSocialNetworks {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Q_SocialNetworkIconTelegram {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .Q_SocialNetworkIconInstagram {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .Q_SocialNetworkIconVkontakte {
+    width: 15vw;
+    height: 15vw;
+  }
+  .Q_ABCImage {
+    width: 20vw;
+    height: 20vw;
+    left: 73vw;
+  }
+
+  .Q_BarkodeImage {
+    width: 40vw;
+    height: 6vw;
+    margin-left: 2vw;
+  }
+  .Q_HSEImage {
+    width: 48vw;
+    height: 22vw;
+  }
 }
 
 // map for map :)))))))))))
@@ -319,6 +618,22 @@
   height: 46vw;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .Q_Map {
+    width: 100vw;
+    height: 70.9vw;
+    border-left: 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .Q_Map {
+    height: 128.5vw;
+    width: 100vw;
+    border-left: 0;
+  }
 }
 
 // images and symbols for search and filter page

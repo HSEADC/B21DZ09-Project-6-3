@@ -1,9 +1,9 @@
 document?.addEventListener('DOMContentLoaded', function () {
   const input = document.querySelector('.A_SearchInput')
-  const cards = document.querySelectorAll('.M_SearchAndFiltersPageCard')
-  const categories = document.querySelectorAll('.A_SearchAndFilterCard')
+  const cards = document.querySelectorAll('.W_ContentCard')
+  const categories = document.querySelectorAll('.A_FilterPageChooseButton')
   const filterArrow = document.querySelector('.Q_FilterPageArrowImage1')
-  const searchAndFilterCards = document.querySelector('.W_SearchAndFilterCards')
+  const searchAndFilterCards = document.querySelector('.W_FilterPageButtons ')
   const titleSearchAndFilterPage = document.querySelector(
     '.A_TitleSearchAndFilterPage'
   )

@@ -20,8 +20,14 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  height: 122vw;
+  height: auto;
   width: 100vw;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .O_MainPageContainer {
+    height: auto;
+  }
 }
 
 // search and filter page organisms
@@ -68,23 +74,23 @@
 
 .O_CollectionPageContainer {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   height: fit-content;
   width: 100vw;
-  margin-bottom: 4vw;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 // mind map page organisms
 
 .O_MindMapPageContainer {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100vw;
-  margin-bottom: 3vw;
 }
 
 .O_MindMapPageCridContainer {
@@ -139,4 +145,5 @@
   flex-wrap: wrap;
   height: fit-content;
   width: 100vw;
+  border-bottom: 0.138vw;
 }

@@ -1,5 +1,17 @@
 @import 'mixins';
 
+.mapboxgl-popup-content {
+  font-family: 'Inter';
+  font-size: 4vw;
+  line-height: 5.5vw;
+  letter-spacing: -3%;
+  height: 30vw;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 24px;
+}
+
 // article page titles typography
 .W_BodyTextFact {
   width: 100%;
@@ -107,20 +119,35 @@
   border: 0;
 }
 
-.W_ArrowAnNameFilterPage {
-  display: flex;
-}
-
-.M_TitleSearchAndFilterPage {
-  width: 100vw;
-  min-height: 6.24vw;
-  border-bottom: 2px solid black;
+.C_FilterPageNavigation {
   display: flex;
   align-items: center;
-  padding-right: 1.5vw;
-  justify-content: space-between;
-  padding: 1vw 0 1vw 2vw;
-  padding-right: 1.5vw;
+  width: 100vw;
+}
+
+// .C_FilterPageNavigation {
+//   width: 100vw;
+//   min-height: 6.24vw;
+//   border-bottom: 2px solid black;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 1vw 0 1vw 2vw;
+//   padding-right: 1.5vw;
+// }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_FilterPageNavigation {
+    width: 100vw;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_FilterPageNavigation {
+    width: 100vw;
+    border-bottom: 0.46vw solid #000000;
+  }
 }
 
 // map page typography and cards
@@ -153,9 +180,23 @@
 
 // titles typography
 
-.A_TitleAuxiliary {
+.A_AdditionalTitle {
   @include TitlesAuxiliaryProperties;
-  width: 95%;
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_AdditionalTitle {
+    font-size: 2.44vw;
+    line-height: 2.92vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_AdditionalTitle {
+    font-size: 5.84vw;
+    line-height: 7vw;
+  }
 }
 
 .A_TitleAuxiliaryBody {
@@ -164,41 +205,93 @@
   padding-top: 5vw;
 }
 
-.A_TitleAuxiliaryMap {
-  @include TitlesAuxiliaryProperties;
-  width: 95%;
+.A_TextTopMap {
+  @include TextPropertiesSmall;
+  font-weight: 500;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  padding-bottom: 2vw;
+}
+
+.A_TextBottomMap {
+  @include TextPropertiesBig;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextBottomMap {
+    font-size: 2.41vw;
+    line-height: 2.92vw;
+    padding-bottom: 3vw;
+  }
+  .A_TextTopMap {
+    font-size: 1.94vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextBottomMap {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-bottom: 10vw;
+  }
+  .A_TextTopMap {
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 // main page titles typography
 
-.A_TitleMainPage {
+.A_Title {
   @include TitlesProperties;
   text-align: center;
   width: 100vw;
   border-bottom: 2px solid black;
 }
 
-.C_MainPageCard {
-  width: 33.2vw;
-  height: 51.7vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid black;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_Title {
+    font-size: 3.93vw;
+    line-height: 4.68vw;
+    padding: 2vw 0 2vw 0vw;
+  }
 }
 
-.M_MainPageCards {
-  width: 29.8vw;
-  height: 47.7vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 2vw;
-  justify-content: space-between;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  border-bottom: 30px solid black;
-  border-top: 30px solid black;
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_Title {
+    font-size: 7vw;
+    line-height: 8.41vw;
+    padding: 3.5vw 0 3.5vw 0vw;
+  }
+}
+
+.A_TitleContent {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 2.8vw;
+  line-height: 4.16vw;
+  text-align: left;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TitleContent {
+    font-size: 3.93vw;
+    line-height: 4.68vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TitleContent {
+    font-size: 7vw;
+    line-height: 8.41vw;
+  }
 }
 
 .W_MainPageCardShort {
@@ -211,9 +304,29 @@
   align-items: flex-end;
 }
 
-.A_TitleAuxiliaryMainPageCardShort {
+.W_MainPageMenu {
   @include TitlesAuxiliaryProperties;
   @include TitlesAuxiliaryCardsPropertiesMainPage;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .W_MainPageMenu {
+    @include TitlesAuxiliaryProperties;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    border-bottom: 0.69vw solid black;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MainPageMenu {
+    font-size: 2.44vw;
+    line-height: 2.92vw;
+    padding-bottom: 2vw;
+  }
 }
 
 .W_MainPageCardLong {
@@ -235,13 +348,30 @@
 }
 
 .A_TextImportantTop {
-  @include TextPropertiesSmall;
-  font-weight: 500;
+  font-family: 'Inter';
+  font-size: 1.38vw;
+  line-height: 2.08vw;
+  letter-spacing: -3%;
+  font-weight: 400;
   border-bottom: 12px solid black;
   padding-bottom: 3vw;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextImportantTop {
+    font-size: 1.59vw;
+    line-height: 1.95vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextImportantTop {
+    font-size: 3.39vw;
+    line-height: 4.2vw;
+  }
 }
 
 h4 {
@@ -303,19 +433,31 @@ h4 {
 
 //collection page
 
-.C_CoolectionBodyTextParagraphs {
-  @include BodyTextParagraphs;
-  padding: 3vw 3vw 3vw 3vw !important;
-  border-bottom: 2px solid #000000;
+.W_CoolectionBodyTextParagraphs {
+  padding: 3vw 3vw 3vw 3vw;
+  height: fit-content;
+  border-bottom: 0.138vw solid #000000;
+  display: flex;
+  flex-direction: column;
   width: 66vw;
-  min-height: 52vw;
+  height: 52vw;
 }
 
-.C_CollectionBodyTextParagraphs::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_CoolectionBodyTextParagraphs {
+    width: 61vw;
+    height: 70.2vw;
+    padding: 4vw 6vw 4vw 6vw;
+  }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_CoolectionBodyTextParagraphs {
+    width: 100vw;
+    height: fit-content;
+    padding: 10vw 8vw 10vw 8vw;
+  }
+}
 .A_TextImportant {
   @include TextPropertiesSmall;
   font-weight: 500;
@@ -340,11 +482,30 @@ h4 {
 }
 
 .A_TextIndependent {
-  @include TextPropertiesBig;
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 2.43vw;
+  letter-spacing: -3%;
   font-weight: 400;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+  padding-top: 3vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextIndependent {
+    font-size: 1.95vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextIndependent {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-top: 6vw;
+  }
 }
 
 .A_TextIndependentFooter {
@@ -355,6 +516,41 @@ h4 {
   -ms-hyphens: auto;
   text-transform: uppercase;
   color: #f4f4f4;
+  padding-bottom: 5vw;
+}
+
+.A_TextDependentFooter {
+  @include TextPropertiesSmall;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  color: #f4f4f4;
+  padding-top: 1vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextIndependentFooter {
+    font-size: 2.41vw;
+    line-height: 2.92vw;
+    padding-bottom: 3vw;
+  }
+  .A_TextDependentFooter {
+    font-size: 1.94vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextIndependentFooter {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-bottom: 10vw;
+  }
+  .A_TextDependentFooter {
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 .A_TextIndependentBody {
@@ -376,31 +572,28 @@ h4 {
   padding-top: 3vw;
 }
 
-.A_TextDependentFooter {
-  @include TextPropertiesSmall;
-  font-weight: 400;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  color: #f4f4f4;
-}
-
 .W_LogoBottomFooter {
   height: 7vw;
   width: 100vw;
   display: flex;
-  border: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
   border-top: 0;
   justify-content: center;
   align-items: center;
 }
 
-.A_TextDependentMap {
-  @include TextPropertiesSmall;
-  font-weight: 400;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_LogoBottomFooter {
+    height: 10.55vw;
+    border-bottom: 0.2vw solid #f4f4f4;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_LogoBottomFooter {
+    height: 25.25vw;
+    border-bottom: 0.46vw solid #f4f4f4;
+  }
 }
 
 .A_TextList {
@@ -420,12 +613,26 @@ h4 {
   border-bottom: 2px solid #000000;
 }
 
-.W_MapPagePointInformation {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.W_MapPageInfoBox {
+  padding: 3vw 3vw 3vw 3vw !important;
+  border-bottom: 2px solid #000000;
+  width: 33vw;
+  height: 51vw;
 }
-.W_MapChooseCard {
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MapPageInfoBox {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MapPageInfoBox {
+    display: none;
+  }
+}
+
+.W_MapChooseButtons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -433,15 +640,54 @@ h4 {
   height: 4vw;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MapChooseButtons {
+    height: 9.9vw;
+    width: 100vw;
+    justify-content: space-evenly;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MapChooseButtons {
+    height: 15.8vw;
+    width: 100vw;
+    border-bottom: 0.46vw solid #000000;
+    overflow-x: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
 .W_MapInput {
   display: flex;
 }
 
-.W_MindMapShortInfoBox {
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MapInput {
+    flex-direction: column;
+  }
+}
+
+.W_MindMapInfoBox {
   width: 34vw;
   height: 52vw;
   padding: 2vw 2vw 2vw 2vw;
-  border-bottom: 2px solid black;
+  border-bottom: 0.138vw solid black;
+  border-right: 0.138vw solid black;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MindMapInfoBox {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MindMapInfoBox {
+    display: none;
+  }
 }
 
 .A_MindMapPageChooseCard {
@@ -455,30 +701,42 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 52vw;
-  width: 66vw;
   border-bottom: 2px solid #000000;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
 }
 
-.A_MindMapPagePlayRestartCard {
-  @include TitlesAuxiliaryProperties;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33vw;
-  height: 5.6vw;
-  border: 2px solid black;
-  border-bottom: 0;
-  background-color: black;
-}
-
-.A_MindMapPageChooseCard.correct {
+.A_MindMapPageChooseButton1.correct {
   background-color: #1ebcb1;
 }
 
-.A_MindMapPageChooseCard.incorrect {
+.A_MindMapPageChooseButton1.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton2.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton2.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton3.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton3.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton4.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton4.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton5.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton5.incorrect {
   background-color: #f45e4e;
 }
 
@@ -490,38 +748,96 @@ h4 {
   height: 4vw;
 }
 
-.W_MindMapPlayRestartCards {
+.W_MindMapPlayButtons {
   display: flex;
-  width: 66vw;
 }
 
-.A_MapPageChooseCard {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MindMapPlayButtons {
+    border-top: 0.195vw solid black;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MindMapPlayButtons {
+    flex-direction: column;
+    border-top: 0.46vw solid black;
+  }
+}
+
+.A_MapPageChooseButton {
   @include TextPropertiesSmall;
   @include TitlesAuxiliaryCardsProperties;
   text-transform: none;
   margin-right: 2vw;
+  border-radius: 5px;
 }
 
-.A_MapPageChooseCard:hover {
+.A_MapPageChooseButton:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MapPageChooseButton {
+    height: 5.44vw;
+    width: 14.2vw;
+    font-size: 2vw;
+    line-height: 2.92vw;
+    margin-right: 0;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MapPageChooseButton {
+    height: 10.8vw;
+    min-width: 26.21vw;
+    margin-left: 2vw;
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 .A_MapPageInput {
   width: 46vw;
   height: 5.6vw;
   display: flex;
+  align-items: center;
   background-color: #f4f4f4;
   border-right: 2px solid black;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MapPageInput {
+    border-right: 0;
+    border-left: 0;
+    width: 66.6vw;
+    height: 9.9vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MapPageInput {
+    border-right: 0;
+    border-left: 0;
+    width: 100vw;
+    height: 18.6vw;
+  }
+}
+
 .A_MapPageFindButton {
-  @include TextPropertiesBig;
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20vw;
+  color: #f4f4f4;
   background-color: black;
   height: 5.6vw;
   border-width: 2px;
@@ -530,26 +846,12 @@ h4 {
   background-color: black;
 }
 
-.A_MapPageFindButton:hover {
-  cursor: pointer;
-}
-
-.A_CollectionsPageFindButton {
-  @include TitlesAuxiliaryProperties;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28vw;
-  background-color: black;
-  height: 5.6vw;
-  border-top: 0px;
-  border-bottom: 2px solid black;
-  background-color: black;
-  position: absolute;
-  bottom: 3vw;
-}
 .A_MindMapPageCribButton {
-  @include TitlesAuxiliaryProperties;
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -557,7 +859,89 @@ h4 {
   height: 5.6vw;
   border: 2px solid black;
   border-bottom: 0;
+}
+.A_MindMapPagePlayRestartCard {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33vw;
+  color: #f4f4f4;
   background-color: black;
+  height: 5.6vw;
+  border-width: 2px;
+  border-top: 0px;
+  border-bottom: 0.138vw solid black;
+  background-color: black;
+}
+
+.A_MindMapPagePlayRestartCard:hover {
+  cursor: pointer;
+}
+
+.A_MindMapPageCribButton:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MindMapPagePlayRestartCard,
+  .A_MindMapPageCribButton {
+    border: 0;
+    font-size: 2.44vw;
+    width: 50vw;
+    height: 9.9vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MindMapPagePlayRestartCard,
+  .A_MindMapPageCribButton {
+    font-size: 5.84vw;
+    border: 0;
+    width: 100vw;
+    height: 18.6vw;
+  }
+}
+
+.A_CollectionsPageFindButton {
+  font-family: 'DrukSuper';
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 1.73vw;
+  line-height: 2.08vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28vw;
+  background-color: black;
+  height: 5.6vw;
+  border-top: 0px;
+  background-color: black;
+  margin-top: 5vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_CollectionsPageFindButton {
+    width: 35.6vw;
+    height: 7.8vw;
+    font-size: 2.44vw;
+    line-height: 2.92vw;
+    margin-top: 8vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_CollectionsPageFindButton {
+    width: 79.9vw;
+    height: 18.6vw;
+    font-size: 5.84vw;
+    line-height: 7vw;
+    margin-top: 15vw;
+  }
 }
 
 .A_CollectionsPageFindButton:hover {
@@ -566,35 +950,64 @@ h4 {
 
 #input {
   all: initial;
-  @include TextPropertiesSmall;
+  font-family: 'Inter';
+  font-size: 1.38vw;
+  line-height: 2.08vw;
+  letter-spacing: -3%;
+  margin-left: 6vw;
   padding-left: 1.5vw;
-  width: 50vw;
   height: 5.5vw;
   background-color: #f4f4f4;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #input {
+    font-size: 1.94vw;
+    letter-spacing: -3%;
+    margin-left: 2vw;
+    height: fit-content;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  #input {
+    height: fit-content;
+    font-size: 4.67vw;
+    margin-left: 6vw;
+    width: 80vw;
+  }
+}
+
 // mind map card
 
-.A_MapPageChooseCard:hover {
+.A_MapPageChooseButton:hover {
   cursor: pointer;
 }
 
 // search and filter
-.C_Filter {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .C_SearchAndFiltersPageCards {
   padding: 1.8vw 1.8vw 0vw 0vw;
   display: flex;
   justify-content: flex-start;
-  min-height: fit-content;
+  align-content: flex-start;
+  min-height: 48.3vw;
   flex-wrap: wrap;
   border-bottom: 2px solid #000000;
-  height: fit-content;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_SearchAndFiltersPageCards {
+    padding: 2.5vw 1.8vw 0.7vw 0vw;
+    min-height: 110vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_SearchAndFiltersPageCards {
+    padding: 6vw 0vw 0vw 0vw;
+    justify-content: center;
+  }
 }
 
 .W_SearchAndFilterCard {
@@ -623,7 +1036,7 @@ h4 {
   padding-left: 1.5vw;
 }
 
-.W_SearchAndFilterCards {
+.W_FilterPageButtons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -631,20 +1044,134 @@ h4 {
   height: 4vw;
 }
 
-.W_SearchAndFilterCards:hover {
+.W_FilterPageButtons:hover {
   cursor: pointer;
 }
 
-.W_SearchAndFilterCards::-webkit-scrollbar {
+.W_FilterPageButtons::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-.A_SearchAndFilterCard {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_FilterPageButtons {
+    height: 9.9vw;
+    width: 100vw;
+    justify-content: space-evenly;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_FilterPageButtons {
+    height: 15.8vw;
+    width: 100vw;
+    border-bottom: 0.46vw solid #000000;
+    overflow-x: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+.A_FilterPageChooseButton {
   @include TextPropertiesSmall;
   @include TitlesAuxiliaryCardsProperties;
+  border-radius: 5px;
   text-transform: none;
   margin-right: 2vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_FilterPageChooseButton {
+    height: 5.44vw;
+    width: 14.2vw;
+    font-size: 2vw;
+    line-height: 2.92vw;
+    margin-right: 0;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_FilterPageChooseButton {
+    height: 10.8vw;
+    min-width: 26.21vw;
+    margin-left: 2vw;
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
+}
+
+.W_MindMapPageButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  height: 4vw;
+}
+
+.W_MindMapPageButtons:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_MindMapPageButtons {
+    height: 9.9vw;
+    width: 100vw;
+    justify-content: space-evenly;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_MindMapPageButtons {
+    height: 15.8vw;
+    width: 100vw;
+    border-bottom: 0.46vw solid #000000;
+    overflow-x: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+.A_MindMapPageChooseButton1,
+.A_MindMapPageChooseButton2,
+.A_MindMapPageChooseButton3,
+.A_MindMapPageChooseButton4,
+.A_MindMapPageChooseButton5 {
+  @include TextPropertiesSmall;
+  @include TitlesAuxiliaryCardsProperties;
+  border-radius: 5px;
+  text-transform: none;
+  margin-right: 2vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_MindMapPageChooseButton1,
+  .A_MindMapPageChooseButton2,
+  .A_MindMapPageChooseButton3,
+  .A_MindMapPageChooseButton4,
+  .A_MindMapPageChooseButton5 {
+    height: 5.44vw;
+    width: 14.2vw;
+    font-size: 2vw;
+    line-height: 2.92vw;
+    margin-right: 0;
+    border-bottom: 0.2vw solid #000000;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_MindMapPageChooseButton1,
+  .A_MindMapPageChooseButton2,
+  .A_MindMapPageChooseButton3,
+  .A_MindMapPageChooseButton4,
+  .A_MindMapPageChooseButton5 {
+    height: 10.8vw;
+    min-width: 26.21vw;
+    margin-left: 2vw;
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
 }
 
 .A_SearchInput {
@@ -1062,28 +1589,11 @@ h4 {
   border-top: 30px solid black;
 }
 
-.A_MapPageFindButtonS {
-  @include TextPropertiesBig;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20vw;
-  background-color: black;
-  height: 5.6vw;
-  border-width: 2px;
-  border-top: 0px;
-  border-bottom: 2px solid black;
-  background-color: black;
-}
-
-.A_MapPageFindButtonS:hover {
-  cursor: pointer;
-}
-
 .A_MapPageInputStyleGuide {
   width: 46vw;
   height: 5.6vw;
   display: flex;
+
   background-color: #f4f4f4;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
@@ -1167,4 +1677,7 @@ h4 {
   width: 19.5vw;
   margin-left: 68vw;
   margin-bottom: 2vw;
+}
+::-webkit-scrollbar {
+  display: none;
 }
