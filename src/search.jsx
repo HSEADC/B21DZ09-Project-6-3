@@ -44,9 +44,7 @@ const SearchPage = () => {
                 href={post.link}
                 className="post"
                 key={post.id}
-                style={
-                  post.bg ? { backgroundImage: `url(${post.bg})` } : undefined
-                }
+                style={{ backgroundImage: `url(${post.bg})` }}
               >
                 <div className="A_AdditionalTitle">{post.title}</div>
               </a>
