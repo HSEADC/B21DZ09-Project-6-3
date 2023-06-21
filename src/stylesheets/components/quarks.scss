@@ -10,8 +10,8 @@
 }
 
 .Q_MainPageSymbol {
-  height: 4.5vw;
-  width: 4.5vw;
+  height: 4.3vw;
+  width: 4.3vw;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -410,8 +410,12 @@
 // images and symbols for search page and "it will be interesting"
 
 .Q_ContentCardsIcon {
-  height: 6vw;
-  width: 6vw;
+  height: 5vw;
+  width: 5vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {

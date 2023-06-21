@@ -24,11 +24,10 @@ const SearchPage = () => {
       <div className="C_FilterPageNavigation">
         <div className="Q_GoBack"></div>
         <div className="A_TitleContent">Поиск</div>
-      </div>
-      <div className="W_FilterPageButtons">
-        <div className="searchWrapper">
+
+        <div className="W_SearchPageButtons">
           <input
-            placeholder="пластик, пакет, магазин, мусор..."
+            placeholder="Введите запрос"
             onChange={(e) => setValue(e.target.value)}
             value={value}
             type="text"

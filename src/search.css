@@ -11,41 +11,116 @@ body {
 
 .searchWrapper {
   display: flex;
+  width: 95vw;
 }
 
-.searchWrapper input {
+.W_SearchPageButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  height: 4vw;
+}
+
+.W_SearchPageButtons:hover {
+  cursor: pointer;
+}
+
+.W_SearchPageButtons::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.W_SearchPageButtons input {
   font-family: 'Inter';
   font-size: 1.38vw;
   line-height: 2.08vw;
   letter-spacing: -3%;
   width: 30vw;
-  height: 9.9vw;
+  height: 6vw;
   display: flex;
   align-items: center;
   background-color: #f4f4f4;
   border: 2px solid black;
   padding-left: 2vw;
+  margin-right: 2vw;
 }
 
-.searchWrapper button {
-  font-family: 'DrukSuper';
-  text-transform: uppercase;
-  letter-spacing: -3%;
-  font-size: 1.73vw;
+.W_SearchPageButtons button {
+  font-family: 'Inter';
+  font-size: 1.38vw;
   line-height: 2.08vw;
+  letter-spacing: -3%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20vw;
   color: #f4f4f4;
   background-color: black;
-  height: 9.9vw;
+  height: 6vw;
   border-width: 2px;
   border-top: 0px;
   border-bottom: 2px solid black;
   background-color: black;
   border-radius: 5px;
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .W_SearchPageButtons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 6vw;
+  }
+  .W_SearchPageButtons input {
+    font-size: 1.95vw;
+    line-height: 2.34vw;
+  }
+  .W_SearchPageButtons button {
+    font-size: 1.95vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .W_SearchPageButtons {
+    height: 15.8vw;
+    width: 100vw;
+    border-bottom: 0.46vw solid #000000;
+    overflow-x: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+/* .A_TextIndependent {
+  font-family: 'Inter';
+  font-size: 1.73vw;
+  line-height: 2.43vw;
+  letter-spacing: -3%;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  padding-top: 3vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .A_TextIndependent {
+    font-size: 1.95vw;
+    line-height: 2.34vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .A_TextIndependent {
+    font-size: 4.67vw;
+    line-height: 5.6vw;
+    padding-top: 6vw;
+  }
+} */
 
 .heading {
   margin-bottom: 20px;
