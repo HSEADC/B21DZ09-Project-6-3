@@ -4376,12 +4376,10 @@ var SearchPage = function SearchPage() {
     className: "Q_GoBack"
   }), /*#__PURE__*/react.createElement("div", {
     className: "A_TitleContent"
-  }, "\u041F\u043E\u0438\u0441\u043A")), /*#__PURE__*/react.createElement("div", {
-    className: "W_FilterPageButtons"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "searchWrapper"
+  }, "\u041F\u043E\u0438\u0441\u043A"), /*#__PURE__*/react.createElement("div", {
+    className: "W_SearchPageButtons"
   }, /*#__PURE__*/react.createElement("input", {
-    placeholder: "\u043F\u043B\u0430\u0441\u0442\u0438\u043A, \u043F\u0430\u043A\u0435\u0442, \u043C\u0430\u0433\u0430\u0437\u0438\u043D, \u043C\u0443\u0441\u043E\u0440...",
+    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u0430\u043F\u0440\u043E\u0441",
     onChange: function onChange(e) {
       return setValue(e.target.value);
     },
