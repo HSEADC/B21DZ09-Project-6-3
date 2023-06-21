@@ -55,6 +55,10 @@ const SearchPage = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = createRoot(document.querySelector('.W_ContentReactModule'))
+  const container = document.createElement('div')
+  container.classList.add('W_ContentReactModule')
+  document.body.appendChild(container)
+
+  const root = createRoot(container)
   root.render(<SearchPage />)
 })

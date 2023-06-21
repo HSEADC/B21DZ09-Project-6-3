@@ -1,5 +1,17 @@
 @import 'mixins';
 
+.mapboxgl-popup-content {
+  font-family: 'Inter';
+  font-size: 4vw;
+  line-height: 5.5vw;
+  letter-spacing: -3%;
+  height: 30vw;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 24px;
+}
+
 // article page titles typography
 .W_BodyTextFact {
   width: 100%;

@@ -95,8 +95,8 @@ window?.addEventListener('load', function () {
           console.log('click', coordinates)
           const name = e.features[0].properties.title
 
-          const markerName = document.createElement('h4')
-          markerName.textContent = name
+          // const markerName = document.createElement('h4')
+          // markerName.textContent = name
 
           new mapboxgl.Popup().setLngLat(coordinates).setHTML(name).addTo(map)
         })
