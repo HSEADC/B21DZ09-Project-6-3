@@ -663,6 +663,34 @@ h4 {
 .A_MindMapPageChooseButton1.incorrect {
   background-color: #f45e4e;
 }
+.A_MindMapPageChooseButton2.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton2.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton3.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton3.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton4.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton4.incorrect {
+  background-color: #f45e4e;
+}
+.A_MindMapPageChooseButton5.correct {
+  background-color: #1ebcb1;
+}
+
+.A_MindMapPageChooseButton5.incorrect {
+  background-color: #f45e4e;
+}
 
 .W_MindMapChooseCards {
   display: flex;
@@ -1036,7 +1064,11 @@ h4 {
     padding-right: 2vw;
   }
 }
-.A_MindMapPageChooseButton1 {
+.A_MindMapPageChooseButton1,
+.A_MindMapPageChooseButton2,
+.A_MindMapPageChooseButton3,
+.A_MindMapPageChooseButton4,
+.A_MindMapPageChooseButton5 {
   @include TextPropertiesSmall;
   @include TitlesAuxiliaryCardsProperties;
   border-radius: 5px;
@@ -1045,7 +1077,11 @@ h4 {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .A_MindMapPageChooseButton1 {
+  .A_MindMapPageChooseButton1,
+  .A_MindMapPageChooseButton2,
+  .A_MindMapPageChooseButton3,
+  .A_MindMapPageChooseButton4,
+  .A_MindMapPageChooseButton5 {
     height: 5.44vw;
     width: 14.2vw;
     font-size: 2vw;
@@ -1056,7 +1092,11 @@ h4 {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
-  .A_MindMapPageChooseButton1 {
+  .A_MindMapPageChooseButton1,
+  .A_MindMapPageChooseButton2,
+  .A_MindMapPageChooseButton3,
+  .A_MindMapPageChooseButton4,
+  .A_MindMapPageChooseButton5 {
     height: 10.8vw;
     min-width: 26.21vw;
     margin-left: 2vw;

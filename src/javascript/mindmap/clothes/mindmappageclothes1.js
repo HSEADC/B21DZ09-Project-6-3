@@ -1,6 +1,6 @@
-document?.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const colors = document.querySelectorAll('.A_MindMapPageChooseButton1')
-  const playButton = document.getElementById('play')
+  const playButton = document.getElementById('play1')
   const game = document.querySelector('.Q_MindMapPagePlayImage')
   const result = document.getElementById('result')
 
@@ -21,7 +21,6 @@ document?.addEventListener('DOMContentLoaded', function () {
     if (currentImage >= Object.keys(colorAnswers).length) {
       return
     }
-
     const imageContainer = document.createElement('div')
     const image = document.createElement('img')
     game.className = 'Q_MindMapPagePlayImage'
@@ -69,7 +68,6 @@ document?.addEventListener('DOMContentLoaded', function () {
       showNextImage()
     }, 500)
   }
-
   playButton?.addEventListener('click', startGame)
 
   colors.forEach(function (color) {

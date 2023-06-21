@@ -17,6 +17,7 @@ const SearchPage = () => {
       )
     })
   }
+
   console.log(posts)
   return (
     <div className="M_Filter">
@@ -55,10 +56,16 @@ const SearchPage = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.createElement('div')
-  container.classList.add('W_ContentReactModule')
-  document.body.appendChild(container)
+  // Define the specific relative path where you want to render the component
+  const specificPath = 'search.html'
 
-  const root = createRoot(container)
-  root.render(<SearchPage />)
+  // Check if the current URL contains the specific relative path
+  if (window.location.pathname.includes(specificPath)) {
+    const container = document.createElement('div')
+    container.classList.add('W_ContentReactModule')
+    document.body.appendChild(container)
+
+    const root = createRoot(container)
+    root.render(<SearchPage />)
+  }
 })
