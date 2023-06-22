@@ -470,11 +470,6 @@
   justify-content: center;
 }
 
-.W_MainPageMenuBurger:hover {
-  color: rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .W_MainPageMenuBurger {
     font-size: 2.44vw;
