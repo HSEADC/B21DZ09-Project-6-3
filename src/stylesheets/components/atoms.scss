@@ -168,7 +168,7 @@
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
   .W_TitleContentPage {
     width: 100vw;
-    height: 180vw;
+    min-height: 180vw;
     padding: 7vw 6vw 7vw 6vw;
     border: 0;
   }
