@@ -66,6 +66,32 @@
     display: none;
   }
 }
+
+.C_MainPageCardsBurger {
+  width: 29.8vw;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 1.5vw;
+  justify-content: space-between;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_MainPageCardsBurger {
+    height: 70.38vw;
+    width: 50vw;
+    padding: 3.2vw 3vw 3.2vw 3vw;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_MainPageCardsBurger {
+    height: 160vw;
+    width: 80vw;
+    padding: 3.2vw 3vw 3.2vw 3vw;
+  }
+}
+
 .M_Footer {
   height: 27vw;
   display: flex;
