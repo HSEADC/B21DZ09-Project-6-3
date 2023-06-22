@@ -3781,11 +3781,11 @@ var _document;
 /***/ (() => {
 
 var toggleButton = document.querySelector('.Q_BurgerMenuIqon');
-var overlay = document.querySelector('.C_Menu');
+var overlay = document.querySelector('.O_BurgerMenu');
 var header = document.querySelector('.W_Header');
 toggleButton === null || toggleButton === void 0 ? void 0 : toggleButton.addEventListener('click', function () {
   if (overlay.style.display === 'none' || overlay.style.display === '') {
-    overlay.style.display = 'block';
+    overlay.style.display = 'flex';
     header.style.position = 'fixed';
     header.style.top = '0';
     document.body.style.paddingTop = header.offsetHeight + 'px';
