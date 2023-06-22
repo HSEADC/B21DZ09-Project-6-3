@@ -576,6 +576,18 @@ h4 {
   height: 52vw;
 }
 
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .W_CoolectionBodyTextParagraphs {
+    height: 42.5vw;
+  }
+}
+
+@media only screen and (device-width: 1366px) {
+  .W_CoolectionBodyTextParagraphs {
+    height: 42.5vw;
+  }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .W_CoolectionBodyTextParagraphs {
     width: 61vw;
@@ -869,6 +881,20 @@ h4 {
   padding: 3vw 3vw 3vw 3vw;
   border-bottom: 0.138vw solid black;
   border-right: 0.138vw solid black;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .W_MindMapInfoBox {
+    height: 42.5vw;
+    border-left: 0;
+  }
+}
+
+@media only screen and (device-width: 1366px) {
+  .W_MindMapInfoBox {
+    height: 42.5vw;
+    border-left: 0;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
