@@ -23,30 +23,30 @@
 
 @media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
   .M_MainPageCard {
-    height: 45.6vw;
+    height: 43.6vw;
   }
   .C_MainPageCards {
-    height: 41.9vw;
+    height: 39.9vw;
     padding: 1.5vw 2vw 1.5vw 2vw;
   }
 }
 
 @media only screen and (device-width: 1728px) {
   .M_MainPageCard {
-    height: 53.9vw;
+    height: 51.9vw;
   }
   .C_MainPageCards {
-    height: 48.6vw;
+    height: 47.6vw;
     width: 27.8vw;
   }
 }
 
 @media only screen and (device-width: 1512px) {
   .M_MainPageCard {
-    height: 54.2vw;
+    height: 52.2vw;
   }
   .C_MainPageCards {
-    height: 50vw;
+    height: 48vw;
   }
 }
 
@@ -99,6 +99,30 @@
   flex-direction: row;
   align-items: center;
   border-bottom: 0.13vw solid #000000;
+}
+
+@media only screen and (device-width: 1680px) {
+  .M_Filter {
+    min-height: 9.9vw;
+  }
+}
+
+@media only screen and (device-width: 1512px) {
+  .M_Filter {
+    min-height: 6.34vw;
+  }
+}
+
+@media only screen and (device-width: 1194px) {
+  .M_Filter {
+    min-height: 7.2vw;
+  }
+}
+
+@media only screen and (device-width: 1152px) {
+  .M_Filter {
+    min-height: 6.94vw;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -160,7 +184,7 @@
 
 .W_ContentCard {
   width: 22.7vw;
-  height: 23.5vw;
+  height: 23.2vw;
   padding: 2.5vw 1.5vw 1.5vw 1.5vw;
   margin: 0 0 1.5vw 1.8vw;
   border: 0.138vw solid #000000;

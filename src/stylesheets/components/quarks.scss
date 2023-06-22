@@ -49,12 +49,12 @@
     width: 5.95vw;
   }
   .MainPageSymbolLifehack {
-    width: 5vw !important;
-    height: 6.6vw;
+    width: 5.2vw !important;
+    height: 6.6vw !important;
   }
   .MainPageSymbolMindMap {
-    width: 6.8vw;
-    height: 6.8vw;
+    width: 6.5vw !important;
+    height: 6.5vw !important;
   }
 }
 
@@ -189,6 +189,30 @@
 
 .Q_GoBack:hover {
   cursor: pointer;
+}
+
+@media only screen and (device-width: 1680px) {
+  .Q_GoBack {
+    min-height: 9.9vw;
+  }
+}
+
+@media only screen and (device-width: 1512px) {
+  .Q_GoBack {
+    min-height: 6.34vw;
+  }
+}
+
+@media only screen and (device-width: 1194px) {
+  .Q_GoBack {
+    min-height: 7.2vw;
+  }
+}
+
+@media only screen and (device-width: 1152px) {
+  .Q_GoBack {
+    min-height: 6.94vw;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -673,10 +697,24 @@
 // map for map :)))))))))))
 
 .Q_Map {
-  width: 66vw;
-  height: 46vw;
+  width: 67vw;
+  height: 42.7vw;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .Q_Map {
+    width: 67vw;
+    height: 36.9vw;
+  }
+}
+
+@media only screen and (device-width: 1366px) {
+  .Q_Map {
+    width: 67vw;
+    height: 36.9vw;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
