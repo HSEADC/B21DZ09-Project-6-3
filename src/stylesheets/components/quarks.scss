@@ -49,12 +49,12 @@
     width: 5.95vw;
   }
   .MainPageSymbolLifehack {
-    width: 5vw !important;
-    height: 6.6vw;
+    width: 5.2vw !important;
+    height: 6.6vw !important;
   }
   .MainPageSymbolMindMap {
-    width: 6.8vw;
-    height: 6.8vw;
+    width: 6.5vw !important;
+    height: 6.5vw !important;
   }
 }
 
@@ -152,10 +152,11 @@
 
 .Q_TopicSymboll {
   background-image: url(./images/AllArticlesSymbol.png);
-  width: 32.5vw;
-  height: 8.69vw;
-  margin-top: 5.5vw;
+  width: 27.5vw;
+  height: 8vw;
+  margin-top: 5vw;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -189,6 +190,30 @@
 
 .Q_GoBack:hover {
   cursor: pointer;
+}
+
+@media only screen and (device-width: 1680px) {
+  .Q_GoBack {
+    min-height: 9.9vw;
+  }
+}
+
+@media only screen and (device-width: 1512px) {
+  .Q_GoBack {
+    min-height: 6.34vw;
+  }
+}
+
+@media only screen and (device-width: 1194px) {
+  .Q_GoBack {
+    min-height: 7.2vw;
+  }
+}
+
+@media only screen and (device-width: 1152px) {
+  .Q_GoBack {
+    min-height: 6.94vw;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -333,14 +358,31 @@
   justify-content: center;
   align-items: center;
   width: 66vw;
-  height: 46vw;
+  height: 42.7vw;
   border-right: 2px solid #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .Q_MindMapPagePlayImage {
+    width: 66vw;
+    height: 36.9vw;
+  }
+}
+
+@media only screen and (device-width: 1366px) {
+  .Q_MindMapPagePlayImage {
+    width: 66vw;
+    height: 36.9vw;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .Q_MindMapPagePlayImage {
     height: 70.9vw;
     width: 100vw;
+    background-size: 140%;
   }
 }
 
@@ -348,6 +390,7 @@
   .Q_MindMapPagePlayImage {
     height: 128.5vw;
     width: 100vw;
+    background-size: 170%;
   }
 }
 
@@ -364,12 +407,27 @@
 
 .Q_GeneralImageCollectionPage {
   width: 34vw;
-  height: 52vw;
+  height: 48.7vw;
   border: 0;
   border-bottom: 2px solid black;
   margin: 0;
   background-color: black;
 }
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .Q_GeneralImageCollectionPage {
+    height: 42.5vw;
+    border-left: 0;
+  }
+}
+
+@media only screen and (device-width: 1366px) {
+  .Q_GeneralImageCollectionPage {
+    height: 42.5vw;
+    border-left: 0;
+  }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .Q_GeneralImageCollectionPage {
     height: 70.2vw;
@@ -673,10 +731,24 @@
 // map for map :)))))))))))
 
 .Q_Map {
-  width: 66vw;
-  height: 46vw;
+  width: 67vw;
+  height: 42.7vw;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
+  .Q_Map {
+    width: 67vw;
+    height: 36.9vw;
+  }
+}
+
+@media only screen and (device-width: 1366px) {
+  .Q_Map {
+    width: 67vw;
+    height: 36.9vw;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
