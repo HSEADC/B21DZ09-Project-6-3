@@ -70,6 +70,33 @@
   width: 100vw;
 }
 
+.O_BurgerMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #f4f4f4;
+  z-index: 2;
+  width: 100vw;
+  min-height: 58vw;
+  padding-bottom: 5vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .O_BurgerMenu {
+    min-height: 130vw;
+    padding-bottom: 15vw;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .O_BurgerMenu {
+    min-height: 210vw;
+    padding-bottom: 15vw;
+  }
+}
+
 // article page organisms
 
 .O_CollectionPageContainer {
@@ -146,5 +173,5 @@
   flex-wrap: wrap;
   height: fit-content;
   width: 100vw;
-  border-bottom: 0.138vw;
+  border-bottom: 2px;
 }
