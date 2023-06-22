@@ -1661,7 +1661,6 @@ h4 {
   border-bottom: 2px solid #000000;
   border-left: 2px solid black;
   border-right: 2px solid black;
-  margin-left: 10vw;
   align-content: space-around;
 }
 
@@ -1669,7 +1668,7 @@ h4 {
 
 .C_StyleGuideCover {
   width: 97vw;
-  height: 55vw;
+  height: 49.5vw;
   border: 2px solid black;
   margin-top: 1.5vw;
   display: flex;
@@ -1940,7 +1939,7 @@ h4 {
 
 .M_StyleGuideBlockAbout {
   width: 97vw;
-  min-height: 59.5vw;
+  min-height: 55vw;
   border: 2px solid black;
   padding: 4vw 3vw 7vw 3vw;
   margin-top: 1.5vw;
@@ -1959,4 +1958,316 @@ h4 {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .C_StyleGuideCover {
+    width: 95vw;
+    height: 120vw;
+    border-bottom: 0.2vw solid #000000;
+    margin-top: 3vw;
+    padding-bottom: 5vw;
+    padding-top: 4vw;
+  }
+  .W_TextStyleGuidePageCover {
+    height: 100vw;
+    display: flex;
+    margin-top: 3vw;
+    flex-direction: column;
+  }
+  .A_TextStyleGuidePageCover {
+    font-family: 'Inter';
+    font-size: 2.8vw;
+    line-height: 3.5vw;
+    letter-spacing: -3%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .A_TitleStyleGuidePageCover {
+    font-family: 'DrukSuper';
+    text-transform: uppercase;
+    letter-spacing: -3%;
+    font-size: 8.6vw;
+  }
+  .M_StyleGuideBlockAbout {
+    width: 95vw;
+    min-height: 70vw;
+    border: 2px solid black;
+    padding: 6vw 6vw 8vw 6vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .A_TitleStyleGuidePage {
+    font-size: 4.6vw;
+    line-height: 7.16vw;
+    margin-bottom: 2vw;
+  }
+  .C_StyleGuideWhoWeAre {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    padding-left: 10vw;
+    flex-direction: column;
+  }
+  .A_TitleStyleGuideAuxiliaryBody {
+    font-size: 2.8vw;
+    line-height: 3.16vw;
+    margin-top: 5.2vw;
+    // padding-left: 2vw;
+  }
+  .A_TextStyleGuideIndependentBodyDependent {
+    font-size: 2.4vw;
+    line-height: 3.16vw;
+    margin-top: 4vw;
+    padding-left: 4vw;
+    font-weight: 400;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+  .W_StyleGuideWhoWeAreBox {
+    display: flex;
+    max-width: 67vw;
+    flex-direction: column;
+  }
+
+  .M_StyleGuideBlock {
+    width: 95vw;
+    min-height: 59.5vw;
+    border: 2px solid black;
+    padding: 6vw 6vw 8vw 6vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .Q_StyleGuideLogoPositions {
+    background-size: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    width: 83vw;
+    height: 30vw;
+  }
+  .Q_StyleGuideSecurityField {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 40vw;
+    height: 30vw;
+  }
+  .A_TextStyleGuideIndependentBody {
+    font-family: 'Inter';
+    font-size: 2.2vw;
+    line-height: 2.7vw;
+    letter-spacing: -3%;
+    margin-top: 3vw;
+  }
+  .W_StyleGuideColorSmall {
+    display: flex;
+    width: 15vw;
+    height: 15vw;
+  }
+  .W_StyleGuideColorBig {
+    display: flex;
+    width: 15vw;
+    height: 15vw;
+  }
+  .C_StyleGuideColors {
+    display: flex;
+    width: 83vw;
+    margin: 3vw 0 3vw 0;
+  }
+  .C_StyleGuideTypography {
+    display: flex;
+    width: 75vw;
+    justify-content: space-between;
+    margin-top: 4vw;
+  }
+  .M_StyleGuideBlockImages {
+    width: 95vw;
+    height: 75vw;
+    margin: 3vw 0 0 0;
+    background-size: cover;
+  }
+  .M_StyleGuideBlockToneOfVoive {
+    width: 95vw;
+    height: 50vw;
+    border: 0.2vw solid black;
+    padding: 6vw 6vw 8vw 6vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
+  .C_StyleGuideCover {
+    width: 95vw;
+    height: 160vw;
+    border-bottom: 0.46vw solid #000000;
+    margin-top: 2.5vw;
+    padding-bottom: 10vw;
+    padding-top: 4vw;
+  }
+  .W_TextStyleGuidePageCover {
+    height: 140vw;
+    display: flex;
+    margin-top: 3vw;
+    flex-direction: column;
+  }
+  .A_TextStyleGuidePageCover {
+    font-family: 'Inter';
+    font-size: 3.2vw;
+    line-height: 5.5vw;
+    letter-spacing: -3%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .A_TitleStyleGuidePageCover {
+    font-family: 'DrukSuper';
+    text-transform: uppercase;
+    letter-spacing: -3%;
+    font-size: 8.6vw;
+  }
+  .M_StyleGuideBlockAbout {
+    width: 95vw;
+    min-height: 70vw;
+    border: 0.46vw solid black;
+    padding: 10vw 8vw 12vw 8vw;
+    margin-top: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .A_TitleStyleGuidePage {
+    font-size: 6.6vw;
+    line-height: 9.1vw;
+    margin-bottom: 2vw;
+  }
+  .C_StyleGuideWhoWeAre {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    flex-direction: column;
+  }
+  .A_TitleStyleGuideAuxiliaryBody {
+    font-size: 6.6vw;
+    line-height: 8.16vw;
+    margin-top: 10vw;
+    padding-left: 2vw;
+  }
+  .A_TextStyleGuideIndependentBodyDependent {
+    font-size: 4.4vw;
+    line-height: 6.2vw;
+    margin-top: 6vw;
+    padding-left: 4vw;
+    font-weight: 400;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+  .W_StyleGuideWhoWeAreBox {
+    display: flex;
+    max-width: 80vw;
+    flex-direction: column;
+  }
+
+  .M_StyleGuideBlock {
+    width: 95vw;
+    min-height: 59.5vw;
+    border: 2px solid black;
+    padding: 6vw 6vw 8vw 6vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .Q_StyleGuideLogoPositions {
+    display: none;
+  }
+  .Q_StyleGuideSecurityField {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 55vw;
+  }
+  .A_TextStyleGuideIndependentBody {
+    font-size: 4.4vw;
+    line-height: 6.2vw;
+    margin-top: 6vw;
+    padding-left: 4vw;
+    font-weight: 400;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+  .W_StyleGuideColorSmall {
+    display: flex;
+    width: 80vw;
+    height: 80vw;
+    margin-top: 6vw;
+  }
+  .W_StyleGuideColorBig {
+    display: flex;
+    width: 83vw;
+    height: 83vw;
+    margin-top: 6vw;
+  }
+  .C_StyleGuideColors {
+    display: flex;
+    width: 83vw;
+    margin: 3vw 0 3vw 0;
+    flex-direction: column;
+  }
+  .C_StyleGuideTypography {
+    display: flex;
+    width: 75vw;
+    justify-content: space-between;
+    margin-top: 4vw;
+  }
+  .M_StyleGuideBlockImages {
+    width: 95vw;
+    height: 75vw;
+    margin: 3vw 0 0 0;
+    background-size: cover;
+  }
+  .M_StyleGuideBlockToneOfVoive {
+    width: 95vw;
+    height: 50vw;
+    border: 2px solid black;
+    padding: 6vw 6vw 8vw 6vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .A_TextStyleGuideIndependentTypography {
+    font-family: 'Inter';
+    font-size: 6vw;
+    line-height: 8vw;
+    margin-bottom: 5vw;
+    letter-spacing: -3%;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
 }
