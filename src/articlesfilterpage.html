@@ -1,24 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr" class="bg-white overflow-x-hidden">
   <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon_package_v0/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_package_v0/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon_package_v0/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon_package_v0/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicon_package_v0/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <title>Подборки</title>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <meta
+      name="description"
+      content="Страница со статьями об осознанном потреблении"
+    />
+    <meta name="language" content="русский" />
+    <meta
+      name="keywords"
+      content="сервис, осознанное, потребление, пластик, еда, быт, стекло, бумага"
+    />
     <meta property="og:url" content="https://retrash.adc.ac" />
-    <meta property="og:image" content="https://retrash.adc.ac/share/test.png" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      property="og:image"
+      content="http://retrash.adc.ac/images/f2cc6b8fd89544972f86.png"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NQHR9PZ9ZL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-    <analytics></analytics>
+      gtag('config', 'G-NQHR9PZ9ZL')
+    </script>
   </head>
 
   <body>
     <div class="SO_SearchAndFilterArticlesPage">
       <div class="W_Header">
-        <div class="Q_SearchIqon"></div>
-        <div class="Q_LogoHeader"></div>
+        <a href="search.html"> <div class="Q_SearchIqon"></div></a>
+        <a href="index.html"><div class="Q_LogoHeader"></div></a>
         <div class="Q_BurgerMenuIqon"></div>
       </div>
       <div class="O_SearchAndFilterContainer">
+        <div class="O_BurgerMenu">
+          <div class="C_MainPageCardsBurger">
+            <a href="lifehacksfilterpage.html">
+              <div class="W_MainPageMenuBurger menu-item1">
+                Лайфхаки
+              </div></a
+            >
+            <a href="mindmapsfilterpage.html"
+              ><div class="W_MainPageMenuBurger menu-item1">
+                Памятки
+              </div></a
+            >
+            <a href="map.html"
+              ><div class="W_MainPageMenuBurger menu-item1">
+                Карта
+              </div></a
+            >
+            <a href="articlesfilterpage.html"
+              ><div class="W_MainPageMenuBurger menu-item1">
+                Статьи
+              </div></a
+            >
+            <a href="collectionsfilterpage.html"
+              ><div class="W_MainPageMenuBurger menu-item1">
+                Подборки
+              </div></a
+            >
+            <a
+              href="https://www.behance.net/gallery/173654539/RETRASH-media-service"
+              ><div
+                class="W_MainPageMenuBurger borderbot0 paddingbot0 menu-item1"
+              >
+                Behance
+              </div></a
+            >
+          </div>
+        </div>
         <div class="M_Filter">
           <div class="C_FilterPageNavigation">
             <div class="Q_GoBack"></div>
