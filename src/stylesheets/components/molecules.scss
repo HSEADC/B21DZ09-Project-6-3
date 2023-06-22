@@ -86,8 +86,9 @@
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
   .C_MainPageCardsBurger {
-    height: 160vw;
+    height: 100vw;
     width: 80vw;
+    margin-bottom: 70vw;
     padding: 3.2vw 3vw 3.2vw 3vw;
   }
 }
