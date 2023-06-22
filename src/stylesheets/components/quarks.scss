@@ -411,9 +411,11 @@
   width: 34vw;
   height: 48.7vw;
   border: 0;
+  border-right: 2px solid black;
   border-bottom: 2px solid black;
   margin: 0;
-  background-color: black;
+  background-size: cover;
+  background-repeat: 0;
 }
 
 @media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
@@ -434,6 +436,8 @@
   .Q_GeneralImageCollectionPage {
     height: 70.2vw;
     width: 38.1vw;
+    border-right: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
   }
 }
 
@@ -441,6 +445,8 @@
   .Q_GeneralImageCollectionPage {
     height: 128.5vw;
     width: 100vw;
+    border-right: 0.46vw solid black;
+    border-bottom: 0.46vw solid black;
   }
 }
 // images and symbols for articles page
