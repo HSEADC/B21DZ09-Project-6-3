@@ -360,6 +360,8 @@
   width: 66vw;
   height: 42.7vw;
   border-right: 2px solid #000000;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-device-width: 1920px) and (max-device-width: 2048px) {
@@ -380,6 +382,7 @@
   .Q_MindMapPagePlayImage {
     height: 70.9vw;
     width: 100vw;
+    background-size: 140%;
   }
 }
 
@@ -387,6 +390,7 @@
   .Q_MindMapPagePlayImage {
     height: 128.5vw;
     width: 100vw;
+    background-size: 170%;
   }
 }
 
