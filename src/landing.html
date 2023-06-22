@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr" class="bg-white overflow-x-hidden">
   <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon_package_v0/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_package_v0/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon_package_v0/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon_package_v0/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicon_package_v0/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Промо</title>
+    <meta
+      name="description"
+      content="Промо лендинг для сервиса об осознанном потреблении"
+    />
+    <meta name="language" content="русский" />
+    <meta name="keywords" content="сервис, осознанное, потребление, промо" />
+    <meta property="og:url" content="https://retrash.adc.ac" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      property="og:image"
+      content="http://retrash.adc.ac/images/f2cc6b8fd89544972f86.png"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NQHR9PZ9ZL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-NQHR9PZ9ZL')
+    </script>
   </head>
 
   <body>
@@ -317,16 +368,15 @@
               последних новостей и&nbsp;взаимодействовать с&nbsp;нашими
               подписчиками!
             </div>
-            <div class="newsletter">
-              <form
-                action="https://formspree.io/f/mgeqzljr"
-                method="POST"
-                id="newsletter-form"
-              >
-                <input type="email" name="email" placeholder="Email" />
-                <button type="submit">Отправить</button>
-              </form>
-            </div>
+            <form
+              action="https://formspree.io/f/mgeqzljr"
+              method="POST"
+              class="W_FilterPageButtons1"
+              id="newsletter-form"
+            >
+              <input type="email" name="email" placeholder="Email" />
+              <button type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </div>
